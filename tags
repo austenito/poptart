@@ -1,0 +1,72 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Cli	lib/resty/cli.rb	/^  class Cli$/;"	c	class:Resty
+Command	lib/resty/override_pry_help.rb	/^  class Command::Help < Pry::ClassCommand$/;"	c	class:Pry
+ConfigFileError	lib/resty/options.rb	/^  class ConfigFileError < StandardError; end$/;"	c	class:Resty
+Options	lib/resty/options.rb	/^  class Options$/;"	c	class:Resty
+PrettyPrinter	lib/resty/pretty_printer.rb	/^  class PrettyPrinter$/;"	c	class:Resty
+Pry	lib/resty/override_pry_help.rb	/^class Pry$/;"	c
+Repl	lib/resty/repl.rb	/^  class Repl$/;"	c	class:Resty
+Request	lib/resty/request.rb	/^  class Request$/;"	c	class:Resty
+Resty	lib/resty.rb	/^module Resty$/;"	m
+Resty	lib/resty/cli.rb	/^module Resty$/;"	m
+Resty	lib/resty/options.rb	/^module Resty$/;"	m
+Resty	lib/resty/pretty_printer.rb	/^module Resty$/;"	m
+Resty	lib/resty/repl.rb	/^module Resty$/;"	m
+Resty	lib/resty/request.rb	/^module Resty$/;"	m
+Resty	lib/version.rb	/^module Resty$/;"	m
+String	spec/spec_helper.rb	/^class String$/;"	c
+basic_auth_invalid?	lib/resty/cli.rb	/^    def basic_auth_invalid?(options)$/;"	f	class:Resty.Cli
+build_data	lib/resty/commands/method_command.rb	/^  def build_data$/;"	f
+build_line	lib/resty/pretty_printer.rb	/^    def build_line(line)$/;"	f	class:Resty.PrettyPrinter
+build_pair	lib/resty/options.rb	/^    def self.build_pair(header)$/;"	F	class:Resty.Options
+data	lib/resty/commands/method_command.rb	/^  def data$/;"	f
+data	lib/resty/request.rb	/^    def data$/;"	f	class:Resty.Request
+data_invalid?	lib/resty/commands/method_command.rb	/^  def data_invalid?$/;"	f
+data_required	lib/resty/request.rb	/^    def self.data_required?(method)$/;"	F	class:Resty.Request
+eval_response	lib/resty/commands/method_command.rb	/^  def eval_response(response)$/;"	f
+eval_ruby	lib/resty/commands/method_command.rb	/^  def eval_ruby(input)$/;"	f
+generate	lib/resty/pretty_printer.rb	/^    def generate $/;"	f	class:Resty.PrettyPrinter
+global_options	lib/resty/commands/method_command.rb	/^  def global_options$/;"	f
+headers	lib/resty/options.rb	/^    def headers$/;"	f	class:Resty.Options
+help_text_for_commands	lib/resty/override_pry_help.rb	/^    def help_text_for_commands(name, commands)$/;"	f	class:Pry.Command
+host	lib/resty/options.rb	/^    def host$/;"	f	class:Resty.Options
+host_alias	lib/resty/options.rb	/^    def host_alias$/;"	f	class:Resty.Options
+http_method	lib/resty/commands/method_command.rb	/^  def http_method$/;"	f
+initialize	lib/resty/options.rb	/^    def initialize(options)$/;"	f	class:Resty.Options
+initialize	lib/resty/pretty_printer.rb	/^    def initialize(options, params)$/;"	f	class:Resty.PrettyPrinter
+initialize	lib/resty/repl.rb	/^    def initialize(resty_options)$/;"	f	class:Resty.Repl
+initialize	lib/resty/request.rb	/^    def initialize(global_options, params)$/;"	f	class:Resty.Request
+load_config_file	lib/resty/options.rb	/^    def load_config_file$/;"	f	class:Resty.Options
+method	lib/resty/request.rb	/^    def method$/;"	f	class:Resty.Request
+missing_host_or_alias?	lib/resty/cli.rb	/^    def missing_host_or_alias?(options)$/;"	f	class:Resty.Cli
+options	lib/resty/commands/method_command.rb	/^  def options(opt)$/;"	f
+parse_headers	lib/resty/options.rb	/^    def self.parse_headers(headers)$/;"	F	class:Resty.Options
+parse_json	lib/resty/commands/method_command.rb	/^  def parse_json(input)$/;"	f
+password	lib/resty/options.rb	/^    def password$/;"	f	class:Resty.Options
+path	lib/resty/commands/method_command.rb	/^  def path$/;"	f
+path	lib/resty/request.rb	/^    def path$/;"	f	class:Resty.Request
+path_missing?	lib/resty/commands/method_command.rb	/^  def path_missing?$/;"	f
+pretty_print_response	lib/resty/pretty_printer.rb	/^    def pretty_print_response(response)$/;"	f	class:Resty.PrettyPrinter
+process	lib/resty/commands/method_command.rb	/^  def process$/;"	f
+read_config_file	lib/resty/options.rb	/^    def read_config_file$/;"	f	class:Resty.Options
+readline	lib/resty/repl.rb	/^    def readline(current_prompt)$/;"	f	class:Resty.Repl
+request	lib/resty/pretty_printer.rb	/^    def request$/;"	f	class:Resty.PrettyPrinter
+request_headers	lib/resty/commands/method_command.rb	/^  def request_headers$/;"	f
+request_options	lib/resty/request.rb	/^    def request_options$/;"	f	class:Resty.Request
+response	lib/resty/pretty_printer.rb	/^    def response$/;"	f	class:Resty.PrettyPrinter
+run	lib/resty/cli.rb	/^    def run$/;"	f	class:Resty.Cli
+send_request	lib/resty/request.rb	/^    def send_request(options = {})$/;"	f	class:Resty.Request
+setup	lib/resty/commands/method_command.rb	/^  def setup$/;"	f
+start	lib/resty/repl.rb	/^    def self.start(resty_options)$/;"	F	class:Resty.Repl
+unindent	spec/spec_helper.rb	/^  def unindent$/;"	f	class:String
+url	lib/resty/request.rb	/^    def url$/;"	f	class:Resty.Request
+username	lib/resty/options.rb	/^    def username$/;"	f	class:Resty.Options
+validate_config_entries	lib/resty/options.rb	/^    def validate_config_entries(config)$/;"	f	class:Resty.Options
+verbose?	lib/resty/options.rb	/^    def verbose?$/;"	f	class:Resty.Options
+verbose?	lib/resty/pretty_printer.rb	/^    def verbose?$/;"	f	class:Resty.PrettyPrinter
+visible_commands	lib/resty/override_pry_help.rb	/^    def visible_commands$/;"	f	class:Pry.Command
