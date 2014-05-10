@@ -1,3 +1,3 @@
-module Resty
-  VERSION = "0.0.7"
+module Poptart
+  VERSION = "0.0.1"
 end

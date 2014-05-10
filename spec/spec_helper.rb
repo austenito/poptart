@@ -1,4 +1,4 @@
-require_relative "../lib/resty"
+require_relative "../lib/poptart"
 
 require 'mocha/api'
 require 'bourne'

@@ -17,6 +17,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'activesupport', ">= 3.2.13"
   gem.add_dependency 'hashie'
+  gem.add_dependency 'faraday'
 
   gem.add_development_dependency 'bourne', "1.5.0"
   gem.add_development_dependency 'guard'
