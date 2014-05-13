@@ -22,10 +22,15 @@ describe Poptart::Survey do
     survey.survey_questions.first.answer.should == "foo"
   end
 
-  it "returns a boolean question", :vcr, record: :all do
+  it "answers a boolean question", :vcr, record: :all do
     boolean_questions = Poptart::BooleanQuestion.all
     survey = Poptart::Survey.create
-    survey_question = survey.create_question(boolean_questions.first)
+    survey_question = survey.add_question(boolean_questions.first)
+
+    survey = Poptart::Survey.for_id(survey.id)
+    survey.survey_questions.count.should == 1
+    survey.survey_questions.first.type == "BooleanQuestion"
+
     survey_question.answer = true
     survey_question.submit.should be
 

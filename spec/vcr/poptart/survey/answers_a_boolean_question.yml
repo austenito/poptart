@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"37a6259cc0c1dae299a7866489dff0bd"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 04d6659e-4f98-4e5d-b312-978234a38c5f
+      X-Runtime:
+      - '0.005419'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Tue, 13 May 2014 23:41:13 GMT
+      Content-Length:
+      - '4'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: 'null'
+    http_version: 
+  recorded_at: Tue, 13 May 2014 23:41:13 GMT
+recorded_with: VCR 2.6.0

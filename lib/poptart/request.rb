@@ -13,6 +13,13 @@ module Poptart
       end
     end
 
+    def put(url, data = {})
+      connection.put do |req|
+        req.url(url)
+        req.headers['Content-Type'] = 'application/json'
+      end
+    end
+
     def post(url, data = {})
       connection.post do |req|
         req.url(url)

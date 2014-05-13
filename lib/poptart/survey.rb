@@ -33,6 +33,11 @@ module Poptart
       Survey.new.extend(SurveyRepresenter).from_json(response.body)
     end
 
+    def add_question(question)
+      Poptart::Survey.put(survey.links.self.href, { survey_question: { question_id: question.id } } )
+      response.status == 204
+    end
+
     def next_question
       if links['next']
         SurveyQuestion.for_url(links['next']['href'])
