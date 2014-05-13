@@ -1,15 +1,18 @@
 require 'spec_helper'
 
 describe Poptart::Survey do
-  it "creates and returns a survey", :vcr do
-    root = Poptart::Root.get_root
-    survey = root.create_survey
+  it "creates and returns an empty survey", :vcr do
+    survey = Poptart::Survey.create
+    survey.survey_questions.count.should == 0
+  end
+
+  it "creates and returns a random question survey", :vcr do
+    survey = Poptart::Survey.create_random
     survey.survey_questions.count.should == 5
   end
 
-  it "answers a survey question", :vcr, record: :all do
-    root = Poptart::Root.get_root
-    survey = root.create_survey
+  it "answers a survey question", :vcr do
+    survey = Poptart::Survey.create_random
     survey_question = survey.survey_questions.first
     survey_question.text.should be
     survey_question.answer = "foo"
@@ -18,6 +21,23 @@ describe Poptart::Survey do
     survey = Poptart::Survey.for_id(survey.id)
     survey.survey_questions.first.answer.should == "foo"
   end
+
+  it "returns a boolean question", :vcr, record: :all do
+    boolean_questions = Poptart::BooleanQuestion.all
+    survey = Poptart::Survey.create
+    survey_question = survey.create_question(boolean_questions.first)
+    survey_question.answer = true
+    survey_question.submit.should be
+
+    survey = Poptart::Survey.for_id(survey.id)
+    survey.survey_questions.first.answer.should == true
+  end
+
+  it "returns a multiple response question"
+
+  it "returns a range question"
+
+  it "returns a time range question"
 end
 
 

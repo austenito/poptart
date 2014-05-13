@@ -12,9 +12,5 @@ module Poptart
       response =  get("/")
       Poptart::Root.new(JSON.parse(response.body))
     end
-
-    def create_survey
-      Poptart::Survey.create
-    end
   end
 end

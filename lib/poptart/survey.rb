@@ -18,6 +18,11 @@ module Poptart
       Poptart::Survey.new(JSON.parse(response.body))
     end
 
+    def self.create_random
+      response = post("/api/surveys?random=true")
+      Poptart::Survey.new(JSON.parse(response.body))
+    end
+
     def self.for_id(id)
       response = get("/api/surveys/#{id}")
       Poptart::Survey.new(JSON.parse(response.body))

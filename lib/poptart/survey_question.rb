@@ -12,8 +12,8 @@ module Poptart
     end
 
     def submit
-      response = Faraday.post(links.submit.href, { id: id, survey_question: { answer: answer} })
-      response.status == 201
+      response = Faraday.put(links.submit.href, { id: id, survey_question: { answer: answer} })
+      response.status == 204
     end
   end
 end
