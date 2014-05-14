@@ -25,11 +25,12 @@ describe Poptart::Survey do
   it "answers a boolean question", :vcr, record: :all do
     boolean_questions = Poptart::BooleanQuestion.all
     survey = Poptart::Survey.create
-    survey_question = survey.add_question(boolean_questions.first)
+    survey.add_question(boolean_questions.first).should be
 
     survey = Poptart::Survey.for_id(survey.id)
     survey.survey_questions.count.should == 1
-    survey.survey_questions.first.type == "BooleanQuestion"
+    survey_question = survey.survey_questions.first
+    survey_question.type.should == "BooleanQuestion"
 
     survey_question.answer = true
     survey_question.submit.should be

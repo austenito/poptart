@@ -16,13 +16,15 @@ module Poptart
     def put(url, data = {})
       connection.put do |req|
         req.url(url)
+        req.body = data.to_json if data
         req.headers['Content-Type'] = 'application/json'
       end
     end
 
-    def post(url, data = {})
+    def post(url, data = nil)
       connection.post do |req|
         req.url(url)
+        req.body = data.to_json if data
         req.headers['Content-Type'] = 'application/json'
       end
     end

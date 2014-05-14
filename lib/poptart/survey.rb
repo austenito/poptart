@@ -1,20 +1,24 @@
 module Poptart
   class Survey
     extend Poptart::Request
-    attr_accessor :id
-    attr_accessor :survey_questions
+    attr_accessor :id, :survey_questions, :links
 
     def initialize(params)
       @id = params['id']
       @links = Hashie::Mash.new(params['_links'])
 
       @survey_questions = params['survey_questions'].map do |survey_question|
-        SurveyQuestion.new(survey_question)
+        if survey_question['type'] == 'BooleanQuestion'
+          BooleanQuestion.new(survey_question)
+        else
+          SurveyQuestion.new(survey_question)
+        end
       end.sort_by { |survey_question| survey_question.id }
     end
 
     def self.create
-      response = post("/api/surveys")
+      root = Poptart::Root.get_root
+      response = post(root.links.surveys.href)
       Poptart::Survey.new(JSON.parse(response.body))
     end
 
@@ -34,8 +38,9 @@ module Poptart
     end
 
     def add_question(question)
-      Poptart::Survey.put(survey.links.self.href, { survey_question: { question_id: question.id } } )
-      response.status == 204
+      response = Poptart::Survey.post("#{links.self.href}/survey_questions",
+                                      { survey_question: { question_id: question.id } } )
+      response.status == 201
     end
 
     def next_question
