@@ -2,9 +2,10 @@ module Poptart
   class Root
     extend Poptart::Request
 
-    attr_accessor :links
+    attr_accessor :links, :question_types
 
     def initialize(params)
+      @question_types = params['question_types']
       @links = Hashie::Mash.new(params['_links'])
     end
 

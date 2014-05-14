@@ -10,6 +10,8 @@ module Poptart
       @survey_questions = params['survey_questions'].map do |survey_question|
         if survey_question['type'] == 'BooleanQuestion'
           BooleanQuestion.new(survey_question)
+        elsif survey_question['type'] == 'MultipleResponseQuestion'
+          MultipleResponseQuestion.new(survey_question)
         else
           SurveyQuestion.new(survey_question)
         end

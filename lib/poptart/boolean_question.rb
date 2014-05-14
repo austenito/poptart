@@ -9,12 +9,10 @@ module Poptart
 
     def self.all
       root = Poptart::Root.get_root
-      response = get(root.links.questions.href)
+      response = get("#{root.links.questions.href}?type=#{root.question_types['boolean']}")
       JSON.parse(response.body).map do |question|
-        if question['questionable_type'] == "BooleanQuestion"
-          new(question)
-        end
-      end.compact
+        new(question)
+      end
     end
   end
 end

@@ -1,0 +1,938 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/113/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"a051236c7e31981b9c4b0c3a16aa04cf"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b585baec-b911-4c1a-bccf-89e5fff0a791
+      X-Runtime:
+      - '0.022536'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Wed, 14 May 2014 12:17:46 GMT
+      Content-Length:
+      - '487'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 335,
+          "text": "How hungry or full are you right now?",
+          "type": "MultipleResponseQuestion",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/113/survey_questions/335"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/113"
+            },
+            "create": {
+              "href": "http://localhost:3000/api/surveys/113/survey_questions"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/113/survey_questions/335"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Wed, 14 May 2014 12:17:46 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/113
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"894c647c0fbe1295290b2dedfd4d5cf3"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 311fec8d-ee2e-48fd-8439-ff15ba855b00
+      X-Runtime:
+      - '0.020947'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Wed, 14 May 2014 12:17:46 GMT
+      Content-Length:
+      - '891'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 113,
+          "survey_questions": [
+            {
+              "id": 335,
+              "text": "How hungry or full are you right now?",
+              "type": "MultipleResponseQuestion",
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/113/survey_questions/335"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/113"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/113/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/113/survey_questions/335"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/113"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/113/survey_questions"
+            },
+            "next": {
+              "href": "http://localhost:3000/api/surveys/113/survey_questions/335"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Wed, 14 May 2014 12:17:46 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/114/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"e15ceca5097f273f49cc1d884ee350b5"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - db1a6f60-4d19-4288-b3ad-dcf0de5615c8
+      X-Runtime:
+      - '0.020843'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Wed, 14 May 2014 12:18:42 GMT
+      Content-Length:
+      - '487'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 336,
+          "text": "How hungry or full are you right now?",
+          "type": "MultipleResponseQuestion",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/114/survey_questions/336"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/114"
+            },
+            "create": {
+              "href": "http://localhost:3000/api/surveys/114/survey_questions"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/114/survey_questions/336"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Wed, 14 May 2014 12:18:42 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/114
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"3723b41e99e4d533dd2ff68dedaf2594"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7783ad1d-fd3d-433c-a6a9-a18538af4cd0
+      X-Runtime:
+      - '0.021008'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Wed, 14 May 2014 12:18:42 GMT
+      Content-Length:
+      - '891'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 114,
+          "survey_questions": [
+            {
+              "id": 336,
+              "text": "How hungry or full are you right now?",
+              "type": "MultipleResponseQuestion",
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/114/survey_questions/336"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/114"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/114/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/114/survey_questions/336"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/114"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/114/survey_questions"
+            },
+            "next": {
+              "href": "http://localhost:3000/api/surveys/114/survey_questions/336"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Wed, 14 May 2014 12:18:42 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/115/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"fd80c23fcd6242e108d2d96b1fd271a6"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bd4745ed-70a9-4013-85c8-d547b0cc50ee
+      X-Runtime:
+      - '0.015927'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Wed, 14 May 2014 12:19:28 GMT
+      Content-Length:
+      - '487'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 337,
+          "text": "How hungry or full are you right now?",
+          "type": "MultipleResponseQuestion",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/115/survey_questions/337"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/115"
+            },
+            "create": {
+              "href": "http://localhost:3000/api/surveys/115/survey_questions"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/115/survey_questions/337"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Wed, 14 May 2014 12:19:28 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/115
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"54059ac766ed92e98a110f31fc5d26e9"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 422d26f9-07aa-46e1-81df-857f12e087ad
+      X-Runtime:
+      - '0.024785'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Wed, 14 May 2014 12:19:40 GMT
+      Content-Length:
+      - '891'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 115,
+          "survey_questions": [
+            {
+              "id": 337,
+              "text": "How hungry or full are you right now?",
+              "type": "MultipleResponseQuestion",
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/115/survey_questions/337"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/115"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/115/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/115/survey_questions/337"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/115"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/115/survey_questions"
+            },
+            "next": {
+              "href": "http://localhost:3000/api/surveys/115/survey_questions/337"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Wed, 14 May 2014 12:19:40 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"a57700d75ca92b44fedcb7642c8c0d61"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c4d6c9c3-814f-43f3-bbb8-59fcb07351ec
+      X-Runtime:
+      - '0.033734'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Wed, 14 May 2014 12:36:01 GMT
+      Content-Length:
+      - '348'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "question_types": {
+            "boolean": "BooleanQuestion",
+            "multiple_response": "MultipleResponseQuestion"
+          },
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api"
+            },
+            "surveys": {
+              "href": "http://localhost:3000/api/surveys"
+            },
+            "questions": {
+              "href": "http://localhost:3000/api/questions"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Wed, 14 May 2014 12:36:01 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/questions?type=MultipleResponseQuestion
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"745910e57ff63ef5ae4697f3172bdd98"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fb0933b7-3096-45ec-a2f6-67ccfe705d73
+      X-Runtime:
+      - '0.029201'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Wed, 14 May 2014 12:36:01 GMT
+      Content-Length:
+      - '1565'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        [
+          {
+            "id": 1,
+            "type": "MultipleResponseQuestion",
+            "text": "How hungry or full are you right now?"
+          },
+          {
+            "id": 4,
+            "type": "MultipleResponseQuestion",
+            "text": "Are you judging or evaluating yourself right now (i.e. at the moment just before you were notified)?"
+          },
+          {
+            "id": 8,
+            "type": "MultipleResponseQuestion",
+            "text": "Are you judging or evaluating what you are doing right now (i.e. at the moment just before you were notified?)"
+          },
+          {
+            "id": 10,
+            "type": "MultipleResponseQuestion",
+            "text": "Imagine you were given $10 to divide between yourself and a stranger to whom you would remain anonymous. How much would you give to the stranger?"
+          },
+          {
+            "id": 12,
+            "type": "MultipleResponseQuestion",
+            "text": "In general, how is your health?"
+          },
+          {
+            "id": 15,
+            "type": "MultipleResponseQuestion",
+            "text": "On average, how many hours do you work each week?"
+          },
+          {
+            "id": 21,
+            "type": "MultipleResponseQuestion",
+            "text": "Who are you talking or interacting with?"
+          },
+          {
+            "id": 26,
+            "type": "MultipleResponseQuestion",
+            "text": "Where are you?"
+          },
+          {
+            "id": 27,
+            "type": "MultipleResponseQuestion",
+            "text": "How many people are you talking or interacting with?"
+          },
+          {
+            "id": 30,
+            "type": "MultipleResponseQuestion",
+            "text": "When did you last check Facebook?"
+          },
+          {
+            "id": 31,
+            "type": "MultipleResponseQuestion",
+            "text": "Beyond any work you've already done today, how many additional hours do you expect to work today?"
+          }
+        ]
+    http_version: 
+  recorded_at: Wed, 14 May 2014 12:36:01 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"a57700d75ca92b44fedcb7642c8c0d61"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1959ef52-1e50-47ab-bed7-a0e688c4c4c7
+      X-Runtime:
+      - '0.007800'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Wed, 14 May 2014 12:36:01 GMT
+      Content-Length:
+      - '348'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "question_types": {
+            "boolean": "BooleanQuestion",
+            "multiple_response": "MultipleResponseQuestion"
+          },
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api"
+            },
+            "surveys": {
+              "href": "http://localhost:3000/api/surveys"
+            },
+            "questions": {
+              "href": "http://localhost:3000/api/questions"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Wed, 14 May 2014 12:36:01 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"a940ec46045e9afa7679fd3d6b32b266"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 965cdcd9-0c86-44a6-a1ef-8138a82570ad
+      X-Runtime:
+      - '0.036005'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Wed, 14 May 2014 12:36:01 GMT
+      Content-Length:
+      - '232'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 117,
+          "survey_questions": [
+
+          ],
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/117"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/117/survey_questions"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Wed, 14 May 2014 12:36:01 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/117/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"3c0c00fdf9650cbe769895d0d922ea1a"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b704349c-6b80-44db-8b62-8af6c3d0931e
+      X-Runtime:
+      - '0.026516'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Wed, 14 May 2014 12:36:01 GMT
+      Content-Length:
+      - '487'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 338,
+          "text": "How hungry or full are you right now?",
+          "type": "MultipleResponseQuestion",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/117/survey_questions/338"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/117"
+            },
+            "create": {
+              "href": "http://localhost:3000/api/surveys/117/survey_questions"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/117/survey_questions/338"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Wed, 14 May 2014 12:36:01 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/117
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"d210dd2506ec65e8ab59089ed4012c42"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bafa371f-fbdc-4ba1-a7f6-d063175d530c
+      X-Runtime:
+      - '0.021791'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Wed, 14 May 2014 12:36:18 GMT
+      Content-Length:
+      - '891'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 117,
+          "survey_questions": [
+            {
+              "id": 338,
+              "text": "How hungry or full are you right now?",
+              "type": "MultipleResponseQuestion",
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/117/survey_questions/338"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/117"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/117/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/117/survey_questions/338"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/117"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/117/survey_questions"
+            },
+            "next": {
+              "href": "http://localhost:3000/api/surveys/117/survey_questions/338"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Wed, 14 May 2014 12:36:18 GMT
+recorded_with: VCR 2.6.0
