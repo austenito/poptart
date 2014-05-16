@@ -35,13 +35,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d3e490d0-dabc-415f-8b0e-a727a1c9eb6b
+      - 509f9b08-8e02-4b6c-aa3d-3b41d4495024
       X-Runtime:
-      - '0.005914'
+      - '0.008551'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Wed, 14 May 2014 00:55:27 GMT
+      - Fri, 16 May 2014 00:03:10 GMT
       Content-Length:
       - '235'
       Connection:
@@ -63,7 +63,7 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Wed, 14 May 2014 00:55:27 GMT
+  recorded_at: Fri, 16 May 2014 00:03:10 GMT
 - request:
     method: post
     uri: http://localhost:3000/api/surveys
@@ -97,17 +97,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"b076de3933e39649a6157ed1d7ae5940"'
+      - '"b60e2b665d0ff3c22914ce11171387a8"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5a7133e1-64c7-420d-ab9e-52314a58ea74
+      - bbe9c5c8-a7a2-4640-a5ad-3f1191168be4
       X-Runtime:
-      - '0.014446'
+      - '0.011748'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Wed, 14 May 2014 00:55:27 GMT
+      - Fri, 16 May 2014 00:03:10 GMT
       Content-Length:
       - '229'
       Connection:
@@ -116,19 +116,19 @@ http_interactions:
       encoding: UTF-8
       string: |-
         {
-          "id": 70,
+          "id": 24,
           "survey_questions": [
 
           ],
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/surveys/70"
+              "href": "http://localhost:3000/api/surveys/24"
             },
             "submit": {
-              "href": "http://localhost:3000/api/surveys/70/survey_questions"
+              "href": "http://localhost:3000/api/surveys/24/survey_questions"
             }
           }
         }
     http_version: 
-  recorded_at: Wed, 14 May 2014 00:55:27 GMT
+  recorded_at: Fri, 16 May 2014 00:03:10 GMT
 recorded_with: VCR 2.6.0
