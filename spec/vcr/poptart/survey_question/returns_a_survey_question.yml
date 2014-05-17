@@ -1,0 +1,213 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys?random=true
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"f68903f826bb95938ce8197b96a8d3f7"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 374c9d3b-4069-4db8-8fd8-4a899f91cd3f
+      X-Runtime:
+      - '0.061814'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Sat, 17 May 2014 02:28:41 GMT
+      Content-Length:
+      - '4012'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 33,
+          "survey_questions": [
+            {
+              "id": 95,
+              "text": "In general, how is your health?",
+              "type": "multiple",
+              "responses": [
+                "Excellent",
+                "Very Good",
+                "Good",
+                "Fair",
+                "Poor"
+              ],
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/33/survey_questions/95"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/33"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/33/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/33/survey_questions/95"
+                }
+              }
+            },
+            {
+              "id": 96,
+              "text": "Have you surprised someone with a gift (including small gifts) in the last week?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/33/survey_questions/96"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/33"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/33/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/33/survey_questions/96"
+                }
+              }
+            },
+            {
+              "id": 97,
+              "text": "Beyond any work you've already done today, how many additional hours do you expect to work today?",
+              "type": "multiple",
+              "responses": [
+                "0 (none)",
+                "Less than 1 hour",
+                "1-2 hours",
+                "2-3 hours",
+                "3-4 hours",
+                "4-5 hours",
+                "5-6 hours"
+              ],
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/33/survey_questions/97"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/33"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/33/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/33/survey_questions/97"
+                }
+              }
+            },
+            {
+              "id": 98,
+              "text": "On average, how many hours do you work each week?",
+              "type": "multiple",
+              "responses": [
+                "Less than 5",
+                "5-10",
+                "10-20",
+                "20-30",
+                "30-40",
+                "40-50",
+                "50-60",
+                "60-70",
+                "More than 70"
+              ],
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/33/survey_questions/98"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/33"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/33/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/33/survey_questions/98"
+                }
+              }
+            },
+            {
+              "id": 99,
+              "text": "Imagine you were given $10 to divide between yourself and a stranger to whom you would remain anonymous. How much would you give to the stranger?",
+              "type": "multiple",
+              "responses": [
+                [
+                  "0",
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9",
+                  "10"
+                ]
+              ],
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/33/survey_questions/99"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/33"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/33/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/33/survey_questions/99"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/33"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/33/survey_questions"
+            },
+            "next": {
+              "href": "http://localhost:3000/api/surveys/33/survey_questions/95"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 17 May 2014 02:28:41 GMT
+recorded_with: VCR 2.6.0

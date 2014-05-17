@@ -38,6 +38,13 @@ describe Poptart::Survey do
     survey = Poptart::Survey.for_id(survey.id)
     survey.survey_questions.first.answer.should == 'true'
   end
+
+  it "finds survey question for id", :vcr do
+    survey = Poptart::Survey.create_random
+    first_survey_question = survey.survey_questions.first
+    survey_question = survey.survey_question_for_id(first_survey_question.id)
+    first_survey_question.should == survey_question
+  end
 end
 
 

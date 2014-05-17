@@ -43,6 +43,12 @@ module Poptart
       response.status == 201
     end
 
+    def survey_question_for_id(id)
+      survey_questions.find do |survey_question|
+        survey_question.id == id
+      end
+    end
+
     def next_question
       if links['next']
         SurveyQuestion.for_url(links['next']['href'])
