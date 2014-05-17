@@ -1899,444 +1899,6 @@ http_interactions:
   recorded_at: Sat, 10 May 2014 21:18:17 GMT
 - request:
     method: post
-    uri: http://localhost:3000/api/surveys/42/survey_questions
-    body:
-      encoding: UTF-8
-      string: id=207&survey_question%5Banswer%5D=foo
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: 'Created '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"579368f26304e205b0045f07e9b6998c"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - efc8fbdc-9480-4e08-8ada-c5feafd0e1ca
-      X-Runtime:
-      - '0.020489'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
-      Date:
-      - Sun, 11 May 2014 20:57:29 GMT
-      Content-Length:
-      - '504'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "id": 207,
-          "text": "To what extent have you procrastinated so far today?",
-          "type": "RangeQuestion",
-          "answer": "foo",
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/surveys/42/survey_questions/207"
-            },
-            "next": {
-              "href": "http://localhost:3000/api/surveys/42/survey_questions/208"
-            },
-            "survey": {
-              "href": "http://localhost:3000/api/surveys/42"
-            },
-            "submit": {
-              "href": "http://localhost:3000/api/surveys/42/survey_questions"
-            }
-          }
-        }
-    http_version: 
-  recorded_at: Sun, 11 May 2014 20:57:29 GMT
-- request:
-    method: get
-    uri: http://localhost:3000/api/surveys/42
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"5df75076a417b60ad4cde4be2bd60469"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - cbab69fa-d4b3-4a2c-8082-7d359bc93ed1
-      X-Runtime:
-      - '0.046050'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
-      Date:
-      - Sun, 11 May 2014 20:57:29 GMT
-      Content-Length:
-      - '2774'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "id": 42,
-          "survey_questions": [
-            {
-              "id": 208,
-              "text": "To what extent do you feel accepted by the person/people you are interacting with?",
-              "type": "RangeQuestion",
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/42/survey_questions/208"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/42"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/42/survey_questions"
-                }
-              }
-            },
-            {
-              "id": 209,
-              "text": "Who are you talking or interacting with?",
-              "type": "MultipleResponseQuestion",
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/42/survey_questions/209"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/42"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/42/survey_questions"
-                }
-              }
-            },
-            {
-              "id": 210,
-              "text": "Dolorem voluptate consequuntur et maiores numquam dolor sunt sit minus consequatur culpa itaque veritatis iusto.",
-              "type": "RangeQuestion",
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/42/survey_questions/210"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/42"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/42/survey_questions"
-                }
-              }
-            },
-            {
-              "id": 211,
-              "text": "Dolorem voluptate consequuntur et maiores numquam dolor sunt sit minus consequatur culpa itaque veritatis iusto.",
-              "type": "RangeQuestion",
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/42/survey_questions/211"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/42"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/42/survey_questions"
-                }
-              }
-            },
-            {
-              "id": 207,
-              "text": "To what extent have you procrastinated so far today?",
-              "type": "RangeQuestion",
-              "answer": "foo",
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/42/survey_questions/207"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/42"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/42/survey_questions"
-                }
-              }
-            }
-          ],
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/surveys/42"
-            },
-            "submit": {
-              "href": "http://localhost:3000/api/surveys/42/survey_questions"
-            },
-            "next": {
-              "href": "http://localhost:3000/api/surveys/42/survey_questions/208"
-            }
-          }
-        }
-    http_version: 
-  recorded_at: Sun, 11 May 2014 20:57:29 GMT
-- request:
-    method: post
-    uri: http://localhost:3000/api/surveys/45/survey_questions
-    body:
-      encoding: UTF-8
-      string: id=222&survey_question%5Banswer%5D=foo
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: 'Created '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"139bc61142bad6b264d2898936b08288"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 07b0d209-5712-43dc-a416-d6479761ac0a
-      X-Runtime:
-      - '0.018126'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
-      Date:
-      - Sun, 11 May 2014 20:57:46 GMT
-      Content-Length:
-      - '573'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "id": 222,
-          "text": "Are you judging or evaluating what you are doing right now (i.e. at the moment just before you were notified?)",
-          "type": "MultipleResponseQuestion",
-          "answer": "foo",
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/surveys/45/survey_questions/222"
-            },
-            "next": {
-              "href": "http://localhost:3000/api/surveys/45/survey_questions/223"
-            },
-            "survey": {
-              "href": "http://localhost:3000/api/surveys/45"
-            },
-            "submit": {
-              "href": "http://localhost:3000/api/surveys/45/survey_questions"
-            }
-          }
-        }
-    http_version: 
-  recorded_at: Sun, 11 May 2014 20:57:46 GMT
-- request:
-    method: get
-    uri: http://localhost:3000/api/surveys/45
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"234357d9508f5c866a2ff3c419b94098"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 01acde59-422f-4c5d-9bc9-f0651399e805
-      X-Runtime:
-      - '0.048870'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
-      Date:
-      - Sun, 11 May 2014 20:57:46 GMT
-      Content-Length:
-      - '3194'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "id": 45,
-          "survey_questions": [
-            {
-              "id": 223,
-              "text": "How well did you sleep last night?",
-              "type": "RangeQuestion",
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/45/survey_questions/223"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/45"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/45/survey_questions"
-                }
-              }
-            },
-            {
-              "id": 224,
-              "text": "If you could, and it had no negative consequences, would you jump forward in time 24 hours?",
-              "type": "BooleanQuestion",
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/45/survey_questions/224"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/45"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/45/survey_questions"
-                }
-              }
-            },
-            {
-              "id": 225,
-              "text": "How well did you sleep last night?",
-              "type": "RangeQuestion",
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/45/survey_questions/225"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/45"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/45/survey_questions"
-                }
-              }
-            },
-            {
-              "id": 226,
-              "text": "Where would you place yourself on this ladder?\nThink of a ladder representing where people stand in your country.\nAt the top of the ladder are the people who are the best off - those who have the most money, the most education and the most respected jobs. At the bottom are the people who are the worst off - who have the least money, least education, and the least respected jobs or no job. The higher up you are on the ladder, the closer you are to the people at the very top; the lower you are the closer you are to people at the very bottom.",
-              "type": "RangeQuestion",
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/45/survey_questions/226"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/45"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/45/survey_questions"
-                }
-              }
-            },
-            {
-              "id": 222,
-              "text": "Are you judging or evaluating what you are doing right now (i.e. at the moment just before you were notified?)",
-              "type": "MultipleResponseQuestion",
-              "answer": "foo",
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/45/survey_questions/222"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/45"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/45/survey_questions"
-                }
-              }
-            }
-          ],
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/surveys/45"
-            },
-            "submit": {
-              "href": "http://localhost:3000/api/surveys/45/survey_questions"
-            },
-            "next": {
-              "href": "http://localhost:3000/api/surveys/45/survey_questions/223"
-            }
-          }
-        }
-    http_version: 
-  recorded_at: Sun, 11 May 2014 20:57:46 GMT
-- request:
-    method: post
     uri: http://localhost:3000/api/surveys/48/survey_questions
     body:
       encoding: UTF-8
@@ -5494,6 +5056,959 @@ http_interactions:
     http_version: 
   recorded_at: Fri, 16 May 2014 00:03:10 GMT
 - request:
+    method: post
+    uri: http://localhost:3000/api/surveys/28/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":9}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"e7dd1a21919e3065bf8f1c98c3dfc44c"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4b2e2e41-a4ee-4d40-be3f-34e4bafcadc5
+      X-Runtime:
+      - '0.016555'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Fri, 16 May 2014 00:04:17 GMT
+      Content-Length:
+      - '543'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 79,
+          "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+          "type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/28/survey_questions/79"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/28"
+            },
+            "create": {
+              "href": "http://localhost:3000/api/surveys/28/survey_questions"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/28/survey_questions/79"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Fri, 16 May 2014 00:04:17 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/28
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"715f1b56d37f76b402c515f99bb416c2"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ca88a232-3b8a-48f5-a12e-244b6f80675e
+      X-Runtime:
+      - '0.026568'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Fri, 16 May 2014 00:04:17 GMT
+      Content-Length:
+      - '958'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 28,
+          "survey_questions": [
+            {
+              "id": 79,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/28/survey_questions/79"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/28"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/28/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/28/survey_questions/79"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/28"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/28/survey_questions"
+            },
+            "next": {
+              "href": "http://localhost:3000/api/surveys/28/survey_questions/79"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Fri, 16 May 2014 00:04:17 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/28/survey_questions/79
+    body:
+      encoding: UTF-8
+      string: '{"id":79,"survey_question":{"answer":"true"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 0f6811b9-1a9e-4a16-ac58-19fb536b640c
+      X-Runtime:
+      - '0.008960'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Fri, 16 May 2014 00:04:17 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 16 May 2014 00:04:17 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/28
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"6ffe424aa27aacffa05680e79f0bebf3"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 26935a14-1a54-4dfb-95ea-f9963fbb9474
+      X-Runtime:
+      - '0.025331'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Fri, 16 May 2014 00:04:17 GMT
+      Content-Length:
+      - '888'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 28,
+          "survey_questions": [
+            {
+              "id": 79,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": "true",
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/28/survey_questions/79"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/28"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/28/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/28/survey_questions/79"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/28"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/28/survey_questions"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Fri, 16 May 2014 00:04:17 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/41/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":9}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"2840beb850cfcd877ba23a9fc93e6aab"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 759f091a-36a7-454a-b1cb-7708230f9cd6
+      X-Runtime:
+      - '0.023359'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Sat, 17 May 2014 12:26:54 GMT
+      Content-Length:
+      - '546'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 135,
+          "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+          "type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/41/survey_questions/135"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/41"
+            },
+            "create": {
+              "href": "http://localhost:3000/api/surveys/41/survey_questions"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/41/survey_questions/135"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 17 May 2014 12:26:54 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/41
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"f3025df87b77ce8e4202477f572a63e7"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c7e3f930-8a5c-4b02-a2e2-9ac2010eefe9
+      X-Runtime:
+      - '0.018081'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Sat, 17 May 2014 12:26:54 GMT
+      Content-Length:
+      - '962'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 41,
+          "survey_questions": [
+            {
+              "id": 135,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/41/survey_questions/135"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/41"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/41/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/41/survey_questions/135"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/41"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/41/survey_questions"
+            },
+            "next": {
+              "href": "http://localhost:3000/api/surveys/41/survey_questions/135"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 17 May 2014 12:26:54 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/42/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":9}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"98658f2282dac68a849c836aa875d386"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bbb92a69-a386-4134-a849-838e77616a52
+      X-Runtime:
+      - '0.026920'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Sat, 17 May 2014 12:28:56 GMT
+      Content-Length:
+      - '546'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 136,
+          "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+          "type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/42/survey_questions/136"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/42"
+            },
+            "create": {
+              "href": "http://localhost:3000/api/surveys/42/survey_questions"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/42/survey_questions/136"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 17 May 2014 12:28:56 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/42
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"caa6de45abf93a4cb44e9de6563eaf22"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9c70b6d9-ff42-4a4d-9055-714daa133ce8
+      X-Runtime:
+      - '0.025614'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Sat, 17 May 2014 12:28:56 GMT
+      Content-Length:
+      - '962'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 42,
+          "survey_questions": [
+            {
+              "id": 136,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/42/survey_questions/136"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/42"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/42/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/42/survey_questions/136"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/42"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/42/survey_questions"
+            },
+            "next": {
+              "href": "http://localhost:3000/api/surveys/42/survey_questions/136"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 17 May 2014 12:28:56 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/43/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":9}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"3f583cc6b2cd86d08d24610685d6431c"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a1bbf46d-ac6d-4ece-a406-c74956390600
+      X-Runtime:
+      - '0.017763'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Sat, 17 May 2014 12:31:16 GMT
+      Content-Length:
+      - '546'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 137,
+          "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+          "type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/43/survey_questions/137"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/43"
+            },
+            "create": {
+              "href": "http://localhost:3000/api/surveys/43/survey_questions"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/43/survey_questions/137"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 17 May 2014 12:31:16 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/43
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"fcd01a505eef563496df9a2c87c4a952"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - acea5de3-9f5f-4884-9d02-a304540ec4eb
+      X-Runtime:
+      - '0.021771'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Sat, 17 May 2014 12:31:16 GMT
+      Content-Length:
+      - '962'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 43,
+          "survey_questions": [
+            {
+              "id": 137,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/137"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/43"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/137"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/43"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/43/survey_questions"
+            },
+            "next": {
+              "href": "http://localhost:3000/api/surveys/43/survey_questions/137"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 17 May 2014 12:31:16 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/44/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":9}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"028b6e3980fa524dd5c79219325c6e41"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - be380d2a-0393-4799-88ac-e5754cb388a6
+      X-Runtime:
+      - '0.017774'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Sat, 17 May 2014 12:31:25 GMT
+      Content-Length:
+      - '546'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 138,
+          "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+          "type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/44/survey_questions/138"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/44"
+            },
+            "create": {
+              "href": "http://localhost:3000/api/surveys/44/survey_questions"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/44/survey_questions/138"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 17 May 2014 12:31:25 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/44
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"6c0d3807228755b8bb866c3c4fc964c2"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 553e153e-d574-4aef-afb0-05088c06ed3c
+      X-Runtime:
+      - '0.020770'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Sat, 17 May 2014 12:31:25 GMT
+      Content-Length:
+      - '962'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 44,
+          "survey_questions": [
+            {
+              "id": 138,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/44/survey_questions/138"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/44"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/44/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/44/survey_questions/138"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/44"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/44/survey_questions"
+            },
+            "next": {
+              "href": "http://localhost:3000/api/surveys/44/survey_questions/138"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 17 May 2014 12:31:25 GMT
+- request:
     method: get
     uri: http://localhost:3000/
     body:
@@ -5528,13 +6043,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6718d18c-b12c-4718-85d7-44bbbd5bb3a8
+      - 97be03b9-4a8e-4c07-8525-5b13be40805b
       X-Runtime:
-      - '0.006851'
+      - '0.011252'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Fri, 16 May 2014 00:04:17 GMT
+      - Sat, 17 May 2014 12:31:40 GMT
       Content-Length:
       - '235'
       Connection:
@@ -5556,7 +6071,7 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Fri, 16 May 2014 00:04:17 GMT
+  recorded_at: Sat, 17 May 2014 12:31:40 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/questions
@@ -5592,13 +6107,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - db3f59fa-24b4-4e51-835f-1d44312837a5
+      - 43011567-e92c-4136-a2be-326aeb5b8935
       X-Runtime:
-      - '0.010640'
+      - '0.010518'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Fri, 16 May 2014 00:04:17 GMT
+      - Sat, 17 May 2014 12:31:40 GMT
       Content-Length:
       - '10132'
       Connection:
@@ -6007,7 +6522,7 @@ http_interactions:
           }
         ]
     http_version: 
-  recorded_at: Fri, 16 May 2014 00:04:17 GMT
+  recorded_at: Sat, 17 May 2014 12:31:40 GMT
 - request:
     method: get
     uri: http://localhost:3000/
@@ -6043,13 +6558,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 63682824-6848-4a49-aad8-be17271b74c0
+      - a9e61f74-ed67-4322-bdf8-f2e086495fc2
       X-Runtime:
-      - '0.007454'
+      - '0.007503'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Fri, 16 May 2014 00:04:17 GMT
+      - Sat, 17 May 2014 12:31:40 GMT
       Content-Length:
       - '235'
       Connection:
@@ -6071,7 +6586,7 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Fri, 16 May 2014 00:04:17 GMT
+  recorded_at: Sat, 17 May 2014 12:31:40 GMT
 - request:
     method: post
     uri: http://localhost:3000/api/surveys
@@ -6105,17 +6620,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"b058d66cb8a7d53f7a662a2c0e53f9c3"'
+      - '"46efa891839a6cc607cbd083c287bf9e"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 60eea539-1035-4ac1-ba55-9594a3c9bc11
+      - 19d8f7ce-e0cb-4ab5-be3d-ef5bc6c31f39
       X-Runtime:
-      - '0.013373'
+      - '0.011674'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Fri, 16 May 2014 00:04:17 GMT
+      - Sat, 17 May 2014 12:31:40 GMT
       Content-Length:
       - '229'
       Connection:
@@ -6124,24 +6639,24 @@ http_interactions:
       encoding: UTF-8
       string: |-
         {
-          "id": 28,
+          "id": 45,
           "survey_questions": [
 
           ],
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/surveys/28"
+              "href": "http://localhost:3000/api/surveys/45"
             },
             "submit": {
-              "href": "http://localhost:3000/api/surveys/28/survey_questions"
+              "href": "http://localhost:3000/api/surveys/45/survey_questions"
             }
           }
         }
     http_version: 
-  recorded_at: Fri, 16 May 2014 00:04:17 GMT
+  recorded_at: Sat, 17 May 2014 12:31:40 GMT
 - request:
     method: post
-    uri: http://localhost:3000/api/surveys/28/survey_questions
+    uri: http://localhost:3000/api/surveys/45/survey_questions
     body:
       encoding: UTF-8
       string: '{"survey_question":{"question_id":9}}'
@@ -6170,26 +6685,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"e7dd1a21919e3065bf8f1c98c3dfc44c"'
+      - '"a3f9b7e72ecbc6e807d0a8c137c29719"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4b2e2e41-a4ee-4d40-be3f-34e4bafcadc5
+      - d5d3ec85-b3b7-4ec8-8a20-0955a13f2a66
       X-Runtime:
-      - '0.016555'
+      - '0.017839'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Fri, 16 May 2014 00:04:17 GMT
+      - Sat, 17 May 2014 12:31:40 GMT
       Content-Length:
-      - '543'
+      - '546'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "id": 79,
+          "id": 139,
           "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
           "type": "boolean",
           "responses": [
@@ -6198,24 +6713,24 @@ http_interactions:
           ],
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/surveys/28/survey_questions/79"
+              "href": "http://localhost:3000/api/surveys/45/survey_questions/139"
             },
             "survey": {
-              "href": "http://localhost:3000/api/surveys/28"
+              "href": "http://localhost:3000/api/surveys/45"
             },
             "create": {
-              "href": "http://localhost:3000/api/surveys/28/survey_questions"
+              "href": "http://localhost:3000/api/surveys/45/survey_questions"
             },
             "submit": {
-              "href": "http://localhost:3000/api/surveys/28/survey_questions/79"
+              "href": "http://localhost:3000/api/surveys/45/survey_questions/139"
             }
           }
         }
     http_version: 
-  recorded_at: Fri, 16 May 2014 00:04:17 GMT
+  recorded_at: Sat, 17 May 2014 12:31:40 GMT
 - request:
     method: get
-    uri: http://localhost:3000/api/surveys/28
+    uri: http://localhost:3000/api/surveys/45
     body:
       encoding: US-ASCII
       string: ''
@@ -6244,29 +6759,29 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"715f1b56d37f76b402c515f99bb416c2"'
+      - '"8fe5ae4e6c4ffdf745018cdc6ed46ecb"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ca88a232-3b8a-48f5-a12e-244b6f80675e
+      - 6e357ffd-ccce-43d3-892d-70a6e8c974ad
       X-Runtime:
-      - '0.026568'
+      - '0.016819'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Fri, 16 May 2014 00:04:17 GMT
+      - Sat, 17 May 2014 12:31:40 GMT
       Content-Length:
-      - '958'
+      - '962'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "id": 28,
+          "id": 45,
           "survey_questions": [
             {
-              "id": 79,
+              "id": 139,
               "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
               "type": "boolean",
               "responses": [
@@ -6275,40 +6790,40 @@ http_interactions:
               ],
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/28/survey_questions/79"
+                  "href": "http://localhost:3000/api/surveys/45/survey_questions/139"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/28"
+                  "href": "http://localhost:3000/api/surveys/45"
                 },
                 "create": {
-                  "href": "http://localhost:3000/api/surveys/28/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/45/survey_questions"
                 },
                 "submit": {
-                  "href": "http://localhost:3000/api/surveys/28/survey_questions/79"
+                  "href": "http://localhost:3000/api/surveys/45/survey_questions/139"
                 }
               }
             }
           ],
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/surveys/28"
+              "href": "http://localhost:3000/api/surveys/45"
             },
             "submit": {
-              "href": "http://localhost:3000/api/surveys/28/survey_questions"
+              "href": "http://localhost:3000/api/surveys/45/survey_questions"
             },
             "next": {
-              "href": "http://localhost:3000/api/surveys/28/survey_questions/79"
+              "href": "http://localhost:3000/api/surveys/45/survey_questions/139"
             }
           }
         }
     http_version: 
-  recorded_at: Fri, 16 May 2014 00:04:17 GMT
+  recorded_at: Sat, 17 May 2014 12:31:40 GMT
 - request:
     method: put
-    uri: http://localhost:3000/api/surveys/28/survey_questions/79
+    uri: http://localhost:3000/api/surveys/45/survey_questions/139
     body:
       encoding: UTF-8
-      string: '{"id":79,"survey_question":{"answer":"true"}}'
+      string: '{"id":139,"survey_question":{"answer":"true"}}'
     headers:
       User-Agent:
       - Faraday v0.9.0
@@ -6334,23 +6849,23 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 0f6811b9-1a9e-4a16-ac58-19fb536b640c
+      - 86992e90-2611-4f1a-8cd5-47fd174419e5
       X-Runtime:
-      - '0.008960'
+      - '0.010083'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Fri, 16 May 2014 00:04:17 GMT
+      - Sat, 17 May 2014 12:31:40 GMT
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Fri, 16 May 2014 00:04:17 GMT
+  recorded_at: Sat, 17 May 2014 12:31:40 GMT
 - request:
     method: get
-    uri: http://localhost:3000/api/surveys/28
+    uri: http://localhost:3000/api/surveys/45
     body:
       encoding: US-ASCII
       string: ''
@@ -6379,29 +6894,29 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"6ffe424aa27aacffa05680e79f0bebf3"'
+      - '"0f941b2ef2f46d7f632ac3a3363d8d19"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 26935a14-1a54-4dfb-95ea-f9963fbb9474
+      - 0b7d1ace-6fe9-4ac0-b49d-02c1aee17448
       X-Runtime:
-      - '0.025331'
+      - '0.015824'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Fri, 16 May 2014 00:04:17 GMT
+      - Sat, 17 May 2014 12:31:40 GMT
       Content-Length:
-      - '888'
+      - '891'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "id": 28,
+          "id": 45,
           "survey_questions": [
             {
-              "id": 79,
+              "id": 139,
               "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
               "type": "boolean",
               "responses": [
@@ -6411,29 +6926,29 @@ http_interactions:
               "answer": "true",
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/28/survey_questions/79"
+                  "href": "http://localhost:3000/api/surveys/45/survey_questions/139"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/28"
+                  "href": "http://localhost:3000/api/surveys/45"
                 },
                 "create": {
-                  "href": "http://localhost:3000/api/surveys/28/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/45/survey_questions"
                 },
                 "submit": {
-                  "href": "http://localhost:3000/api/surveys/28/survey_questions/79"
+                  "href": "http://localhost:3000/api/surveys/45/survey_questions/139"
                 }
               }
             }
           ],
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/surveys/28"
+              "href": "http://localhost:3000/api/surveys/45"
             },
             "submit": {
-              "href": "http://localhost:3000/api/surveys/28/survey_questions"
+              "href": "http://localhost:3000/api/surveys/45/survey_questions"
             }
           }
         }
     http_version: 
-  recorded_at: Fri, 16 May 2014 00:04:17 GMT
+  recorded_at: Sat, 17 May 2014 12:31:40 GMT
 recorded_with: VCR 2.6.0

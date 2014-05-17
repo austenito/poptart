@@ -30,6 +30,7 @@ describe Poptart::Survey do
     survey = Poptart::Survey.for_id(survey.id)
     survey.survey_questions.count.should == 1
     survey_question = survey.survey_questions.first
+    survey_question.responses.should == ['t', 'f']
     survey_question.type.should == 'boolean'
 
     survey_question.answer = 'true'

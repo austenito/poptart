@@ -45,7 +45,7 @@ module Poptart
 
     def survey_question_for_id(id)
       survey_questions.find do |survey_question|
-        survey_question.id == id
+        survey_question.id == id.to_i
       end
     end
 
