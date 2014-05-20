@@ -25,6 +25,10 @@ module Poptart
       type == "range"
     end
 
+    def time?
+      type == "time"
+    end
+
     def submit
       response = Poptart::SurveyQuestion.put(links.submit.href, { id: id, survey_question: { answer: answer} })
       response.status == 204
