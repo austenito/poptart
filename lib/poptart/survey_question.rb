@@ -9,6 +9,7 @@ module Poptart
       @text = params['text']
       @answer = params['answer']
       @type = params['type']
+      @freeform = params['freeform']
       @responses = params['responses']
       @links = Hashie::Mash.new(params['_links'])
     end
@@ -27,6 +28,10 @@ module Poptart
 
     def time?
       type == "time"
+    end
+
+    def freeform?
+      @freeform == true
     end
 
     def submit
