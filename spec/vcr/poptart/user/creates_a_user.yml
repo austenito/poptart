@@ -35,13 +35,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 96de0d90-7f9b-45ef-8417-4bcda2afcf01
+      - d63f92b5-fe9e-4f64-99b9-0583488a90ca
       X-Runtime:
-      - '0.070822'
+      - '0.006294'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Thu, 22 May 2014 00:52:47 GMT
+      - Fri, 23 May 2014 01:07:55 GMT
       Content-Length:
       - '305'
       Connection:
@@ -66,13 +66,13 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Thu, 22 May 2014 00:52:47 GMT
+  recorded_at: Fri, 23 May 2014 01:07:55 GMT
 - request:
     method: post
     uri: http://localhost:3000/api/users
     body:
       encoding: UTF-8
-      string: '{"user":{"user_id":42}}'
+      string: '{"user":{"external_user_id":42}}'
     headers:
       User-Agent:
       - Faraday v0.9.0
@@ -98,34 +98,34 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"aabd29429d1e0b352cab1d65f4208374"'
+      - '"72ac93d887d44d75c43bcb0a78a3e129"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 66933c17-5297-4bee-98aa-c862b2627167
+      - e3705bf4-c3ac-47d7-8a81-d9134b6c14e6
       X-Runtime:
-      - '0.014493'
+      - '0.010068'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Thu, 22 May 2014 00:52:47 GMT
+      - Fri, 23 May 2014 01:07:55 GMT
       Content-Length:
-      - '271'
+      - '273'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "id": 8,
+          "id": 63,
           "external_user_id": 42,
-          "token": "8828fd79d3d370906ff6e51a358a2694d9e0a5bcb863c8c598165dfcaff4a69f1c641aa200ae0eb3b96e67712bcdcbdfc07161c9a262aae61246591589da9e59",
+          "token": "23153abdf1cf36d06e8ca3dbba4d940e465a00dedd814753580d638d1287b9b615cdf37180613b6c3b58a3e7edf4acfd6e14e52be0efdce57714e774ddf3ec79",
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/users/8"
+              "href": "http://localhost:3000/api/users/63"
             }
           }
         }
     http_version: 
-  recorded_at: Thu, 22 May 2014 00:52:47 GMT
+  recorded_at: Fri, 23 May 2014 01:07:55 GMT
 recorded_with: VCR 2.6.0

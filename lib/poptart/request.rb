@@ -1,31 +1,28 @@
 module Poptart
   module Request
-    # get survey with one type of question
-    #   for each question, depending on what it is build it
-    #     answer the question
-    #     loop
-    #
-
-    def get(url)
+    def get(url, headers = {})
       connection.get do |req|
         req.url(url)
         req.headers['Content-Type'] = 'application/json'
+        req.headers.merge!(headers)
       end
     end
 
-    def put(url, data = {})
+    def put(url, data, headers = {})
       connection.put do |req|
         req.url(url)
         req.body = data.to_json if data
         req.headers['Content-Type'] = 'application/json'
+        req.headers.merge!(headers)
       end
     end
 
-    def post(url, data = nil)
+    def post(url, data, headers = {})
       connection.post do |req|
         req.url(url)
         req.body = data.to_json if data
         req.headers['Content-Type'] = 'application/json'
+        req.headers.merge!(headers)
       end
     end
 
