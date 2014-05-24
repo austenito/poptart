@@ -35,13 +35,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d63f92b5-fe9e-4f64-99b9-0583488a90ca
+      - 4680ed4e-9139-4a5c-aef7-abba6775313f
       X-Runtime:
-      - '0.006294'
+      - '0.006976'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Fri, 23 May 2014 01:07:55 GMT
+      - Sat, 24 May 2014 13:54:26 GMT
       Content-Length:
       - '305'
       Connection:
@@ -66,7 +66,7 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Fri, 23 May 2014 01:07:55 GMT
+  recorded_at: Sat, 24 May 2014 13:54:26 GMT
 - request:
     method: post
     uri: http://localhost:3000/api/users
@@ -98,17 +98,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"72ac93d887d44d75c43bcb0a78a3e129"'
+      - '"4333c2d5da147357136bf5de35834f9b"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e3705bf4-c3ac-47d7-8a81-d9134b6c14e6
+      - 6b590f6b-dddc-4a28-a7bb-e844a78f9726
       X-Runtime:
-      - '0.010068'
+      - '0.010054'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Fri, 23 May 2014 01:07:55 GMT
+      - Sat, 24 May 2014 13:54:26 GMT
       Content-Length:
       - '273'
       Connection:
@@ -117,15 +117,15 @@ http_interactions:
       encoding: UTF-8
       string: |-
         {
-          "id": 63,
+          "id": 80,
           "external_user_id": 42,
-          "token": "23153abdf1cf36d06e8ca3dbba4d940e465a00dedd814753580d638d1287b9b615cdf37180613b6c3b58a3e7edf4acfd6e14e52be0efdce57714e774ddf3ec79",
+          "token": "079b7d94daba9434d71560b10e18bee6ff40286082a34ca8b7753bc6b97242f07b541b0e9704b3a2ed7372f680facb626c3bf1f384cf22f47bc46ef84b127b7b",
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/users/63"
+              "href": "http://localhost:3000/api/users/80"
             }
           }
         }
     http_version: 
-  recorded_at: Fri, 23 May 2014 01:07:55 GMT
+  recorded_at: Sat, 24 May 2014 13:54:26 GMT
 recorded_with: VCR 2.6.0

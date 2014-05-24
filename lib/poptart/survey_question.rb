@@ -1,6 +1,7 @@
 module Poptart
   class SurveyQuestion
     extend Poptart::Request
+    include Poptart::Request
 
     attr_accessor :id, :text, :answer, :links, :type, :responses
 
@@ -35,7 +36,7 @@ module Poptart
     end
 
     def submit
-      response = Poptart::SurveyQuestion.put(links.submit.href, { id: id, survey_question: { answer: answer} })
+      response = put(links.submit.href, { id: id, survey_question: { answer: answer} })
       response.status == 204
     end
   end

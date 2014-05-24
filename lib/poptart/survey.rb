@@ -1,6 +1,6 @@
 module Poptart
   class Survey
-    extend Poptart::Request
+    include Poptart::Request
     attr_accessor :id, :user_id, :survey_questions, :links
 
     def initialize(params)
@@ -18,7 +18,7 @@ module Poptart
     end
 
     def add_question(question)
-      response = Poptart::Survey.post("#{links.self.href}/survey_questions",
+      response = post("#{links.self.href}/survey_questions",
                                       { survey_question: { question_id: question.id } } )
       response.status == 201
     end
