@@ -16,6 +16,12 @@ module Poptart
       Poptart::User.new(JSON.parse(response.body))
     end
 
+    def self.for_id(external_user_id)
+      root = Poptart::Root.get_root
+      response = get("#{root.links.users.href}/#{external_user_id}")
+      Poptart::User.new(JSON.parse(response.body))
+    end
+
     def create_survey
       root = Poptart::Root.get_root
       response = post(root.links.surveys.href, survey: { user_id: id })

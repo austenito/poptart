@@ -35,13 +35,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 60fa3e0b-cf91-49f1-adc9-13df8d9cc99e
+      - 15ce7199-acc8-4d31-af1c-3989f7c16210
       X-Runtime:
-      - '0.005570'
+      - '0.007420'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Sat, 24 May 2014 14:00:47 GMT
+      - Sat, 24 May 2014 14:24:26 GMT
       Content-Length:
       - '305'
       Connection:
@@ -66,7 +66,7 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Sat, 24 May 2014 14:00:47 GMT
+  recorded_at: Sat, 24 May 2014 14:24:26 GMT
 - request:
     method: post
     uri: http://localhost:3000/api/users
@@ -98,17 +98,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"cbbce16f6e7b33ad1b3e0ddb2ccba2cd"'
+      - '"6db268c4c1fa95f3183f7fd9f83ceb65"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 75866dbb-961f-465d-b083-4d3e6f492bb5
+      - 3571ea2e-19a3-487e-af79-730451618f35
       X-Runtime:
-      - '0.008932'
+      - '0.008963'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Sat, 24 May 2014 14:00:47 GMT
+      - Sat, 24 May 2014 14:24:26 GMT
       Content-Length:
       - '275'
       Connection:
@@ -117,23 +117,23 @@ http_interactions:
       encoding: UTF-8
       string: |-
         {
-          "id": 118,
+          "id": 167,
           "external_user_id": 42,
-          "token": "71fb881458b5c68ecf7ce1a1977a0e863ba5b157d39fbf0db4c9f03c373ee1a44f8fa43c0fa132ef505586ac18b322252ec4955845ea48a88924517ea34ff7fb",
+          "token": "68f839095f0d8fe507d19d79375d47fccc3f8bbf32b89fed7135f056231ed0cc5e66535c09c9167c03f1713e4a1fb55948c3034692ac9398d4443d8713a5d679",
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/users/118"
+              "href": "http://localhost:3000/api/users/167"
             }
           }
         }
     http_version: 
-  recorded_at: Sat, 24 May 2014 14:00:47 GMT
+  recorded_at: Sat, 24 May 2014 14:24:26 GMT
 - request:
     method: post
     uri: http://localhost:3000/api/surveys?random=true
     body:
       encoding: UTF-8
-      string: '{"survey":{"user_id":118}}'
+      string: '{"survey":{"user_id":167}}'
     headers:
       User-Agent:
       - Faraday v0.9.0
@@ -159,31 +159,83 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"f88f077c1dc6f002eaf8840a7d230c31"'
+      - '"c42bf03f859b40395d3a1616c3bd8d0c"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e1101d6b-f0fd-48ed-9503-c406b7b11693
+      - 0a16a4d6-ba02-482e-84b3-d8ca69d724c3
       X-Runtime:
-      - '0.070067'
+      - '0.061105'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Sat, 24 May 2014 14:00:47 GMT
+      - Sat, 24 May 2014 14:24:27 GMT
       Content-Length:
-      - '4149'
+      - '3682'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "id": 87,
-          "user_id": 118,
+          "id": 122,
+          "user_id": 167,
           "survey_questions": [
             {
-              "id": 281,
-              "text": "Have you taken any over-the-counter pain medication in the past 24 hours?",
+              "id": 393,
+              "text": "What time did you wake up this morning?",
+              "type": "time",
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/122/survey_questions/393"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/122"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/122/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/122/survey_questions/393"
+                }
+              }
+            },
+            {
+              "id": 394,
+              "text": "Who are you talking or interacting with?",
+              "type": "multiple",
+              "responses": [
+                "Spouse/partner/significant other",
+                "Children",
+                "Parents",
+                "Other relatives",
+                "Friends",
+                "Acquaintances",
+                "Strangers",
+                "Co-workers",
+                "Customers/students",
+                "Boss"
+              ],
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/122/survey_questions/394"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/122"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/122/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/122/survey_questions/394"
+                }
+              }
+            },
+            {
+              "id": 395,
+              "text": "Have you surprised someone with a gift (including small gifts) in the last week?",
               "type": "boolean",
               "responses": [
                 "t",
@@ -192,21 +244,21 @@ http_interactions:
               "freeform": false,
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/87/survey_questions/281"
+                  "href": "http://localhost:3000/api/surveys/122/survey_questions/395"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/87"
+                  "href": "http://localhost:3000/api/surveys/122"
                 },
                 "create": {
-                  "href": "http://localhost:3000/api/surveys/87/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/122/survey_questions"
                 },
                 "submit": {
-                  "href": "http://localhost:3000/api/surveys/87/survey_questions/281"
+                  "href": "http://localhost:3000/api/surveys/122/survey_questions/395"
                 }
               }
             },
             {
-              "id": 282,
+              "id": 396,
               "text": "To what extent have you procrastinated so far today?",
               "type": "range",
               "responses": [
@@ -216,106 +268,56 @@ http_interactions:
               "freeform": false,
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/87/survey_questions/282"
+                  "href": "http://localhost:3000/api/surveys/122/survey_questions/396"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/87"
+                  "href": "http://localhost:3000/api/surveys/122"
                 },
                 "create": {
-                  "href": "http://localhost:3000/api/surveys/87/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/122/survey_questions"
                 },
                 "submit": {
-                  "href": "http://localhost:3000/api/surveys/87/survey_questions/282"
+                  "href": "http://localhost:3000/api/surveys/122/survey_questions/396"
                 }
               }
             },
             {
-              "id": 283,
-              "text": "Where would you place yourself on this ladder?\nThink of a ladder representing where people stand in your country.\nAt the top of the ladder are the people who are the best off - those who have the most money, the most education and the most respected jobs. At the bottom are the people who are the worst off - who have the least money, least education, and the least respected jobs or no job. The higher up you are on the ladder, the closer you are to the people at the very top; the lower you are the closer you are to people at the very bottom.",
-              "type": "range",
+              "id": 397,
+              "text": "Are you alone?",
+              "type": "boolean",
               "responses": [
-                "0",
-                "10"
+                "t",
+                "f"
               ],
               "freeform": false,
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/87/survey_questions/283"
+                  "href": "http://localhost:3000/api/surveys/122/survey_questions/397"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/87"
+                  "href": "http://localhost:3000/api/surveys/122"
                 },
                 "create": {
-                  "href": "http://localhost:3000/api/surveys/87/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/122/survey_questions"
                 },
                 "submit": {
-                  "href": "http://localhost:3000/api/surveys/87/survey_questions/283"
-                }
-              }
-            },
-            {
-              "id": 284,
-              "text": "How well did you sleep last night?",
-              "type": "range",
-              "responses": [
-                "0",
-                "10"
-              ],
-              "freeform": false,
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/87/survey_questions/284"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/87"
-                },
-                "create": {
-                  "href": "http://localhost:3000/api/surveys/87/survey_questions"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/87/survey_questions/284"
-                }
-              }
-            },
-            {
-              "id": 285,
-              "text": "Are you judging or evaluating yourself right now (i.e. at the moment just before you were notified)?",
-              "type": "multiple",
-              "responses": [
-                "f",
-                "Yes - Negatively",
-                "Yes - Neutrally",
-                "Yes - Positively"
-              ],
-              "freeform": false,
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/87/survey_questions/285"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/87"
-                },
-                "create": {
-                  "href": "http://localhost:3000/api/surveys/87/survey_questions"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/87/survey_questions/285"
+                  "href": "http://localhost:3000/api/surveys/122/survey_questions/397"
                 }
               }
             }
           ],
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/surveys/87"
+              "href": "http://localhost:3000/api/surveys/122"
             },
             "submit": {
-              "href": "http://localhost:3000/api/surveys/87/survey_questions"
+              "href": "http://localhost:3000/api/surveys/122/survey_questions"
             },
             "next": {
-              "href": "http://localhost:3000/api/surveys/87/survey_questions/281"
+              "href": "http://localhost:3000/api/surveys/122/survey_questions/393"
             }
           }
         }
     http_version: 
-  recorded_at: Sat, 24 May 2014 14:00:47 GMT
+  recorded_at: Sat, 24 May 2014 14:24:27 GMT
 recorded_with: VCR 2.6.0
