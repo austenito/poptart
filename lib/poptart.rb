@@ -6,6 +6,7 @@ require 'json'
 require 'hashie'
 
 require_relative 'version'
+require_relative 'poptart/model'
 require_relative 'poptart/request'
 require_relative 'poptart/root'
 require_relative 'poptart/survey'

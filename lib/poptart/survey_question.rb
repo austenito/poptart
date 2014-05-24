@@ -1,18 +1,17 @@
 module Poptart
-  class SurveyQuestion
+  class SurveyQuestion < Model
     extend Poptart::Request
     include Poptart::Request
 
-    attr_accessor :id, :text, :answer, :links, :type, :responses
+    attr_accessor :text, :answer, :type, :responses
 
     def initialize(params)
-      @id = params['id']
+      super
       @text = params['text']
       @answer = params['answer']
       @type = params['type']
       @freeform = params['freeform']
       @responses = params['responses']
-      @links = Hashie::Mash.new(params['_links'])
     end
 
     def boolean?

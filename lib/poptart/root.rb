@@ -1,12 +1,7 @@
 module Poptart
-  class Root
+  class Root < Model
     extend Poptart::Request
-
     attr_accessor :links
-
-    def initialize(params)
-      @links = Hashie::Mash.new(params['_links'])
-    end
 
     def self.get_root
       response =  get("/")

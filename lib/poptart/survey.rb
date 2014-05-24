@@ -1,12 +1,11 @@
 module Poptart
-  class Survey
+  class Survey < Model
     include Poptart::Request
-    attr_accessor :id, :user_id, :survey_questions, :links
+    attr_accessor :user_id, :survey_questions
 
     def initialize(params)
-      @id = params['id']
+      super
       @user_id = params['user_id']
-      @links = Hashie::Mash.new(params['_links'])
 
       @survey_questions = params['survey_questions'].map do |survey_question|
         if survey_question['type'] == 'BooleanQuestion'

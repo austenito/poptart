@@ -1,14 +1,13 @@
 module Poptart
-  class User
+  class User < Model
     extend Poptart::Request
     include Poptart::Request
-    attr_accessor :id, :external_user_id, :token
+    attr_accessor :external_user_id, :token
 
     def initialize(params)
-      @id = params['id']
+      super
       @external_user_id = params['external_user_id']
       @token = params['token']
-      @links = Hashie::Mash.new(params['_links'])
     end
 
     def self.create(external_user_id)

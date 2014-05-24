@@ -35,13 +35,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ce1694e4-3663-4c7f-9944-49a93dd258b5
+      - 9262b572-797d-4c34-ae46-4cfcce520635
       X-Runtime:
-      - '0.006443'
+      - '0.006770'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Sat, 24 May 2014 13:54:26 GMT
+      - Sat, 24 May 2014 14:00:47 GMT
       Content-Length:
       - '305'
       Connection:
@@ -66,7 +66,7 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Sat, 24 May 2014 13:54:26 GMT
+  recorded_at: Sat, 24 May 2014 14:00:47 GMT
 - request:
     method: post
     uri: http://localhost:3000/api/users
@@ -98,36 +98,36 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"13b616009c6515a9765bb53b81ed0da3"'
+      - '"df6906ff4029a586c53e1b2aa46221e2"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c905fc52-3bcb-4f84-8471-61dde4e28e16
+      - ec4875a1-a46e-47e6-8c54-b581dd00b340
       X-Runtime:
-      - '0.008221'
+      - '0.011445'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Sat, 24 May 2014 13:54:26 GMT
+      - Sat, 24 May 2014 14:00:47 GMT
       Content-Length:
-      - '273'
+      - '275'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "id": 81,
+          "id": 117,
           "external_user_id": 42,
-          "token": "079b7d94daba9434d71560b10e18bee6ff40286082a34ca8b7753bc6b97242f07b541b0e9704b3a2ed7372f680facb626c3bf1f384cf22f47bc46ef84b127b7b",
+          "token": "71fb881458b5c68ecf7ce1a1977a0e863ba5b157d39fbf0db4c9f03c373ee1a44f8fa43c0fa132ef505586ac18b322252ec4955845ea48a88924517ea34ff7fb",
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/users/81"
+              "href": "http://localhost:3000/api/users/117"
             }
           }
         }
     http_version: 
-  recorded_at: Sat, 24 May 2014 13:54:26 GMT
+  recorded_at: Sat, 24 May 2014 14:00:47 GMT
 - request:
     method: get
     uri: http://localhost:3000/
@@ -163,13 +163,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - fd27162b-364f-46b6-916d-71a1fe3ff069
+      - 28632244-1a4b-4b76-806f-bc5996dd05bf
       X-Runtime:
-      - '0.006099'
+      - '0.005839'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Sat, 24 May 2014 13:54:26 GMT
+      - Sat, 24 May 2014 14:00:47 GMT
       Content-Length:
       - '305'
       Connection:
@@ -194,13 +194,13 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Sat, 24 May 2014 13:54:26 GMT
+  recorded_at: Sat, 24 May 2014 14:00:47 GMT
 - request:
     method: post
     uri: http://localhost:3000/api/surveys
     body:
       encoding: UTF-8
-      string: '{"survey":{"user_id":81}}'
+      string: '{"survey":{"user_id":117}}'
     headers:
       User-Agent:
       - Faraday v0.9.0
@@ -226,39 +226,39 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"1b6d3c9337d07cc267151654e33463b9"'
+      - '"c79be22c3d8e2d79b9d18180a2b0e31e"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d02f4ad2-5294-4225-8a9f-34aa8ee48fe6
+      - 44d03d84-bae4-4034-96a4-079dc2c579e8
       X-Runtime:
-      - '0.010790'
+      - '0.013602'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Sat, 24 May 2014 13:54:26 GMT
+      - Sat, 24 May 2014 14:00:47 GMT
       Content-Length:
-      - '246'
+      - '247'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "id": 56,
-          "user_id": 81,
+          "id": 86,
+          "user_id": 117,
           "survey_questions": [
 
           ],
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/surveys/56"
+              "href": "http://localhost:3000/api/surveys/86"
             },
             "submit": {
-              "href": "http://localhost:3000/api/surveys/56/survey_questions"
+              "href": "http://localhost:3000/api/surveys/86/survey_questions"
             }
           }
         }
     http_version: 
-  recorded_at: Sat, 24 May 2014 13:54:26 GMT
+  recorded_at: Sat, 24 May 2014 14:00:47 GMT
 recorded_with: VCR 2.6.0

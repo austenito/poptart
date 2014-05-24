@@ -1,12 +1,6 @@
 module Poptart
-  class Question
+  class Question < Model
     extend Poptart::Request
-
-    attr_accessor :id
-
-    def initialize(params)
-      @id = params['id']
-    end
 
     def self.all(params = {})
       root = Poptart::Root.get_root
