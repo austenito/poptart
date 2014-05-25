@@ -1,4 +1,11 @@
 module Poptart
+  def self.api_token=(token)
+    @token = token
+  end
+
+  def self.api_token
+    @token
+  end
 end
 
 require 'faraday'

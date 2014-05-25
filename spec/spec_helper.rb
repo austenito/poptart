@@ -64,3 +64,5 @@ class String
     gsub(/^#{scan(/^\s*/).min_by{|l|l.length}}/, "")
   end
 end
+
+Poptart.api_token = "testing"

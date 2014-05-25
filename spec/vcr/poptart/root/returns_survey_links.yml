@@ -11,6 +11,8 @@ http_interactions:
       - Faraday v0.9.0
       Content-Type:
       - application/json
+      Api-Token:
+      - testing
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -35,13 +37,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 014c8504-f348-4035-ab42-d1a1c4bfd975
+      - e89f895f-6589-4f68-bc0c-7e22209e782a
       X-Runtime:
-      - '0.005567'
+      - '0.012950'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Sun, 25 May 2014 18:09:38 GMT
+      - Sun, 25 May 2014 18:41:14 GMT
       Content-Length:
       - '305'
       Connection:
@@ -66,5 +68,5 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Sun, 25 May 2014 18:09:38 GMT
+  recorded_at: Sun, 25 May 2014 18:41:14 GMT
 recorded_with: VCR 2.6.0

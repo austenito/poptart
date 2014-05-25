@@ -5,7 +5,7 @@ module Poptart
 
     attr_accessor :text, :answer, :type, :responses
 
-    def initialize(params)
+    def initialize(response)
       super
       @text = params['text']
       @answer = params['answer']

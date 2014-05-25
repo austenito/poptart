@@ -3,7 +3,7 @@ module Poptart
     include Poptart::Request
     attr_accessor :user_id, :survey_questions
 
-    def initialize(params)
+    def initialize(response)
       super
       @user_id = params['user_id']
 

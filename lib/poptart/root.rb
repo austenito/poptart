@@ -5,7 +5,7 @@ module Poptart
 
     def self.get_root
       response =  get("/")
-      Poptart::Root.new(JSON.parse(response.body))
+      Poptart::Root.new(response)
     end
   end
 end
