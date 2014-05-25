@@ -10,3 +10,9 @@ task :spec do
     t.pattern = './spec/**/*_spec.rb'
   end
 end
+
+namespace :spec do
+  task :clean do
+    FileUtils.rm_rf(Dir.glob('spec/vcr/*'))
+  end
+end

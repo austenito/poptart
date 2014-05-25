@@ -31,19 +31,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"600e7f5e6f5024eb12702d3890fcfa00"'
+      - '"a723ac88b99a06c255a3384c2d01f4fb"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 39b770d0-757f-45fe-b189-a84d4af55804
+      - 014c8504-f348-4035-ab42-d1a1c4bfd975
       X-Runtime:
-      - '0.005885'
+      - '0.005567'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
       Date:
-      - Sat, 10 May 2014 20:39:40 GMT
+      - Sun, 25 May 2014 18:09:38 GMT
       Content-Length:
-      - '80'
+      - '305'
       Connection:
       - Keep-Alive
     body:
@@ -52,10 +52,19 @@ http_interactions:
         {
           "_links": {
             "self": {
-              "href": "http://localhost:3000/"
+              "href": "http://localhost:3000/api"
+            },
+            "surveys": {
+              "href": "http://localhost:3000/api/surveys"
+            },
+            "users": {
+              "href": "http://localhost:3000/api/users"
+            },
+            "questions": {
+              "href": "http://localhost:3000/api/questions"
             }
           }
         }
     http_version: 
-  recorded_at: Sat, 10 May 2014 20:39:40 GMT
+  recorded_at: Sun, 25 May 2014 18:09:38 GMT
 recorded_with: VCR 2.6.0
