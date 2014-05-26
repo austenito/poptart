@@ -1,0 +1,267 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"a723ac88b99a06c255a3384c2d01f4fb"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 570e03df-cf67-4dd7-83aa-396d69771baf
+      X-Runtime:
+      - '0.007673'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Mon, 26 May 2014 20:53:54 GMT
+      Content-Length:
+      - '305'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api"
+            },
+            "surveys": {
+              "href": "http://localhost:3000/api/surveys"
+            },
+            "users": {
+              "href": "http://localhost:3000/api/users"
+            },
+            "questions": {
+              "href": "http://localhost:3000/api/questions"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Mon, 26 May 2014 20:53:54 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/users
+    body:
+      encoding: UTF-8
+      string: '{"user":{"external_user_id":43}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"f5d5e4d6941fc83be5f6520032f7ffd2"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5d2d8ff9-1677-4d61-93a6-0fc717cb2ddb
+      X-Runtime:
+      - '0.009754'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Mon, 26 May 2014 20:53:54 GMT
+      Content-Length:
+      - '275'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 238,
+          "external_user_id": 43,
+          "token": "9038b1959ca074678c14f401e150643e670cb08149767792277728f564980eae8e4f35420fce55763e6b80942e399e9c282794b7b449e1ba5a72d0946319d49a",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/users/238"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Mon, 26 May 2014 20:53:54 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"a723ac88b99a06c255a3384c2d01f4fb"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a00010b2-0a01-4869-b7aa-053594dadeb8
+      X-Runtime:
+      - '0.007469'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Mon, 26 May 2014 20:53:54 GMT
+      Content-Length:
+      - '305'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api"
+            },
+            "surveys": {
+              "href": "http://localhost:3000/api/surveys"
+            },
+            "users": {
+              "href": "http://localhost:3000/api/users"
+            },
+            "questions": {
+              "href": "http://localhost:3000/api/questions"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Mon, 26 May 2014 20:53:54 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/users/43
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"f5d5e4d6941fc83be5f6520032f7ffd2"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a06b742f-99b6-4e9d-bbb7-52cd593d0db3
+      X-Runtime:
+      - '0.010142'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Mon, 26 May 2014 20:53:54 GMT
+      Content-Length:
+      - '275'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 238,
+          "external_user_id": 43,
+          "token": "9038b1959ca074678c14f401e150643e670cb08149767792277728f564980eae8e4f35420fce55763e6b80942e399e9c282794b7b449e1ba5a72d0946319d49a",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/users/238"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Mon, 26 May 2014 20:53:54 GMT
+recorded_with: VCR 2.6.0

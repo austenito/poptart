@@ -4,7 +4,7 @@ module Poptart
       connection.get do |req|
         req.url(url)
         req.headers['Content-Type'] = 'application/json'
-        req.headers['API-TOKEN'] = Poptart.api_token
+        req.headers['API-TOKEN'] = Poptart.api_token if Poptart.api_token
         req.headers.merge!(headers)
       end
     end
@@ -14,7 +14,7 @@ module Poptart
         req.url(url)
         req.body = data.to_json if data
         req.headers['Content-Type'] = 'application/json'
-        req.headers['API-TOKEN'] = Poptart.api_token
+        req.headers['API-TOKEN'] = Poptart.api_token if Poptart.api_token
         req.headers.merge!(headers)
       end
     end
@@ -24,7 +24,7 @@ module Poptart
         req.url(url)
         req.body = data.to_json if data
         req.headers['Content-Type'] = 'application/json'
-        req.headers['API-TOKEN'] = Poptart.api_token
+        req.headers['API-TOKEN'] = Poptart.api_token if Poptart.api_token
         req.headers.merge!(headers)
       end
     end
