@@ -27,7 +27,7 @@ describe 'Answering survey questions', :vcr do
     survey.survey_questions.first.answer.should == "foo"
   end
 
-  it "answers a survey question", record: :all do
+  it "answers a survey question" do
     boolean_questions = Poptart::Question.all(type: 'boolean')
     user = Poptart::User.create(42)
     survey = user.create_survey

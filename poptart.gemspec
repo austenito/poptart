@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
   gem.license = 'MIT'
 
-  gem.add_dependency 'activesupport', "~> 3.2.13"
+  gem.add_dependency 'activesupport'
   gem.add_dependency 'hashie'
   gem.add_dependency 'faraday'
 
