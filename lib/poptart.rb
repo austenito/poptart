@@ -6,6 +6,14 @@ module Poptart
   def self.api_token
     @token
   end
+
+  def self.url=(url)
+    @url = url
+  end
+
+  def self.url
+    @url || 'http://localhost:3000'
+  end
 end
 
 require 'faraday'

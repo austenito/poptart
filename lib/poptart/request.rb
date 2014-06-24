@@ -31,14 +31,7 @@ module Poptart
 
     def connection
       return @connection if @connection
-
-      # if Rails.env.production?
-        # url = ""
-      # else
-        url = "http://localhost:3000"
-      # end
-
-      @connection = Faraday.new(:url => url) do |faraday|
+      @connection = Faraday.new(:url => Poptart.url) do |faraday|
         faraday.request  :url_encoded
         faraday.response :logger
         faraday.adapter  Faraday.default_adapter
