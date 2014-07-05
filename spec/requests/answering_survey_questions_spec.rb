@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'Answering survey questions', :vcr do
+describe 'Answering survey questions', :vcr, :record => :all do
   it "creates and returns an empty survey" do
     user = Poptart::User.create(42)
     survey = user.create_survey
@@ -12,7 +12,7 @@ describe 'Answering survey questions', :vcr do
     user = Poptart::User.create(42)
     survey = user.create_random_survey
     survey.user_id.should == user.id
-    survey.survey_questions.count.should == 5
+    survey.survey_questions.count.should == 6
   end
 
   it "answers a survey question" do
