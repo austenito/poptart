@@ -2,6 +2,14 @@ module Poptart
   class Question < Model
     extend Poptart::Request
 
+    attr_accessor :responses, :freeform
+
+    def initialize(response)
+      super
+      @responses = params['responses']
+      @freeform = params['freeform']
+    end
+
     def self.all(params = {})
       root = Poptart::Root.get_root
       response = get(root.links.questions.href)
@@ -14,6 +22,10 @@ module Poptart
           new(question)
         end
       end.compact
+    end
+
+    def freeform?
+      @freeform
     end
   end
 end

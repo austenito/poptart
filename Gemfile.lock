@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    poptart (0.0.1)
+    poptart (0.0.4)
       activesupport
       faraday
       hashie
@@ -37,7 +37,7 @@ GEM
     guard-rspec (4.0.0)
       guard (~> 2.0)
       rspec (~> 2.14)
-    hashie (2.1.1)
+    hashie (3.1.0)
     i18n (0.6.9)
     json (1.8.1)
     listen (2.1.0)
@@ -70,7 +70,7 @@ GEM
     safe_yaml (0.9.7)
     slop (3.4.6)
     thor (0.18.1)
-    thread_safe (0.3.3)
+    thread_safe (0.3.4)
     timers (1.1.0)
     tzinfo (1.1.0)
       thread_safe (~> 0.1)
