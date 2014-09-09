@@ -3552,225 +3552,6 @@ http_interactions:
     http_version: 
   recorded_at: Sat, 05 Jul 2014 21:17:58 GMT
 - request:
-    method: post
-    uri: http://localhost:3000/api/surveys?random=true
-    body:
-      encoding: UTF-8
-      string: '{"survey":{"user_id":323}}'
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: 'Created '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"72998a77ce1611f812aee63e2eaf5f81"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 9876cf2b-5e6b-42eb-ab25-f73bdb13bf11
-      X-Runtime:
-      - '0.037256'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sat, 05 Jul 2014 21:24:17 GMT
-      Content-Length:
-      - '4372'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "id": 273,
-          "user_id": 323,
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/surveys/273"
-            },
-            "submit": {
-              "href": "http://localhost:3000/api/surveys/273/survey_questions"
-            }
-          },
-          "survey_questions": [
-            {
-              "id": 994,
-              "text": "How do you feel right now?",
-              "type": "range",
-              "responses": [
-                "0",
-                "10"
-              ],
-              "answer": null,
-              "freeform": false,
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/273/survey_questions/994"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/273"
-                },
-                "create": {
-                  "href": "http://localhost:3000/api/surveys/273/survey_questions"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/273/survey_questions/994"
-                }
-              }
-            },
-            {
-              "id": 995,
-              "text": "Are you judging or evaluating yourself right now (i.e. at the moment just before you were notified)?",
-              "type": "multiple",
-              "responses": [
-                "f",
-                "Yes - Negatively",
-                "Yes - Neutrally",
-                "Yes - Positively"
-              ],
-              "answer": null,
-              "freeform": false,
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/273/survey_questions/995"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/273"
-                },
-                "create": {
-                  "href": "http://localhost:3000/api/surveys/273/survey_questions"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/273/survey_questions/995"
-                }
-              }
-            },
-            {
-              "id": 996,
-              "text": "Have you taken any over-the-counter pain medication in the past 24 hours?",
-              "type": "boolean",
-              "responses": [
-                "t",
-                "f"
-              ],
-              "answer": null,
-              "freeform": false,
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/273/survey_questions/996"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/273"
-                },
-                "create": {
-                  "href": "http://localhost:3000/api/surveys/273/survey_questions"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/273/survey_questions/996"
-                }
-              }
-            },
-            {
-              "id": 997,
-              "text": "Have you taken any over-the-counter pain medication in the past 24 hours?",
-              "type": "boolean",
-              "responses": [
-                "t",
-                "f"
-              ],
-              "answer": null,
-              "freeform": false,
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/273/survey_questions/997"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/273"
-                },
-                "create": {
-                  "href": "http://localhost:3000/api/surveys/273/survey_questions"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/273/survey_questions/997"
-                }
-              }
-            },
-            {
-              "id": 998,
-              "text": "To what extent are you focused on what you are doing?",
-              "type": "range",
-              "responses": [
-                "0",
-                "10"
-              ],
-              "answer": null,
-              "freeform": false,
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/273/survey_questions/998"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/273"
-                },
-                "create": {
-                  "href": "http://localhost:3000/api/surveys/273/survey_questions"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/273/survey_questions/998"
-                }
-              }
-            },
-            {
-              "id": 999,
-              "text": "To what extent are you focused on what you are doing?",
-              "type": "range",
-              "responses": [
-                "0",
-                "10"
-              ],
-              "answer": null,
-              "freeform": false,
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/273/survey_questions/999"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/273"
-                },
-                "create": {
-                  "href": "http://localhost:3000/api/surveys/273/survey_questions"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/273/survey_questions/999"
-                }
-              }
-            }
-          ]
-        }
-    http_version: 
-  recorded_at: Sat, 05 Jul 2014 21:24:17 GMT
-- request:
     method: put
     uri: http://localhost:3000/api/surveys/273/survey_questions/994
     body:
@@ -4032,558 +3813,6 @@ http_interactions:
                 }
               }
             }
-          ]
-        }
-    http_version: 
-  recorded_at: Sat, 05 Jul 2014 21:24:17 GMT
-- request:
-    method: get
-    uri: http://localhost:3000/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"a723ac88b99a06c255a3384c2d01f4fb"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 42ebbcf4-4707-4748-a777-9c882482d49d
-      X-Runtime:
-      - '0.004505'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sat, 05 Jul 2014 21:24:17 GMT
-      Content-Length:
-      - '305'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api"
-            },
-            "surveys": {
-              "href": "http://localhost:3000/api/surveys"
-            },
-            "users": {
-              "href": "http://localhost:3000/api/users"
-            },
-            "questions": {
-              "href": "http://localhost:3000/api/questions"
-            }
-          }
-        }
-    http_version: 
-  recorded_at: Sat, 05 Jul 2014 21:24:17 GMT
-- request:
-    method: get
-    uri: http://localhost:3000/api/questions
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"fa59a1359f12b44b4f749b8411f6aa12"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 4e81569c-a6bf-4d20-8843-7ab4b4250581
-      X-Runtime:
-      - '0.008304'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sat, 05 Jul 2014 21:24:17 GMT
-      Content-Length:
-      - '4549'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        [
-          {
-            "id": 65,
-            "question_type": "multiple",
-            "text": "How hungry or full are you right now?"
-          },
-          {
-            "id": 66,
-            "question_type": "time",
-            "text": "What time did you wake up this morning?"
-          },
-          {
-            "id": 67,
-            "question_type": "time",
-            "text": "What time did you got to sleep last night?"
-          },
-          {
-            "id": 68,
-            "question_type": "multiple",
-            "text": "Are you judging or evaluating yourself right now (i.e. at the moment just before you were notified)?"
-          },
-          {
-            "id": 69,
-            "question_type": "range",
-            "text": "How well did you sleep last night?"
-          },
-          {
-            "id": 70,
-            "question_type": "range",
-            "text": "To what extent are you engrossed in what you are doing?"
-          },
-          {
-            "id": 71,
-            "question_type": "range",
-            "text": "To what extent do you feel accepted by the person/people you are interacting with?"
-          },
-          {
-            "id": 72,
-            "question_type": "multiple",
-            "text": "Are you judging or evaluating what you are doing right now (i.e. at the moment just before you were notified?)"
-          },
-          {
-            "id": 73,
-            "question_type": "boolean",
-            "text": "In the past 24 hours, have you engaged in sexual activity with another person?"
-          },
-          {
-            "id": 74,
-            "question_type": "multiple",
-            "text": "Imagine you were given $10 to divide between yourself and a stranger to whom you would remain anonymous. How much would you give to the stranger?"
-          },
-          {
-            "id": 75,
-            "question_type": "boolean",
-            "text": "Have you surprised someone with a gift (including small gifts) in the last week?"
-          },
-          {
-            "id": 76,
-            "question_type": "multiple",
-            "text": "In general, how is your health?"
-          },
-          {
-            "id": 77,
-            "question_type": "range",
-            "text": "Where would you place yourself on this ladder?\nThink of a ladder representing where people stand in your country.\nAt the top of the ladder are the people who are the best off - those who have the most money, the most education and the most respected jobs. At the bottom are the people who are the worst off - who have the least money, least education, and the least respected jobs or no job. The higher up you are on the ladder, the closer you are to the people at the very top; the lower you are the closer you are to people at the very bottom."
-          },
-          {
-            "id": 78,
-            "question_type": "range",
-            "text": "To what extent is what you're doing interesting?"
-          },
-          {
-            "id": 79,
-            "question_type": "multiple",
-            "text": "On average, how many hours do you work each week?"
-          },
-          {
-            "id": 80,
-            "question_type": "range",
-            "text": "How do you feel right now?"
-          },
-          {
-            "id": 81,
-            "question_type": "range",
-            "text": "To what extent do you expect good things to happen in the future?"
-          },
-          {
-            "id": 82,
-            "question_type": "boolean",
-            "text": "Have you taken any over-the-counter pain medication in the past 24 hours?"
-          },
-          {
-            "id": 83,
-            "question_type": "range",
-            "text": "To what extent have you procrastinated so far today?"
-          },
-          {
-            "id": 84,
-            "question_type": "range",
-            "text": "To what extent are you being productive?"
-          },
-          {
-            "id": 85,
-            "question_type": "multiple",
-            "text": "Who are you talking or interacting with?"
-          },
-          {
-            "id": 86,
-            "question_type": "range",
-            "text": "To what extent do you feel accepted by the person/people you are interacting with?"
-          },
-          {
-            "id": 87,
-            "question_type": "boolean",
-            "text": "Are you alone?"
-          },
-          {
-            "id": 88,
-            "question_type": "boolean",
-            "text": "Do you want to do what you're doing?"
-          },
-          {
-            "id": 89,
-            "question_type": "boolean",
-            "text": "Are you talking or interacting with anyone?"
-          },
-          {
-            "id": 90,
-            "question_type": "multiple",
-            "text": "Where are you?"
-          },
-          {
-            "id": 91,
-            "question_type": "multiple",
-            "text": "How many people are you talking or interacting with?"
-          },
-          {
-            "id": 92,
-            "question_type": "boolean",
-            "text": "Do you have to do what you're doing?"
-          },
-          {
-            "id": 93,
-            "question_type": "range",
-            "text": "To what extent are you focused on what you are doing?"
-          },
-          {
-            "id": 94,
-            "question_type": "multiple",
-            "text": "When did you last check Facebook?"
-          },
-          {
-            "id": 95,
-            "question_type": "multiple",
-            "text": "Beyond any work you've already done today, how many additional hours do you expect to work today?"
-          },
-          {
-            "id": 96,
-            "question_type": "boolean",
-            "text": "If you could, and it had no negative consequences, would you jump forward in time 24 hours?"
-          }
-        ]
-    http_version: 
-  recorded_at: Sat, 05 Jul 2014 21:24:17 GMT
-- request:
-    method: get
-    uri: http://localhost:3000/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"a723ac88b99a06c255a3384c2d01f4fb"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 98ecdf2f-36d0-4c63-86b1-b4c27055081a
-      X-Runtime:
-      - '0.004249'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sat, 05 Jul 2014 21:24:17 GMT
-      Content-Length:
-      - '305'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api"
-            },
-            "surveys": {
-              "href": "http://localhost:3000/api/surveys"
-            },
-            "users": {
-              "href": "http://localhost:3000/api/users"
-            },
-            "questions": {
-              "href": "http://localhost:3000/api/questions"
-            }
-          }
-        }
-    http_version: 
-  recorded_at: Sat, 05 Jul 2014 21:24:17 GMT
-- request:
-    method: post
-    uri: http://localhost:3000/api/users
-    body:
-      encoding: UTF-8
-      string: '{"user":{"external_user_id":42}}'
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: 'Created '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"67990554098fc68c53d7c280f4d514d0"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 9c458a52-ffac-4116-81f0-4139d628766e
-      X-Runtime:
-      - '0.006684'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sat, 05 Jul 2014 21:24:17 GMT
-      Content-Length:
-      - '132'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "id": 324,
-          "external_user_id": 42,
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/users/324"
-            }
-          }
-        }
-    http_version: 
-  recorded_at: Sat, 05 Jul 2014 21:24:17 GMT
-- request:
-    method: get
-    uri: http://localhost:3000/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"a723ac88b99a06c255a3384c2d01f4fb"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 67a944bf-ebb3-4aac-a217-2759f8d6b6b0
-      X-Runtime:
-      - '0.004144'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sat, 05 Jul 2014 21:24:17 GMT
-      Content-Length:
-      - '305'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api"
-            },
-            "surveys": {
-              "href": "http://localhost:3000/api/surveys"
-            },
-            "users": {
-              "href": "http://localhost:3000/api/users"
-            },
-            "questions": {
-              "href": "http://localhost:3000/api/questions"
-            }
-          }
-        }
-    http_version: 
-  recorded_at: Sat, 05 Jul 2014 21:24:17 GMT
-- request:
-    method: post
-    uri: http://localhost:3000/api/surveys
-    body:
-      encoding: UTF-8
-      string: '{"survey":{"user_id":324}}'
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: 'Created '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"43d7ef57a6e4b80d8b070b62b819a319"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 5c9abd35-5785-479d-ae91-a690f0f7ebb0
-      X-Runtime:
-      - '0.008864'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sat, 05 Jul 2014 21:24:17 GMT
-      Content-Length:
-      - '250'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "id": 274,
-          "user_id": 324,
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/surveys/274"
-            },
-            "submit": {
-              "href": "http://localhost:3000/api/surveys/274/survey_questions"
-            }
-          },
-          "survey_questions": [
-
           ]
         }
     http_version: 
@@ -4881,4 +4110,1502 @@ http_interactions:
         }
     http_version: 
   recorded_at: Sat, 05 Jul 2014 21:24:17 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys?random=true
+    body:
+      encoding: UTF-8
+      string: '{"survey":{"user_id":52}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"a33b6e0f5d4ada3e44f5be8eb9f4a381"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0dfbefad-170b-471a-a087-400353b239e9
+      X-Runtime:
+      - '0.032579'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Tue, 09 Sep 2014 23:20:54 GMT
+      Content-Length:
+      - '3666'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 43,
+          "user_id": 52,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/43"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/43/survey_questions"
+            }
+          },
+          "survey_questions": [
+            {
+              "id": 119,
+              "text": "How do you feel right now?",
+              "type": "range",
+              "responses": [
+                "0",
+                "10"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/119"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/43"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/119"
+                }
+              }
+            },
+            {
+              "id": 120,
+              "text": "Where are you?",
+              "type": "multiple",
+              "responses": [
+                "At Home",
+                "At Work",
+                "In a car",
+                "Other"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/120"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/43"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/120"
+                }
+              }
+            },
+            {
+              "id": 121,
+              "text": "On average, how many hours do you work each week?",
+              "type": "multiple",
+              "responses": [
+                "Less than 5",
+                "5-10",
+                "10-20",
+                "20-30",
+                "30-40",
+                "40-50",
+                "50-60",
+                "60-70",
+                "More than 70"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/121"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/43"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/121"
+                }
+              }
+            },
+            {
+              "id": 122,
+              "text": "Do you want to do what you're doing?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/122"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/43"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/122"
+                }
+              }
+            },
+            {
+              "id": 123,
+              "text": "To what extent do you expect good things to happen in the future?",
+              "type": "range",
+              "responses": [
+                "0",
+                "10"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/123"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/43"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/123"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Tue, 09 Sep 2014 23:20:54 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/43/survey_questions/119
+    body:
+      encoding: UTF-8
+      string: '{"id":119,"survey_question":{"answer":"foo"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - cfbcc7b3-6fcb-433c-902f-73e0adec80b3
+      X-Runtime:
+      - '0.009914'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Tue, 09 Sep 2014 23:20:54 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 09 Sep 2014 23:20:54 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/43
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"7984471d5eec75e8abc759fb128ebb51"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 75fff0a4-0b25-4cb2-b064-4cd1bc0c6893
+      X-Runtime:
+      - '0.019802'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Tue, 09 Sep 2014 23:20:54 GMT
+      Content-Length:
+      - '3667'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 43,
+          "user_id": 52,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/43"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/43/survey_questions"
+            }
+          },
+          "survey_questions": [
+            {
+              "id": 120,
+              "text": "Where are you?",
+              "type": "multiple",
+              "responses": [
+                "At Home",
+                "At Work",
+                "In a car",
+                "Other"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/120"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/43"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/120"
+                }
+              }
+            },
+            {
+              "id": 121,
+              "text": "On average, how many hours do you work each week?",
+              "type": "multiple",
+              "responses": [
+                "Less than 5",
+                "5-10",
+                "10-20",
+                "20-30",
+                "30-40",
+                "40-50",
+                "50-60",
+                "60-70",
+                "More than 70"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/121"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/43"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/121"
+                }
+              }
+            },
+            {
+              "id": 122,
+              "text": "Do you want to do what you're doing?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/122"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/43"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/122"
+                }
+              }
+            },
+            {
+              "id": 123,
+              "text": "To what extent do you expect good things to happen in the future?",
+              "type": "range",
+              "responses": [
+                "0",
+                "10"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/123"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/43"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/123"
+                }
+              }
+            },
+            {
+              "id": 119,
+              "text": "How do you feel right now?",
+              "type": "range",
+              "responses": [
+                "0",
+                "10"
+              ],
+              "answer": "foo",
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/119"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/43"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/43/survey_questions/119"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Tue, 09 Sep 2014 23:20:54 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"a723ac88b99a06c255a3384c2d01f4fb"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 68f5afaf-5a87-42c4-a239-82f2caaac750
+      X-Runtime:
+      - '0.004551'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Tue, 09 Sep 2014 23:20:54 GMT
+      Content-Length:
+      - '305'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api"
+            },
+            "surveys": {
+              "href": "http://localhost:3000/api/surveys"
+            },
+            "users": {
+              "href": "http://localhost:3000/api/users"
+            },
+            "questions": {
+              "href": "http://localhost:3000/api/questions"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Tue, 09 Sep 2014 23:20:54 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/questions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"00b082ab08fa212cd932dcae5cb61a0c"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1b5ef08e-7726-43f5-8921-740c19a880d6
+      X-Runtime:
+      - '0.008084'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Tue, 09 Sep 2014 23:20:54 GMT
+      Content-Length:
+      - '7773'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        [
+          {
+            "id": 1,
+            "question_type": "multiple",
+            "text": "How hungry or full are you right now?",
+            "responses": [
+              "Very hungry",
+              "Somewhat hungry",
+              "Neither full nor hungry",
+              "Somewhat full",
+              "Very full"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 2,
+            "question_type": "time",
+            "text": "What time did you wake up this morning?",
+            "responses": null,
+            "freeform": false
+          },
+          {
+            "id": 3,
+            "question_type": "time",
+            "text": "What time did you got to sleep last night?",
+            "responses": null,
+            "freeform": false
+          },
+          {
+            "id": 4,
+            "question_type": "multiple",
+            "text": "Are you judging or evaluating yourself right now (i.e. at the moment just before you were notified)?",
+            "responses": [
+              "f",
+              "Yes - Negatively",
+              "Yes - Neutrally",
+              "Yes - Positively"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 5,
+            "question_type": "range",
+            "text": "How well did you sleep last night?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 6,
+            "question_type": "range",
+            "text": "To what extent are you engrossed in what you are doing?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 7,
+            "question_type": "multiple",
+            "text": "Are you judging or evaluating what you are doing right now (i.e. at the moment just before you were notified?)",
+            "responses": [
+              "f",
+              "Yes - Negatively",
+              "Yes - Neutrally",
+              "Yes - Positively"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 8,
+            "question_type": "boolean",
+            "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 9,
+            "question_type": "multiple",
+            "text": "Imagine you were given $10 to divide between yourself and a stranger to whom you would remain anonymous. How much would you give to the stranger?",
+            "responses": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 10,
+            "question_type": "boolean",
+            "text": "Have you surprised someone with a gift (including small gifts) in the last week?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 11,
+            "question_type": "multiple",
+            "text": "In general, how is your health?",
+            "responses": [
+              "Excellent",
+              "Very Good",
+              "Good",
+              "Fair",
+              "Poor"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 12,
+            "question_type": "range",
+            "text": "Where would you place yourself on this ladder?\nThink of a ladder representing where people stand in your country.\nAt the top of the ladder are the people who are the best off - those who have the most money, the most education and the most respected jobs. At the bottom are the people who are the worst off - who have the least money, least education, and the least respected jobs or no job. The higher up you are on the ladder, the closer you are to the people at the very top; the lower you are the closer you are to people at the very bottom.",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 13,
+            "question_type": "range",
+            "text": "To what extent is what you're doing interesting?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 14,
+            "question_type": "multiple",
+            "text": "On average, how many hours do you work each week?",
+            "responses": [
+              "Less than 5",
+              "5-10",
+              "10-20",
+              "20-30",
+              "30-40",
+              "40-50",
+              "50-60",
+              "60-70",
+              "More than 70"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 15,
+            "question_type": "range",
+            "text": "How do you feel right now?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 16,
+            "question_type": "range",
+            "text": "To what extent do you expect good things to happen in the future?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 17,
+            "question_type": "boolean",
+            "text": "Have you taken any over-the-counter pain medication in the past 24 hours?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 18,
+            "question_type": "range",
+            "text": "To what extent have you procrastinated so far today?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 19,
+            "question_type": "range",
+            "text": "To what extent are you being productive?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 20,
+            "question_type": "multiple",
+            "text": "Who are you talking or interacting with?",
+            "responses": [
+              "Spouse/partner/significant other",
+              "Children",
+              "Parents",
+              "Other relatives",
+              "Friends",
+              "Acquaintances",
+              "Strangers",
+              "Co-workers",
+              "Customers/students",
+              "Boss",
+              "No one"
+            ],
+            "freeform": true
+          },
+          {
+            "id": 30,
+            "question_type": "multiple",
+            "text": "Beyond any work you've already done today, how many additional hours do you expect to work today?",
+            "responses": [
+              "0 (none)",
+              "Less than 1 hour",
+              "1-2 hours",
+              "2-3 hours",
+              "3-4 hours",
+              "4-5 hours",
+              "5-6 hours"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 21,
+            "question_type": "range",
+            "text": "To what extent do you feel accepted by the person/people you are interacting with?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 22,
+            "question_type": "boolean",
+            "text": "Are you alone?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 23,
+            "question_type": "boolean",
+            "text": "Do you want to do what you're doing?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 24,
+            "question_type": "boolean",
+            "text": "Are you talking or interacting with anyone?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 25,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "freeform": true
+          },
+          {
+            "id": 26,
+            "question_type": "multiple",
+            "text": "How many people are you talking or interacting with?",
+            "responses": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "More than 10"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 27,
+            "question_type": "boolean",
+            "text": "Do you have to do what you're doing?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 28,
+            "question_type": "range",
+            "text": "To what extent are you focused on what you are doing?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 29,
+            "question_type": "multiple",
+            "text": "When did you last check Facebook?",
+            "responses": [
+              "Right now",
+              "In the last 5 minutes",
+              "In the last 15 minutes",
+              "In the last 30 minutes",
+              "In the last hour",
+              "1-2 hours ago",
+              "3-5 hours ago",
+              "6-12 hours ago",
+              "24 hours ago",
+              "Don't use facebook"
+            ],
+            "freeform": false
+          },
+          {
+            "id": 31,
+            "question_type": "boolean",
+            "text": "If you could, and it had no negative consequences, would you jump forward in time 24 hours?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false
+          }
+        ]
+    http_version: 
+  recorded_at: Tue, 09 Sep 2014 23:20:54 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"a723ac88b99a06c255a3384c2d01f4fb"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 43f38120-2011-438e-b0bd-bd748cfecd02
+      X-Runtime:
+      - '0.004955'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Tue, 09 Sep 2014 23:20:54 GMT
+      Content-Length:
+      - '305'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api"
+            },
+            "surveys": {
+              "href": "http://localhost:3000/api/surveys"
+            },
+            "users": {
+              "href": "http://localhost:3000/api/users"
+            },
+            "questions": {
+              "href": "http://localhost:3000/api/questions"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Tue, 09 Sep 2014 23:20:54 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/users
+    body:
+      encoding: UTF-8
+      string: '{"user":{"external_user_id":42}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"989ce274cd380fddb86bb2441e399185"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 28fa0ba9-5a9d-431a-908b-816a1a366674
+      X-Runtime:
+      - '0.008525'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Tue, 09 Sep 2014 23:20:54 GMT
+      Content-Length:
+      - '130'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 53,
+          "external_user_id": 42,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/users/53"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Tue, 09 Sep 2014 23:20:54 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"a723ac88b99a06c255a3384c2d01f4fb"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 20b7bcd5-4aba-410f-b93b-69faf81b7c62
+      X-Runtime:
+      - '0.004497'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Tue, 09 Sep 2014 23:20:54 GMT
+      Content-Length:
+      - '305'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api"
+            },
+            "surveys": {
+              "href": "http://localhost:3000/api/surveys"
+            },
+            "users": {
+              "href": "http://localhost:3000/api/users"
+            },
+            "questions": {
+              "href": "http://localhost:3000/api/questions"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Tue, 09 Sep 2014 23:20:54 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys
+    body:
+      encoding: UTF-8
+      string: '{"survey":{"user_id":53}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"78d6cc8e638a374053eccee777427dda"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cab976d1-89b6-4f18-bee7-07a23e8617b0
+      X-Runtime:
+      - '0.008722'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Tue, 09 Sep 2014 23:20:54 GMT
+      Content-Length:
+      - '246'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 44,
+          "user_id": 53,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/44"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/44/survey_questions"
+            }
+          },
+          "survey_questions": [
+
+          ]
+        }
+    http_version: 
+  recorded_at: Tue, 09 Sep 2014 23:20:54 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/44/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":8}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"43e355c8aa31cbdf38edc37857809ce2"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 90538d70-7b89-487b-9aff-3b19514df167
+      X-Runtime:
+      - '0.008673'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Tue, 09 Sep 2014 23:20:54 GMT
+      Content-Length:
+      - '183'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 124,
+          "survey_id": 44,
+          "question_id": 8,
+          "order_index": null,
+          "answer": null,
+          "created_at": "2014-09-09T23:20:54.502Z",
+          "updated_at": "2014-09-09T23:20:54.502Z"
+        }
+    http_version: 
+  recorded_at: Tue, 09 Sep 2014 23:20:54 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/44
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"d9d55b879065058b46cfee0653a1ae8e"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2910a61b-c3c4-4fab-aa6b-651b733f98d3
+      X-Runtime:
+      - '0.010434'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Tue, 09 Sep 2014 23:20:54 GMT
+      Content-Length:
+      - '931'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 44,
+          "user_id": 53,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/44"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/44/survey_questions"
+            }
+          },
+          "survey_questions": [
+            {
+              "id": 124,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/44/survey_questions/124"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/44"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/44/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/44/survey_questions/124"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Tue, 09 Sep 2014 23:20:54 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/44/survey_questions/124
+    body:
+      encoding: UTF-8
+      string: '{"id":124,"survey_question":{"answer":"true"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - b27b4f16-d69a-4017-97cc-ba612a217f9b
+      X-Runtime:
+      - '0.007712'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Tue, 09 Sep 2014 23:20:54 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 09 Sep 2014 23:20:54 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/44
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"e488a76a36c78c2d55d15d2af8affb4e"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ddea811c-33e9-4739-b64b-8247382532f6
+      X-Runtime:
+      - '0.011041'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Tue, 09 Sep 2014 23:20:54 GMT
+      Content-Length:
+      - '933'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 44,
+          "user_id": 53,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/44"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/44/survey_questions"
+            }
+          },
+          "survey_questions": [
+            {
+              "id": 124,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": "true",
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/44/survey_questions/124"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/44"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/44/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/44/survey_questions/124"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Tue, 09 Sep 2014 23:20:54 GMT
 recorded_with: VCR 2.6.0

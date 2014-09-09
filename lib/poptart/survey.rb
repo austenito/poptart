@@ -6,6 +6,7 @@ module Poptart
     def initialize(response)
       super
       @user_id = params['user_id']
+      @completed = params['completed']
 
       @survey_questions = params['survey_questions'].map do |survey_question|
         if survey_question['type'] == 'BooleanQuestion'
@@ -32,6 +33,10 @@ module Poptart
       if links['next']
         SurveyQuestion.for_url(links['next']['href'])
       end
+    end
+
+    def completed?
+      @completed
     end
   end
 end

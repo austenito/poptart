@@ -46,7 +46,7 @@ describe 'Answering survey questions', :vcr do
     survey.survey_questions.first.answer.should == 'true'
   end
 
-  it "answers a multiple choice question", :vcr do
+  it "answers a multiple choice question", :vcr, :record => :all do
     questions = Poptart::Question.all(type: 'multiple')
     question = questions.find { |question| question.responses.include?('At Home') }
     user = Poptart::User.create(42)
@@ -64,7 +64,6 @@ describe 'Answering survey questions', :vcr do
 
     survey = user.survey_for_id(survey.id)
     survey.survey_questions.first.answer.should == 'At Home'
-    survey.completed?.should be
   end
 
   it "finds survey question for id", :vcr do
