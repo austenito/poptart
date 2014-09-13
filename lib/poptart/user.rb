@@ -6,7 +6,7 @@ module Poptart
 
     def initialize(response)
       super
-      @external_user_id = params['external_user_id']
+      @external_user_id = params['external_user_id'].to_i
       @token = params['token']
     end
 
