@@ -12,7 +12,7 @@ module Poptart
 
     def self.all(params = {})
       root = Poptart::Root.get_root
-      response = get(root.links.questions.href)
+      response = get(root.questions_url)
       JSON.parse(response.body).map do |question|
         if params[:type]
           if question['question_type'] == params[:type]

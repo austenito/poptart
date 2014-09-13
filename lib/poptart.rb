@@ -19,6 +19,7 @@ end
 require 'faraday'
 require 'json'
 require 'hashie'
+require "addressable/template"
 
 require_relative 'version'
 require_relative 'poptart/model'

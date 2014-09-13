@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'Answering survey questions', :vcr do
+describe 'Answering survey questions' do
   it "creates and returns an empty survey", :vcr do
     user = Poptart::User.create(42)
     survey = user.create_survey
@@ -72,5 +72,29 @@ describe 'Answering survey questions', :vcr do
     first_survey_question = survey.survey_questions.first
     survey_question = survey.survey_question_for_id(first_survey_question.id)
     first_survey_question.should == survey_question
+  end
+
+  xit "returns all answered survey questions for a question", :vcr, :record => :all do
+    questions = Poptart::Question.all(type: 'multiple')
+    question = questions.find { |question| question.responses.include?('At Home') }
+    user = Poptart::User.create(42)
+
+    survey = user.create_survey
+    survey.add_question(question).should be
+    second_survey = user.create_survey
+    second_survey.add_question(question).should be
+
+    survey = user.survey_for_id(survey.id)
+    survey_question = survey.survey_questions.first
+    survey_question.answer = 'At Home'
+    survey_question.submit.should be
+
+    survey = user.survey_for_id(second_survey.id)
+    survey_question = survey.survey_questions.first
+    survey_question.answer = 'At Work'
+    survey_question.submit.should be
+
+    answered_questions = user.survey_questions_for_question_id(question.id)
+    answered_questions.map(&:answer).should =~ ['At Home', 'At Work']
   end
 end

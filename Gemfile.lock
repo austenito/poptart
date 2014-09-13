@@ -3,6 +3,7 @@ PATH
   specs:
     poptart (0.0.5)
       activesupport
+      addressable
       faraday
       hashie
 
