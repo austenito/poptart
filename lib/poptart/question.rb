@@ -11,7 +11,6 @@ module Poptart
     end
 
     def self.all(params = {})
-      root = Poptart::Root.get_root
       response = get(root.questions_url)
       JSON.parse(response.body).map do |question|
         if params[:type]

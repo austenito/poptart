@@ -12,7 +12,7 @@ describe 'Answering survey questions' do
     user = Poptart::User.create(42)
     survey = user.create_random_survey
     survey.user_id.should == user.id
-    survey.survey_questions.count.should == 6
+    survey.survey_questions.count.should == 5
   end
 
   it "answers a survey question", :vcr do
@@ -27,7 +27,7 @@ describe 'Answering survey questions' do
     survey.survey_questions.first.answer.should == "foo"
   end
 
-  it "answers a survey question", :vcr do
+  it "answers a survey question", :vcr, record: :all do
     boolean_questions = Poptart::Question.all(type: 'boolean')
     user = Poptart::User.create(42)
     survey = user.create_survey

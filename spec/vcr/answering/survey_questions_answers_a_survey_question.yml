@@ -4979,75 +4979,6 @@ http_interactions:
     http_version: 
   recorded_at: Tue, 09 Sep 2014 23:20:54 GMT
 - request:
-    method: get
-    uri: http://localhost:3000/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"a723ac88b99a06c255a3384c2d01f4fb"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 43f38120-2011-438e-b0bd-bd748cfecd02
-      X-Runtime:
-      - '0.004955'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Tue, 09 Sep 2014 23:20:54 GMT
-      Content-Length:
-      - '305'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api"
-            },
-            "surveys": {
-              "href": "http://localhost:3000/api/surveys"
-            },
-            "users": {
-              "href": "http://localhost:3000/api/users"
-            },
-            "questions": {
-              "href": "http://localhost:3000/api/questions"
-            }
-          }
-        }
-    http_version: 
-  recorded_at: Tue, 09 Sep 2014 23:20:54 GMT
-- request:
     method: post
     uri: http://localhost:3000/api/users
     body:
@@ -5104,75 +5035,6 @@ http_interactions:
           "_links": {
             "self": {
               "href": "http://localhost:3000/api/users/53"
-            }
-          }
-        }
-    http_version: 
-  recorded_at: Tue, 09 Sep 2014 23:20:54 GMT
-- request:
-    method: get
-    uri: http://localhost:3000/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"a723ac88b99a06c255a3384c2d01f4fb"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 20b7bcd5-4aba-410f-b93b-69faf81b7c62
-      X-Runtime:
-      - '0.004497'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Tue, 09 Sep 2014 23:20:54 GMT
-      Content-Length:
-      - '305'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api"
-            },
-            "surveys": {
-              "href": "http://localhost:3000/api/surveys"
-            },
-            "users": {
-              "href": "http://localhost:3000/api/users"
-            },
-            "questions": {
-              "href": "http://localhost:3000/api/questions"
             }
           }
         }
@@ -7662,75 +7524,6 @@ http_interactions:
     http_version: 
   recorded_at: Sat, 13 Sep 2014 15:34:07 GMT
 - request:
-    method: get
-    uri: http://localhost:3000/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"0373655803c91ae9dcdeb88ac62a3ff4"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 3fe8a84c-c582-465a-a661-f4116a53b8da
-      X-Runtime:
-      - '0.005059'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sat, 13 Sep 2014 15:34:30 GMT
-      Content-Length:
-      - '224'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/"
-            },
-            "surveys": {
-              "href": "surveys"
-            },
-            "users": {
-              "href": "users"
-            },
-            "questions": {
-              "href": "questions"
-            }
-          }
-        }
-    http_version: 
-  recorded_at: Sat, 13 Sep 2014 15:34:30 GMT
-- request:
     method: put
     uri: http://localhost:3000/api/surveys/111/survey_questions/263
     body:
@@ -8284,212 +8077,6 @@ http_interactions:
     http_version: 
   recorded_at: Sat, 13 Sep 2014 15:34:51 GMT
 - request:
-    method: post
-    uri: http://localhost:3000/api/surveys/?random=true
-    body:
-      encoding: UTF-8
-      string: '{"survey":{"user_id":117}}'
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: 'Created '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"35c2a4ce684521394b91ddb4469af129"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - df711697-055c-41f0-a518-7ac49327070c
-      X-Runtime:
-      - '0.031438'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sat, 13 Sep 2014 15:35:04 GMT
-      Content-Length:
-      - '4353'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "id": 118,
-          "user_id": 117,
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/surveys/118"
-            },
-            "submit": {
-              "href": "http://localhost:3000/api/surveys/118/survey_questions"
-            }
-          },
-          "completed": false,
-          "survey_questions": [
-            {
-              "id": 277,
-              "text": "How do you feel right now?",
-              "type": "range",
-              "responses": [
-                "0",
-                "10"
-              ],
-              "answer": null,
-              "freeform": false,
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/118/survey_questions/277"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/118"
-                },
-                "create": {
-                  "href": "http://localhost:3000/api/surveys/118/survey_questions"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/118/survey_questions/277"
-                }
-              }
-            },
-            {
-              "id": 278,
-              "text": "Where are you?",
-              "type": "multiple",
-              "responses": [
-                "At Home",
-                "At Work",
-                "In a car",
-                "Other"
-              ],
-              "answer": null,
-              "freeform": true,
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/118/survey_questions/278"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/118"
-                },
-                "create": {
-                  "href": "http://localhost:3000/api/surveys/118/survey_questions"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/118/survey_questions/278"
-                }
-              }
-            },
-            {
-              "id": 279,
-              "text": "When did you last check Facebook?",
-              "type": "multiple",
-              "responses": [
-                "Right now",
-                "In the last 5 minutes",
-                "In the last 15 minutes",
-                "In the last 30 minutes",
-                "In the last hour",
-                "1-2 hours ago",
-                "3-5 hours ago",
-                "6-12 hours ago",
-                "24 hours ago",
-                "Don't use facebook"
-              ],
-              "answer": null,
-              "freeform": false,
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/118/survey_questions/279"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/118"
-                },
-                "create": {
-                  "href": "http://localhost:3000/api/surveys/118/survey_questions"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/118/survey_questions/279"
-                }
-              }
-            },
-            {
-              "id": 280,
-              "text": "Where would you place yourself on this ladder?\nThink of a ladder representing where people stand in your country.\nAt the top of the ladder are the people who are the best off - those who have the most money, the most education and the most respected jobs. At the bottom are the people who are the worst off - who have the least money, least education, and the least respected jobs or no job. The higher up you are on the ladder, the closer you are to the people at the very top; the lower you are the closer you are to people at the very bottom.",
-              "type": "range",
-              "responses": [
-                "0",
-                "10"
-              ],
-              "answer": null,
-              "freeform": false,
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/118/survey_questions/280"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/118"
-                },
-                "create": {
-                  "href": "http://localhost:3000/api/surveys/118/survey_questions"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/118/survey_questions/280"
-                }
-              }
-            },
-            {
-              "id": 281,
-              "text": "In general, how is your health?",
-              "type": "multiple",
-              "responses": [
-                "Excellent",
-                "Very Good",
-                "Good",
-                "Fair",
-                "Poor"
-              ],
-              "answer": null,
-              "freeform": false,
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/118/survey_questions/281"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/118"
-                },
-                "create": {
-                  "href": "http://localhost:3000/api/surveys/118/survey_questions"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/118/survey_questions/281"
-                }
-              }
-            }
-          ]
-        }
-    http_version: 
-  recorded_at: Sat, 13 Sep 2014 15:35:04 GMT
-- request:
     method: put
     uri: http://localhost:3000/api/surveys/118/survey_questions/277
     body:
@@ -8743,6 +8330,4199 @@ http_interactions:
     http_version: 
   recorded_at: Sat, 13 Sep 2014 15:35:04 GMT
 - request:
+    method: post
+    uri: http://localhost:3000/api/surveys/119/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":8}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"022d4e9d1a1865d42ec5a0f5fc5233a8"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 98087709-1622-4cba-bbb8-76cb00f8cb0a
+      X-Runtime:
+      - '0.009345'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 13 Sep 2014 15:35:04 GMT
+      Content-Length:
+      - '184'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 282,
+          "survey_id": 119,
+          "question_id": 8,
+          "order_index": null,
+          "answer": null,
+          "created_at": "2014-09-13T15:35:04.912Z",
+          "updated_at": "2014-09-13T15:35:04.912Z"
+        }
+    http_version: 
+  recorded_at: Sat, 13 Sep 2014 15:35:04 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/119
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"1a80881165eef2eb00ac37131619dcb1"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 03256794-0d3c-4832-bcaa-1dbcf085414e
+      X-Runtime:
+      - '0.008545'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 13 Sep 2014 15:35:04 GMT
+      Content-Length:
+      - '961'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 119,
+          "user_id": 118,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/119"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/119/survey_questions"
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 282,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/119/survey_questions/282"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/119"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/119/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/119/survey_questions/282"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sat, 13 Sep 2014 15:35:04 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/119/survey_questions/282
+    body:
+      encoding: UTF-8
+      string: '{"id":282,"survey_question":{"answer":"true"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 5fe52f58-37a7-47a1-bb7b-fdc0f1f46850
+      X-Runtime:
+      - '0.009367'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 13 Sep 2014 15:35:04 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 13 Sep 2014 15:35:04 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/119
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"1a876ff6d7fdcd6f8d9ec4aa755a6ad2"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6002f70f-9bed-4f37-b0f7-885428055881
+      X-Runtime:
+      - '0.010838'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 13 Sep 2014 15:35:04 GMT
+      Content-Length:
+      - '963'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 119,
+          "user_id": 118,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/119"
+            },
+            "submit": {
+              "href": "http://localhost:3000/api/surveys/119/survey_questions"
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 282,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": "true",
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/119/survey_questions/282"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/119"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/119/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/119/survey_questions/282"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sat, 13 Sep 2014 15:35:04 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/%2Fapi%2Fsurveys%2F126%2Fsurvey_questions/
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":8}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: 'Not Found '
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '16615'
+      X-Request-Id:
+      - 22952a8b-af4c-4f7f-ae7e-25f3216ef9d6
+      X-Runtime:
+      - '0.031256'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 13:21:14 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\"
+        />\n  <title>Action Controller: Exception caught</title>\n  <style>\n    body
+        {\n      background-color: #FAFAFA;\n      color: #333;\n      margin: 0px;\n
+        \   }\n\n    body, p, ol, ul, td {\n      font-family: helvetica, verdana,
+        arial, sans-serif;\n      font-size:   13px;\n      line-height: 18px;\n    }\n\n
+        \   pre {\n      font-size: 11px;\n      white-space: pre-wrap;\n    }\n\n
+        \   pre.box {\n      border: 1px solid #EEE;\n      padding: 10px;\n      margin:
+        0px;\n      width: 958px;\n    }\n\n    header {\n      color: #F0F0F0;\n
+        \     background: #C52F24;\n      padding: 0.5em 1.5em;\n    }\n\n    h1 {\n
+        \     margin: 0.2em 0;\n      line-height: 1.1em;\n      font-size: 2em;\n
+        \   }\n\n    h2 {\n      color: #C52F24;\n      line-height: 25px;\n    }\n\n
+        \   .details {\n      border: 1px solid #D0D0D0;\n      border-radius: 4px;\n
+        \     margin: 1em 0px;\n      display: block;\n      width: 978px;\n    }\n\n
+        \   .summary {\n      padding: 8px 15px;\n      border-bottom: 1px solid #D0D0D0;\n
+        \     display: block;\n    }\n\n    .details pre {\n      margin: 5px;\n      border:
+        none;\n    }\n\n    #container {\n      box-sizing: border-box;\n      width:
+        100%;\n      padding: 0 1.5em;\n    }\n\n    .source * {\n      margin: 0px;\n
+        \     padding: 0px;\n    }\n\n    .source {\n      border: 1px solid #D9D9D9;\n
+        \     background: #ECECEC;\n      width: 978px;\n    }\n\n    .source pre
+        {\n      padding: 10px 0px;\n      border: none;\n    }\n\n    .source .data
+        {\n      font-size: 80%;\n      overflow: auto;\n      background-color: #FFF;\n
+        \   }\n\n    .info {\n      padding: 0.5em;\n    }\n\n    .source .data .line_numbers
+        {\n      background-color: #ECECEC;\n      color: #AAA;\n      padding: 1em
+        .5em;\n      border-right: 1px solid #DDD;\n      text-align: right;\n    }\n\n
+        \   .line {\n      padding-left: 10px;\n    }\n\n    .line:hover {\n      background-color:
+        #F6F6F6;\n    }\n\n    .line.active {\n      background-color: #FFCCCC;\n
+        \   }\n\n    a { color: #980905; }\n    a:visited { color: #666; }\n    a:hover
+        { color: #C52F24; }\n\n      #route_table {\n    margin: 0 auto 0;\n    border-collapse:
+        collapse;\n  }\n\n  #route_table td {\n    padding: 0 30px;\n  }\n\n  #route_table
+        tr.bottom th {\n    padding-bottom: 10px;\n    line-height: 15px;\n  }\n\n
+        \ #route_table .matched_paths {\n    background-color: LightGoldenRodYellow;\n
+        \ }\n\n  #route_table .matched_paths {\n    border-bottom: solid 3px SlateGrey;\n
+        \ }\n\n  #path_search {\n    width: 80%;\n    font-size: inherit;\n  }\n\n
+        \ </style>\n\n  <script>\n    var toggle = function(id) {\n      var s = document.getElementById(id).style;\n
+        \     s.display = s.display == 'none' ? 'block' : 'none';\n      return false;\n
+        \   }\n    var show = function(id) {\n      document.getElementById(id).style.display
+        = 'block';\n    }\n    var hide = function(id) {\n      document.getElementById(id).style.display
+        = 'none';\n    }\n    var toggleTrace = function() {\n      return toggle('blame_trace');\n
+        \   }\n    var toggleSessionDump = function() {\n      return toggle('session_dump');\n
+        \   }\n    var toggleEnvDump = function() {\n      return toggle('env_dump');\n
+        \   }\n  </script>\n</head>\n<body>\n\n<header>\n  <h1>Routing Error</h1>\n</header>\n<div
+        id=\"container\">\n  <h2>No route matches [POST] &quot;/api/%2Fapi%2Fsurveys%2F126%2Fsurvey_questions&quot;</h2>\n\n
+        \ \n<p><code>Rails.root: /Users/austenito/repos/happiness/happiness_service</code></p>\n\n<div
+        id=\"traces\">\n    <a href=\"#\" onclick=\"hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);;
+        return false;\">Application Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);;
+        return false;\">Framework Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);;
+        return false;\">Full Trace</a> \n\n    <div id=\"Application-Trace\" style=\"display:
+        block;\">\n      <pre><code></code></pre>\n    </div>\n    <div id=\"Framework-Trace\"
+        style=\"display: none;\">\n      <pre><code>actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in
+        `call&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in
+        `call&#39;\nrack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport
+        (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call&#39;\nrack
+        (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in
+        `call&#39;\nrailties (4.0.4) lib/rails/engine.rb:511:in `call&#39;\nrailties
+        (4.0.4) lib/rails/application.rb:97:in `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in
+        `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;\nrack
+        (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n    <div id=\"Full-Trace\"
+        style=\"display: none;\">\n      <pre><code>actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in
+        `call&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in
+        `call&#39;\nrack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport
+        (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call&#39;\nrack
+        (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in
+        `call&#39;\nrailties (4.0.4) lib/rails/engine.rb:511:in `call&#39;\nrailties
+        (4.0.4) lib/rails/application.rb:97:in `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in
+        `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;\nrack
+        (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n</div>\n\n\n    <h2>\n
+        \     Routes\n    </h2>\n\n    <p>\n      Routes match in priority from top
+        to bottom\n    </p>\n\n    \n<table id='route_table' class='route_table'>\n
+        \ <thead>\n    <tr>\n      <th>Helper</th>\n      <th>HTTP Verb</th>\n      <th>Path</th>\n
+        \     <th>Controller#Action</th>\n    </tr>\n    <tr class='bottom'>\n      <th>\n
+        \       <a data-route-helper=\"_path\" href=\"#\" title=\"Returns a relative
+        path (without the http or domain)\">Path</a> /\n        <a data-route-helper=\"_url\"
+        href=\"#\" title=\"Returns an absolute url (with the http and domain)\">Url</a>\n
+        \     </th>\n      <th>\n      </th>\n      <th>\n        <input id=\"path_search\"
+        name=\"path[]\" placeholder=\"Path Match\" type=\"search\" />\n      </th>\n
+        \     <th>\n      </th>\n    </tr>\n  </thead>\n  <tbody class='matched_paths'
+        id='matched_paths'>\n  </tbody>\n  <tbody>\n    <tr class='route_row' data-helper='path'>\n
+        \ <td data-route-name='api_question_survey_questions'>\n      api_question_survey_questions<span
+        class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n    GET\n
+        \ </td>\n  <td data-route-path='/api/questions/:question_id/survey_questions(.:format)'
+        data-regexp='^\\/api\\/questions\\/([^\\/.?]+)\\/survey_questions(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/questions/:question_id/survey_questions(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#index {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#index {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='api_questions'>\n
+        \     api_questions<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/questions(.:format)' data-regexp='^\\/api\\/questions(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/questions(.:format)\n  </td>\n  <td data-route-reqs='api/v1/questions#index
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/questions#index {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_survey_survey_questions'>\n
+        \     api_survey_survey_questions<span class='helper'>_path</span>\n  </td>\n
+        \ <td data-route-verb='POST'>\n    POST\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions(.:format)\n  </td>\n  <td data-route-reqs='api/v1/survey_questions#create
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/survey_questions#create {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_survey_survey_question'>\n
+        \     api_survey_survey_question<span class='helper'>_path</span>\n  </td>\n
+        \ <td data-route-verb='GET'>\n    GET\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions/:id(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions/:id(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#show {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#show {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name=''>\n  </td>\n
+        \ <td data-route-verb='PATCH'>\n    PATCH\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions/:id(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions/:id(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name=''>\n  </td>\n
+        \ <td data-route-verb='PUT'>\n    PUT\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions/:id(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions/:id(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='api_surveys'>\n
+        \     api_surveys<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/surveys(.:format)' data-regexp='^\\/api\\/surveys(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys(.:format)\n  </td>\n  <td data-route-reqs='api/v1/surveys#index
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/surveys#index {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name=''>\n
+        \ </td>\n  <td data-route-verb='POST'>\n    POST\n  </td>\n  <td data-route-path='/api/surveys(.:format)'
+        data-regexp='^\\/api\\/surveys(?:\\.([^\\/.?]+))?$'>\n    /api/surveys(.:format)\n
+        \ </td>\n  <td data-route-reqs='api/v1/surveys#create {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/surveys#create {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='api_survey'>\n
+        \     api_survey<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/surveys/:id(.:format)' data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:id(.:format)\n  </td>\n  <td data-route-reqs='api/v1/surveys#show
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/surveys#show {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_users'>\n
+        \     api_users<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='POST'>\n
+        \   POST\n  </td>\n  <td data-route-path='/api/users(.:format)' data-regexp='^\\/api\\/users(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/users(.:format)\n  </td>\n  <td data-route-reqs='api/v1/users#create
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/users#create {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_user'>\n
+        \     api_user<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/users/:id(.:format)' data-regexp='^\\/api\\/users\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/users/:id(.:format)\n  </td>\n  <td data-route-reqs='api/v1/users#show
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/users#show {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='root'>\n
+        \     root<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/' data-regexp='^\\/$'>\n    /\n
+        \ </td>\n  <td data-route-reqs='api/v1/root#index'>\n    api/v1/root#index\n
+        \ </td>\n</tr>\n\n  </tbody>\n</table>\n\n<script type='text/javascript'>\n
+        \ function each(elems, func) {\n    if (!elems instanceof Array) { elems =
+        [elems]; }\n    for (var i = 0, len = elems.length; i < len; i++) {\n      func(elems[i]);\n
+        \   }\n  }\n\n  function setValOn(elems, val) {\n    each(elems, function(elem)
+        {\n      elem.innerHTML = val;\n    });\n  }\n\n  function onClick(elems,
+        func) {\n    each(elems, function(elem) {\n      elem.onclick = func;\n    });\n
+        \ }\n\n  // Enables functionality to toggle between `_path` and `_url` helper
+        suffixes\n  function setupRouteToggleHelperLinks() {\n    var toggleLinks
+        = document.querySelectorAll('#route_table [data-route-helper]');\n    onClick(toggleLinks,
+        function(){\n      var helperTxt   = this.getAttribute(\"data-route-helper\"),\n
+        \         helperElems = document.querySelectorAll('[data-route-name] span.helper');\n
+        \     setValOn(helperElems, helperTxt);\n    });\n  }\n\n  // takes an array
+        of elements with a data-regexp attribute and\n  // passes their their parent
+        <tr> into the callback function\n  // if the regexp matchs a given path\n
+        \ function eachElemsForPath(elems, path, func) {\n    each(elems, function(e){\n
+        \     var reg = e.getAttribute(\"data-regexp\");\n      if (path.match(RegExp(reg)))
+        {\n        func(e.parentNode.cloneNode(true));\n      }\n    })\n  }\n\n  //
+        Ensure path always starts with a slash \"/\" and remove params or fragments\n
+        \ function sanitizePath(path) {\n    var path = path.charAt(0) == '/' ? path
+        : \"/\" + path;\n    return path.replace(/\\#.*|\\?.*/, '');\n  }\n\n  //
+        Enables path search functionality\n  function setupMatchPaths() {\n    var
+        regexpElems     = document.querySelectorAll('#route_table [data-regexp]'),\n
+        \       pathElem        = document.querySelector('#path_search'),\n        selectedSection
+        = document.querySelector('#matched_paths'),\n        noMatchText     = '<tr><th
+        colspan=\"4\">None</th></tr>';\n\n\n    // Remove matches if no path is present\n
+        \   pathElem.onblur = function(e) {\n      if (pathElem.value === \"\") selectedSection.innerHTML
+        = \"\";\n    }\n\n    // On key press perform a search for matching paths\n
+        \   pathElem.onkeyup = function(e){\n      var path        = sanitizePath(pathElem.value),\n
+        \         defaultText = '<tr><th colspan=\"4\">Paths Matching (' + path +
+        '):</th></tr>';\n\n      // Clear out results section\n      selectedSection.innerHTML=
+        defaultText;\n\n      // Display matches if they exist\n      eachElemsForPath(regexpElems,
+        path, function(e){\n        selectedSection.appendChild(e);\n      });\n\n
+        \     // If no match present, tell the user\n      if (selectedSection.innerHTML
+        === defaultText) {\n        selectedSection.innerHTML = selectedSection.innerHTML
+        + noMatchText;\n      }\n    }\n  }\n\n  setupMatchPaths();\n  setupRouteToggleHelperLinks();\n</script>\n\n</div>\n\n\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 13:21:14 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/%2Fapi%2Fquestions/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: 'Not Found '
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '16587'
+      X-Request-Id:
+      - bb383770-5009-4dd4-bc4a-e9b1d0d68c97
+      X-Runtime:
+      - '0.023958'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 13:23:12 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\"
+        />\n  <title>Action Controller: Exception caught</title>\n  <style>\n    body
+        {\n      background-color: #FAFAFA;\n      color: #333;\n      margin: 0px;\n
+        \   }\n\n    body, p, ol, ul, td {\n      font-family: helvetica, verdana,
+        arial, sans-serif;\n      font-size:   13px;\n      line-height: 18px;\n    }\n\n
+        \   pre {\n      font-size: 11px;\n      white-space: pre-wrap;\n    }\n\n
+        \   pre.box {\n      border: 1px solid #EEE;\n      padding: 10px;\n      margin:
+        0px;\n      width: 958px;\n    }\n\n    header {\n      color: #F0F0F0;\n
+        \     background: #C52F24;\n      padding: 0.5em 1.5em;\n    }\n\n    h1 {\n
+        \     margin: 0.2em 0;\n      line-height: 1.1em;\n      font-size: 2em;\n
+        \   }\n\n    h2 {\n      color: #C52F24;\n      line-height: 25px;\n    }\n\n
+        \   .details {\n      border: 1px solid #D0D0D0;\n      border-radius: 4px;\n
+        \     margin: 1em 0px;\n      display: block;\n      width: 978px;\n    }\n\n
+        \   .summary {\n      padding: 8px 15px;\n      border-bottom: 1px solid #D0D0D0;\n
+        \     display: block;\n    }\n\n    .details pre {\n      margin: 5px;\n      border:
+        none;\n    }\n\n    #container {\n      box-sizing: border-box;\n      width:
+        100%;\n      padding: 0 1.5em;\n    }\n\n    .source * {\n      margin: 0px;\n
+        \     padding: 0px;\n    }\n\n    .source {\n      border: 1px solid #D9D9D9;\n
+        \     background: #ECECEC;\n      width: 978px;\n    }\n\n    .source pre
+        {\n      padding: 10px 0px;\n      border: none;\n    }\n\n    .source .data
+        {\n      font-size: 80%;\n      overflow: auto;\n      background-color: #FFF;\n
+        \   }\n\n    .info {\n      padding: 0.5em;\n    }\n\n    .source .data .line_numbers
+        {\n      background-color: #ECECEC;\n      color: #AAA;\n      padding: 1em
+        .5em;\n      border-right: 1px solid #DDD;\n      text-align: right;\n    }\n\n
+        \   .line {\n      padding-left: 10px;\n    }\n\n    .line:hover {\n      background-color:
+        #F6F6F6;\n    }\n\n    .line.active {\n      background-color: #FFCCCC;\n
+        \   }\n\n    a { color: #980905; }\n    a:visited { color: #666; }\n    a:hover
+        { color: #C52F24; }\n\n      #route_table {\n    margin: 0 auto 0;\n    border-collapse:
+        collapse;\n  }\n\n  #route_table td {\n    padding: 0 30px;\n  }\n\n  #route_table
+        tr.bottom th {\n    padding-bottom: 10px;\n    line-height: 15px;\n  }\n\n
+        \ #route_table .matched_paths {\n    background-color: LightGoldenRodYellow;\n
+        \ }\n\n  #route_table .matched_paths {\n    border-bottom: solid 3px SlateGrey;\n
+        \ }\n\n  #path_search {\n    width: 80%;\n    font-size: inherit;\n  }\n\n
+        \ </style>\n\n  <script>\n    var toggle = function(id) {\n      var s = document.getElementById(id).style;\n
+        \     s.display = s.display == 'none' ? 'block' : 'none';\n      return false;\n
+        \   }\n    var show = function(id) {\n      document.getElementById(id).style.display
+        = 'block';\n    }\n    var hide = function(id) {\n      document.getElementById(id).style.display
+        = 'none';\n    }\n    var toggleTrace = function() {\n      return toggle('blame_trace');\n
+        \   }\n    var toggleSessionDump = function() {\n      return toggle('session_dump');\n
+        \   }\n    var toggleEnvDump = function() {\n      return toggle('env_dump');\n
+        \   }\n  </script>\n</head>\n<body>\n\n<header>\n  <h1>Routing Error</h1>\n</header>\n<div
+        id=\"container\">\n  <h2>No route matches [GET] &quot;/%2Fapi%2Fquestions&quot;</h2>\n\n
+        \ \n<p><code>Rails.root: /Users/austenito/repos/happiness/happiness_service</code></p>\n\n<div
+        id=\"traces\">\n    <a href=\"#\" onclick=\"hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);;
+        return false;\">Application Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);;
+        return false;\">Framework Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);;
+        return false;\">Full Trace</a> \n\n    <div id=\"Application-Trace\" style=\"display:
+        block;\">\n      <pre><code></code></pre>\n    </div>\n    <div id=\"Framework-Trace\"
+        style=\"display: none;\">\n      <pre><code>actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in
+        `call&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in
+        `call&#39;\nrack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport
+        (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call&#39;\nrack
+        (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in
+        `call&#39;\nrailties (4.0.4) lib/rails/engine.rb:511:in `call&#39;\nrailties
+        (4.0.4) lib/rails/application.rb:97:in `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in
+        `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;\nrack
+        (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n    <div id=\"Full-Trace\"
+        style=\"display: none;\">\n      <pre><code>actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in
+        `call&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in
+        `call&#39;\nrack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport
+        (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call&#39;\nrack
+        (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in
+        `call&#39;\nrailties (4.0.4) lib/rails/engine.rb:511:in `call&#39;\nrailties
+        (4.0.4) lib/rails/application.rb:97:in `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in
+        `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;\nrack
+        (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n</div>\n\n\n    <h2>\n
+        \     Routes\n    </h2>\n\n    <p>\n      Routes match in priority from top
+        to bottom\n    </p>\n\n    \n<table id='route_table' class='route_table'>\n
+        \ <thead>\n    <tr>\n      <th>Helper</th>\n      <th>HTTP Verb</th>\n      <th>Path</th>\n
+        \     <th>Controller#Action</th>\n    </tr>\n    <tr class='bottom'>\n      <th>\n
+        \       <a data-route-helper=\"_path\" href=\"#\" title=\"Returns a relative
+        path (without the http or domain)\">Path</a> /\n        <a data-route-helper=\"_url\"
+        href=\"#\" title=\"Returns an absolute url (with the http and domain)\">Url</a>\n
+        \     </th>\n      <th>\n      </th>\n      <th>\n        <input id=\"path_search\"
+        name=\"path[]\" placeholder=\"Path Match\" type=\"search\" />\n      </th>\n
+        \     <th>\n      </th>\n    </tr>\n  </thead>\n  <tbody class='matched_paths'
+        id='matched_paths'>\n  </tbody>\n  <tbody>\n    <tr class='route_row' data-helper='path'>\n
+        \ <td data-route-name='api_question_survey_questions'>\n      api_question_survey_questions<span
+        class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n    GET\n
+        \ </td>\n  <td data-route-path='/api/questions/:question_id/survey_questions(.:format)'
+        data-regexp='^\\/api\\/questions\\/([^\\/.?]+)\\/survey_questions(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/questions/:question_id/survey_questions(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#index {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#index {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='api_questions'>\n
+        \     api_questions<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/questions(.:format)' data-regexp='^\\/api\\/questions(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/questions(.:format)\n  </td>\n  <td data-route-reqs='api/v1/questions#index
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/questions#index {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_survey_survey_questions'>\n
+        \     api_survey_survey_questions<span class='helper'>_path</span>\n  </td>\n
+        \ <td data-route-verb='POST'>\n    POST\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions(.:format)\n  </td>\n  <td data-route-reqs='api/v1/survey_questions#create
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/survey_questions#create {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_survey_survey_question'>\n
+        \     api_survey_survey_question<span class='helper'>_path</span>\n  </td>\n
+        \ <td data-route-verb='GET'>\n    GET\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions/:id(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions/:id(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#show {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#show {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name=''>\n  </td>\n
+        \ <td data-route-verb='PATCH'>\n    PATCH\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions/:id(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions/:id(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name=''>\n  </td>\n
+        \ <td data-route-verb='PUT'>\n    PUT\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions/:id(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions/:id(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='api_surveys'>\n
+        \     api_surveys<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/surveys(.:format)' data-regexp='^\\/api\\/surveys(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys(.:format)\n  </td>\n  <td data-route-reqs='api/v1/surveys#index
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/surveys#index {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name=''>\n
+        \ </td>\n  <td data-route-verb='POST'>\n    POST\n  </td>\n  <td data-route-path='/api/surveys(.:format)'
+        data-regexp='^\\/api\\/surveys(?:\\.([^\\/.?]+))?$'>\n    /api/surveys(.:format)\n
+        \ </td>\n  <td data-route-reqs='api/v1/surveys#create {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/surveys#create {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='api_survey'>\n
+        \     api_survey<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/surveys/:id(.:format)' data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:id(.:format)\n  </td>\n  <td data-route-reqs='api/v1/surveys#show
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/surveys#show {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_users'>\n
+        \     api_users<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='POST'>\n
+        \   POST\n  </td>\n  <td data-route-path='/api/users(.:format)' data-regexp='^\\/api\\/users(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/users(.:format)\n  </td>\n  <td data-route-reqs='api/v1/users#create
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/users#create {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_user'>\n
+        \     api_user<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/users/:id(.:format)' data-regexp='^\\/api\\/users\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/users/:id(.:format)\n  </td>\n  <td data-route-reqs='api/v1/users#show
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/users#show {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='root'>\n
+        \     root<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/' data-regexp='^\\/$'>\n    /\n
+        \ </td>\n  <td data-route-reqs='api/v1/root#index'>\n    api/v1/root#index\n
+        \ </td>\n</tr>\n\n  </tbody>\n</table>\n\n<script type='text/javascript'>\n
+        \ function each(elems, func) {\n    if (!elems instanceof Array) { elems =
+        [elems]; }\n    for (var i = 0, len = elems.length; i < len; i++) {\n      func(elems[i]);\n
+        \   }\n  }\n\n  function setValOn(elems, val) {\n    each(elems, function(elem)
+        {\n      elem.innerHTML = val;\n    });\n  }\n\n  function onClick(elems,
+        func) {\n    each(elems, function(elem) {\n      elem.onclick = func;\n    });\n
+        \ }\n\n  // Enables functionality to toggle between `_path` and `_url` helper
+        suffixes\n  function setupRouteToggleHelperLinks() {\n    var toggleLinks
+        = document.querySelectorAll('#route_table [data-route-helper]');\n    onClick(toggleLinks,
+        function(){\n      var helperTxt   = this.getAttribute(\"data-route-helper\"),\n
+        \         helperElems = document.querySelectorAll('[data-route-name] span.helper');\n
+        \     setValOn(helperElems, helperTxt);\n    });\n  }\n\n  // takes an array
+        of elements with a data-regexp attribute and\n  // passes their their parent
+        <tr> into the callback function\n  // if the regexp matchs a given path\n
+        \ function eachElemsForPath(elems, path, func) {\n    each(elems, function(e){\n
+        \     var reg = e.getAttribute(\"data-regexp\");\n      if (path.match(RegExp(reg)))
+        {\n        func(e.parentNode.cloneNode(true));\n      }\n    })\n  }\n\n  //
+        Ensure path always starts with a slash \"/\" and remove params or fragments\n
+        \ function sanitizePath(path) {\n    var path = path.charAt(0) == '/' ? path
+        : \"/\" + path;\n    return path.replace(/\\#.*|\\?.*/, '');\n  }\n\n  //
+        Enables path search functionality\n  function setupMatchPaths() {\n    var
+        regexpElems     = document.querySelectorAll('#route_table [data-regexp]'),\n
+        \       pathElem        = document.querySelector('#path_search'),\n        selectedSection
+        = document.querySelector('#matched_paths'),\n        noMatchText     = '<tr><th
+        colspan=\"4\">None</th></tr>';\n\n\n    // Remove matches if no path is present\n
+        \   pathElem.onblur = function(e) {\n      if (pathElem.value === \"\") selectedSection.innerHTML
+        = \"\";\n    }\n\n    // On key press perform a search for matching paths\n
+        \   pathElem.onkeyup = function(e){\n      var path        = sanitizePath(pathElem.value),\n
+        \         defaultText = '<tr><th colspan=\"4\">Paths Matching (' + path +
+        '):</th></tr>';\n\n      // Clear out results section\n      selectedSection.innerHTML=
+        defaultText;\n\n      // Display matches if they exist\n      eachElemsForPath(regexpElems,
+        path, function(e){\n        selectedSection.appendChild(e);\n      });\n\n
+        \     // If no match present, tell the user\n      if (selectedSection.innerHTML
+        === defaultText) {\n        selectedSection.innerHTML = selectedSection.innerHTML
+        + noMatchText;\n      }\n    }\n  }\n\n  setupMatchPaths();\n  setupRouteToggleHelperLinks();\n</script>\n\n</div>\n\n\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 13:23:12 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api%2Fquestions/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: 'Not Found '
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '16584'
+      X-Request-Id:
+      - 1f4b531e-4605-4c3e-89cd-e232366ef42b
+      X-Runtime:
+      - '0.018598'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 13:34:14 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\"
+        />\n  <title>Action Controller: Exception caught</title>\n  <style>\n    body
+        {\n      background-color: #FAFAFA;\n      color: #333;\n      margin: 0px;\n
+        \   }\n\n    body, p, ol, ul, td {\n      font-family: helvetica, verdana,
+        arial, sans-serif;\n      font-size:   13px;\n      line-height: 18px;\n    }\n\n
+        \   pre {\n      font-size: 11px;\n      white-space: pre-wrap;\n    }\n\n
+        \   pre.box {\n      border: 1px solid #EEE;\n      padding: 10px;\n      margin:
+        0px;\n      width: 958px;\n    }\n\n    header {\n      color: #F0F0F0;\n
+        \     background: #C52F24;\n      padding: 0.5em 1.5em;\n    }\n\n    h1 {\n
+        \     margin: 0.2em 0;\n      line-height: 1.1em;\n      font-size: 2em;\n
+        \   }\n\n    h2 {\n      color: #C52F24;\n      line-height: 25px;\n    }\n\n
+        \   .details {\n      border: 1px solid #D0D0D0;\n      border-radius: 4px;\n
+        \     margin: 1em 0px;\n      display: block;\n      width: 978px;\n    }\n\n
+        \   .summary {\n      padding: 8px 15px;\n      border-bottom: 1px solid #D0D0D0;\n
+        \     display: block;\n    }\n\n    .details pre {\n      margin: 5px;\n      border:
+        none;\n    }\n\n    #container {\n      box-sizing: border-box;\n      width:
+        100%;\n      padding: 0 1.5em;\n    }\n\n    .source * {\n      margin: 0px;\n
+        \     padding: 0px;\n    }\n\n    .source {\n      border: 1px solid #D9D9D9;\n
+        \     background: #ECECEC;\n      width: 978px;\n    }\n\n    .source pre
+        {\n      padding: 10px 0px;\n      border: none;\n    }\n\n    .source .data
+        {\n      font-size: 80%;\n      overflow: auto;\n      background-color: #FFF;\n
+        \   }\n\n    .info {\n      padding: 0.5em;\n    }\n\n    .source .data .line_numbers
+        {\n      background-color: #ECECEC;\n      color: #AAA;\n      padding: 1em
+        .5em;\n      border-right: 1px solid #DDD;\n      text-align: right;\n    }\n\n
+        \   .line {\n      padding-left: 10px;\n    }\n\n    .line:hover {\n      background-color:
+        #F6F6F6;\n    }\n\n    .line.active {\n      background-color: #FFCCCC;\n
+        \   }\n\n    a { color: #980905; }\n    a:visited { color: #666; }\n    a:hover
+        { color: #C52F24; }\n\n      #route_table {\n    margin: 0 auto 0;\n    border-collapse:
+        collapse;\n  }\n\n  #route_table td {\n    padding: 0 30px;\n  }\n\n  #route_table
+        tr.bottom th {\n    padding-bottom: 10px;\n    line-height: 15px;\n  }\n\n
+        \ #route_table .matched_paths {\n    background-color: LightGoldenRodYellow;\n
+        \ }\n\n  #route_table .matched_paths {\n    border-bottom: solid 3px SlateGrey;\n
+        \ }\n\n  #path_search {\n    width: 80%;\n    font-size: inherit;\n  }\n\n
+        \ </style>\n\n  <script>\n    var toggle = function(id) {\n      var s = document.getElementById(id).style;\n
+        \     s.display = s.display == 'none' ? 'block' : 'none';\n      return false;\n
+        \   }\n    var show = function(id) {\n      document.getElementById(id).style.display
+        = 'block';\n    }\n    var hide = function(id) {\n      document.getElementById(id).style.display
+        = 'none';\n    }\n    var toggleTrace = function() {\n      return toggle('blame_trace');\n
+        \   }\n    var toggleSessionDump = function() {\n      return toggle('session_dump');\n
+        \   }\n    var toggleEnvDump = function() {\n      return toggle('env_dump');\n
+        \   }\n  </script>\n</head>\n<body>\n\n<header>\n  <h1>Routing Error</h1>\n</header>\n<div
+        id=\"container\">\n  <h2>No route matches [GET] &quot;/api%2Fquestions&quot;</h2>\n\n
+        \ \n<p><code>Rails.root: /Users/austenito/repos/happiness/happiness_service</code></p>\n\n<div
+        id=\"traces\">\n    <a href=\"#\" onclick=\"hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);;
+        return false;\">Application Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);;
+        return false;\">Framework Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);;
+        return false;\">Full Trace</a> \n\n    <div id=\"Application-Trace\" style=\"display:
+        block;\">\n      <pre><code></code></pre>\n    </div>\n    <div id=\"Framework-Trace\"
+        style=\"display: none;\">\n      <pre><code>actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in
+        `call&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in
+        `call&#39;\nrack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport
+        (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call&#39;\nrack
+        (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in
+        `call&#39;\nrailties (4.0.4) lib/rails/engine.rb:511:in `call&#39;\nrailties
+        (4.0.4) lib/rails/application.rb:97:in `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in
+        `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;\nrack
+        (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n    <div id=\"Full-Trace\"
+        style=\"display: none;\">\n      <pre><code>actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in
+        `call&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in
+        `call&#39;\nrack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport
+        (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call&#39;\nrack
+        (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in
+        `call&#39;\nrailties (4.0.4) lib/rails/engine.rb:511:in `call&#39;\nrailties
+        (4.0.4) lib/rails/application.rb:97:in `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in
+        `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;\nrack
+        (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n</div>\n\n\n    <h2>\n
+        \     Routes\n    </h2>\n\n    <p>\n      Routes match in priority from top
+        to bottom\n    </p>\n\n    \n<table id='route_table' class='route_table'>\n
+        \ <thead>\n    <tr>\n      <th>Helper</th>\n      <th>HTTP Verb</th>\n      <th>Path</th>\n
+        \     <th>Controller#Action</th>\n    </tr>\n    <tr class='bottom'>\n      <th>\n
+        \       <a data-route-helper=\"_path\" href=\"#\" title=\"Returns a relative
+        path (without the http or domain)\">Path</a> /\n        <a data-route-helper=\"_url\"
+        href=\"#\" title=\"Returns an absolute url (with the http and domain)\">Url</a>\n
+        \     </th>\n      <th>\n      </th>\n      <th>\n        <input id=\"path_search\"
+        name=\"path[]\" placeholder=\"Path Match\" type=\"search\" />\n      </th>\n
+        \     <th>\n      </th>\n    </tr>\n  </thead>\n  <tbody class='matched_paths'
+        id='matched_paths'>\n  </tbody>\n  <tbody>\n    <tr class='route_row' data-helper='path'>\n
+        \ <td data-route-name='api_question_survey_questions'>\n      api_question_survey_questions<span
+        class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n    GET\n
+        \ </td>\n  <td data-route-path='/api/questions/:question_id/survey_questions(.:format)'
+        data-regexp='^\\/api\\/questions\\/([^\\/.?]+)\\/survey_questions(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/questions/:question_id/survey_questions(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#index {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#index {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='api_questions'>\n
+        \     api_questions<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/questions(.:format)' data-regexp='^\\/api\\/questions(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/questions(.:format)\n  </td>\n  <td data-route-reqs='api/v1/questions#index
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/questions#index {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_survey_survey_questions'>\n
+        \     api_survey_survey_questions<span class='helper'>_path</span>\n  </td>\n
+        \ <td data-route-verb='POST'>\n    POST\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions(.:format)\n  </td>\n  <td data-route-reqs='api/v1/survey_questions#create
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/survey_questions#create {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_survey_survey_question'>\n
+        \     api_survey_survey_question<span class='helper'>_path</span>\n  </td>\n
+        \ <td data-route-verb='GET'>\n    GET\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions/:id(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions/:id(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#show {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#show {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name=''>\n  </td>\n
+        \ <td data-route-verb='PATCH'>\n    PATCH\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions/:id(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions/:id(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name=''>\n  </td>\n
+        \ <td data-route-verb='PUT'>\n    PUT\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions/:id(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions/:id(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='api_surveys'>\n
+        \     api_surveys<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/surveys(.:format)' data-regexp='^\\/api\\/surveys(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys(.:format)\n  </td>\n  <td data-route-reqs='api/v1/surveys#index
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/surveys#index {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name=''>\n
+        \ </td>\n  <td data-route-verb='POST'>\n    POST\n  </td>\n  <td data-route-path='/api/surveys(.:format)'
+        data-regexp='^\\/api\\/surveys(?:\\.([^\\/.?]+))?$'>\n    /api/surveys(.:format)\n
+        \ </td>\n  <td data-route-reqs='api/v1/surveys#create {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/surveys#create {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='api_survey'>\n
+        \     api_survey<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/surveys/:id(.:format)' data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:id(.:format)\n  </td>\n  <td data-route-reqs='api/v1/surveys#show
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/surveys#show {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_users'>\n
+        \     api_users<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='POST'>\n
+        \   POST\n  </td>\n  <td data-route-path='/api/users(.:format)' data-regexp='^\\/api\\/users(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/users(.:format)\n  </td>\n  <td data-route-reqs='api/v1/users#create
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/users#create {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_user'>\n
+        \     api_user<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/users/:id(.:format)' data-regexp='^\\/api\\/users\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/users/:id(.:format)\n  </td>\n  <td data-route-reqs='api/v1/users#show
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/users#show {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='root'>\n
+        \     root<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/' data-regexp='^\\/$'>\n    /\n
+        \ </td>\n  <td data-route-reqs='api/v1/root#index'>\n    api/v1/root#index\n
+        \ </td>\n</tr>\n\n  </tbody>\n</table>\n\n<script type='text/javascript'>\n
+        \ function each(elems, func) {\n    if (!elems instanceof Array) { elems =
+        [elems]; }\n    for (var i = 0, len = elems.length; i < len; i++) {\n      func(elems[i]);\n
+        \   }\n  }\n\n  function setValOn(elems, val) {\n    each(elems, function(elem)
+        {\n      elem.innerHTML = val;\n    });\n  }\n\n  function onClick(elems,
+        func) {\n    each(elems, function(elem) {\n      elem.onclick = func;\n    });\n
+        \ }\n\n  // Enables functionality to toggle between `_path` and `_url` helper
+        suffixes\n  function setupRouteToggleHelperLinks() {\n    var toggleLinks
+        = document.querySelectorAll('#route_table [data-route-helper]');\n    onClick(toggleLinks,
+        function(){\n      var helperTxt   = this.getAttribute(\"data-route-helper\"),\n
+        \         helperElems = document.querySelectorAll('[data-route-name] span.helper');\n
+        \     setValOn(helperElems, helperTxt);\n    });\n  }\n\n  // takes an array
+        of elements with a data-regexp attribute and\n  // passes their their parent
+        <tr> into the callback function\n  // if the regexp matchs a given path\n
+        \ function eachElemsForPath(elems, path, func) {\n    each(elems, function(e){\n
+        \     var reg = e.getAttribute(\"data-regexp\");\n      if (path.match(RegExp(reg)))
+        {\n        func(e.parentNode.cloneNode(true));\n      }\n    })\n  }\n\n  //
+        Ensure path always starts with a slash \"/\" and remove params or fragments\n
+        \ function sanitizePath(path) {\n    var path = path.charAt(0) == '/' ? path
+        : \"/\" + path;\n    return path.replace(/\\#.*|\\?.*/, '');\n  }\n\n  //
+        Enables path search functionality\n  function setupMatchPaths() {\n    var
+        regexpElems     = document.querySelectorAll('#route_table [data-regexp]'),\n
+        \       pathElem        = document.querySelector('#path_search'),\n        selectedSection
+        = document.querySelector('#matched_paths'),\n        noMatchText     = '<tr><th
+        colspan=\"4\">None</th></tr>';\n\n\n    // Remove matches if no path is present\n
+        \   pathElem.onblur = function(e) {\n      if (pathElem.value === \"\") selectedSection.innerHTML
+        = \"\";\n    }\n\n    // On key press perform a search for matching paths\n
+        \   pathElem.onkeyup = function(e){\n      var path        = sanitizePath(pathElem.value),\n
+        \         defaultText = '<tr><th colspan=\"4\">Paths Matching (' + path +
+        '):</th></tr>';\n\n      // Clear out results section\n      selectedSection.innerHTML=
+        defaultText;\n\n      // Display matches if they exist\n      eachElemsForPath(regexpElems,
+        path, function(e){\n        selectedSection.appendChild(e);\n      });\n\n
+        \     // If no match present, tell the user\n      if (selectedSection.innerHTML
+        === defaultText) {\n        selectedSection.innerHTML = selectedSection.innerHTML
+        + noMatchText;\n      }\n    }\n  }\n\n  setupMatchPaths();\n  setupRouteToggleHelperLinks();\n</script>\n\n</div>\n\n\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 13:34:14 GMT
+- request:
+    method: post
+    uri: http://localhost:3000//api/surveys/128/survey_questions/
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":8}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"b26af3b0476eea7f8f950e9c18d4d66c"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 29526fe1-f24a-436e-b97d-db28f720e4e0
+      X-Runtime:
+      - '0.023652'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 13:34:43 GMT
+      Content-Length:
+      - '184'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 289,
+          "survey_id": 128,
+          "question_id": 8,
+          "order_index": null,
+          "answer": null,
+          "created_at": "2014-09-14T13:34:43.055Z",
+          "updated_at": "2014-09-14T13:34:43.055Z"
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 13:34:43 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/128
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"f037c39a8824828eead43eba0ca6ba48"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 25fba97f-d570-4870-99cf-89790879c166
+      X-Runtime:
+      - '0.010661'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 13:34:43 GMT
+      Content-Length:
+      - '1071'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 128,
+          "user_id": 132,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/128"
+            },
+            "survey_questions": {
+              "method": "post",
+              "href": "/api/surveys/128/survey_questions"
+            },
+            "submit": {
+              "method": "post",
+              "href": "/api/surveys/128/survey_questions"
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 289,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/128/survey_questions/289"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/128"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/128/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/128/survey_questions/289"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 13:34:43 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/128/survey_questions/289
+    body:
+      encoding: UTF-8
+      string: '{"id":289,"survey_question":{"answer":"true"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 5221ac1f-7ea4-4f15-b7dc-403e3c032aad
+      X-Runtime:
+      - '0.008845'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 13:34:43 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 13:34:43 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/128
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"9feeed8665436ce1f2c7419895230f35"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cfa47cd9-c37a-4782-ba06-c2f19947cf00
+      X-Runtime:
+      - '0.009268'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 13:34:43 GMT
+      Content-Length:
+      - '1073'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 128,
+          "user_id": 132,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/128"
+            },
+            "survey_questions": {
+              "method": "post",
+              "href": "/api/surveys/128/survey_questions"
+            },
+            "submit": {
+              "method": "post",
+              "href": "/api/surveys/128/survey_questions"
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 289,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": "true",
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/128/survey_questions/289"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/128"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/128/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/128/survey_questions/289"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 13:34:43 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/users/
+    body:
+      encoding: UTF-8
+      string: '{"user":{"external_user_id":42}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: 'Not Found '
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '16575'
+      X-Request-Id:
+      - f26df18b-f160-44e1-a18a-51e239869803
+      X-Runtime:
+      - '0.019481'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 16:59:38 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\"
+        />\n  <title>Action Controller: Exception caught</title>\n  <style>\n    body
+        {\n      background-color: #FAFAFA;\n      color: #333;\n      margin: 0px;\n
+        \   }\n\n    body, p, ol, ul, td {\n      font-family: helvetica, verdana,
+        arial, sans-serif;\n      font-size:   13px;\n      line-height: 18px;\n    }\n\n
+        \   pre {\n      font-size: 11px;\n      white-space: pre-wrap;\n    }\n\n
+        \   pre.box {\n      border: 1px solid #EEE;\n      padding: 10px;\n      margin:
+        0px;\n      width: 958px;\n    }\n\n    header {\n      color: #F0F0F0;\n
+        \     background: #C52F24;\n      padding: 0.5em 1.5em;\n    }\n\n    h1 {\n
+        \     margin: 0.2em 0;\n      line-height: 1.1em;\n      font-size: 2em;\n
+        \   }\n\n    h2 {\n      color: #C52F24;\n      line-height: 25px;\n    }\n\n
+        \   .details {\n      border: 1px solid #D0D0D0;\n      border-radius: 4px;\n
+        \     margin: 1em 0px;\n      display: block;\n      width: 978px;\n    }\n\n
+        \   .summary {\n      padding: 8px 15px;\n      border-bottom: 1px solid #D0D0D0;\n
+        \     display: block;\n    }\n\n    .details pre {\n      margin: 5px;\n      border:
+        none;\n    }\n\n    #container {\n      box-sizing: border-box;\n      width:
+        100%;\n      padding: 0 1.5em;\n    }\n\n    .source * {\n      margin: 0px;\n
+        \     padding: 0px;\n    }\n\n    .source {\n      border: 1px solid #D9D9D9;\n
+        \     background: #ECECEC;\n      width: 978px;\n    }\n\n    .source pre
+        {\n      padding: 10px 0px;\n      border: none;\n    }\n\n    .source .data
+        {\n      font-size: 80%;\n      overflow: auto;\n      background-color: #FFF;\n
+        \   }\n\n    .info {\n      padding: 0.5em;\n    }\n\n    .source .data .line_numbers
+        {\n      background-color: #ECECEC;\n      color: #AAA;\n      padding: 1em
+        .5em;\n      border-right: 1px solid #DDD;\n      text-align: right;\n    }\n\n
+        \   .line {\n      padding-left: 10px;\n    }\n\n    .line:hover {\n      background-color:
+        #F6F6F6;\n    }\n\n    .line.active {\n      background-color: #FFCCCC;\n
+        \   }\n\n    a { color: #980905; }\n    a:visited { color: #666; }\n    a:hover
+        { color: #C52F24; }\n\n      #route_table {\n    margin: 0 auto 0;\n    border-collapse:
+        collapse;\n  }\n\n  #route_table td {\n    padding: 0 30px;\n  }\n\n  #route_table
+        tr.bottom th {\n    padding-bottom: 10px;\n    line-height: 15px;\n  }\n\n
+        \ #route_table .matched_paths {\n    background-color: LightGoldenRodYellow;\n
+        \ }\n\n  #route_table .matched_paths {\n    border-bottom: solid 3px SlateGrey;\n
+        \ }\n\n  #path_search {\n    width: 80%;\n    font-size: inherit;\n  }\n\n
+        \ </style>\n\n  <script>\n    var toggle = function(id) {\n      var s = document.getElementById(id).style;\n
+        \     s.display = s.display == 'none' ? 'block' : 'none';\n      return false;\n
+        \   }\n    var show = function(id) {\n      document.getElementById(id).style.display
+        = 'block';\n    }\n    var hide = function(id) {\n      document.getElementById(id).style.display
+        = 'none';\n    }\n    var toggleTrace = function() {\n      return toggle('blame_trace');\n
+        \   }\n    var toggleSessionDump = function() {\n      return toggle('session_dump');\n
+        \   }\n    var toggleEnvDump = function() {\n      return toggle('env_dump');\n
+        \   }\n  </script>\n</head>\n<body>\n\n<header>\n  <h1>Routing Error</h1>\n</header>\n<div
+        id=\"container\">\n  <h2>No route matches [POST] &quot;/users&quot;</h2>\n\n
+        \ \n<p><code>Rails.root: /Users/austenito/repos/happiness/happiness_service</code></p>\n\n<div
+        id=\"traces\">\n    <a href=\"#\" onclick=\"hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);;
+        return false;\">Application Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);;
+        return false;\">Framework Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);;
+        return false;\">Full Trace</a> \n\n    <div id=\"Application-Trace\" style=\"display:
+        block;\">\n      <pre><code></code></pre>\n    </div>\n    <div id=\"Framework-Trace\"
+        style=\"display: none;\">\n      <pre><code>actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in
+        `call&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in
+        `call&#39;\nrack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport
+        (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call&#39;\nrack
+        (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in
+        `call&#39;\nrailties (4.0.4) lib/rails/engine.rb:511:in `call&#39;\nrailties
+        (4.0.4) lib/rails/application.rb:97:in `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in
+        `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;\nrack
+        (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n    <div id=\"Full-Trace\"
+        style=\"display: none;\">\n      <pre><code>actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in
+        `call&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in
+        `call&#39;\nrack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport
+        (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call&#39;\nrack
+        (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in
+        `call&#39;\nrailties (4.0.4) lib/rails/engine.rb:511:in `call&#39;\nrailties
+        (4.0.4) lib/rails/application.rb:97:in `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in
+        `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;\nrack
+        (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n</div>\n\n\n    <h2>\n
+        \     Routes\n    </h2>\n\n    <p>\n      Routes match in priority from top
+        to bottom\n    </p>\n\n    \n<table id='route_table' class='route_table'>\n
+        \ <thead>\n    <tr>\n      <th>Helper</th>\n      <th>HTTP Verb</th>\n      <th>Path</th>\n
+        \     <th>Controller#Action</th>\n    </tr>\n    <tr class='bottom'>\n      <th>\n
+        \       <a data-route-helper=\"_path\" href=\"#\" title=\"Returns a relative
+        path (without the http or domain)\">Path</a> /\n        <a data-route-helper=\"_url\"
+        href=\"#\" title=\"Returns an absolute url (with the http and domain)\">Url</a>\n
+        \     </th>\n      <th>\n      </th>\n      <th>\n        <input id=\"path_search\"
+        name=\"path[]\" placeholder=\"Path Match\" type=\"search\" />\n      </th>\n
+        \     <th>\n      </th>\n    </tr>\n  </thead>\n  <tbody class='matched_paths'
+        id='matched_paths'>\n  </tbody>\n  <tbody>\n    <tr class='route_row' data-helper='path'>\n
+        \ <td data-route-name='api_question_survey_questions'>\n      api_question_survey_questions<span
+        class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n    GET\n
+        \ </td>\n  <td data-route-path='/api/questions/:question_id/survey_questions(.:format)'
+        data-regexp='^\\/api\\/questions\\/([^\\/.?]+)\\/survey_questions(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/questions/:question_id/survey_questions(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#index {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#index {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='api_questions'>\n
+        \     api_questions<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/questions(.:format)' data-regexp='^\\/api\\/questions(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/questions(.:format)\n  </td>\n  <td data-route-reqs='api/v1/questions#index
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/questions#index {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_survey_survey_questions'>\n
+        \     api_survey_survey_questions<span class='helper'>_path</span>\n  </td>\n
+        \ <td data-route-verb='POST'>\n    POST\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions(.:format)\n  </td>\n  <td data-route-reqs='api/v1/survey_questions#create
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/survey_questions#create {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_survey_survey_question'>\n
+        \     api_survey_survey_question<span class='helper'>_path</span>\n  </td>\n
+        \ <td data-route-verb='GET'>\n    GET\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions/:id(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions/:id(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#show {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#show {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name=''>\n  </td>\n
+        \ <td data-route-verb='PATCH'>\n    PATCH\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions/:id(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions/:id(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name=''>\n  </td>\n
+        \ <td data-route-verb='PUT'>\n    PUT\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions/:id(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions/:id(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='api_surveys'>\n
+        \     api_surveys<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/surveys(.:format)' data-regexp='^\\/api\\/surveys(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys(.:format)\n  </td>\n  <td data-route-reqs='api/v1/surveys#index
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/surveys#index {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name=''>\n
+        \ </td>\n  <td data-route-verb='POST'>\n    POST\n  </td>\n  <td data-route-path='/api/surveys(.:format)'
+        data-regexp='^\\/api\\/surveys(?:\\.([^\\/.?]+))?$'>\n    /api/surveys(.:format)\n
+        \ </td>\n  <td data-route-reqs='api/v1/surveys#create {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/surveys#create {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='api_survey'>\n
+        \     api_survey<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/surveys/:id(.:format)' data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:id(.:format)\n  </td>\n  <td data-route-reqs='api/v1/surveys#show
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/surveys#show {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_users'>\n
+        \     api_users<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='POST'>\n
+        \   POST\n  </td>\n  <td data-route-path='/api/users(.:format)' data-regexp='^\\/api\\/users(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/users(.:format)\n  </td>\n  <td data-route-reqs='api/v1/users#create
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/users#create {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_user'>\n
+        \     api_user<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/users/:id(.:format)' data-regexp='^\\/api\\/users\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/users/:id(.:format)\n  </td>\n  <td data-route-reqs='api/v1/users#show
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/users#show {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='root'>\n
+        \     root<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/' data-regexp='^\\/$'>\n    /\n
+        \ </td>\n  <td data-route-reqs='api/v1/root#index'>\n    api/v1/root#index\n
+        \ </td>\n</tr>\n\n  </tbody>\n</table>\n\n<script type='text/javascript'>\n
+        \ function each(elems, func) {\n    if (!elems instanceof Array) { elems =
+        [elems]; }\n    for (var i = 0, len = elems.length; i < len; i++) {\n      func(elems[i]);\n
+        \   }\n  }\n\n  function setValOn(elems, val) {\n    each(elems, function(elem)
+        {\n      elem.innerHTML = val;\n    });\n  }\n\n  function onClick(elems,
+        func) {\n    each(elems, function(elem) {\n      elem.onclick = func;\n    });\n
+        \ }\n\n  // Enables functionality to toggle between `_path` and `_url` helper
+        suffixes\n  function setupRouteToggleHelperLinks() {\n    var toggleLinks
+        = document.querySelectorAll('#route_table [data-route-helper]');\n    onClick(toggleLinks,
+        function(){\n      var helperTxt   = this.getAttribute(\"data-route-helper\"),\n
+        \         helperElems = document.querySelectorAll('[data-route-name] span.helper');\n
+        \     setValOn(helperElems, helperTxt);\n    });\n  }\n\n  // takes an array
+        of elements with a data-regexp attribute and\n  // passes their their parent
+        <tr> into the callback function\n  // if the regexp matchs a given path\n
+        \ function eachElemsForPath(elems, path, func) {\n    each(elems, function(e){\n
+        \     var reg = e.getAttribute(\"data-regexp\");\n      if (path.match(RegExp(reg)))
+        {\n        func(e.parentNode.cloneNode(true));\n      }\n    })\n  }\n\n  //
+        Ensure path always starts with a slash \"/\" and remove params or fragments\n
+        \ function sanitizePath(path) {\n    var path = path.charAt(0) == '/' ? path
+        : \"/\" + path;\n    return path.replace(/\\#.*|\\?.*/, '');\n  }\n\n  //
+        Enables path search functionality\n  function setupMatchPaths() {\n    var
+        regexpElems     = document.querySelectorAll('#route_table [data-regexp]'),\n
+        \       pathElem        = document.querySelector('#path_search'),\n        selectedSection
+        = document.querySelector('#matched_paths'),\n        noMatchText     = '<tr><th
+        colspan=\"4\">None</th></tr>';\n\n\n    // Remove matches if no path is present\n
+        \   pathElem.onblur = function(e) {\n      if (pathElem.value === \"\") selectedSection.innerHTML
+        = \"\";\n    }\n\n    // On key press perform a search for matching paths\n
+        \   pathElem.onkeyup = function(e){\n      var path        = sanitizePath(pathElem.value),\n
+        \         defaultText = '<tr><th colspan=\"4\">Paths Matching (' + path +
+        '):</th></tr>';\n\n      // Clear out results section\n      selectedSection.innerHTML=
+        defaultText;\n\n      // Display matches if they exist\n      eachElemsForPath(regexpElems,
+        path, function(e){\n        selectedSection.appendChild(e);\n      });\n\n
+        \     // If no match present, tell the user\n      if (selectedSection.innerHTML
+        === defaultText) {\n        selectedSection.innerHTML = selectedSection.innerHTML
+        + noMatchText;\n      }\n    }\n  }\n\n  setupMatchPaths();\n  setupRouteToggleHelperLinks();\n</script>\n\n</div>\n\n\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 16:59:38 GMT
+- request:
+    method: post
+    uri: http://localhost:3000//api/surveys/132/survey_questions/
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":8}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"64b0e58fb3844d81bc0a6b0fb30ee896"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 63baaa47-64ae-4cd4-bf27-be972b4b413b
+      X-Runtime:
+      - '0.010041'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:17:20 GMT
+      Content-Length:
+      - '184'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 300,
+          "survey_id": 132,
+          "question_id": 8,
+          "order_index": null,
+          "answer": null,
+          "created_at": "2014-09-14T17:17:20.165Z",
+          "updated_at": "2014-09-14T17:17:20.165Z"
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:17:20 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/132
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"2c5d04f34152aeb766638840340e6b66"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ad990a6e-250e-45e1-8f28-ebd62d52b6ce
+      X-Runtime:
+      - '0.012329'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:17:20 GMT
+      Content-Length:
+      - '1052'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 132,
+          "user_id": 136,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/132"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/132/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/132/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 300,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/132/survey_questions/300"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/132"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/132/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/132/survey_questions/300"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:17:20 GMT
+- request:
+    method: post
+    uri: http://localhost:3000//api/surveys/137/survey_questions/
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":8}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"d68e3371a3edf01996ed55fea2b22f2f"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a87b40a6-d2b8-4b37-9854-fe7730ad6bee
+      X-Runtime:
+      - '0.007943'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:17:40 GMT
+      Content-Length:
+      - '184'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 317,
+          "survey_id": 137,
+          "question_id": 8,
+          "order_index": null,
+          "answer": null,
+          "created_at": "2014-09-14T17:17:40.581Z",
+          "updated_at": "2014-09-14T17:17:40.581Z"
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:17:40 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/137
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"26f146436785b2b52194413ddc73da77"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5364f07a-92a5-424b-aba0-ce604a8f0543
+      X-Runtime:
+      - '0.010810'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:17:40 GMT
+      Content-Length:
+      - '1052'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 137,
+          "user_id": 141,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/137"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/137/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/137/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 317,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/137/survey_questions/317"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/137"
+                },
+                "create": {
+                  "href": "http://localhost:3000/api/surveys/137/survey_questions"
+                },
+                "submit": {
+                  "href": "http://localhost:3000/api/surveys/137/survey_questions/317"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:17:40 GMT
+- request:
+    method: post
+    uri: http://localhost:3000//api/surveys/141/survey_questions/
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":8}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"45c7bcb08ce17c276d41ed70787e5278"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5eb25807-dfc2-40f0-ac5f-dea2cd3c31c0
+      X-Runtime:
+      - '0.009062'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:19:55 GMT
+      Content-Length:
+      - '184'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 329,
+          "survey_id": 141,
+          "question_id": 8,
+          "order_index": null,
+          "answer": null,
+          "created_at": "2014-09-14T17:19:55.705Z",
+          "updated_at": "2014-09-14T17:19:55.705Z"
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:19:55 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/141
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"5ccd3ac8d9241d0c1f2adf7b4e7b3b03"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - aca6f33c-ef95-40ee-901d-aaaf59ca18c9
+      X-Runtime:
+      - '0.009948'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:19:55 GMT
+      Content-Length:
+      - '984'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 141,
+          "user_id": 145,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/141"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/141/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/141/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 329,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/141/survey_questions/329"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/141/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/141/survey_questions/329"
+                },
+                "survey": {
+                  "href": "/api/surveys/141"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:19:55 GMT
+- request:
+    method: put
+    uri: http://localhost:3000//api/surveys/149/survey_questions/361/
+    body:
+      encoding: UTF-8
+      string: '{"id":361,"survey_question":{"answer":"foo"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 37358c1a-441b-4ec6-be75-548138469b3f
+      X-Runtime:
+      - '0.008673'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:28:31 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:28:31 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/149
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"188fc4bf4e5ed4ed1ecf84ce73c55fc8"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fd6b8934-cfbc-406b-a2df-16f7bc4e4fba
+      X-Runtime:
+      - '0.024681'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:28:31 GMT
+      Content-Length:
+      - '4214'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 149,
+          "user_id": 153,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/149"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/149/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/149/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 362,
+              "text": "Where are you?",
+              "type": "multiple",
+              "responses": [
+                "At Home",
+                "At Work",
+                "In a car",
+                "Other"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/149/survey_questions/362"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/149/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/149/survey_questions/362"
+                },
+                "survey": {
+                  "href": "/api/surveys/149"
+                }
+              }
+            },
+            {
+              "id": 363,
+              "text": "To what extent is what you're doing interesting?",
+              "type": "range",
+              "responses": [
+                "0",
+                "10"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/149/survey_questions/363"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/149/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/149/survey_questions/363"
+                },
+                "survey": {
+                  "href": "/api/surveys/149"
+                }
+              }
+            },
+            {
+              "id": 364,
+              "text": "If you could, and it had no negative consequences, would you jump forward in time 24 hours?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/149/survey_questions/364"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/149/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/149/survey_questions/364"
+                },
+                "survey": {
+                  "href": "/api/surveys/149"
+                }
+              }
+            },
+            {
+              "id": 365,
+              "text": "Who are you talking or interacting with?",
+              "type": "multiple",
+              "responses": [
+                "Spouse/partner/significant other",
+                "Children",
+                "Parents",
+                "Other relatives",
+                "Friends",
+                "Acquaintances",
+                "Strangers",
+                "Co-workers",
+                "Customers/students",
+                "Boss",
+                "No one"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/149/survey_questions/365"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/149/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/149/survey_questions/365"
+                },
+                "survey": {
+                  "href": "/api/surveys/149"
+                }
+              }
+            },
+            {
+              "id": 366,
+              "text": "To what extent do you feel accepted by the person/people you are interacting with?",
+              "type": "range",
+              "responses": [
+                "0",
+                "10"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/149/survey_questions/366"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/149/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/149/survey_questions/366"
+                },
+                "survey": {
+                  "href": "/api/surveys/149"
+                }
+              }
+            },
+            {
+              "id": 361,
+              "text": "How do you feel right now?",
+              "type": "range",
+              "responses": [
+                "0",
+                "10"
+              ],
+              "answer": "foo",
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/149/survey_questions/361"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/149/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/149/survey_questions/361"
+                },
+                "survey": {
+                  "href": "/api/surveys/149"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:28:31 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/?random=true
+    body:
+      encoding: UTF-8
+      string: '{"survey":{"user_id":154}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"9dc3b8749ba334db1b89c58409bdd939"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 84b65546-87d2-467f-8993-14d41bcd33a5
+      X-Runtime:
+      - '0.028870'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:28:38 GMT
+      Content-Length:
+      - '3474'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 150,
+          "user_id": 154,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/150"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/150/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/150/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 367,
+              "text": "How do you feel right now?",
+              "type": "range",
+              "responses": [
+                "0",
+                "10"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/150/survey_questions/367"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/150/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/150/survey_questions/367"
+                },
+                "survey": {
+                  "href": "/api/surveys/150"
+                }
+              }
+            },
+            {
+              "id": 368,
+              "text": "Where are you?",
+              "type": "multiple",
+              "responses": [
+                "At Home",
+                "At Work",
+                "In a car",
+                "Other"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/150/survey_questions/368"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/150/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/150/survey_questions/368"
+                },
+                "survey": {
+                  "href": "/api/surveys/150"
+                }
+              }
+            },
+            {
+              "id": 369,
+              "text": "To what extent is what you're doing interesting?",
+              "type": "range",
+              "responses": [
+                "0",
+                "10"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/150/survey_questions/369"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/150/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/150/survey_questions/369"
+                },
+                "survey": {
+                  "href": "/api/surveys/150"
+                }
+              }
+            },
+            {
+              "id": 370,
+              "text": "On average, how many hours do you work each week?",
+              "type": "multiple",
+              "responses": [
+                "Less than 5",
+                "5-10",
+                "10-20",
+                "20-30",
+                "30-40",
+                "40-50",
+                "50-60",
+                "60-70",
+                "More than 70"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/150/survey_questions/370"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/150/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/150/survey_questions/370"
+                },
+                "survey": {
+                  "href": "/api/surveys/150"
+                }
+              }
+            },
+            {
+              "id": 371,
+              "text": "To what extent do you expect good things to happen in the future?",
+              "type": "range",
+              "responses": [
+                "0",
+                "10"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/150/survey_questions/371"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/150/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/150/survey_questions/371"
+                },
+                "survey": {
+                  "href": "/api/surveys/150"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:28:38 GMT
+- request:
+    method: put
+    uri: http://localhost:3000//api/surveys/150/survey_questions/367/
+    body:
+      encoding: UTF-8
+      string: '{"id":367,"survey_question":{"answer":"foo"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - a50ded41-551b-436c-9bac-f41fae53ed88
+      X-Runtime:
+      - '0.008671'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:28:38 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:28:38 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/150
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"cb401d6ca5411dbfda447e22c18b8b48"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1dfa65f2-c9b3-4850-a2dc-0502ab87b08e
+      X-Runtime:
+      - '0.018579'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:28:38 GMT
+      Content-Length:
+      - '3475'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 150,
+          "user_id": 154,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/150"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/150/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/150/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 368,
+              "text": "Where are you?",
+              "type": "multiple",
+              "responses": [
+                "At Home",
+                "At Work",
+                "In a car",
+                "Other"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/150/survey_questions/368"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/150/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/150/survey_questions/368"
+                },
+                "survey": {
+                  "href": "/api/surveys/150"
+                }
+              }
+            },
+            {
+              "id": 369,
+              "text": "To what extent is what you're doing interesting?",
+              "type": "range",
+              "responses": [
+                "0",
+                "10"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/150/survey_questions/369"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/150/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/150/survey_questions/369"
+                },
+                "survey": {
+                  "href": "/api/surveys/150"
+                }
+              }
+            },
+            {
+              "id": 370,
+              "text": "On average, how many hours do you work each week?",
+              "type": "multiple",
+              "responses": [
+                "Less than 5",
+                "5-10",
+                "10-20",
+                "20-30",
+                "30-40",
+                "40-50",
+                "50-60",
+                "60-70",
+                "More than 70"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/150/survey_questions/370"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/150/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/150/survey_questions/370"
+                },
+                "survey": {
+                  "href": "/api/surveys/150"
+                }
+              }
+            },
+            {
+              "id": 371,
+              "text": "To what extent do you expect good things to happen in the future?",
+              "type": "range",
+              "responses": [
+                "0",
+                "10"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/150/survey_questions/371"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/150/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/150/survey_questions/371"
+                },
+                "survey": {
+                  "href": "/api/surveys/150"
+                }
+              }
+            },
+            {
+              "id": 367,
+              "text": "How do you feel right now?",
+              "type": "range",
+              "responses": [
+                "0",
+                "10"
+              ],
+              "answer": "foo",
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/150/survey_questions/367"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/150/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/150/survey_questions/367"
+                },
+                "survey": {
+                  "href": "/api/surveys/150"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:28:38 GMT
+- request:
+    method: post
+    uri: http://localhost:3000//api/surveys/151/survey_questions/
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":8}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"69458e6bef3093377665a34fe6462b9f"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - dee8a2b7-e028-4447-9960-9af7df1bbe6c
+      X-Runtime:
+      - '0.009458'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:28:38 GMT
+      Content-Length:
+      - '184'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 372,
+          "survey_id": 151,
+          "question_id": 8,
+          "order_index": null,
+          "answer": null,
+          "created_at": "2014-09-14T17:28:38.547Z",
+          "updated_at": "2014-09-14T17:28:38.547Z"
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:28:38 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/151
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"060c06b573c1a06ef0f0b2af8c84c706"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6edbfa01-8110-4493-8ce5-b24fe016b69d
+      X-Runtime:
+      - '0.008930'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:28:38 GMT
+      Content-Length:
+      - '984'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 151,
+          "user_id": 155,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/151"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/151/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/151/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 372,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/151/survey_questions/372"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/151/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/151/survey_questions/372"
+                },
+                "survey": {
+                  "href": "/api/surveys/151"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:28:38 GMT
+- request:
+    method: put
+    uri: http://localhost:3000//api/surveys/151/survey_questions/372/
+    body:
+      encoding: UTF-8
+      string: '{"id":372,"survey_question":{"answer":"true"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 0dbca00a-1dbe-4aa7-94a0-82b08684768d
+      X-Runtime:
+      - '0.009277'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:28:38 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:28:38 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/151
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"33b622f55ef65529b64fa60741012c89"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 93fd4351-1c95-415e-b940-040dcd60485b
+      X-Runtime:
+      - '0.008855'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:28:38 GMT
+      Content-Length:
+      - '986'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 151,
+          "user_id": 155,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/151"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/151/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/151/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 372,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": "true",
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/151/survey_questions/372"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/151/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/151/survey_questions/372"
+                },
+                "survey": {
+                  "href": "/api/surveys/151"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:28:38 GMT
+- request:
+    method: post
+    uri: http://localhost:3000//api/surveys/154/survey_questions/
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":8}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"bd7babb5794168de99b44e648a825932"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0ac8d4d7-b833-4bb1-afd9-505861675a02
+      X-Runtime:
+      - '0.008817'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:28:56 GMT
+      Content-Length:
+      - '184'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 379,
+          "survey_id": 154,
+          "question_id": 8,
+          "order_index": null,
+          "answer": null,
+          "created_at": "2014-09-14T17:28:56.329Z",
+          "updated_at": "2014-09-14T17:28:56.329Z"
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:28:56 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/154
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"99d1d78813296dbc28aee099c3be01aa"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cb55b96d-1a9d-4f52-93c3-335d0a5867f8
+      X-Runtime:
+      - '0.010392'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:28:56 GMT
+      Content-Length:
+      - '984'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 154,
+          "user_id": 158,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/154"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/154/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/154/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 379,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/154/survey_questions/379"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/154/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/154/survey_questions/379"
+                },
+                "survey": {
+                  "href": "/api/surveys/154"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:28:56 GMT
+- request:
+    method: put
+    uri: http://localhost:3000//api/surveys/154/survey_questions/379/
+    body:
+      encoding: UTF-8
+      string: '{"id":379,"survey_question":{"answer":"true"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 8d297b26-22c3-4c62-9a36-3d59449d89c7
+      X-Runtime:
+      - '0.007784'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:28:56 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:28:56 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/154
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"5b5af726f0bfa89b051cbfff00ab09bc"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ea59cdc5-6221-4d4a-9b77-8854a20c5735
+      X-Runtime:
+      - '0.011118'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:28:56 GMT
+      Content-Length:
+      - '986'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 154,
+          "user_id": 158,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/154"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/154/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/154/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 379,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": "true",
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/154/survey_questions/379"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/154/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/154/survey_questions/379"
+                },
+                "survey": {
+                  "href": "/api/surveys/154"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:28:56 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"c4942090acbc96722cba50e4cecfde73"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 17f7b4b2-4133-4452-8548-b9f9879d8553
+      X-Runtime:
+      - '0.004696'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:29:27 GMT
+      Content-Length:
+      - '236'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/"
+            },
+            "surveys": {
+              "href": "api/surveys"
+            },
+            "users": {
+              "href": "api/users"
+            },
+            "questions": {
+              "href": "api/questions"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:29:27 GMT
+- request:
+    method: post
+    uri: http://localhost:3000//api/surveys/155/survey_questions/
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":8}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"91eb5dfc7e5226c8c2a0de4880bff6f0"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 497cee8f-fcc6-4b76-aa07-e4ac96fdb7d8
+      X-Runtime:
+      - '0.010300'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:29:28 GMT
+      Content-Length:
+      - '184'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 380,
+          "survey_id": 155,
+          "question_id": 8,
+          "order_index": null,
+          "answer": null,
+          "created_at": "2014-09-14T17:29:28.052Z",
+          "updated_at": "2014-09-14T17:29:28.052Z"
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:29:28 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/155
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"ad9b356bb0f30182c4765f1827845905"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2973887a-aca4-4970-b1a6-ea6d4f606081
+      X-Runtime:
+      - '0.009374'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:29:28 GMT
+      Content-Length:
+      - '984'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 155,
+          "user_id": 159,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/155"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/155/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/155/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 380,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/155/survey_questions/380"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/155/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/155/survey_questions/380"
+                },
+                "survey": {
+                  "href": "/api/surveys/155"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:29:28 GMT
+- request:
+    method: put
+    uri: http://localhost:3000//api/surveys/155/survey_questions/380/
+    body:
+      encoding: UTF-8
+      string: '{"id":380,"survey_question":{"answer":"true"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 4ed14637-f390-4e28-a7bc-43a54be018b9
+      X-Runtime:
+      - '0.008524'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:29:28 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:29:28 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/155
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"4008f03936078d7db634acff5080acad"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4daeafc9-b066-4f91-b8ff-cdbf49a68079
+      X-Runtime:
+      - '0.010056'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:29:28 GMT
+      Content-Length:
+      - '986'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 155,
+          "user_id": 159,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/155"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/155/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/155/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 380,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": "true",
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/155/survey_questions/380"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/155/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/155/survey_questions/380"
+                },
+                "survey": {
+                  "href": "/api/surveys/155"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:29:28 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"c4942090acbc96722cba50e4cecfde73"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c8ad3b3c-a83b-452e-90bf-85099467ffc2
+      X-Runtime:
+      - '0.004110'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:30:21 GMT
+      Content-Length:
+      - '236'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/"
+            },
+            "surveys": {
+              "href": "api/surveys"
+            },
+            "users": {
+              "href": "api/users"
+            },
+            "questions": {
+              "href": "api/questions"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:30:21 GMT
+- request:
+    method: post
+    uri: http://localhost:3000//api/surveys/156/survey_questions/
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":8}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"c31d892d248f75d0cde5fdf3bffd564d"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2c9d5afa-3030-4ff8-90ef-e83ab419becb
+      X-Runtime:
+      - '0.011335'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:30:21 GMT
+      Content-Length:
+      - '184'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 381,
+          "survey_id": 156,
+          "question_id": 8,
+          "order_index": null,
+          "answer": null,
+          "created_at": "2014-09-14T17:30:21.919Z",
+          "updated_at": "2014-09-14T17:30:21.919Z"
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:30:21 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/156
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"36c3d718c32944cbd46a4ab79d4f1b4f"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c98a0a42-d54c-45e2-9a60-6671b775d327
+      X-Runtime:
+      - '0.014606'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:30:21 GMT
+      Content-Length:
+      - '984'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 156,
+          "user_id": 160,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/156"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/156/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/156/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 381,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/156/survey_questions/381"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/156/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/156/survey_questions/381"
+                },
+                "survey": {
+                  "href": "/api/surveys/156"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:30:21 GMT
+- request:
+    method: put
+    uri: http://localhost:3000//api/surveys/156/survey_questions/381/
+    body:
+      encoding: UTF-8
+      string: '{"id":381,"survey_question":{"answer":"true"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 38d29ea5-7c08-4041-ae98-1982aed7a85a
+      X-Runtime:
+      - '0.008526'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:30:21 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:30:21 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/156
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"50c85bd0c7db7115037e7b7c3a532911"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5e39b985-11d5-4b3b-8605-c63a655a7961
+      X-Runtime:
+      - '0.010733'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:30:21 GMT
+      Content-Length:
+      - '986'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 156,
+          "user_id": 160,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/156"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/156/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/156/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 381,
+              "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+              "type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": "true",
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/156/survey_questions/381"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/156/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/156/survey_questions/381"
+                },
+                "survey": {
+                  "href": "/api/surveys/156"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:30:21 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"c4942090acbc96722cba50e4cecfde73"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2aafed0c-83bb-4507-a935-d0a57f7653a0
+      X-Runtime:
+      - '0.004173'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 14 Sep 2014 17:30:34 GMT
+      Content-Length:
+      - '236'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/"
+            },
+            "surveys": {
+              "href": "api/surveys"
+            },
+            "users": {
+              "href": "api/users"
+            },
+            "questions": {
+              "href": "api/questions"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sun, 14 Sep 2014 17:30:34 GMT
+- request:
     method: get
     uri: http://localhost:3000/api/questions/
     body:
@@ -8779,13 +12559,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 33a174fc-025d-4223-84ff-c53802bd7a38
+      - 3193413b-d694-4b47-bf50-806da04cce60
       X-Runtime:
-      - '0.008308'
+      - '0.012003'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Sat, 13 Sep 2014 15:35:04 GMT
+      - Sun, 14 Sep 2014 17:30:34 GMT
       Content-Length:
       - '7773'
       Connection:
@@ -9160,7 +12940,7 @@ http_interactions:
           }
         ]
     http_version: 
-  recorded_at: Sat, 13 Sep 2014 15:35:04 GMT
+  recorded_at: Sun, 14 Sep 2014 17:30:34 GMT
 - request:
     method: post
     uri: http://localhost:3000/api/users/
@@ -9194,41 +12974,42 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"1dbfce492b50e700954bbe3da2d30009"'
+      - '"57a36dd1a23ff5f93c5c9d257e3a4f38"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 821878e0-736f-44dc-ae7a-7928bb4a251f
+      - 8adfd3da-b623-44b7-9bb5-70064ec5f0f8
       X-Runtime:
-      - '0.007008'
+      - '0.008079'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Sat, 13 Sep 2014 15:35:04 GMT
+      - Sun, 14 Sep 2014 17:30:34 GMT
       Content-Length:
-      - '132'
+      - '275'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "id": 118,
+          "id": 161,
           "external_user_id": 42,
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/users/118"
+              "href": "http://localhost:3000/api/users/161"
             }
-          }
+          },
+          "token": "4de57df1e6930a6bf3cc5f6f61e97fd60c855e18245bc2b07522d635eee6bbdb022043f0d467609ebffaee4962728d2d79fdf57d545e76bcaabe03a64b9be1b3"
         }
     http_version: 
-  recorded_at: Sat, 13 Sep 2014 15:35:04 GMT
+  recorded_at: Sun, 14 Sep 2014 17:30:34 GMT
 - request:
     method: post
     uri: http://localhost:3000/api/surveys/
     body:
       encoding: UTF-8
-      string: '{"survey":{"user_id":118}}'
+      string: '{"survey":{"user_id":161}}'
     headers:
       User-Agent:
       - Faraday v0.9.0
@@ -9256,33 +13037,38 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"b728df6e4a2864ee97949f03a1099c76"'
+      - '"2f8014cb94304a991c55ffc7f016f0b5"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b7960ca4-b4db-4386-9750-9b9c35f813ef
+      - 71f53563-12ca-42ee-9fbb-2fdf90725618
       X-Runtime:
-      - '0.008788'
+      - '0.008595'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Sat, 13 Sep 2014 15:35:04 GMT
+      - Sun, 14 Sep 2014 17:30:34 GMT
       Content-Length:
-      - '272'
+      - '363'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "id": 119,
-          "user_id": 118,
+          "id": 157,
+          "user_id": 161,
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/surveys/119"
+              "href": "http://localhost:3000/api/surveys/157"
             },
-            "submit": {
-              "href": "http://localhost:3000/api/surveys/119/survey_questions"
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/157/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/157/survey_questions"
+              }
             }
           },
           "completed": false,
@@ -9291,10 +13077,10 @@ http_interactions:
           ]
         }
     http_version: 
-  recorded_at: Sat, 13 Sep 2014 15:35:04 GMT
+  recorded_at: Sun, 14 Sep 2014 17:30:34 GMT
 - request:
     method: post
-    uri: http://localhost:3000/api/surveys/119/survey_questions
+    uri: http://localhost:3000//api/surveys/157/survey_questions/
     body:
       encoding: UTF-8
       string: '{"survey_question":{"question_id":8}}'
@@ -9325,17 +13111,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"022d4e9d1a1865d42ec5a0f5fc5233a8"'
+      - '"5488449d000062d542b6949694c3b6ad"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 98087709-1622-4cba-bbb8-76cb00f8cb0a
+      - f2b027a4-1605-40e2-8840-fd862d0ba2c6
       X-Runtime:
-      - '0.009345'
+      - '0.009292'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Sat, 13 Sep 2014 15:35:04 GMT
+      - Sun, 14 Sep 2014 17:30:34 GMT
       Content-Length:
       - '184'
       Connection:
@@ -9344,19 +13130,19 @@ http_interactions:
       encoding: UTF-8
       string: |-
         {
-          "id": 282,
-          "survey_id": 119,
+          "id": 382,
+          "survey_id": 157,
           "question_id": 8,
           "order_index": null,
           "answer": null,
-          "created_at": "2014-09-13T15:35:04.912Z",
-          "updated_at": "2014-09-13T15:35:04.912Z"
+          "created_at": "2014-09-14T17:30:34.562Z",
+          "updated_at": "2014-09-14T17:30:34.562Z"
         }
     http_version: 
-  recorded_at: Sat, 13 Sep 2014 15:35:04 GMT
+  recorded_at: Sun, 14 Sep 2014 17:30:34 GMT
 - request:
     method: get
-    uri: http://localhost:3000/api/surveys/119
+    uri: http://localhost:3000/api/surveys/157
     body:
       encoding: US-ASCII
       string: ''
@@ -9387,39 +13173,44 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"1a80881165eef2eb00ac37131619dcb1"'
+      - '"e04c2001b98f8b6535735b1d9c07278e"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 03256794-0d3c-4832-bcaa-1dbcf085414e
+      - a770a537-a0bb-4d60-ad62-a286f2c6456f
       X-Runtime:
-      - '0.008545'
+      - '0.009553'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Sat, 13 Sep 2014 15:35:04 GMT
+      - Sun, 14 Sep 2014 17:30:34 GMT
       Content-Length:
-      - '961'
+      - '984'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "id": 119,
-          "user_id": 118,
+          "id": 157,
+          "user_id": 161,
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/surveys/119"
+              "href": "http://localhost:3000/api/surveys/157"
             },
-            "submit": {
-              "href": "http://localhost:3000/api/surveys/119/survey_questions"
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/157/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/157/survey_questions"
+              }
             }
           },
           "completed": false,
           "survey_questions": [
             {
-              "id": 282,
+              "id": 382,
               "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
               "type": "boolean",
               "responses": [
@@ -9430,29 +13221,29 @@ http_interactions:
               "freeform": false,
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/119/survey_questions/282"
+                  "href": "/api/surveys/157/survey_questions/382"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/157/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/157/survey_questions/382"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/119"
-                },
-                "create": {
-                  "href": "http://localhost:3000/api/surveys/119/survey_questions"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/119/survey_questions/282"
+                  "href": "/api/surveys/157"
                 }
               }
             }
           ]
         }
     http_version: 
-  recorded_at: Sat, 13 Sep 2014 15:35:04 GMT
+  recorded_at: Sun, 14 Sep 2014 17:30:34 GMT
 - request:
     method: put
-    uri: http://localhost:3000/api/surveys/119/survey_questions/282
+    uri: http://localhost:3000//api/surveys/157/survey_questions/382/
     body:
       encoding: UTF-8
-      string: '{"id":282,"survey_question":{"answer":"true"}}'
+      string: '{"id":382,"survey_question":{"answer":"true"}}'
     headers:
       User-Agent:
       - Faraday v0.9.0
@@ -9480,23 +13271,23 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 5fe52f58-37a7-47a1-bb7b-fdc0f1f46850
+      - 2662b016-8c83-4a05-9016-4819cc58255b
       X-Runtime:
-      - '0.009367'
+      - '0.007633'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Sat, 13 Sep 2014 15:35:04 GMT
+      - Sun, 14 Sep 2014 17:30:34 GMT
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 13 Sep 2014 15:35:04 GMT
+  recorded_at: Sun, 14 Sep 2014 17:30:34 GMT
 - request:
     method: get
-    uri: http://localhost:3000/api/surveys/119
+    uri: http://localhost:3000/api/surveys/157
     body:
       encoding: US-ASCII
       string: ''
@@ -9527,39 +13318,44 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"1a876ff6d7fdcd6f8d9ec4aa755a6ad2"'
+      - '"bde36c17702e0a7b74ae82f4ebeaac23"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6002f70f-9bed-4f37-b0f7-885428055881
+      - cb4eac42-4316-4edb-8596-9dff919d2049
       X-Runtime:
-      - '0.010838'
+      - '0.010682'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Sat, 13 Sep 2014 15:35:04 GMT
+      - Sun, 14 Sep 2014 17:30:34 GMT
       Content-Length:
-      - '963'
+      - '986'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "id": 119,
-          "user_id": 118,
+          "id": 157,
+          "user_id": 161,
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/surveys/119"
+              "href": "http://localhost:3000/api/surveys/157"
             },
-            "submit": {
-              "href": "http://localhost:3000/api/surveys/119/survey_questions"
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/157/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/157/survey_questions"
+              }
             }
           },
           "completed": false,
           "survey_questions": [
             {
-              "id": 282,
+              "id": 382,
               "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
               "type": "boolean",
               "responses": [
@@ -9570,21 +13366,21 @@ http_interactions:
               "freeform": false,
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/119/survey_questions/282"
+                  "href": "/api/surveys/157/survey_questions/382"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/157/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/157/survey_questions/382"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/119"
-                },
-                "create": {
-                  "href": "http://localhost:3000/api/surveys/119/survey_questions"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/119/survey_questions/282"
+                  "href": "/api/surveys/157"
                 }
               }
             }
           ]
         }
     http_version: 
-  recorded_at: Sat, 13 Sep 2014 15:35:04 GMT
+  recorded_at: Sun, 14 Sep 2014 17:30:34 GMT
 recorded_with: VCR 2.6.0

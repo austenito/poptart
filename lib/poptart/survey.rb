@@ -18,20 +18,14 @@ module Poptart
     end
 
     def add_question(question)
-      response = post("#{links.self.href}/survey_questions",
-                                      { survey_question: { question_id: question.id } } )
+      url = build_url(links.survey_questions.post.href)
+      response = post(url, { survey_question: { question_id: question.id } } )
       response.status == 201
     end
 
     def survey_question_for_id(id)
       survey_questions.find do |survey_question|
         survey_question.id == id.to_i
-      end
-    end
-
-    def next_question
-      if links['next']
-        SurveyQuestion.for_url(links['next']['href'])
       end
     end
 

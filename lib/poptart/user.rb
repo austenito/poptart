@@ -46,15 +46,5 @@ module Poptart
     def survey_questions_for_question_id(question_id)
 
     end
-
-    private
-
-    def self.root
-      Poptart::Root.get_root
-    end
-
-    def root
-      Poptart::Root.get_root
-    end
   end
 end

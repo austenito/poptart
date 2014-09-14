@@ -35,7 +35,8 @@ module Poptart
     end
 
     def submit
-      response = put(links.submit.href, { id: id, survey_question: { answer: answer} })
+      url = build_url(links.put.href)
+      response = put(url, { id: id, survey_question: { answer: answer} })
       response.status == 204
     end
   end

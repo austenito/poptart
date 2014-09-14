@@ -22,8 +22,8 @@ require 'hashie'
 require "addressable/template"
 
 require_relative 'version'
-require_relative 'poptart/model'
 require_relative 'poptart/request'
+require_relative 'poptart/model'
 require_relative 'poptart/root'
 require_relative 'poptart/survey'
 require_relative 'poptart/survey_question'
