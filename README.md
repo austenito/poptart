@@ -24,4 +24,21 @@ user.survey_for_id(id)
 user.survey_for_url #=> Do I want to get rid of this?
 ```
 
+### User Attributes
+
+```
+user.id # => 14
+user.token # => "1234abc"
+user.surveys ? # Need to add this
+```
+
+## Question
+
+To find all questions:
+
+```
+questions = Question.all
+
+```
+
 
