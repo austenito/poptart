@@ -2,21 +2,21 @@ module Poptart
   class User < Model
     extend Poptart::Request
     include Poptart::Request
-    attr_accessor :external_user_id, :token
+    attr_accessor :service_user_id, :token
 
     def initialize(response)
       super
-      @external_user_id = params['external_user_id'].to_i
+      @service_user_id = params['service_user_id']
       @token = params['token']
     end
 
-    def self.create(external_user_id)
-      response = post(root.users_url, user: { external_user_id: external_user_id })
+    def self.create
+      response = post(root.users_url)
       Poptart::User.new(response)
     end
 
-    def self.for_id(external_user_id)
-      url = root.users_url(id: external_user_id)
+    def self.for_id(service_user_id)
+      url = root.users_url(id: service_user_id)
       response = get(url)
       Poptart::User.new(response)
     end

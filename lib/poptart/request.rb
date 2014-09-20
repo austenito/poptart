@@ -19,7 +19,7 @@ module Poptart
       end
     end
 
-    def post(url, data, headers = {})
+    def post(url, data = {}, headers = {})
       connection.post do |req|
         req.url(url)
         req.body = data.to_json if data
