@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    poptart (0.0.6)
+    poptart (0.0.7)
       activesupport
       addressable
       faraday
