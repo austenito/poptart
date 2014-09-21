@@ -4,14 +4,14 @@ describe 'Answering survey questions' do
   it "creates and returns an empty survey", :vcr do
     user = Poptart::User.create
     survey = user.create_survey
-    survey.user_id.should == user.id
+    survey.service_user_id.should == user.service_user_id
     survey.survey_questions.count.should == 0
   end
 
   it "creates and returns a random question survey", :vcr do
     user = Poptart::User.create
     survey = user.create_random_survey
-    survey.user_id.should == user.id
+    survey.service_user_id.should == user.service_user_id
     survey.survey_questions.count.should == 5
   end
 

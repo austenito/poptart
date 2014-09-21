@@ -1,11 +1,11 @@
 module Poptart
   class Survey < Model
     include Poptart::Request
-    attr_accessor :user_id, :survey_questions
+    attr_accessor :service_user_id, :survey_questions
 
     def initialize(response)
       super
-      @user_id = params['user_id']
+      @service_user_id = params['service_user_id']
       @completed = params['completed']
 
       @survey_questions = params['survey_questions'].map do |survey_question|

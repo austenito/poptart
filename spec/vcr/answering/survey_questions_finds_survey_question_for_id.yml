@@ -1068,42 +1068,41 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"a8f199bc6caa5fff3d3449c465eabfea"'
+      - '"f8643c8d38f3e576797fed94dfd3fc15"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7eeafa78-636e-4805-ad42-b5991318b0f9
+      - fe1f3ee8-dee9-4b31-8ed9-a8c7551ea00d
       X-Runtime:
-      - '0.006511'
+      - '0.006452'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Sat, 20 Sep 2014 14:14:34 GMT
+      - Sun, 21 Sep 2014 20:28:02 GMT
       Content-Length:
-      - '272'
+      - '260'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "id": 12,
-          "service_user_id": "3aa49be2db36a85fe4c6b19e6345c8379836716ee035c972e748c7c71195864c",
+          "service_user_id": "f1ea49729c79e973903b1de97b4f80e28d0bd9260782c96bdc3628f53a132c7d",
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/users/12"
+              "href": "http://localhost:3000/api/users/87"
             }
           },
-          "token": "2965f424f516ad23160aecf4bb6c9131c31439a129a976981237b1b0fbd8754b"
+          "token": "e35c7c4e976117deb3662d5e6ead4a399d66340ac62a75e4b30542424b3019f8"
         }
     http_version: 
-  recorded_at: Sat, 20 Sep 2014 14:14:34 GMT
+  recorded_at: Sun, 21 Sep 2014 20:28:02 GMT
 - request:
     method: post
     uri: http://localhost:3000/api/surveys/?random=true
     body:
       encoding: UTF-8
-      string: '{"survey":{"user_id":12}}'
+      string: '{"survey":{"service_user_id":"f1ea49729c79e973903b1de97b4f80e28d0bd9260782c96bdc3628f53a132c7d"}}'
     headers:
       User-Agent:
       - Faraday v0.9.0
@@ -1131,44 +1130,44 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"8d698a52db0f4c5b310716c034a655e3"'
+      - '"75a51a8eaba89802259be1673587b088"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 48bcc608-571e-488e-85af-ec24f2f6d832
+      - 31f67021-f535-4798-995e-17fa183f3b56
       X-Runtime:
-      - '0.039988'
+      - '0.038826'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Sat, 20 Sep 2014 14:14:34 GMT
+      - Sun, 21 Sep 2014 20:28:02 GMT
       Content-Length:
-      - '4487'
+      - '3682'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "id": 12,
-          "user_id": 12,
+          "id": 87,
+          "service_user_id": "f1ea49729c79e973903b1de97b4f80e28d0bd9260782c96bdc3628f53a132c7d",
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/surveys/12"
+              "href": "http://localhost:3000/api/surveys/87"
             },
             "survey_questions": {
               "post": {
-                "href": "/api/surveys/12/survey_questions"
+                "href": "/api/surveys/87/survey_questions"
               },
               "put": {
-                "href": "/api/surveys/12/survey_questions"
+                "href": "/api/surveys/87/survey_questions"
               }
             }
           },
           "completed": false,
           "survey_questions": [
             {
-              "id": 30,
+              "id": 275,
               "text": "How do you feel right now?",
               "type": "range",
               "responses": [
@@ -1179,21 +1178,21 @@ http_interactions:
               "freeform": false,
               "_links": {
                 "self": {
-                  "href": "/api/surveys/12/survey_questions/30"
+                  "href": "/api/surveys/87/survey_questions/275"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/12/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/87/survey_questions"
                 },
                 "put": {
-                  "href": "/api/surveys/12/survey_questions/30"
+                  "href": "/api/surveys/87/survey_questions/275"
                 },
                 "survey": {
-                  "href": "/api/surveys/12"
+                  "href": "/api/surveys/87"
                 }
               }
             },
             {
-              "id": 31,
+              "id": 276,
               "text": "Where are you?",
               "type": "multiple",
               "responses": [
@@ -1206,149 +1205,105 @@ http_interactions:
               "freeform": true,
               "_links": {
                 "self": {
-                  "href": "/api/surveys/12/survey_questions/31"
+                  "href": "/api/surveys/87/survey_questions/276"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/12/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/87/survey_questions"
                 },
                 "put": {
-                  "href": "/api/surveys/12/survey_questions/31"
+                  "href": "/api/surveys/87/survey_questions/276"
                 },
                 "survey": {
-                  "href": "/api/surveys/12"
+                  "href": "/api/surveys/87"
                 }
               }
             },
             {
-              "id": 32,
-              "text": "Who are you talking or interacting with?",
+              "id": 277,
+              "text": "On average, how many hours do you work each week?",
               "type": "multiple",
               "responses": [
-                "Spouse/partner/significant other",
-                "Children",
-                "Parents",
-                "Other relatives",
-                "Friends",
-                "Acquaintances",
-                "Strangers",
-                "Co-workers",
-                "Customers/students",
-                "Boss",
-                "No one"
-              ],
-              "answer": null,
-              "freeform": true,
-              "_links": {
-                "self": {
-                  "href": "/api/surveys/12/survey_questions/32"
-                },
-                "post": {
-                  "href": "http://localhost:3000/api/surveys/12/survey_questions"
-                },
-                "put": {
-                  "href": "/api/surveys/12/survey_questions/32"
-                },
-                "survey": {
-                  "href": "/api/surveys/12"
-                }
-              }
-            },
-            {
-              "id": 33,
-              "text": "How many people are you talking or interacting with?",
-              "type": "multiple",
-              "responses": [
-                "0",
-                "1",
-                "2",
-                "3",
-                "4",
-                "5",
-                "6",
-                "7",
-                "8",
-                "9",
-                "10",
-                "More than 10"
+                "Less than 5",
+                "5-10",
+                "10-20",
+                "20-30",
+                "30-40",
+                "40-50",
+                "50-60",
+                "60-70",
+                "More than 70"
               ],
               "answer": null,
               "freeform": false,
               "_links": {
                 "self": {
-                  "href": "/api/surveys/12/survey_questions/33"
+                  "href": "/api/surveys/87/survey_questions/277"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/12/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/87/survey_questions"
                 },
                 "put": {
-                  "href": "/api/surveys/12/survey_questions/33"
+                  "href": "/api/surveys/87/survey_questions/277"
                 },
                 "survey": {
-                  "href": "/api/surveys/12"
+                  "href": "/api/surveys/87"
                 }
               }
             },
             {
-              "id": 34,
-              "text": "Imagine you were given $10 to divide between yourself and a stranger to whom you would remain anonymous. How much would you give to the stranger?",
+              "id": 278,
+              "text": "Are you judging or evaluating what you are doing right now (i.e. at the moment just before you were notified?)",
               "type": "multiple",
               "responses": [
-                "0",
-                "1",
-                "2",
-                "3",
-                "4",
-                "5",
-                "6",
-                "7",
-                "8",
-                "9",
-                "10"
+                "f",
+                "Yes - Negatively",
+                "Yes - Neutrally",
+                "Yes - Positively"
               ],
               "answer": null,
               "freeform": false,
               "_links": {
                 "self": {
-                  "href": "/api/surveys/12/survey_questions/34"
+                  "href": "/api/surveys/87/survey_questions/278"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/12/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/87/survey_questions"
                 },
                 "put": {
-                  "href": "/api/surveys/12/survey_questions/34"
+                  "href": "/api/surveys/87/survey_questions/278"
                 },
                 "survey": {
-                  "href": "/api/surveys/12"
+                  "href": "/api/surveys/87"
                 }
               }
             },
             {
-              "id": 35,
-              "text": "To what extent do you feel accepted by the person/people you are interacting with?",
-              "type": "range",
+              "id": 279,
+              "text": "If you could, and it had no negative consequences, would you jump forward in time 24 hours?",
+              "type": "boolean",
               "responses": [
-                "0",
-                "10"
+                "t",
+                "f"
               ],
               "answer": null,
               "freeform": false,
               "_links": {
                 "self": {
-                  "href": "/api/surveys/12/survey_questions/35"
+                  "href": "/api/surveys/87/survey_questions/279"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/12/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/87/survey_questions"
                 },
                 "put": {
-                  "href": "/api/surveys/12/survey_questions/35"
+                  "href": "/api/surveys/87/survey_questions/279"
                 },
                 "survey": {
-                  "href": "/api/surveys/12"
+                  "href": "/api/surveys/87"
                 }
               }
             }
           ]
         }
     http_version: 
-  recorded_at: Sat, 20 Sep 2014 14:14:34 GMT
+  recorded_at: Sun, 21 Sep 2014 20:28:02 GMT
 recorded_with: VCR 2.6.0

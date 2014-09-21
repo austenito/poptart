@@ -22,13 +22,13 @@ module Poptart
     end
 
     def create_survey
-      response = post(root.surveys_url, survey: { user_id: id })
+      response = post(root.surveys_url, survey: { service_user_id: service_user_id })
       Poptart::Survey.new(response)
     end
 
     def create_random_survey
       url = root.surveys_url(query: {random: true})
-      response = post(url, survey: { user_id: id })
+      response = post(url, survey: { service_user_id: service_user_id })
       Poptart::Survey.new(response)
     end
 
