@@ -28,7 +28,6 @@ user.survey_for_id(id)
 ## Question
 
 To find all questions:
-
 ```
 questions = Question.all
 
