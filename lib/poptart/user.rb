@@ -38,11 +38,6 @@ module Poptart
       Poptart::Survey.new(response)
     end
 
-    def survey_for_url(url)
-      response = get(url)
-      Survey.new.extend(SurveyRepresenter).from_json(response.body)
-    end
-
     def survey_questions_for_question_id(question_id)
 
     end

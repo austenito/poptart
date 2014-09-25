@@ -31,11 +31,9 @@ describe 'Answering survey questions' do
     boolean_questions = Poptart::Question.all(type: 'boolean')
     user = Poptart::User.create
     survey = user.create_survey
-    survey.add_question(boolean_questions.first).should be
+    survey_question = survey.add_question(boolean_questions.first)
 
-    survey = user.survey_for_id(survey.id)
     survey.survey_questions.count.should == 1
-    survey_question = survey.survey_questions.first
     survey_question.responses.should == ['t', 'f']
     survey_question.type.should == 'boolean'
 
@@ -51,11 +49,9 @@ describe 'Answering survey questions' do
     question = questions.find { |question| question.responses.include?('At Home') }
     user = Poptart::User.create
     survey = user.create_survey
-    survey.add_question(question).should be
+    survey_question = survey.add_question(question)
 
-    survey = user.survey_for_id(survey.id)
     survey.survey_questions.count.should == 1
-    survey_question = survey.survey_questions.first
     survey_question.responses.should == ["At Home", "At Work", "In a car", "Other"]
     survey_question.type.should == 'multiple'
 

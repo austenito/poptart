@@ -20,7 +20,9 @@ module Poptart
     def add_question(question)
       url = build_url(links.survey_questions.post.href)
       response = post(url, { survey_question: { question_id: question.id } } )
-      response.status == 201
+      if response.status == 201
+        Poptart::SurveyQuestion.new(response).tap { |survey_question| survey_questions << survey_question }
+      end
     end
 
     def survey_question_for_id(id)
