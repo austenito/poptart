@@ -1,0 +1,207 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"c4942090acbc96722cba50e4cecfde73"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 539da7fd-4545-4bd9-bb94-00306ef709c0
+      X-Runtime:
+      - '0.004558'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 28 Sep 2014 14:42:42 GMT
+      Content-Length:
+      - '236'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/"
+            },
+            "surveys": {
+              "href": "api/surveys"
+            },
+            "users": {
+              "href": "api/users"
+            },
+            "questions": {
+              "href": "api/questions"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sun, 28 Sep 2014 14:42:42 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"c4942090acbc96722cba50e4cecfde73"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b2e0b3de-668e-4651-9171-f789217b0f5a
+      X-Runtime:
+      - '0.003826'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 28 Sep 2014 14:43:00 GMT
+      Content-Length:
+      - '236'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/"
+            },
+            "surveys": {
+              "href": "api/surveys"
+            },
+            "users": {
+              "href": "api/users"
+            },
+            "questions": {
+              "href": "api/questions"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sun, 28 Sep 2014 14:43:00 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/questions/
+    body:
+      encoding: UTF-8
+      string: '{"question":{"question_type":"multiple","responses":["Yes","No"],"text":"Do
+        you like poptarts?","freeform":false,"absolute_index":null,"parent_question_id":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"f6e5852ba4f14e962fb6195400ec85d2"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5a358303-e7ac-4e00-88b7-6bbcab11a400
+      X-Runtime:
+      - '0.008645'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 28 Sep 2014 14:43:00 GMT
+      Content-Length:
+      - '199'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 83,
+          "question_type": "multiple",
+          "text": "Do you like poptarts?",
+          "responses": [
+            "Yes",
+            "No"
+          ],
+          "freeform": false,
+          "absolute_index": null,
+          "parent_question_id": null
+        }
+    http_version: 
+  recorded_at: Sun, 28 Sep 2014 14:43:00 GMT
+recorded_with: VCR 2.6.0

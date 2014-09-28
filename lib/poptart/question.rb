@@ -2,12 +2,25 @@ module Poptart
   class Question < Model
     extend Poptart::Request
 
-    attr_accessor :responses, :freeform
+    attr_accessor :responses, :freeform, :question_type, :absolute_index, :parent_question_id
 
     def initialize(response)
       super
       @responses = params['responses']
       @freeform = params['freeform']
+      @question_type = params['question_type']
+      @absolute_index = params['absolute_index']
+      @parent_question_id = params['parent_question_id']
+    end
+
+    def self.create(text, responses: [], freeform: false, absolute_index: nil, parent_question_id: nil)
+      response = post(root.questions_url, question: { question_type: question_type,
+                                                      responses: responses,
+                                                      text: text,
+                                                      freeform: freeform,
+                                                      absolute_index: absolute_index,
+                                                      parent_question_id: parent_question_id })
+      new(response)
     end
 
     def self.all(params = {})
