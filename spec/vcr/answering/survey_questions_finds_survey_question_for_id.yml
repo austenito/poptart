@@ -1,333 +1,6 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: http://localhost:3000/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"a723ac88b99a06c255a3384c2d01f4fb"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - c5a25952-0d62-4615-bc58-ca916bc21d27
-      X-Runtime:
-      - '0.004535'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Tue, 09 Sep 2014 23:20:54 GMT
-      Content-Length:
-      - '305'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api"
-            },
-            "surveys": {
-              "href": "http://localhost:3000/api/surveys"
-            },
-            "users": {
-              "href": "http://localhost:3000/api/users"
-            },
-            "questions": {
-              "href": "http://localhost:3000/api/questions"
-            }
-          }
-        }
-    http_version: 
-  recorded_at: Tue, 09 Sep 2014 23:20:54 GMT
-- request:
-    method: post
-    uri: http://localhost:3000/api/users
-    body:
-      encoding: UTF-8
-      string: '{"user":{"external_user_id":42}}'
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: 'Created '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"1984ca647e67bee3954a60eb3713a70e"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - da1652ba-34df-49c4-bdcd-b4dd8d6c80db
-      X-Runtime:
-      - '0.006685'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Tue, 09 Sep 2014 23:20:54 GMT
-      Content-Length:
-      - '130'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "id": 55,
-          "external_user_id": 42,
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/users/55"
-            }
-          }
-        }
-    http_version: 
-  recorded_at: Tue, 09 Sep 2014 23:20:54 GMT
-- request:
-    method: post
-    uri: http://localhost:3000/api/surveys?random=true
-    body:
-      encoding: UTF-8
-      string: '{"survey":{"user_id":55}}'
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: 'Created '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"1c41ed0fcd5af60ec158ee9028502ae8"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 0c15d971-0db0-4f01-896c-0c37a6b62acc
-      X-Runtime:
-      - '0.035550'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Tue, 09 Sep 2014 23:20:54 GMT
-      Content-Length:
-      - '4118'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "id": 46,
-          "user_id": 55,
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/surveys/46"
-            },
-            "submit": {
-              "href": "http://localhost:3000/api/surveys/46/survey_questions"
-            }
-          },
-          "survey_questions": [
-            {
-              "id": 126,
-              "text": "How do you feel right now?",
-              "type": "range",
-              "responses": [
-                "0",
-                "10"
-              ],
-              "answer": null,
-              "freeform": false,
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/46/survey_questions/126"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/46"
-                },
-                "create": {
-                  "href": "http://localhost:3000/api/surveys/46/survey_questions"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/46/survey_questions/126"
-                }
-              }
-            },
-            {
-              "id": 127,
-              "text": "Where are you?",
-              "type": "multiple",
-              "responses": [
-                "At Home",
-                "At Work",
-                "In a car",
-                "Other"
-              ],
-              "answer": null,
-              "freeform": true,
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/46/survey_questions/127"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/46"
-                },
-                "create": {
-                  "href": "http://localhost:3000/api/surveys/46/survey_questions"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/46/survey_questions/127"
-                }
-              }
-            },
-            {
-              "id": 128,
-              "text": "Are you judging or evaluating what you are doing right now (i.e. at the moment just before you were notified?)",
-              "type": "multiple",
-              "responses": [
-                "f",
-                "Yes - Negatively",
-                "Yes - Neutrally",
-                "Yes - Positively"
-              ],
-              "answer": null,
-              "freeform": false,
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/46/survey_questions/128"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/46"
-                },
-                "create": {
-                  "href": "http://localhost:3000/api/surveys/46/survey_questions"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/46/survey_questions/128"
-                }
-              }
-            },
-            {
-              "id": 129,
-              "text": "Where would you place yourself on this ladder?\nThink of a ladder representing where people stand in your country.\nAt the top of the ladder are the people who are the best off - those who have the most money, the most education and the most respected jobs. At the bottom are the people who are the worst off - who have the least money, least education, and the least respected jobs or no job. The higher up you are on the ladder, the closer you are to the people at the very top; the lower you are the closer you are to people at the very bottom.",
-              "type": "range",
-              "responses": [
-                "0",
-                "10"
-              ],
-              "answer": null,
-              "freeform": false,
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/46/survey_questions/129"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/46"
-                },
-                "create": {
-                  "href": "http://localhost:3000/api/surveys/46/survey_questions"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/46/survey_questions/129"
-                }
-              }
-            },
-            {
-              "id": 130,
-              "text": "Are you alone?",
-              "type": "boolean",
-              "responses": [
-                "t",
-                "f"
-              ],
-              "answer": null,
-              "freeform": false,
-              "_links": {
-                "self": {
-                  "href": "http://localhost:3000/api/surveys/46/survey_questions/130"
-                },
-                "survey": {
-                  "href": "http://localhost:3000/api/surveys/46"
-                },
-                "create": {
-                  "href": "http://localhost:3000/api/surveys/46/survey_questions"
-                },
-                "submit": {
-                  "href": "http://localhost:3000/api/surveys/46/survey_questions/130"
-                }
-              }
-            }
-          ]
-        }
-    http_version: 
-  recorded_at: Tue, 09 Sep 2014 23:20:54 GMT
-- request:
     method: post
     uri: http://localhost:3000/api/http:%2F%2Flocalhost:3000%2Fapi%2F%252Fusers%2F/
     body:
@@ -1036,6 +709,365 @@ http_interactions:
     http_version: 
   recorded_at: Sun, 14 Sep 2014 16:59:38 GMT
 - request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: 'Internal Server Error '
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '21264'
+      X-Request-Id:
+      - 894934d0-06cf-402a-b696-f05c663e36a1
+      X-Runtime:
+      - '0.027140'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 15:25:47 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\"
+        />\n  <title>Action Controller: Exception caught</title>\n  <style>\n    body
+        {\n      background-color: #FAFAFA;\n      color: #333;\n      margin: 0px;\n
+        \   }\n\n    body, p, ol, ul, td {\n      font-family: helvetica, verdana,
+        arial, sans-serif;\n      font-size:   13px;\n      line-height: 18px;\n    }\n\n
+        \   pre {\n      font-size: 11px;\n      white-space: pre-wrap;\n    }\n\n
+        \   pre.box {\n      border: 1px solid #EEE;\n      padding: 10px;\n      margin:
+        0px;\n      width: 958px;\n    }\n\n    header {\n      color: #F0F0F0;\n
+        \     background: #C52F24;\n      padding: 0.5em 1.5em;\n    }\n\n    h1 {\n
+        \     margin: 0.2em 0;\n      line-height: 1.1em;\n      font-size: 2em;\n
+        \   }\n\n    h2 {\n      color: #C52F24;\n      line-height: 25px;\n    }\n\n
+        \   .details {\n      border: 1px solid #D0D0D0;\n      border-radius: 4px;\n
+        \     margin: 1em 0px;\n      display: block;\n      width: 978px;\n    }\n\n
+        \   .summary {\n      padding: 8px 15px;\n      border-bottom: 1px solid #D0D0D0;\n
+        \     display: block;\n    }\n\n    .details pre {\n      margin: 5px;\n      border:
+        none;\n    }\n\n    #container {\n      box-sizing: border-box;\n      width:
+        100%;\n      padding: 0 1.5em;\n    }\n\n    .source * {\n      margin: 0px;\n
+        \     padding: 0px;\n    }\n\n    .source {\n      border: 1px solid #D9D9D9;\n
+        \     background: #ECECEC;\n      width: 978px;\n    }\n\n    .source pre
+        {\n      padding: 10px 0px;\n      border: none;\n    }\n\n    .source .data
+        {\n      font-size: 80%;\n      overflow: auto;\n      background-color: #FFF;\n
+        \   }\n\n    .info {\n      padding: 0.5em;\n    }\n\n    .source .data .line_numbers
+        {\n      background-color: #ECECEC;\n      color: #AAA;\n      padding: 1em
+        .5em;\n      border-right: 1px solid #DDD;\n      text-align: right;\n    }\n\n
+        \   .line {\n      padding-left: 10px;\n    }\n\n    .line:hover {\n      background-color:
+        #F6F6F6;\n    }\n\n    .line.active {\n      background-color: #FFCCCC;\n
+        \   }\n\n    a { color: #980905; }\n    a:visited { color: #666; }\n    a:hover
+        { color: #C52F24; }\n\n    \n  </style>\n\n  <script>\n    var toggle = function(id)
+        {\n      var s = document.getElementById(id).style;\n      s.display = s.display
+        == 'none' ? 'block' : 'none';\n      return false;\n    }\n    var show =
+        function(id) {\n      document.getElementById(id).style.display = 'block';\n
+        \   }\n    var hide = function(id) {\n      document.getElementById(id).style.display
+        = 'none';\n    }\n    var toggleTrace = function() {\n      return toggle('blame_trace');\n
+        \   }\n    var toggleSessionDump = function() {\n      return toggle('session_dump');\n
+        \   }\n    var toggleEnvDump = function() {\n      return toggle('env_dump');\n
+        \   }\n  </script>\n</head>\n<body>\n\n<header>\n  <h1>\n    NameError\n      in
+        Api::V1::RootController#index\n  </h1>\n</header>\n\n<div id=\"container\">\n
+        \ <h2>undefined local variable or method `api_questions_answers_url&#39; for
+        #&lt;Api::V1::RootSerializer:0x007fe583f4c228&gt;</h2>\n\n  <div class=\"source\">\n<div
+        class=\"info\">\n  Extracted source (around line <strong>#21</strong>):\n</div>\n<div
+        class=\"data\">\n  <table cellpadding=\"0\" cellspacing=\"0\" class=\"lines\">\n
+        \     <tr>\n        <td>\n          <pre class=\"line_numbers\">\n<span>19</span>\n<span>20</span>\n<span>21</span>\n<span>22</span>\n<span>23</span>\n<span>24</span>\n
+        \         </pre>\n        </td>\n<td width=\"100%\">\n<pre>\n<div class=\"line\">
+        \     },\n</div><div class=\"line\">      answers: {\n</div><div class=\"line
+        active\">        href: api_questions_answers_url\n</div><div class=\"line\">
+        \     }\n</div><div class=\"line\">    }\n</div><div class=\"line\">  end\n</div>\n</pre>\n</td>\n
+        \   </tr>\n  </table>\n</div>\n</div>\n\n  \n<p><code>Rails.root: /Users/austenito/repos/happiness/happiness_service</code></p>\n\n<div
+        id=\"traces\">\n    <a href=\"#\" onclick=\"hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);;
+        return false;\">Application Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);;
+        return false;\">Framework Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);;
+        return false;\">Full Trace</a> \n\n    <div id=\"Application-Trace\" style=\"display:
+        block;\">\n      <pre><code>app/serializers/api/v1/root_serializer.rb:21:in
+        `_links&#39;\napp/controllers/api/v1/root_controller.rb:5:in `index&#39;</code></pre>\n
+        \   </div>\n    <div id=\"Framework-Trace\" style=\"display: none;\">\n      <pre><code>(eval):3:in
+        `_fast_attributes&#39;\nactive_model_serializers (0.8.1) lib/active_model/serializer.rb:466:in
+        `rescue in attributes&#39;\nactive_model_serializers (0.8.1) lib/active_model/serializer.rb:454:in
+        `attributes&#39;\nactive_model_serializers (0.8.1) lib/active_model/serializer.rb:478:in
+        `_serializable_hash&#39;\nactive_model_serializers (0.8.1) lib/active_model/serializer.rb:360:in
+        `serializable_hash&#39;\nactive_model_serializers (0.8.1) lib/active_model/serializer.rb:348:in
+        `as_json&#39;\nactivesupport (4.0.4) lib/active_support/json/encoding.rb:50:in
+        `block in encode&#39;\nactivesupport (4.0.4) lib/active_support/json/encoding.rb:81:in
+        `check_for_circular_references&#39;\nactivesupport (4.0.4) lib/active_support/json/encoding.rb:49:in
+        `encode&#39;\nactivesupport (4.0.4) lib/active_support/json/encoding.rb:34:in
+        `encode&#39;\nactivesupport (4.0.4) lib/active_support/core_ext/object/to_json.rb:16:in
+        `to_json&#39;\nactive_model_serializers (0.8.1) lib/active_model/serializer.rb:333:in
+        `to_json&#39;\nactionpack (4.0.4) lib/action_controller/metal/renderers.rb:90:in
+        `block in &lt;module:Renderers&gt;&#39;\nactive_model_serializers (0.8.1)
+        lib/action_controller/serialization.rb:46:in `_render_option_json&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/renderers.rb:33:in `block in _handle_render_options&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/set.rb:263:in
+        `each_key&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/set.rb:263:in
+        `each&#39;\nactionpack (4.0.4) lib/action_controller/metal/renderers.rb:30:in
+        `_handle_render_options&#39;\nactionpack (4.0.4) lib/action_controller/metal/renderers.rb:26:in
+        `render_to_body&#39;\nactionpack (4.0.4) lib/abstract_controller/rendering.rb:97:in
+        `render&#39;\nactionpack (4.0.4) lib/action_controller/metal/rendering.rb:16:in
+        `render&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in
+        `block (2 levels) in render&#39;\nactivesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in
+        `block in ms&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in
+        `realtime&#39;\nactivesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in
+        `ms&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in
+        `block in render&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:84:in
+        `cleanup_view_runtime&#39;\nactiverecord (4.0.4) lib/active_record/railties/controller_runtime.rb:25:in
+        `cleanup_view_runtime&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:40:in
+        `render&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:255:in
+        `display&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:203:in
+        `api_behavior&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:182:in
+        `rescue in to_format&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:176:in
+        `to_format&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:154:in
+        `respond&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:147:in
+        `call&#39;\nactionpack (4.0.4) lib/action_controller/metal/mime_responds.rb:330:in
+        `respond_with&#39;\nactionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:4:in
+        `send_action&#39;\nactionpack (4.0.4) lib/abstract_controller/base.rb:189:in
+        `process_action&#39;\nactionpack (4.0.4) lib/action_controller/metal/rendering.rb:10:in
+        `process_action&#39;\nactionpack (4.0.4) lib/abstract_controller/callbacks.rb:18:in
+        `block in process_action&#39;\nactivesupport (4.0.4) lib/active_support/callbacks.rb:383:in
+        `_run__552417660275114359__process_action__callbacks&#39;\nactivesupport (4.0.4)
+        lib/active_support/callbacks.rb:80:in `run_callbacks&#39;\nactionpack (4.0.4)
+        lib/abstract_controller/callbacks.rb:17:in `process_action&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications.rb:159:in `instrument&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;\nactiverecord
+        (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/base.rb:136:in `process&#39;\nactionpack (4.0.4)
+        lib/abstract_controller/rendering.rb:44:in `process&#39;\nactionpack (4.0.4)
+        lib/action_controller/metal.rb:195:in `dispatch&#39;\nactionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in
+        `dispatch&#39;\nactionpack (4.0.4) lib/action_controller/metal.rb:231:in `block
+        in action&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in
+        `dispatch&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in
+        `block in call&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in
+        `each&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in
+        `call&#39;\nrack (1.5.2) lib/rack/etag.rb:23:in `call&#39;\nrack (1.5.2) lib/rack/conditionalget.rb:25:in
+        `call&#39;\nrack (1.5.2) lib/rack/head.rb:11:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;\nactiverecord
+        (4.0.4) lib/active_record/query_cache.rb:36:in `call&#39;\nactiverecord (4.0.4)
+        lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call&#39;\nactiverecord
+        (4.0.4) lib/active_record/migration.rb:373:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:373:in `_run__2270658051568218024__call__callbacks&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:20:in
+        `block in call&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in
+        `block in tagged&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in
+        `tagged&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in
+        `tagged&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;\nrack
+        (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in
+        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/static.rb:64:in `call&#39;\nrailties (4.0.4)
+        lib/rails/engine.rb:511:in `call&#39;\nrailties (4.0.4) lib/rails/application.rb:97:in
+        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in
+        `call&#39;\nrack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n    <div id=\"Full-Trace\"
+        style=\"display: none;\">\n      <pre><code>app/serializers/api/v1/root_serializer.rb:21:in
+        `_links&#39;\n(eval):3:in `_fast_attributes&#39;\nactive_model_serializers
+        (0.8.1) lib/active_model/serializer.rb:466:in `rescue in attributes&#39;\nactive_model_serializers
+        (0.8.1) lib/active_model/serializer.rb:454:in `attributes&#39;\nactive_model_serializers
+        (0.8.1) lib/active_model/serializer.rb:478:in `_serializable_hash&#39;\nactive_model_serializers
+        (0.8.1) lib/active_model/serializer.rb:360:in `serializable_hash&#39;\nactive_model_serializers
+        (0.8.1) lib/active_model/serializer.rb:348:in `as_json&#39;\nactivesupport
+        (4.0.4) lib/active_support/json/encoding.rb:50:in `block in encode&#39;\nactivesupport
+        (4.0.4) lib/active_support/json/encoding.rb:81:in `check_for_circular_references&#39;\nactivesupport
+        (4.0.4) lib/active_support/json/encoding.rb:49:in `encode&#39;\nactivesupport
+        (4.0.4) lib/active_support/json/encoding.rb:34:in `encode&#39;\nactivesupport
+        (4.0.4) lib/active_support/core_ext/object/to_json.rb:16:in `to_json&#39;\nactive_model_serializers
+        (0.8.1) lib/active_model/serializer.rb:333:in `to_json&#39;\nactionpack (4.0.4)
+        lib/action_controller/metal/renderers.rb:90:in `block in &lt;module:Renderers&gt;&#39;\nactive_model_serializers
+        (0.8.1) lib/action_controller/serialization.rb:46:in `_render_option_json&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/renderers.rb:33:in `block in _handle_render_options&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/set.rb:263:in
+        `each_key&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/set.rb:263:in
+        `each&#39;\nactionpack (4.0.4) lib/action_controller/metal/renderers.rb:30:in
+        `_handle_render_options&#39;\nactionpack (4.0.4) lib/action_controller/metal/renderers.rb:26:in
+        `render_to_body&#39;\nactionpack (4.0.4) lib/abstract_controller/rendering.rb:97:in
+        `render&#39;\nactionpack (4.0.4) lib/action_controller/metal/rendering.rb:16:in
+        `render&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in
+        `block (2 levels) in render&#39;\nactivesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in
+        `block in ms&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in
+        `realtime&#39;\nactivesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in
+        `ms&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in
+        `block in render&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:84:in
+        `cleanup_view_runtime&#39;\nactiverecord (4.0.4) lib/active_record/railties/controller_runtime.rb:25:in
+        `cleanup_view_runtime&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:40:in
+        `render&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:255:in
+        `display&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:203:in
+        `api_behavior&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:182:in
+        `rescue in to_format&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:176:in
+        `to_format&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:154:in
+        `respond&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:147:in
+        `call&#39;\nactionpack (4.0.4) lib/action_controller/metal/mime_responds.rb:330:in
+        `respond_with&#39;\napp/controllers/api/v1/root_controller.rb:5:in `index&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/base.rb:189:in `process_action&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/callbacks.rb:18:in `block in process_action&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:383:in `_run__552417660275114359__process_action__callbacks&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/callbacks.rb:17:in `process_action&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications.rb:159:in `instrument&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;\nactiverecord
+        (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/base.rb:136:in `process&#39;\nactionpack (4.0.4)
+        lib/abstract_controller/rendering.rb:44:in `process&#39;\nactionpack (4.0.4)
+        lib/action_controller/metal.rb:195:in `dispatch&#39;\nactionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in
+        `dispatch&#39;\nactionpack (4.0.4) lib/action_controller/metal.rb:231:in `block
+        in action&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in
+        `dispatch&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in
+        `block in call&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in
+        `each&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in
+        `call&#39;\nrack (1.5.2) lib/rack/etag.rb:23:in `call&#39;\nrack (1.5.2) lib/rack/conditionalget.rb:25:in
+        `call&#39;\nrack (1.5.2) lib/rack/head.rb:11:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;\nactiverecord
+        (4.0.4) lib/active_record/query_cache.rb:36:in `call&#39;\nactiverecord (4.0.4)
+        lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call&#39;\nactiverecord
+        (4.0.4) lib/active_record/migration.rb:373:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:373:in `_run__2270658051568218024__call__callbacks&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:20:in
+        `block in call&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in
+        `block in tagged&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in
+        `tagged&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in
+        `tagged&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;\nrack
+        (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in
+        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/static.rb:64:in `call&#39;\nrailties (4.0.4)
+        lib/rails/engine.rb:511:in `call&#39;\nrailties (4.0.4) lib/rails/application.rb:97:in
+        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in
+        `call&#39;\nrack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n</div>\n\n  \n\n<h2
+        style=\"margin-top: 30px\">Request</h2>\n<p><b>Parameters</b>:</p> <pre>None</pre>\n\n<div
+        class=\"details\">\n  <div class=\"summary\"><a href=\"#\" onclick=\"return
+        toggleSessionDump()\">Toggle session dump</a></div>\n  <div id=\"session_dump\"
+        style=\"display:none\"><pre></pre></div>\n</div>\n\n<div class=\"details\">\n
+        \ <div class=\"summary\"><a href=\"#\" onclick=\"return toggleEnvDump()\">Toggle
+        env dump</a></div>\n  <div id=\"env_dump\" style=\"display:none\"><pre>GATEWAY_INTERFACE:
+        &quot;CGI/1.1&quot;\nHTTP_ACCEPT: &quot;*/*&quot;\nHTTP_ACCEPT_ENCODING: &quot;gzip;q=1.0,deflate;q=0.6,identity;q=0.3&quot;\nREMOTE_ADDR:
+        &quot;127.0.0.1&quot;\nREMOTE_HOST: &quot;127.0.0.1&quot;\nSERVER_NAME: &quot;localhost&quot;\nSERVER_PROTOCOL:
+        &quot;HTTP/1.1&quot;</pre></div>\n</div>\n\n<h2 style=\"margin-top: 30px\">Response</h2>\n<p><b>Headers</b>:</p>
+        <pre>None</pre>\n\n</div>\n\n\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 15:25:47 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/?query=random,true
+    body:
+      encoding: UTF-8
+      string: '{"survey":{"service_user_id":"640cc842fbe5eddf3e12bca56b4fdd15817edfd3447e3b07d50d35ae2a934d9e"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"0b7e04ded5a4de37f5910f63a829de7a"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7c90484d-b1cd-49d8-a499-809cf2ba6071
+      X-Runtime:
+      - '0.009468'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 15:28:53 GMT
+      Content-Length:
+      - '434'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 102,
+          "service_user_id": "640cc842fbe5eddf3e12bca56b4fdd15817edfd3447e3b07d50d35ae2a934d9e",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/102"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/102/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/102/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+
+          ]
+        }
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 15:28:53 GMT
+- request:
     method: post
     uri: http://localhost:3000/api/users/
     body:
@@ -1068,41 +1100,41 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"f8643c8d38f3e576797fed94dfd3fc15"'
+      - '"02bb926525b9f984bb302157f0f974bc"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - fe1f3ee8-dee9-4b31-8ed9-a8c7551ea00d
+      - ef423d17-9d9c-45a5-9ab0-7c3039fe4b6e
       X-Runtime:
-      - '0.006452'
+      - '0.006316'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Sun, 21 Sep 2014 20:28:02 GMT
+      - Sat, 04 Oct 2014 17:52:44 GMT
       Content-Length:
-      - '260'
+      - '261'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "service_user_id": "f1ea49729c79e973903b1de97b4f80e28d0bd9260782c96bdc3628f53a132c7d",
+          "service_user_id": "3ed74be14a79b760b2a02069e4f2650c706b4c869e9bebe2588c6c58cfe12efb",
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/users/87"
+              "href": "http://localhost:3000/api/users/119"
             }
           },
-          "token": "e35c7c4e976117deb3662d5e6ead4a399d66340ac62a75e4b30542424b3019f8"
+          "token": "49b8cf8cae167b6e60bbd205f77ce7ea64755eb35e246e8c964479c5971993db"
         }
     http_version: 
-  recorded_at: Sun, 21 Sep 2014 20:28:02 GMT
+  recorded_at: Sat, 04 Oct 2014 17:52:44 GMT
 - request:
     method: post
     uri: http://localhost:3000/api/surveys/?random=true
     body:
       encoding: UTF-8
-      string: '{"survey":{"service_user_id":"f1ea49729c79e973903b1de97b4f80e28d0bd9260782c96bdc3628f53a132c7d"}}'
+      string: '{"survey":{"service_user_id":"3ed74be14a79b760b2a02069e4f2650c706b4c869e9bebe2588c6c58cfe12efb"}}'
     headers:
       User-Agent:
       - Faraday v0.9.0
@@ -1130,44 +1162,44 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"75a51a8eaba89802259be1673587b088"'
+      - '"f36637b8d5f4798c4776608f29a8a486"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 31f67021-f535-4798-995e-17fa183f3b56
+      - 4273af50-549b-49ed-b6b6-7880a49d0177
       X-Runtime:
-      - '0.038826'
+      - '0.085233'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Sun, 21 Sep 2014 20:28:02 GMT
+      - Sat, 04 Oct 2014 17:52:44 GMT
       Content-Length:
-      - '3682'
+      - '7300'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "id": 87,
-          "service_user_id": "f1ea49729c79e973903b1de97b4f80e28d0bd9260782c96bdc3628f53a132c7d",
+          "id": 123,
+          "service_user_id": "3ed74be14a79b760b2a02069e4f2650c706b4c869e9bebe2588c6c58cfe12efb",
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/surveys/87"
+              "href": "http://localhost:3000/api/surveys/123"
             },
             "survey_questions": {
               "post": {
-                "href": "/api/surveys/87/survey_questions"
+                "href": "/api/surveys/123/survey_questions"
               },
               "put": {
-                "href": "/api/surveys/87/survey_questions"
+                "href": "/api/surveys/123/survey_questions"
               }
             }
           },
           "completed": false,
           "survey_questions": [
             {
-              "id": 275,
+              "id": 486,
               "text": "How do you feel right now?",
               "type": "range",
               "responses": [
@@ -1178,21 +1210,21 @@ http_interactions:
               "freeform": false,
               "_links": {
                 "self": {
-                  "href": "/api/surveys/87/survey_questions/275"
+                  "href": "/api/surveys/123/survey_questions/486"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/87/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/123/survey_questions"
                 },
                 "put": {
-                  "href": "/api/surveys/87/survey_questions/275"
+                  "href": "/api/surveys/123/survey_questions/486"
                 },
                 "survey": {
-                  "href": "/api/surveys/87"
+                  "href": "/api/surveys/123"
                 }
               }
             },
             {
-              "id": 276,
+              "id": 487,
               "text": "Where are you?",
               "type": "multiple",
               "responses": [
@@ -1205,105 +1237,1145 @@ http_interactions:
               "freeform": true,
               "_links": {
                 "self": {
-                  "href": "/api/surveys/87/survey_questions/276"
+                  "href": "/api/surveys/123/survey_questions/487"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/87/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/123/survey_questions"
                 },
                 "put": {
-                  "href": "/api/surveys/87/survey_questions/276"
+                  "href": "/api/surveys/123/survey_questions/487"
                 },
                 "survey": {
-                  "href": "/api/surveys/87"
+                  "href": "/api/surveys/123"
                 }
               }
             },
             {
-              "id": 277,
-              "text": "On average, how many hours do you work each week?",
+              "id": 488,
+              "text": "Do you like poptarts?",
               "type": "multiple",
               "responses": [
-                "Less than 5",
-                "5-10",
-                "10-20",
-                "20-30",
-                "30-40",
-                "40-50",
-                "50-60",
-                "60-70",
-                "More than 70"
+                "Yes",
+                "No"
               ],
               "answer": null,
-              "freeform": false,
+              "freeform": true,
               "_links": {
                 "self": {
-                  "href": "/api/surveys/87/survey_questions/277"
+                  "href": "/api/surveys/123/survey_questions/488"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/87/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/123/survey_questions"
                 },
                 "put": {
-                  "href": "/api/surveys/87/survey_questions/277"
+                  "href": "/api/surveys/123/survey_questions/488"
                 },
                 "survey": {
-                  "href": "/api/surveys/87"
+                  "href": "/api/surveys/123"
                 }
               }
             },
             {
-              "id": 278,
-              "text": "Are you judging or evaluating what you are doing right now (i.e. at the moment just before you were notified?)",
+              "id": 489,
+              "text": "Do you like poptarts?",
               "type": "multiple",
               "responses": [
-                "f",
-                "Yes - Negatively",
-                "Yes - Neutrally",
-                "Yes - Positively"
+                "Yes",
+                "No"
               ],
               "answer": null,
-              "freeform": false,
+              "freeform": true,
               "_links": {
                 "self": {
-                  "href": "/api/surveys/87/survey_questions/278"
+                  "href": "/api/surveys/123/survey_questions/489"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/87/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/123/survey_questions"
                 },
                 "put": {
-                  "href": "/api/surveys/87/survey_questions/278"
+                  "href": "/api/surveys/123/survey_questions/489"
                 },
                 "survey": {
-                  "href": "/api/surveys/87"
+                  "href": "/api/surveys/123"
                 }
               }
             },
             {
-              "id": 279,
-              "text": "If you could, and it had no negative consequences, would you jump forward in time 24 hours?",
-              "type": "boolean",
+              "id": 490,
+              "text": "Do you love poptarts?",
+              "type": "multiple",
               "responses": [
-                "t",
-                "f"
+                "Yes",
+                "No"
               ],
               "answer": null,
-              "freeform": false,
+              "freeform": true,
               "_links": {
                 "self": {
-                  "href": "/api/surveys/87/survey_questions/279"
+                  "href": "/api/surveys/123/survey_questions/490"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/87/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/123/survey_questions"
                 },
                 "put": {
-                  "href": "/api/surveys/87/survey_questions/279"
+                  "href": "/api/surveys/123/survey_questions/490"
                 },
                 "survey": {
-                  "href": "/api/surveys/87"
+                  "href": "/api/surveys/123"
+                }
+              }
+            },
+            {
+              "id": 491,
+              "text": "Do you love poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/123/survey_questions/491"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/123/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/123/survey_questions/491"
+                },
+                "survey": {
+                  "href": "/api/surveys/123"
+                }
+              }
+            },
+            {
+              "id": 492,
+              "text": "Do you like poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/123/survey_questions/492"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/123/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/123/survey_questions/492"
+                },
+                "survey": {
+                  "href": "/api/surveys/123"
+                }
+              }
+            },
+            {
+              "id": 493,
+              "text": "Do you like poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/123/survey_questions/493"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/123/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/123/survey_questions/493"
+                },
+                "survey": {
+                  "href": "/api/surveys/123"
+                }
+              }
+            },
+            {
+              "id": 494,
+              "text": "Do you like poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/123/survey_questions/494"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/123/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/123/survey_questions/494"
+                },
+                "survey": {
+                  "href": "/api/surveys/123"
+                }
+              }
+            },
+            {
+              "id": 495,
+              "text": "Do you like poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/123/survey_questions/495"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/123/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/123/survey_questions/495"
+                },
+                "survey": {
+                  "href": "/api/surveys/123"
+                }
+              }
+            },
+            {
+              "id": 496,
+              "text": "Do you like poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/123/survey_questions/496"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/123/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/123/survey_questions/496"
+                },
+                "survey": {
+                  "href": "/api/surveys/123"
+                }
+              }
+            },
+            {
+              "id": 497,
+              "text": "Do you love poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "/api/surveys/123/survey_questions/497"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/123/survey_questions"
+                },
+                "put": {
+                  "href": "/api/surveys/123/survey_questions/497"
+                },
+                "survey": {
+                  "href": "/api/surveys/123"
                 }
               }
             }
           ]
         }
     http_version: 
-  recorded_at: Sun, 21 Sep 2014 20:28:02 GMT
+  recorded_at: Sat, 04 Oct 2014 17:52:44 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/users//
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"fc692c7ccaf589476cb91a6c580491ab"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c1cae796-fc34-4b89-b2e3-205e1f1413c1
+      X-Runtime:
+      - '0.007073'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 18:11:12 GMT
+      Content-Length:
+      - '261'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "service_user_id": "1137bb0988d40212135e81ed462fee2730643c60e3c17156717408152a9d9e63",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/users/134"
+            }
+          },
+          "token": "8c51f9bc79862f7e51e6b8e5c33b087f56f6be2288b8eb049612206ca9d046d2"
+        }
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 18:11:12 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys//?random=true
+    body:
+      encoding: UTF-8
+      string: '{"survey":{"service_user_id":"1137bb0988d40212135e81ed462fee2730643c60e3c17156717408152a9d9e63"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"b8f6ddf2ea2a8d9c26367434a0cdd937"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8ecb82e2-cd9e-46f5-a1df-ac98e2043823
+      X-Runtime:
+      - '0.070170'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 18:11:12 GMT
+      Content-Length:
+      - '8056'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 138,
+          "service_user_id": "1137bb0988d40212135e81ed462fee2730643c60e3c17156717408152a9d9e63",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/138"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/138/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/138/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 642,
+              "text": "How do you feel right now?",
+              "type": "range",
+              "responses": [
+                "0",
+                "10"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/642"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/642"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/138"
+                }
+              }
+            },
+            {
+              "id": 643,
+              "text": "Where are you?",
+              "type": "multiple",
+              "responses": [
+                "At Home",
+                "At Work",
+                "In a car",
+                "Other"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/643"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/643"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/138"
+                }
+              }
+            },
+            {
+              "id": 644,
+              "text": "Do you like poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/644"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/644"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/138"
+                }
+              }
+            },
+            {
+              "id": 645,
+              "text": "Do you like poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/645"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/645"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/138"
+                }
+              }
+            },
+            {
+              "id": 646,
+              "text": "Do you love poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/646"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/646"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/138"
+                }
+              }
+            },
+            {
+              "id": 647,
+              "text": "Do you love poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/647"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/647"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/138"
+                }
+              }
+            },
+            {
+              "id": 648,
+              "text": "Do you like poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/648"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/648"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/138"
+                }
+              }
+            },
+            {
+              "id": 649,
+              "text": "Do you like poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/649"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/649"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/138"
+                }
+              }
+            },
+            {
+              "id": 650,
+              "text": "Do you like poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/650"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/650"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/138"
+                }
+              }
+            },
+            {
+              "id": 651,
+              "text": "Do you like poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/651"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/651"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/138"
+                }
+              }
+            },
+            {
+              "id": 652,
+              "text": "Do you like poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/652"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/652"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/138"
+                }
+              }
+            },
+            {
+              "id": 653,
+              "text": "Do you love poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/653"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/138/survey_questions/653"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/138"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 18:11:12 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/users
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"f4ef02e86280fba87530b3681d97f1c6"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 395403a1-98d5-478d-baa7-cc7f8bf83bf2
+      X-Runtime:
+      - '0.006426'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 18:43:51 GMT
+      Content-Length:
+      - '261'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "service_user_id": "4b33689ce77a5dadfb30def4e759cff82ec47baf22c9b66b22ac5cc4fa84e27a",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/users/142"
+            }
+          },
+          "token": "9446ec2fddfca3489be0f1dd6a268dec0d23862ab9367e44afd6a42d611b176b"
+        }
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 18:43:51 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys?random=true
+    body:
+      encoding: UTF-8
+      string: '{"survey":{"service_user_id":"4b33689ce77a5dadfb30def4e759cff82ec47baf22c9b66b22ac5cc4fa84e27a"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"28d4023aa966aae205b4447e64a91bcc"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4188c8b8-b1dd-45b2-b246-cc50cc9e9a61
+      X-Runtime:
+      - '0.058917'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 18:43:51 GMT
+      Content-Length:
+      - '8056'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 146,
+          "service_user_id": "4b33689ce77a5dadfb30def4e759cff82ec47baf22c9b66b22ac5cc4fa84e27a",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/146"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/146/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/146/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 681,
+              "text": "How do you feel right now?",
+              "type": "range",
+              "responses": [
+                "0",
+                "10"
+              ],
+              "answer": null,
+              "freeform": false,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/681"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/681"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/146"
+                }
+              }
+            },
+            {
+              "id": 682,
+              "text": "Where are you?",
+              "type": "multiple",
+              "responses": [
+                "At Home",
+                "At Work",
+                "In a car",
+                "Other"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/682"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/682"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/146"
+                }
+              }
+            },
+            {
+              "id": 683,
+              "text": "Do you like poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/683"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/683"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/146"
+                }
+              }
+            },
+            {
+              "id": 684,
+              "text": "Do you like poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/684"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/684"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/146"
+                }
+              }
+            },
+            {
+              "id": 685,
+              "text": "Do you love poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/685"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/685"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/146"
+                }
+              }
+            },
+            {
+              "id": 686,
+              "text": "Do you love poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/686"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/686"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/146"
+                }
+              }
+            },
+            {
+              "id": 687,
+              "text": "Do you like poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/687"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/687"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/146"
+                }
+              }
+            },
+            {
+              "id": 688,
+              "text": "Do you like poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/688"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/688"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/146"
+                }
+              }
+            },
+            {
+              "id": 689,
+              "text": "Do you like poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/689"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/689"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/146"
+                }
+              }
+            },
+            {
+              "id": 690,
+              "text": "Do you like poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/690"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/690"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/146"
+                }
+              }
+            },
+            {
+              "id": 691,
+              "text": "Do you like poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/691"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/691"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/146"
+                }
+              }
+            },
+            {
+              "id": 692,
+              "text": "Do you love poptarts?",
+              "type": "multiple",
+              "responses": [
+                "Yes",
+                "No"
+              ],
+              "answer": null,
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/692"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/146/survey_questions/692"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/146"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 18:43:51 GMT
 recorded_with: VCR 2.6.0

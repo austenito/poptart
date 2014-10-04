@@ -26,26 +26,19 @@ module Poptart
       Poptart::Model.root
     end
 
-    def build_url(resource, id: nil, nested_resource: nil, query: nil)
-      template_string = "#{scheme}://#{host}/{+resource}/{id}"
-      if nested_resource
-        template_string += "/{nested_resource}"
-      end
-      template_string += "{?query*}"
-      template = Addressable::Template.new(template_string)
-      template.expand(resource: resource, id: id, nested_resource: nested_resource, query: query).to_s
-    end
-
     def users_url(id: nil, query: nil)
-      build_url(links.users.href, id: id, query: query)
+      template = Addressable::Template.new(links.users.href)
+      template.expand(id: id, query: query).to_s
     end
 
     def surveys_url(id: nil, query: nil)
-      build_url(links.surveys.href, id: id, query: query)
+      template = Addressable::Template.new(links.surveys.href)
+      template.expand(id: id, query: query).to_s
     end
 
     def questions_url(id: nil, query: nil)
-      build_url(links.questions.href, id: id, query: query)
+      template = Addressable::Template.new(links.questions.href)
+      template.expand(id: id, query: query).to_s
     end
 
     private

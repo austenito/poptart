@@ -1994,494 +1994,6 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1e39bac8-0eb3-437b-99a0-477a02462303
-      X-Runtime:
-      - '0.005676'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Tue, 09 Sep 2014 23:22:20 GMT
-      Content-Length:
-      - '305'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api"
-            },
-            "surveys": {
-              "href": "http://localhost:3000/api/surveys"
-            },
-            "users": {
-              "href": "http://localhost:3000/api/users"
-            },
-            "questions": {
-              "href": "http://localhost:3000/api/questions"
-            }
-          }
-        }
-    http_version: 
-  recorded_at: Tue, 09 Sep 2014 23:22:20 GMT
-- request:
-    method: get
-    uri: http://localhost:3000/api/questions
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"00b082ab08fa212cd932dcae5cb61a0c"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 1b7755ba-05d7-4335-ab00-b65da8fe5d91
-      X-Runtime:
-      - '0.009553'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Tue, 09 Sep 2014 23:22:20 GMT
-      Content-Length:
-      - '7773'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        [
-          {
-            "id": 1,
-            "question_type": "multiple",
-            "text": "How hungry or full are you right now?",
-            "responses": [
-              "Very hungry",
-              "Somewhat hungry",
-              "Neither full nor hungry",
-              "Somewhat full",
-              "Very full"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 2,
-            "question_type": "time",
-            "text": "What time did you wake up this morning?",
-            "responses": null,
-            "freeform": false
-          },
-          {
-            "id": 3,
-            "question_type": "time",
-            "text": "What time did you got to sleep last night?",
-            "responses": null,
-            "freeform": false
-          },
-          {
-            "id": 4,
-            "question_type": "multiple",
-            "text": "Are you judging or evaluating yourself right now (i.e. at the moment just before you were notified)?",
-            "responses": [
-              "f",
-              "Yes - Negatively",
-              "Yes - Neutrally",
-              "Yes - Positively"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 5,
-            "question_type": "range",
-            "text": "How well did you sleep last night?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 6,
-            "question_type": "range",
-            "text": "To what extent are you engrossed in what you are doing?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 7,
-            "question_type": "multiple",
-            "text": "Are you judging or evaluating what you are doing right now (i.e. at the moment just before you were notified?)",
-            "responses": [
-              "f",
-              "Yes - Negatively",
-              "Yes - Neutrally",
-              "Yes - Positively"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 8,
-            "question_type": "boolean",
-            "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 9,
-            "question_type": "multiple",
-            "text": "Imagine you were given $10 to divide between yourself and a stranger to whom you would remain anonymous. How much would you give to the stranger?",
-            "responses": [
-              "0",
-              "1",
-              "2",
-              "3",
-              "4",
-              "5",
-              "6",
-              "7",
-              "8",
-              "9",
-              "10"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 10,
-            "question_type": "boolean",
-            "text": "Have you surprised someone with a gift (including small gifts) in the last week?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 11,
-            "question_type": "multiple",
-            "text": "In general, how is your health?",
-            "responses": [
-              "Excellent",
-              "Very Good",
-              "Good",
-              "Fair",
-              "Poor"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 12,
-            "question_type": "range",
-            "text": "Where would you place yourself on this ladder?\nThink of a ladder representing where people stand in your country.\nAt the top of the ladder are the people who are the best off - those who have the most money, the most education and the most respected jobs. At the bottom are the people who are the worst off - who have the least money, least education, and the least respected jobs or no job. The higher up you are on the ladder, the closer you are to the people at the very top; the lower you are the closer you are to people at the very bottom.",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 13,
-            "question_type": "range",
-            "text": "To what extent is what you're doing interesting?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 14,
-            "question_type": "multiple",
-            "text": "On average, how many hours do you work each week?",
-            "responses": [
-              "Less than 5",
-              "5-10",
-              "10-20",
-              "20-30",
-              "30-40",
-              "40-50",
-              "50-60",
-              "60-70",
-              "More than 70"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 15,
-            "question_type": "range",
-            "text": "How do you feel right now?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 16,
-            "question_type": "range",
-            "text": "To what extent do you expect good things to happen in the future?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 17,
-            "question_type": "boolean",
-            "text": "Have you taken any over-the-counter pain medication in the past 24 hours?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 18,
-            "question_type": "range",
-            "text": "To what extent have you procrastinated so far today?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 19,
-            "question_type": "range",
-            "text": "To what extent are you being productive?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 20,
-            "question_type": "multiple",
-            "text": "Who are you talking or interacting with?",
-            "responses": [
-              "Spouse/partner/significant other",
-              "Children",
-              "Parents",
-              "Other relatives",
-              "Friends",
-              "Acquaintances",
-              "Strangers",
-              "Co-workers",
-              "Customers/students",
-              "Boss",
-              "No one"
-            ],
-            "freeform": true
-          },
-          {
-            "id": 30,
-            "question_type": "multiple",
-            "text": "Beyond any work you've already done today, how many additional hours do you expect to work today?",
-            "responses": [
-              "0 (none)",
-              "Less than 1 hour",
-              "1-2 hours",
-              "2-3 hours",
-              "3-4 hours",
-              "4-5 hours",
-              "5-6 hours"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 21,
-            "question_type": "range",
-            "text": "To what extent do you feel accepted by the person/people you are interacting with?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 22,
-            "question_type": "boolean",
-            "text": "Are you alone?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 23,
-            "question_type": "boolean",
-            "text": "Do you want to do what you're doing?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 24,
-            "question_type": "boolean",
-            "text": "Are you talking or interacting with anyone?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 25,
-            "question_type": "multiple",
-            "text": "Where are you?",
-            "responses": [
-              "At Home",
-              "At Work",
-              "In a car",
-              "Other"
-            ],
-            "freeform": true
-          },
-          {
-            "id": 26,
-            "question_type": "multiple",
-            "text": "How many people are you talking or interacting with?",
-            "responses": [
-              "0",
-              "1",
-              "2",
-              "3",
-              "4",
-              "5",
-              "6",
-              "7",
-              "8",
-              "9",
-              "10",
-              "More than 10"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 27,
-            "question_type": "boolean",
-            "text": "Do you have to do what you're doing?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 28,
-            "question_type": "range",
-            "text": "To what extent are you focused on what you are doing?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 29,
-            "question_type": "multiple",
-            "text": "When did you last check Facebook?",
-            "responses": [
-              "Right now",
-              "In the last 5 minutes",
-              "In the last 15 minutes",
-              "In the last 30 minutes",
-              "In the last hour",
-              "1-2 hours ago",
-              "3-5 hours ago",
-              "6-12 hours ago",
-              "24 hours ago",
-              "Don't use facebook"
-            ],
-            "freeform": false
-          },
-          {
-            "id": 31,
-            "question_type": "boolean",
-            "text": "If you could, and it had no negative consequences, would you jump forward in time 24 hours?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false
-          }
-        ]
-    http_version: 
-  recorded_at: Tue, 09 Sep 2014 23:22:20 GMT
-- request:
-    method: get
-    uri: http://localhost:3000/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"a723ac88b99a06c255a3384c2d01f4fb"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
       - 7a03de2a-5ab1-4566-ad63-6aa5d43640d9
       X-Runtime:
       - '0.006164'
@@ -2509,68 +2021,6 @@ http_interactions:
             },
             "questions": {
               "href": "http://localhost:3000/api/questions"
-            }
-          }
-        }
-    http_version: 
-  recorded_at: Tue, 09 Sep 2014 23:22:20 GMT
-- request:
-    method: post
-    uri: http://localhost:3000/api/users
-    body:
-      encoding: UTF-8
-      string: '{"user":{"external_user_id":42}}'
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: 'Created '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"9ae81f2544a5baa380b63ed1ad969152"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 86f9a12c-8654-4ef8-ab91-c427b850bab9
-      X-Runtime:
-      - '0.008635'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Tue, 09 Sep 2014 23:22:20 GMT
-      Content-Length:
-      - '130'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "id": 58,
-          "external_user_id": 42,
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/users/58"
             }
           }
         }
@@ -2642,75 +2092,6 @@ http_interactions:
               "href": "http://localhost:3000/api/questions"
             }
           }
-        }
-    http_version: 
-  recorded_at: Tue, 09 Sep 2014 23:22:20 GMT
-- request:
-    method: post
-    uri: http://localhost:3000/api/surveys
-    body:
-      encoding: UTF-8
-      string: '{"survey":{"user_id":58}}'
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: 'Created '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"da4dadd706dc1cb32d07a25e1000c2f8"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - d42c1750-c217-4039-8dcc-6d60db267fbb
-      X-Runtime:
-      - '0.010219'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Tue, 09 Sep 2014 23:22:20 GMT
-      Content-Length:
-      - '268'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "id": 49,
-          "user_id": 58,
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/surveys/49"
-            },
-            "submit": {
-              "href": "http://localhost:3000/api/surveys/49/survey_questions"
-            }
-          },
-          "completed": false,
-          "survey_questions": [
-
-          ]
         }
     http_version: 
   recorded_at: Tue, 09 Sep 2014 23:22:20 GMT
@@ -8112,4 +7493,2260 @@ http_interactions:
         }
     http_version: 
   recorded_at: Thu, 25 Sep 2014 02:22:48 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: 'Internal Server Error '
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '21264'
+      X-Request-Id:
+      - 1de9aa67-5f89-4e97-8e05-606a9d45cae5
+      X-Runtime:
+      - '0.020824'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 15:25:47 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\"
+        />\n  <title>Action Controller: Exception caught</title>\n  <style>\n    body
+        {\n      background-color: #FAFAFA;\n      color: #333;\n      margin: 0px;\n
+        \   }\n\n    body, p, ol, ul, td {\n      font-family: helvetica, verdana,
+        arial, sans-serif;\n      font-size:   13px;\n      line-height: 18px;\n    }\n\n
+        \   pre {\n      font-size: 11px;\n      white-space: pre-wrap;\n    }\n\n
+        \   pre.box {\n      border: 1px solid #EEE;\n      padding: 10px;\n      margin:
+        0px;\n      width: 958px;\n    }\n\n    header {\n      color: #F0F0F0;\n
+        \     background: #C52F24;\n      padding: 0.5em 1.5em;\n    }\n\n    h1 {\n
+        \     margin: 0.2em 0;\n      line-height: 1.1em;\n      font-size: 2em;\n
+        \   }\n\n    h2 {\n      color: #C52F24;\n      line-height: 25px;\n    }\n\n
+        \   .details {\n      border: 1px solid #D0D0D0;\n      border-radius: 4px;\n
+        \     margin: 1em 0px;\n      display: block;\n      width: 978px;\n    }\n\n
+        \   .summary {\n      padding: 8px 15px;\n      border-bottom: 1px solid #D0D0D0;\n
+        \     display: block;\n    }\n\n    .details pre {\n      margin: 5px;\n      border:
+        none;\n    }\n\n    #container {\n      box-sizing: border-box;\n      width:
+        100%;\n      padding: 0 1.5em;\n    }\n\n    .source * {\n      margin: 0px;\n
+        \     padding: 0px;\n    }\n\n    .source {\n      border: 1px solid #D9D9D9;\n
+        \     background: #ECECEC;\n      width: 978px;\n    }\n\n    .source pre
+        {\n      padding: 10px 0px;\n      border: none;\n    }\n\n    .source .data
+        {\n      font-size: 80%;\n      overflow: auto;\n      background-color: #FFF;\n
+        \   }\n\n    .info {\n      padding: 0.5em;\n    }\n\n    .source .data .line_numbers
+        {\n      background-color: #ECECEC;\n      color: #AAA;\n      padding: 1em
+        .5em;\n      border-right: 1px solid #DDD;\n      text-align: right;\n    }\n\n
+        \   .line {\n      padding-left: 10px;\n    }\n\n    .line:hover {\n      background-color:
+        #F6F6F6;\n    }\n\n    .line.active {\n      background-color: #FFCCCC;\n
+        \   }\n\n    a { color: #980905; }\n    a:visited { color: #666; }\n    a:hover
+        { color: #C52F24; }\n\n    \n  </style>\n\n  <script>\n    var toggle = function(id)
+        {\n      var s = document.getElementById(id).style;\n      s.display = s.display
+        == 'none' ? 'block' : 'none';\n      return false;\n    }\n    var show =
+        function(id) {\n      document.getElementById(id).style.display = 'block';\n
+        \   }\n    var hide = function(id) {\n      document.getElementById(id).style.display
+        = 'none';\n    }\n    var toggleTrace = function() {\n      return toggle('blame_trace');\n
+        \   }\n    var toggleSessionDump = function() {\n      return toggle('session_dump');\n
+        \   }\n    var toggleEnvDump = function() {\n      return toggle('env_dump');\n
+        \   }\n  </script>\n</head>\n<body>\n\n<header>\n  <h1>\n    NameError\n      in
+        Api::V1::RootController#index\n  </h1>\n</header>\n\n<div id=\"container\">\n
+        \ <h2>undefined local variable or method `api_questions_answers_url&#39; for
+        #&lt;Api::V1::RootSerializer:0x007fe584d06e40&gt;</h2>\n\n  <div class=\"source\">\n<div
+        class=\"info\">\n  Extracted source (around line <strong>#21</strong>):\n</div>\n<div
+        class=\"data\">\n  <table cellpadding=\"0\" cellspacing=\"0\" class=\"lines\">\n
+        \     <tr>\n        <td>\n          <pre class=\"line_numbers\">\n<span>19</span>\n<span>20</span>\n<span>21</span>\n<span>22</span>\n<span>23</span>\n<span>24</span>\n
+        \         </pre>\n        </td>\n<td width=\"100%\">\n<pre>\n<div class=\"line\">
+        \     },\n</div><div class=\"line\">      answers: {\n</div><div class=\"line
+        active\">        href: api_questions_answers_url\n</div><div class=\"line\">
+        \     }\n</div><div class=\"line\">    }\n</div><div class=\"line\">  end\n</div>\n</pre>\n</td>\n
+        \   </tr>\n  </table>\n</div>\n</div>\n\n  \n<p><code>Rails.root: /Users/austenito/repos/happiness/happiness_service</code></p>\n\n<div
+        id=\"traces\">\n    <a href=\"#\" onclick=\"hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);;
+        return false;\">Application Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);;
+        return false;\">Framework Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);;
+        return false;\">Full Trace</a> \n\n    <div id=\"Application-Trace\" style=\"display:
+        block;\">\n      <pre><code>app/serializers/api/v1/root_serializer.rb:21:in
+        `_links&#39;\napp/controllers/api/v1/root_controller.rb:5:in `index&#39;</code></pre>\n
+        \   </div>\n    <div id=\"Framework-Trace\" style=\"display: none;\">\n      <pre><code>(eval):3:in
+        `_fast_attributes&#39;\nactive_model_serializers (0.8.1) lib/active_model/serializer.rb:466:in
+        `rescue in attributes&#39;\nactive_model_serializers (0.8.1) lib/active_model/serializer.rb:454:in
+        `attributes&#39;\nactive_model_serializers (0.8.1) lib/active_model/serializer.rb:478:in
+        `_serializable_hash&#39;\nactive_model_serializers (0.8.1) lib/active_model/serializer.rb:360:in
+        `serializable_hash&#39;\nactive_model_serializers (0.8.1) lib/active_model/serializer.rb:348:in
+        `as_json&#39;\nactivesupport (4.0.4) lib/active_support/json/encoding.rb:50:in
+        `block in encode&#39;\nactivesupport (4.0.4) lib/active_support/json/encoding.rb:81:in
+        `check_for_circular_references&#39;\nactivesupport (4.0.4) lib/active_support/json/encoding.rb:49:in
+        `encode&#39;\nactivesupport (4.0.4) lib/active_support/json/encoding.rb:34:in
+        `encode&#39;\nactivesupport (4.0.4) lib/active_support/core_ext/object/to_json.rb:16:in
+        `to_json&#39;\nactive_model_serializers (0.8.1) lib/active_model/serializer.rb:333:in
+        `to_json&#39;\nactionpack (4.0.4) lib/action_controller/metal/renderers.rb:90:in
+        `block in &lt;module:Renderers&gt;&#39;\nactive_model_serializers (0.8.1)
+        lib/action_controller/serialization.rb:46:in `_render_option_json&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/renderers.rb:33:in `block in _handle_render_options&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/set.rb:263:in
+        `each_key&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/set.rb:263:in
+        `each&#39;\nactionpack (4.0.4) lib/action_controller/metal/renderers.rb:30:in
+        `_handle_render_options&#39;\nactionpack (4.0.4) lib/action_controller/metal/renderers.rb:26:in
+        `render_to_body&#39;\nactionpack (4.0.4) lib/abstract_controller/rendering.rb:97:in
+        `render&#39;\nactionpack (4.0.4) lib/action_controller/metal/rendering.rb:16:in
+        `render&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in
+        `block (2 levels) in render&#39;\nactivesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in
+        `block in ms&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in
+        `realtime&#39;\nactivesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in
+        `ms&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in
+        `block in render&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:84:in
+        `cleanup_view_runtime&#39;\nactiverecord (4.0.4) lib/active_record/railties/controller_runtime.rb:25:in
+        `cleanup_view_runtime&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:40:in
+        `render&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:255:in
+        `display&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:203:in
+        `api_behavior&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:182:in
+        `rescue in to_format&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:176:in
+        `to_format&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:154:in
+        `respond&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:147:in
+        `call&#39;\nactionpack (4.0.4) lib/action_controller/metal/mime_responds.rb:330:in
+        `respond_with&#39;\nactionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:4:in
+        `send_action&#39;\nactionpack (4.0.4) lib/abstract_controller/base.rb:189:in
+        `process_action&#39;\nactionpack (4.0.4) lib/action_controller/metal/rendering.rb:10:in
+        `process_action&#39;\nactionpack (4.0.4) lib/abstract_controller/callbacks.rb:18:in
+        `block in process_action&#39;\nactivesupport (4.0.4) lib/active_support/callbacks.rb:383:in
+        `_run__552417660275114359__process_action__callbacks&#39;\nactivesupport (4.0.4)
+        lib/active_support/callbacks.rb:80:in `run_callbacks&#39;\nactionpack (4.0.4)
+        lib/abstract_controller/callbacks.rb:17:in `process_action&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications.rb:159:in `instrument&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;\nactiverecord
+        (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/base.rb:136:in `process&#39;\nactionpack (4.0.4)
+        lib/abstract_controller/rendering.rb:44:in `process&#39;\nactionpack (4.0.4)
+        lib/action_controller/metal.rb:195:in `dispatch&#39;\nactionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in
+        `dispatch&#39;\nactionpack (4.0.4) lib/action_controller/metal.rb:231:in `block
+        in action&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in
+        `dispatch&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in
+        `block in call&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in
+        `each&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in
+        `call&#39;\nrack (1.5.2) lib/rack/etag.rb:23:in `call&#39;\nrack (1.5.2) lib/rack/conditionalget.rb:25:in
+        `call&#39;\nrack (1.5.2) lib/rack/head.rb:11:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;\nactiverecord
+        (4.0.4) lib/active_record/query_cache.rb:36:in `call&#39;\nactiverecord (4.0.4)
+        lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call&#39;\nactiverecord
+        (4.0.4) lib/active_record/migration.rb:373:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:373:in `_run__2270658051568218024__call__callbacks&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:20:in
+        `block in call&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in
+        `block in tagged&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in
+        `tagged&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in
+        `tagged&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;\nrack
+        (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in
+        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/static.rb:64:in `call&#39;\nrailties (4.0.4)
+        lib/rails/engine.rb:511:in `call&#39;\nrailties (4.0.4) lib/rails/application.rb:97:in
+        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in
+        `call&#39;\nrack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n    <div id=\"Full-Trace\"
+        style=\"display: none;\">\n      <pre><code>app/serializers/api/v1/root_serializer.rb:21:in
+        `_links&#39;\n(eval):3:in `_fast_attributes&#39;\nactive_model_serializers
+        (0.8.1) lib/active_model/serializer.rb:466:in `rescue in attributes&#39;\nactive_model_serializers
+        (0.8.1) lib/active_model/serializer.rb:454:in `attributes&#39;\nactive_model_serializers
+        (0.8.1) lib/active_model/serializer.rb:478:in `_serializable_hash&#39;\nactive_model_serializers
+        (0.8.1) lib/active_model/serializer.rb:360:in `serializable_hash&#39;\nactive_model_serializers
+        (0.8.1) lib/active_model/serializer.rb:348:in `as_json&#39;\nactivesupport
+        (4.0.4) lib/active_support/json/encoding.rb:50:in `block in encode&#39;\nactivesupport
+        (4.0.4) lib/active_support/json/encoding.rb:81:in `check_for_circular_references&#39;\nactivesupport
+        (4.0.4) lib/active_support/json/encoding.rb:49:in `encode&#39;\nactivesupport
+        (4.0.4) lib/active_support/json/encoding.rb:34:in `encode&#39;\nactivesupport
+        (4.0.4) lib/active_support/core_ext/object/to_json.rb:16:in `to_json&#39;\nactive_model_serializers
+        (0.8.1) lib/active_model/serializer.rb:333:in `to_json&#39;\nactionpack (4.0.4)
+        lib/action_controller/metal/renderers.rb:90:in `block in &lt;module:Renderers&gt;&#39;\nactive_model_serializers
+        (0.8.1) lib/action_controller/serialization.rb:46:in `_render_option_json&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/renderers.rb:33:in `block in _handle_render_options&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/set.rb:263:in
+        `each_key&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/set.rb:263:in
+        `each&#39;\nactionpack (4.0.4) lib/action_controller/metal/renderers.rb:30:in
+        `_handle_render_options&#39;\nactionpack (4.0.4) lib/action_controller/metal/renderers.rb:26:in
+        `render_to_body&#39;\nactionpack (4.0.4) lib/abstract_controller/rendering.rb:97:in
+        `render&#39;\nactionpack (4.0.4) lib/action_controller/metal/rendering.rb:16:in
+        `render&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in
+        `block (2 levels) in render&#39;\nactivesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in
+        `block in ms&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in
+        `realtime&#39;\nactivesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in
+        `ms&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in
+        `block in render&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:84:in
+        `cleanup_view_runtime&#39;\nactiverecord (4.0.4) lib/active_record/railties/controller_runtime.rb:25:in
+        `cleanup_view_runtime&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:40:in
+        `render&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:255:in
+        `display&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:203:in
+        `api_behavior&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:182:in
+        `rescue in to_format&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:176:in
+        `to_format&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:154:in
+        `respond&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:147:in
+        `call&#39;\nactionpack (4.0.4) lib/action_controller/metal/mime_responds.rb:330:in
+        `respond_with&#39;\napp/controllers/api/v1/root_controller.rb:5:in `index&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/base.rb:189:in `process_action&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/callbacks.rb:18:in `block in process_action&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:383:in `_run__552417660275114359__process_action__callbacks&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/callbacks.rb:17:in `process_action&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications.rb:159:in `instrument&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;\nactiverecord
+        (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/base.rb:136:in `process&#39;\nactionpack (4.0.4)
+        lib/abstract_controller/rendering.rb:44:in `process&#39;\nactionpack (4.0.4)
+        lib/action_controller/metal.rb:195:in `dispatch&#39;\nactionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in
+        `dispatch&#39;\nactionpack (4.0.4) lib/action_controller/metal.rb:231:in `block
+        in action&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in
+        `dispatch&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in
+        `block in call&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in
+        `each&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in
+        `call&#39;\nrack (1.5.2) lib/rack/etag.rb:23:in `call&#39;\nrack (1.5.2) lib/rack/conditionalget.rb:25:in
+        `call&#39;\nrack (1.5.2) lib/rack/head.rb:11:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;\nactiverecord
+        (4.0.4) lib/active_record/query_cache.rb:36:in `call&#39;\nactiverecord (4.0.4)
+        lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call&#39;\nactiverecord
+        (4.0.4) lib/active_record/migration.rb:373:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:373:in `_run__2270658051568218024__call__callbacks&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:20:in
+        `block in call&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in
+        `block in tagged&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in
+        `tagged&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in
+        `tagged&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;\nrack
+        (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in
+        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/static.rb:64:in `call&#39;\nrailties (4.0.4)
+        lib/rails/engine.rb:511:in `call&#39;\nrailties (4.0.4) lib/rails/application.rb:97:in
+        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in
+        `call&#39;\nrack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n</div>\n\n  \n\n<h2
+        style=\"margin-top: 30px\">Request</h2>\n<p><b>Parameters</b>:</p> <pre>None</pre>\n\n<div
+        class=\"details\">\n  <div class=\"summary\"><a href=\"#\" onclick=\"return
+        toggleSessionDump()\">Toggle session dump</a></div>\n  <div id=\"session_dump\"
+        style=\"display:none\"><pre></pre></div>\n</div>\n\n<div class=\"details\">\n
+        \ <div class=\"summary\"><a href=\"#\" onclick=\"return toggleEnvDump()\">Toggle
+        env dump</a></div>\n  <div id=\"env_dump\" style=\"display:none\"><pre>GATEWAY_INTERFACE:
+        &quot;CGI/1.1&quot;\nHTTP_ACCEPT: &quot;*/*&quot;\nHTTP_ACCEPT_ENCODING: &quot;gzip;q=1.0,deflate;q=0.6,identity;q=0.3&quot;\nREMOTE_ADDR:
+        &quot;127.0.0.1&quot;\nREMOTE_HOST: &quot;127.0.0.1&quot;\nSERVER_NAME: &quot;localhost&quot;\nSERVER_PROTOCOL:
+        &quot;HTTP/1.1&quot;</pre></div>\n</div>\n\n<h2 style=\"margin-top: 30px\">Response</h2>\n<p><b>Headers</b>:</p>
+        <pre>None</pre>\n\n</div>\n\n\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 15:25:47 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/users/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: 'Not Found '
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '17539'
+      X-Request-Id:
+      - ce24f197-e539-4e07-96ff-562054681a13
+      X-Runtime:
+      - '0.019111'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 17:52:44 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\"
+        />\n  <title>Action Controller: Exception caught</title>\n  <style>\n    body
+        {\n      background-color: #FAFAFA;\n      color: #333;\n      margin: 0px;\n
+        \   }\n\n    body, p, ol, ul, td {\n      font-family: helvetica, verdana,
+        arial, sans-serif;\n      font-size:   13px;\n      line-height: 18px;\n    }\n\n
+        \   pre {\n      font-size: 11px;\n      white-space: pre-wrap;\n    }\n\n
+        \   pre.box {\n      border: 1px solid #EEE;\n      padding: 10px;\n      margin:
+        0px;\n      width: 958px;\n    }\n\n    header {\n      color: #F0F0F0;\n
+        \     background: #C52F24;\n      padding: 0.5em 1.5em;\n    }\n\n    h1 {\n
+        \     margin: 0.2em 0;\n      line-height: 1.1em;\n      font-size: 2em;\n
+        \   }\n\n    h2 {\n      color: #C52F24;\n      line-height: 25px;\n    }\n\n
+        \   .details {\n      border: 1px solid #D0D0D0;\n      border-radius: 4px;\n
+        \     margin: 1em 0px;\n      display: block;\n      width: 978px;\n    }\n\n
+        \   .summary {\n      padding: 8px 15px;\n      border-bottom: 1px solid #D0D0D0;\n
+        \     display: block;\n    }\n\n    .details pre {\n      margin: 5px;\n      border:
+        none;\n    }\n\n    #container {\n      box-sizing: border-box;\n      width:
+        100%;\n      padding: 0 1.5em;\n    }\n\n    .source * {\n      margin: 0px;\n
+        \     padding: 0px;\n    }\n\n    .source {\n      border: 1px solid #D9D9D9;\n
+        \     background: #ECECEC;\n      width: 978px;\n    }\n\n    .source pre
+        {\n      padding: 10px 0px;\n      border: none;\n    }\n\n    .source .data
+        {\n      font-size: 80%;\n      overflow: auto;\n      background-color: #FFF;\n
+        \   }\n\n    .info {\n      padding: 0.5em;\n    }\n\n    .source .data .line_numbers
+        {\n      background-color: #ECECEC;\n      color: #AAA;\n      padding: 1em
+        .5em;\n      border-right: 1px solid #DDD;\n      text-align: right;\n    }\n\n
+        \   .line {\n      padding-left: 10px;\n    }\n\n    .line:hover {\n      background-color:
+        #F6F6F6;\n    }\n\n    .line.active {\n      background-color: #FFCCCC;\n
+        \   }\n\n    a { color: #980905; }\n    a:visited { color: #666; }\n    a:hover
+        { color: #C52F24; }\n\n      #route_table {\n    margin: 0 auto 0;\n    border-collapse:
+        collapse;\n  }\n\n  #route_table td {\n    padding: 0 30px;\n  }\n\n  #route_table
+        tr.bottom th {\n    padding-bottom: 10px;\n    line-height: 15px;\n  }\n\n
+        \ #route_table .matched_paths {\n    background-color: LightGoldenRodYellow;\n
+        \ }\n\n  #route_table .matched_paths {\n    border-bottom: solid 3px SlateGrey;\n
+        \ }\n\n  #path_search {\n    width: 80%;\n    font-size: inherit;\n  }\n\n
+        \ </style>\n\n  <script>\n    var toggle = function(id) {\n      var s = document.getElementById(id).style;\n
+        \     s.display = s.display == 'none' ? 'block' : 'none';\n      return false;\n
+        \   }\n    var show = function(id) {\n      document.getElementById(id).style.display
+        = 'block';\n    }\n    var hide = function(id) {\n      document.getElementById(id).style.display
+        = 'none';\n    }\n    var toggleTrace = function() {\n      return toggle('blame_trace');\n
+        \   }\n    var toggleSessionDump = function() {\n      return toggle('session_dump');\n
+        \   }\n    var toggleEnvDump = function() {\n      return toggle('env_dump');\n
+        \   }\n  </script>\n</head>\n<body>\n\n<header>\n  <h1>Routing Error</h1>\n</header>\n<div
+        id=\"container\">\n  <h2>No route matches [GET] &quot;/api/users&quot;</h2>\n\n
+        \ \n<p><code>Rails.root: /Users/austenito/repos/happiness/happiness_service</code></p>\n\n<div
+        id=\"traces\">\n    <a href=\"#\" onclick=\"hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);;
+        return false;\">Application Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);;
+        return false;\">Framework Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);;
+        return false;\">Full Trace</a> \n\n    <div id=\"Application-Trace\" style=\"display:
+        block;\">\n      <pre><code></code></pre>\n    </div>\n    <div id=\"Framework-Trace\"
+        style=\"display: none;\">\n      <pre><code>actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in
+        `call&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in
+        `call&#39;\nrack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport
+        (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call&#39;\nrack
+        (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in
+        `call&#39;\nrailties (4.0.4) lib/rails/engine.rb:511:in `call&#39;\nrailties
+        (4.0.4) lib/rails/application.rb:97:in `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in
+        `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;\nrack
+        (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n    <div id=\"Full-Trace\"
+        style=\"display: none;\">\n      <pre><code>actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in
+        `call&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in
+        `call&#39;\nrack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport
+        (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call&#39;\nrack
+        (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in
+        `call&#39;\nrailties (4.0.4) lib/rails/engine.rb:511:in `call&#39;\nrailties
+        (4.0.4) lib/rails/application.rb:97:in `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in
+        `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;\nrack
+        (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n</div>\n\n\n    <h2>\n
+        \     Routes\n    </h2>\n\n    <p>\n      Routes match in priority from top
+        to bottom\n    </p>\n\n    \n<table id='route_table' class='route_table'>\n
+        \ <thead>\n    <tr>\n      <th>Helper</th>\n      <th>HTTP Verb</th>\n      <th>Path</th>\n
+        \     <th>Controller#Action</th>\n    </tr>\n    <tr class='bottom'>\n      <th>\n
+        \       <a data-route-helper=\"_path\" href=\"#\" title=\"Returns a relative
+        path (without the http or domain)\">Path</a> /\n        <a data-route-helper=\"_url\"
+        href=\"#\" title=\"Returns an absolute url (with the http and domain)\">Url</a>\n
+        \     </th>\n      <th>\n      </th>\n      <th>\n        <input id=\"path_search\"
+        name=\"path[]\" placeholder=\"Path Match\" type=\"search\" />\n      </th>\n
+        \     <th>\n      </th>\n    </tr>\n  </thead>\n  <tbody class='matched_paths'
+        id='matched_paths'>\n  </tbody>\n  <tbody>\n    <tr class='route_row' data-helper='path'>\n
+        \ <td data-route-name='api_question_survey_questions'>\n      api_question_survey_questions<span
+        class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n    GET\n
+        \ </td>\n  <td data-route-path='/api/questions/:question_id/survey_questions(.:format)'
+        data-regexp='^\\/api\\/questions\\/([^\\/.?]+)\\/survey_questions(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/questions/:question_id/survey_questions(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#index {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#index {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='api_question_answers'>\n
+        \     api_question_answers<span class='helper'>_path</span>\n  </td>\n  <td
+        data-route-verb='GET'>\n    GET\n  </td>\n  <td data-route-path='/api/questions/:question_id/answers(.:format)'
+        data-regexp='^\\/api\\/questions\\/([^\\/.?]+)\\/answers(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/questions/:question_id/answers(.:format)\n  </td>\n  <td data-route-reqs='api/v1/answers#index
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/answers#index {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_questions'>\n
+        \     api_questions<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/questions(.:format)' data-regexp='^\\/api\\/questions(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/questions(.:format)\n  </td>\n  <td data-route-reqs='api/v1/questions#index
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/questions#index {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name=''>\n
+        \ </td>\n  <td data-route-verb='POST'>\n    POST\n  </td>\n  <td data-route-path='/api/questions(.:format)'
+        data-regexp='^\\/api\\/questions(?:\\.([^\\/.?]+))?$'>\n    /api/questions(.:format)\n
+        \ </td>\n  <td data-route-reqs='api/v1/questions#create {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/questions#create {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='api_survey_survey_questions'>\n
+        \     api_survey_survey_questions<span class='helper'>_path</span>\n  </td>\n
+        \ <td data-route-verb='POST'>\n    POST\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions(.:format)\n  </td>\n  <td data-route-reqs='api/v1/survey_questions#create
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/survey_questions#create {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_survey_survey_question'>\n
+        \     api_survey_survey_question<span class='helper'>_path</span>\n  </td>\n
+        \ <td data-route-verb='GET'>\n    GET\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions/:id(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions/:id(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#show {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#show {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name=''>\n  </td>\n
+        \ <td data-route-verb='PATCH'>\n    PATCH\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions/:id(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions/:id(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name=''>\n  </td>\n
+        \ <td data-route-verb='PUT'>\n    PUT\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions/:id(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions/:id(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='api_surveys'>\n
+        \     api_surveys<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/surveys(.:format)' data-regexp='^\\/api\\/surveys(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys(.:format)\n  </td>\n  <td data-route-reqs='api/v1/surveys#index
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/surveys#index {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name=''>\n
+        \ </td>\n  <td data-route-verb='POST'>\n    POST\n  </td>\n  <td data-route-path='/api/surveys(.:format)'
+        data-regexp='^\\/api\\/surveys(?:\\.([^\\/.?]+))?$'>\n    /api/surveys(.:format)\n
+        \ </td>\n  <td data-route-reqs='api/v1/surveys#create {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/surveys#create {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='api_survey'>\n
+        \     api_survey<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/surveys/:id(.:format)' data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:id(.:format)\n  </td>\n  <td data-route-reqs='api/v1/surveys#show
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/surveys#show {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_users'>\n
+        \     api_users<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='POST'>\n
+        \   POST\n  </td>\n  <td data-route-path='/api/users(.:format)' data-regexp='^\\/api\\/users(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/users(.:format)\n  </td>\n  <td data-route-reqs='api/v1/users#create
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/users#create {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_user'>\n
+        \     api_user<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/users/:id(.:format)' data-regexp='^\\/api\\/users\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/users/:id(.:format)\n  </td>\n  <td data-route-reqs='api/v1/users#show
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/users#show {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='root'>\n
+        \     root<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/' data-regexp='^\\/$'>\n    /\n
+        \ </td>\n  <td data-route-reqs='api/v1/root#index'>\n    api/v1/root#index\n
+        \ </td>\n</tr>\n\n  </tbody>\n</table>\n\n<script type='text/javascript'>\n
+        \ function each(elems, func) {\n    if (!elems instanceof Array) { elems =
+        [elems]; }\n    for (var i = 0, len = elems.length; i < len; i++) {\n      func(elems[i]);\n
+        \   }\n  }\n\n  function setValOn(elems, val) {\n    each(elems, function(elem)
+        {\n      elem.innerHTML = val;\n    });\n  }\n\n  function onClick(elems,
+        func) {\n    each(elems, function(elem) {\n      elem.onclick = func;\n    });\n
+        \ }\n\n  // Enables functionality to toggle between `_path` and `_url` helper
+        suffixes\n  function setupRouteToggleHelperLinks() {\n    var toggleLinks
+        = document.querySelectorAll('#route_table [data-route-helper]');\n    onClick(toggleLinks,
+        function(){\n      var helperTxt   = this.getAttribute(\"data-route-helper\"),\n
+        \         helperElems = document.querySelectorAll('[data-route-name] span.helper');\n
+        \     setValOn(helperElems, helperTxt);\n    });\n  }\n\n  // takes an array
+        of elements with a data-regexp attribute and\n  // passes their their parent
+        <tr> into the callback function\n  // if the regexp matchs a given path\n
+        \ function eachElemsForPath(elems, path, func) {\n    each(elems, function(e){\n
+        \     var reg = e.getAttribute(\"data-regexp\");\n      if (path.match(RegExp(reg)))
+        {\n        func(e.parentNode.cloneNode(true));\n      }\n    })\n  }\n\n  //
+        Ensure path always starts with a slash \"/\" and remove params or fragments\n
+        \ function sanitizePath(path) {\n    var path = path.charAt(0) == '/' ? path
+        : \"/\" + path;\n    return path.replace(/\\#.*|\\?.*/, '');\n  }\n\n  //
+        Enables path search functionality\n  function setupMatchPaths() {\n    var
+        regexpElems     = document.querySelectorAll('#route_table [data-regexp]'),\n
+        \       pathElem        = document.querySelector('#path_search'),\n        selectedSection
+        = document.querySelector('#matched_paths'),\n        noMatchText     = '<tr><th
+        colspan=\"4\">None</th></tr>';\n\n\n    // Remove matches if no path is present\n
+        \   pathElem.onblur = function(e) {\n      if (pathElem.value === \"\") selectedSection.innerHTML
+        = \"\";\n    }\n\n    // On key press perform a search for matching paths\n
+        \   pathElem.onkeyup = function(e){\n      var path        = sanitizePath(pathElem.value),\n
+        \         defaultText = '<tr><th colspan=\"4\">Paths Matching (' + path +
+        '):</th></tr>';\n\n      // Clear out results section\n      selectedSection.innerHTML=
+        defaultText;\n\n      // Display matches if they exist\n      eachElemsForPath(regexpElems,
+        path, function(e){\n        selectedSection.appendChild(e);\n      });\n\n
+        \     // If no match present, tell the user\n      if (selectedSection.innerHTML
+        === defaultText) {\n        selectedSection.innerHTML = selectedSection.innerHTML
+        + noMatchText;\n      }\n    }\n  }\n\n  setupMatchPaths();\n  setupRouteToggleHelperLinks();\n</script>\n\n</div>\n\n\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 17:52:44 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/users//
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: 'Not Found '
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '17539'
+      X-Request-Id:
+      - 82859f80-6f1b-4e3b-8e45-326963d13d4d
+      X-Runtime:
+      - '0.019097'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 18:11:11 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\"
+        />\n  <title>Action Controller: Exception caught</title>\n  <style>\n    body
+        {\n      background-color: #FAFAFA;\n      color: #333;\n      margin: 0px;\n
+        \   }\n\n    body, p, ol, ul, td {\n      font-family: helvetica, verdana,
+        arial, sans-serif;\n      font-size:   13px;\n      line-height: 18px;\n    }\n\n
+        \   pre {\n      font-size: 11px;\n      white-space: pre-wrap;\n    }\n\n
+        \   pre.box {\n      border: 1px solid #EEE;\n      padding: 10px;\n      margin:
+        0px;\n      width: 958px;\n    }\n\n    header {\n      color: #F0F0F0;\n
+        \     background: #C52F24;\n      padding: 0.5em 1.5em;\n    }\n\n    h1 {\n
+        \     margin: 0.2em 0;\n      line-height: 1.1em;\n      font-size: 2em;\n
+        \   }\n\n    h2 {\n      color: #C52F24;\n      line-height: 25px;\n    }\n\n
+        \   .details {\n      border: 1px solid #D0D0D0;\n      border-radius: 4px;\n
+        \     margin: 1em 0px;\n      display: block;\n      width: 978px;\n    }\n\n
+        \   .summary {\n      padding: 8px 15px;\n      border-bottom: 1px solid #D0D0D0;\n
+        \     display: block;\n    }\n\n    .details pre {\n      margin: 5px;\n      border:
+        none;\n    }\n\n    #container {\n      box-sizing: border-box;\n      width:
+        100%;\n      padding: 0 1.5em;\n    }\n\n    .source * {\n      margin: 0px;\n
+        \     padding: 0px;\n    }\n\n    .source {\n      border: 1px solid #D9D9D9;\n
+        \     background: #ECECEC;\n      width: 978px;\n    }\n\n    .source pre
+        {\n      padding: 10px 0px;\n      border: none;\n    }\n\n    .source .data
+        {\n      font-size: 80%;\n      overflow: auto;\n      background-color: #FFF;\n
+        \   }\n\n    .info {\n      padding: 0.5em;\n    }\n\n    .source .data .line_numbers
+        {\n      background-color: #ECECEC;\n      color: #AAA;\n      padding: 1em
+        .5em;\n      border-right: 1px solid #DDD;\n      text-align: right;\n    }\n\n
+        \   .line {\n      padding-left: 10px;\n    }\n\n    .line:hover {\n      background-color:
+        #F6F6F6;\n    }\n\n    .line.active {\n      background-color: #FFCCCC;\n
+        \   }\n\n    a { color: #980905; }\n    a:visited { color: #666; }\n    a:hover
+        { color: #C52F24; }\n\n      #route_table {\n    margin: 0 auto 0;\n    border-collapse:
+        collapse;\n  }\n\n  #route_table td {\n    padding: 0 30px;\n  }\n\n  #route_table
+        tr.bottom th {\n    padding-bottom: 10px;\n    line-height: 15px;\n  }\n\n
+        \ #route_table .matched_paths {\n    background-color: LightGoldenRodYellow;\n
+        \ }\n\n  #route_table .matched_paths {\n    border-bottom: solid 3px SlateGrey;\n
+        \ }\n\n  #path_search {\n    width: 80%;\n    font-size: inherit;\n  }\n\n
+        \ </style>\n\n  <script>\n    var toggle = function(id) {\n      var s = document.getElementById(id).style;\n
+        \     s.display = s.display == 'none' ? 'block' : 'none';\n      return false;\n
+        \   }\n    var show = function(id) {\n      document.getElementById(id).style.display
+        = 'block';\n    }\n    var hide = function(id) {\n      document.getElementById(id).style.display
+        = 'none';\n    }\n    var toggleTrace = function() {\n      return toggle('blame_trace');\n
+        \   }\n    var toggleSessionDump = function() {\n      return toggle('session_dump');\n
+        \   }\n    var toggleEnvDump = function() {\n      return toggle('env_dump');\n
+        \   }\n  </script>\n</head>\n<body>\n\n<header>\n  <h1>Routing Error</h1>\n</header>\n<div
+        id=\"container\">\n  <h2>No route matches [GET] &quot;/api/users&quot;</h2>\n\n
+        \ \n<p><code>Rails.root: /Users/austenito/repos/happiness/happiness_service</code></p>\n\n<div
+        id=\"traces\">\n    <a href=\"#\" onclick=\"hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);;
+        return false;\">Application Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);;
+        return false;\">Framework Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);;
+        return false;\">Full Trace</a> \n\n    <div id=\"Application-Trace\" style=\"display:
+        block;\">\n      <pre><code></code></pre>\n    </div>\n    <div id=\"Framework-Trace\"
+        style=\"display: none;\">\n      <pre><code>actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in
+        `call&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in
+        `call&#39;\nrack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport
+        (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call&#39;\nrack
+        (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in
+        `call&#39;\nrailties (4.0.4) lib/rails/engine.rb:511:in `call&#39;\nrailties
+        (4.0.4) lib/rails/application.rb:97:in `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in
+        `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;\nrack
+        (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n    <div id=\"Full-Trace\"
+        style=\"display: none;\">\n      <pre><code>actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in
+        `call&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in
+        `call&#39;\nrack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport
+        (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call&#39;\nrack
+        (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in
+        `call&#39;\nrailties (4.0.4) lib/rails/engine.rb:511:in `call&#39;\nrailties
+        (4.0.4) lib/rails/application.rb:97:in `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in
+        `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;\nrack
+        (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n</div>\n\n\n    <h2>\n
+        \     Routes\n    </h2>\n\n    <p>\n      Routes match in priority from top
+        to bottom\n    </p>\n\n    \n<table id='route_table' class='route_table'>\n
+        \ <thead>\n    <tr>\n      <th>Helper</th>\n      <th>HTTP Verb</th>\n      <th>Path</th>\n
+        \     <th>Controller#Action</th>\n    </tr>\n    <tr class='bottom'>\n      <th>\n
+        \       <a data-route-helper=\"_path\" href=\"#\" title=\"Returns a relative
+        path (without the http or domain)\">Path</a> /\n        <a data-route-helper=\"_url\"
+        href=\"#\" title=\"Returns an absolute url (with the http and domain)\">Url</a>\n
+        \     </th>\n      <th>\n      </th>\n      <th>\n        <input id=\"path_search\"
+        name=\"path[]\" placeholder=\"Path Match\" type=\"search\" />\n      </th>\n
+        \     <th>\n      </th>\n    </tr>\n  </thead>\n  <tbody class='matched_paths'
+        id='matched_paths'>\n  </tbody>\n  <tbody>\n    <tr class='route_row' data-helper='path'>\n
+        \ <td data-route-name='api_question_survey_questions'>\n      api_question_survey_questions<span
+        class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n    GET\n
+        \ </td>\n  <td data-route-path='/api/questions/:question_id/survey_questions(.:format)'
+        data-regexp='^\\/api\\/questions\\/([^\\/.?]+)\\/survey_questions(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/questions/:question_id/survey_questions(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#index {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#index {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='api_question_answers'>\n
+        \     api_question_answers<span class='helper'>_path</span>\n  </td>\n  <td
+        data-route-verb='GET'>\n    GET\n  </td>\n  <td data-route-path='/api/questions/:question_id/answers(.:format)'
+        data-regexp='^\\/api\\/questions\\/([^\\/.?]+)\\/answers(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/questions/:question_id/answers(.:format)\n  </td>\n  <td data-route-reqs='api/v1/answers#index
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/answers#index {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_questions'>\n
+        \     api_questions<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/questions(.:format)' data-regexp='^\\/api\\/questions(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/questions(.:format)\n  </td>\n  <td data-route-reqs='api/v1/questions#index
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/questions#index {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name=''>\n
+        \ </td>\n  <td data-route-verb='POST'>\n    POST\n  </td>\n  <td data-route-path='/api/questions(.:format)'
+        data-regexp='^\\/api\\/questions(?:\\.([^\\/.?]+))?$'>\n    /api/questions(.:format)\n
+        \ </td>\n  <td data-route-reqs='api/v1/questions#create {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/questions#create {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='api_survey_survey_questions'>\n
+        \     api_survey_survey_questions<span class='helper'>_path</span>\n  </td>\n
+        \ <td data-route-verb='POST'>\n    POST\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions(.:format)\n  </td>\n  <td data-route-reqs='api/v1/survey_questions#create
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/survey_questions#create {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_survey_survey_question'>\n
+        \     api_survey_survey_question<span class='helper'>_path</span>\n  </td>\n
+        \ <td data-route-verb='GET'>\n    GET\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions/:id(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions/:id(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#show {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#show {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name=''>\n  </td>\n
+        \ <td data-route-verb='PATCH'>\n    PATCH\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions/:id(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions/:id(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name=''>\n  </td>\n
+        \ <td data-route-verb='PUT'>\n    PUT\n  </td>\n  <td data-route-path='/api/surveys/:survey_id/survey_questions/:id(.:format)'
+        data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)\\/survey_questions\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:survey_id/survey_questions/:id(.:format)\n  </td>\n  <td
+        data-route-reqs='api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/survey_questions#update {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='api_surveys'>\n
+        \     api_surveys<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/surveys(.:format)' data-regexp='^\\/api\\/surveys(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys(.:format)\n  </td>\n  <td data-route-reqs='api/v1/surveys#index
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/surveys#index {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name=''>\n
+        \ </td>\n  <td data-route-verb='POST'>\n    POST\n  </td>\n  <td data-route-path='/api/surveys(.:format)'
+        data-regexp='^\\/api\\/surveys(?:\\.([^\\/.?]+))?$'>\n    /api/surveys(.:format)\n
+        \ </td>\n  <td data-route-reqs='api/v1/surveys#create {:format=&gt;&quot;json&quot;}'>\n
+        \   api/v1/surveys#create {:format=&gt;&quot;json&quot;}\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='api_survey'>\n
+        \     api_survey<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/surveys/:id(.:format)' data-regexp='^\\/api\\/surveys\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/surveys/:id(.:format)\n  </td>\n  <td data-route-reqs='api/v1/surveys#show
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/surveys#show {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_users'>\n
+        \     api_users<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='POST'>\n
+        \   POST\n  </td>\n  <td data-route-path='/api/users(.:format)' data-regexp='^\\/api\\/users(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/users(.:format)\n  </td>\n  <td data-route-reqs='api/v1/users#create
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/users#create {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='api_user'>\n
+        \     api_user<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/api/users/:id(.:format)' data-regexp='^\\/api\\/users\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /api/users/:id(.:format)\n  </td>\n  <td data-route-reqs='api/v1/users#show
+        {:format=&gt;&quot;json&quot;}'>\n    api/v1/users#show {:format=&gt;&quot;json&quot;}\n
+        \ </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n  <td data-route-name='root'>\n
+        \     root<span class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n
+        \   GET\n  </td>\n  <td data-route-path='/' data-regexp='^\\/$'>\n    /\n
+        \ </td>\n  <td data-route-reqs='api/v1/root#index'>\n    api/v1/root#index\n
+        \ </td>\n</tr>\n\n  </tbody>\n</table>\n\n<script type='text/javascript'>\n
+        \ function each(elems, func) {\n    if (!elems instanceof Array) { elems =
+        [elems]; }\n    for (var i = 0, len = elems.length; i < len; i++) {\n      func(elems[i]);\n
+        \   }\n  }\n\n  function setValOn(elems, val) {\n    each(elems, function(elem)
+        {\n      elem.innerHTML = val;\n    });\n  }\n\n  function onClick(elems,
+        func) {\n    each(elems, function(elem) {\n      elem.onclick = func;\n    });\n
+        \ }\n\n  // Enables functionality to toggle between `_path` and `_url` helper
+        suffixes\n  function setupRouteToggleHelperLinks() {\n    var toggleLinks
+        = document.querySelectorAll('#route_table [data-route-helper]');\n    onClick(toggleLinks,
+        function(){\n      var helperTxt   = this.getAttribute(\"data-route-helper\"),\n
+        \         helperElems = document.querySelectorAll('[data-route-name] span.helper');\n
+        \     setValOn(helperElems, helperTxt);\n    });\n  }\n\n  // takes an array
+        of elements with a data-regexp attribute and\n  // passes their their parent
+        <tr> into the callback function\n  // if the regexp matchs a given path\n
+        \ function eachElemsForPath(elems, path, func) {\n    each(elems, function(e){\n
+        \     var reg = e.getAttribute(\"data-regexp\");\n      if (path.match(RegExp(reg)))
+        {\n        func(e.parentNode.cloneNode(true));\n      }\n    })\n  }\n\n  //
+        Ensure path always starts with a slash \"/\" and remove params or fragments\n
+        \ function sanitizePath(path) {\n    var path = path.charAt(0) == '/' ? path
+        : \"/\" + path;\n    return path.replace(/\\#.*|\\?.*/, '');\n  }\n\n  //
+        Enables path search functionality\n  function setupMatchPaths() {\n    var
+        regexpElems     = document.querySelectorAll('#route_table [data-regexp]'),\n
+        \       pathElem        = document.querySelector('#path_search'),\n        selectedSection
+        = document.querySelector('#matched_paths'),\n        noMatchText     = '<tr><th
+        colspan=\"4\">None</th></tr>';\n\n\n    // Remove matches if no path is present\n
+        \   pathElem.onblur = function(e) {\n      if (pathElem.value === \"\") selectedSection.innerHTML
+        = \"\";\n    }\n\n    // On key press perform a search for matching paths\n
+        \   pathElem.onkeyup = function(e){\n      var path        = sanitizePath(pathElem.value),\n
+        \         defaultText = '<tr><th colspan=\"4\">Paths Matching (' + path +
+        '):</th></tr>';\n\n      // Clear out results section\n      selectedSection.innerHTML=
+        defaultText;\n\n      // Display matches if they exist\n      eachElemsForPath(regexpElems,
+        path, function(e){\n        selectedSection.appendChild(e);\n      });\n\n
+        \     // If no match present, tell the user\n      if (selectedSection.innerHTML
+        === defaultText) {\n        selectedSection.innerHTML = selectedSection.innerHTML
+        + noMatchText;\n      }\n    }\n  }\n\n  setupMatchPaths();\n  setupRouteToggleHelperLinks();\n</script>\n\n</div>\n\n\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 18:11:11 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/questions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"095b342516d2b8d4e48f2c027147779e"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 18d568b8-1def-4322-a0e8-3ffe9816e621
+      X-Runtime:
+      - '0.015166'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 18:43:51 GMT
+      Content-Length:
+      - '21618'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        [
+          {
+            "id": 1,
+            "question_type": "multiple",
+            "text": "How hungry or full are you right now?",
+            "responses": [
+              "Very hungry",
+              "Somewhat hungry",
+              "Neither full nor hungry",
+              "Somewhat full",
+              "Very full"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 2,
+            "question_type": "time",
+            "text": "What time did you wake up this morning?",
+            "responses": null,
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 3,
+            "question_type": "time",
+            "text": "What time did you got to sleep last night?",
+            "responses": null,
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 4,
+            "question_type": "multiple",
+            "text": "Are you judging or evaluating yourself right now (i.e. at the moment just before you were notified)?",
+            "responses": [
+              "f",
+              "Yes - Negatively",
+              "Yes - Neutrally",
+              "Yes - Positively"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 5,
+            "question_type": "range",
+            "text": "How well did you sleep last night?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 6,
+            "question_type": "range",
+            "text": "To what extent are you engrossed in what you are doing?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 7,
+            "question_type": "multiple",
+            "text": "Are you judging or evaluating what you are doing right now (i.e. at the moment just before you were notified?)",
+            "responses": [
+              "f",
+              "Yes - Negatively",
+              "Yes - Neutrally",
+              "Yes - Positively"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 8,
+            "question_type": "boolean",
+            "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 9,
+            "question_type": "multiple",
+            "text": "Imagine you were given $10 to divide between yourself and a stranger to whom you would remain anonymous. How much would you give to the stranger?",
+            "responses": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 10,
+            "question_type": "boolean",
+            "text": "Have you surprised someone with a gift (including small gifts) in the last week?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 11,
+            "question_type": "multiple",
+            "text": "In general, how is your health?",
+            "responses": [
+              "Excellent",
+              "Very Good",
+              "Good",
+              "Fair",
+              "Poor"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 12,
+            "question_type": "range",
+            "text": "Where would you place yourself on this ladder?\nThink of a ladder representing where people stand in your country.\nAt the top of the ladder are the people who are the best off - those who have the most money, the most education and the most respected jobs. At the bottom are the people who are the worst off - who have the least money, least education, and the least respected jobs or no job. The higher up you are on the ladder, the closer you are to the people at the very top; the lower you are the closer you are to people at the very bottom.",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 13,
+            "question_type": "range",
+            "text": "To what extent is what you're doing interesting?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 14,
+            "question_type": "multiple",
+            "text": "On average, how many hours do you work each week?",
+            "responses": [
+              "Less than 5",
+              "5-10",
+              "10-20",
+              "20-30",
+              "30-40",
+              "40-50",
+              "50-60",
+              "60-70",
+              "More than 70"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 15,
+            "question_type": "range",
+            "text": "How do you feel right now?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false,
+            "absolute_index": 0,
+            "parent_question_id": null
+          },
+          {
+            "id": 16,
+            "question_type": "range",
+            "text": "To what extent do you expect good things to happen in the future?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 17,
+            "question_type": "boolean",
+            "text": "Have you taken any over-the-counter pain medication in the past 24 hours?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 18,
+            "question_type": "range",
+            "text": "To what extent have you procrastinated so far today?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 19,
+            "question_type": "range",
+            "text": "To what extent are you being productive?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 20,
+            "question_type": "multiple",
+            "text": "Who are you talking or interacting with?",
+            "responses": [
+              "Spouse/partner/significant other",
+              "Children",
+              "Parents",
+              "Other relatives",
+              "Friends",
+              "Acquaintances",
+              "Strangers",
+              "Co-workers",
+              "Customers/students",
+              "Boss",
+              "No one"
+            ],
+            "freeform": true,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 30,
+            "question_type": "multiple",
+            "text": "Beyond any work you've already done today, how many additional hours do you expect to work today?",
+            "responses": [
+              "0 (none)",
+              "Less than 1 hour",
+              "1-2 hours",
+              "2-3 hours",
+              "3-4 hours",
+              "4-5 hours",
+              "5-6 hours"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 21,
+            "question_type": "range",
+            "text": "To what extent do you feel accepted by the person/people you are interacting with?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": 20
+          },
+          {
+            "id": 22,
+            "question_type": "boolean",
+            "text": "Are you alone?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 23,
+            "question_type": "boolean",
+            "text": "Do you want to do what you're doing?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 24,
+            "question_type": "boolean",
+            "text": "Are you talking or interacting with anyone?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 25,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "freeform": true,
+            "absolute_index": 1,
+            "parent_question_id": null
+          },
+          {
+            "id": 26,
+            "question_type": "multiple",
+            "text": "How many people are you talking or interacting with?",
+            "responses": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "More than 10"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 27,
+            "question_type": "boolean",
+            "text": "Do you have to do what you're doing?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 28,
+            "question_type": "range",
+            "text": "To what extent are you focused on what you are doing?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 29,
+            "question_type": "multiple",
+            "text": "When did you last check Facebook?",
+            "responses": [
+              "Right now",
+              "In the last 5 minutes",
+              "In the last 15 minutes",
+              "In the last 30 minutes",
+              "In the last hour",
+              "1-2 hours ago",
+              "3-5 hours ago",
+              "6-12 hours ago",
+              "24 hours ago",
+              "Don't use facebook"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 31,
+            "question_type": "boolean",
+            "text": "If you could, and it had no negative consequences, would you jump forward in time 24 hours?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 32,
+            "question_type": "boolean",
+            "text": "Do you love poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 33,
+            "question_type": "boolean",
+            "text": "Do you love poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 34,
+            "question_type": "boolean",
+            "text": "Do you love poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 35,
+            "question_type": "boolean",
+            "text": "Do you love poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 36,
+            "question_type": null,
+            "text": null,
+            "responses": null,
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 37,
+            "question_type": null,
+            "text": null,
+            "responses": null,
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 38,
+            "question_type": null,
+            "text": null,
+            "responses": null,
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 39,
+            "question_type": null,
+            "text": "Do you love poptarts?",
+            "responses": null,
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 40,
+            "question_type": null,
+            "text": "Do you love poptarts?",
+            "responses": null,
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 41,
+            "question_type": "boolean",
+            "text": "Do you love poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 42,
+            "question_type": "boolean",
+            "text": null,
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 43,
+            "question_type": "boolean",
+            "text": null,
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 44,
+            "question_type": "multiple",
+            "text": "Do you love poptarts?",
+            "responses": null,
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 45,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 46,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": null,
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 47,
+            "question_type": "boolean",
+            "text": "Do you love poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 48,
+            "question_type": "multiple",
+            "text": "Do you love poptarts?",
+            "responses": null,
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 49,
+            "question_type": "multiple",
+            "text": "Do you love poptarts?",
+            "responses": null,
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 50,
+            "question_type": "multiple",
+            "text": "Do you love poptarts?",
+            "responses": null,
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 51,
+            "question_type": "multiple",
+            "text": "Do you love poptarts?",
+            "responses": null,
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 52,
+            "question_type": "multiple",
+            "text": "Do you love poptarts?",
+            "responses": null,
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 53,
+            "question_type": "multiple",
+            "text": "Do you love poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 54,
+            "question_type": "range",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 55,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 56,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 57,
+            "question_type": "range",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 58,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 59,
+            "question_type": "range",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 60,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 61,
+            "question_type": "range",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 62,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 63,
+            "question_type": "range",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 64,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 65,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 66,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 67,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": 10,
+            "parent_question_id": null
+          },
+          {
+            "id": 68,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": 10,
+            "parent_question_id": null
+          },
+          {
+            "id": 69,
+            "question_type": "multiple",
+            "text": "Do you love poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 70,
+            "question_type": "multiple",
+            "text": "Do you love poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": 10,
+            "parent_question_id": null
+          },
+          {
+            "id": 71,
+            "question_type": "multiple",
+            "text": "Do you love poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": 10,
+            "parent_question_id": null
+          },
+          {
+            "id": 72,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": 10,
+            "parent_question_id": null
+          },
+          {
+            "id": 73,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": 10,
+            "parent_question_id": null
+          },
+          {
+            "id": 74,
+            "question_type": "range",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 75,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": null,
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 76,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 77,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": 10,
+            "parent_question_id": null
+          },
+          {
+            "id": 78,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": 10,
+            "parent_question_id": null
+          },
+          {
+            "id": 79,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": 10,
+            "parent_question_id": null
+          },
+          {
+            "id": 80,
+            "question_type": "multiple",
+            "text": "Do you love poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": 10,
+            "parent_question_id": null
+          },
+          {
+            "id": 81,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 82,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": true,
+            "absolute_index": 10,
+            "parent_question_id": 42
+          },
+          {
+            "id": 83,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 84,
+            "question_type": "multiple",
+            "text": "Do you love poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 85,
+            "question_type": "multiple",
+            "text": "Do you love poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": null,
+            "parent_question_id": 8
+          },
+          {
+            "id": 86,
+            "question_type": "multiple",
+            "text": "Do you love poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "freeform": true,
+            "absolute_index": null,
+            "parent_question_id": 8
+          },
+          {
+            "id": 87,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          }
+        ]
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 18:43:51 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/users
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"556a8d8681059dd515a70f7027eebf41"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 115d3cc9-0d42-4208-93a1-97e33cec43f1
+      X-Runtime:
+      - '0.007007'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 18:43:51 GMT
+      Content-Length:
+      - '261'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "service_user_id": "4b33689ce77a5dadfb30def4e759cff82ec47baf22c9b66b22ac5cc4fa84e27a",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/users/141"
+            }
+          },
+          "token": "9446ec2fddfca3489be0f1dd6a268dec0d23862ab9367e44afd6a42d611b176b"
+        }
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 18:43:51 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys
+    body:
+      encoding: UTF-8
+      string: '{"survey":{"service_user_id":"4b33689ce77a5dadfb30def4e759cff82ec47baf22c9b66b22ac5cc4fa84e27a"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"6088467defb1e81ac4e6affa03625b8c"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6b4cb2b8-07ed-40eb-8f74-a68a248c474a
+      X-Runtime:
+      - '0.009551'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 18:43:51 GMT
+      Content-Length:
+      - '434'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 145,
+          "service_user_id": "4b33689ce77a5dadfb30def4e759cff82ec47baf22c9b66b22ac5cc4fa84e27a",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/145"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/145/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/145/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+
+          ]
+        }
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 18:43:51 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/145/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":25}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"e50172c62ced50d4088cdfca6dfeae96"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - dc609167-3ee2-4774-87e8-5cc4579c5213
+      X-Runtime:
+      - '0.012135'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 18:43:51 GMT
+      Content-Length:
+      - '561'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 680,
+          "text": "Where are you?",
+          "type": "multiple",
+          "responses": [
+            "At Home",
+            "At Work",
+            "In a car",
+            "Other"
+          ],
+          "answer": null,
+          "freeform": true,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/145/survey_questions/680"
+            },
+            "post": {
+              "href": "http://localhost:3000/api/surveys/145/survey_questions"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/145/survey_questions/680"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/145"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 18:43:51 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/145/survey_questions/680
+    body:
+      encoding: UTF-8
+      string: '{"id":680,"survey_question":{"answer":"At Home"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 17ad2616-144c-45af-94bc-ce3cfa5d7427
+      X-Runtime:
+      - '0.008004'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 18:43:51 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 18:43:51 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/145
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"6d1d21bc6857f01984b3cb2c02720066"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d4005ac8-75cd-49c0-adf4-e64551d705ca
+      X-Runtime:
+      - '0.011250'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 18:43:51 GMT
+      Content-Length:
+      - '1108'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 145,
+          "service_user_id": "4b33689ce77a5dadfb30def4e759cff82ec47baf22c9b66b22ac5cc4fa84e27a",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/145"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/145/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/145/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 680,
+              "text": "Where are you?",
+              "type": "multiple",
+              "responses": [
+                "At Home",
+                "At Work",
+                "In a car",
+                "Other"
+              ],
+              "answer": "At Home",
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/145/survey_questions/680"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/145/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/145/survey_questions/680"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/145"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 18:43:51 GMT
 recorded_with: VCR 2.6.0

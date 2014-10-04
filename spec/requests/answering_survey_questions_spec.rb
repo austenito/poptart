@@ -1,21 +1,21 @@
 require 'spec_helper'
 
 describe 'Answering survey questions' do
-  it "creates and returns an empty survey", :vcr do
+  it "creates and returns an empty survey", :vcr, :record => :all do
     user = Poptart::User.create
     survey = user.create_survey
     survey.service_user_id.should == user.service_user_id
     survey.survey_questions.count.should == 0
   end
 
-  it "creates and returns a random question survey", :vcr do
+  it "creates and returns a random question survey", :vcr, :record => :all do
     user = Poptart::User.create
     survey = user.create_random_survey
     survey.service_user_id.should == user.service_user_id
-    survey.survey_questions.count.should == 5
+    survey.survey_questions.count.should > 0
   end
 
-  it "answers a survey question", :vcr do
+  it "answers a survey question", :vcr, :record => :all do
     user = Poptart::User.create
     survey = user.create_random_survey
     survey_question = survey.survey_questions.first
@@ -27,7 +27,7 @@ describe 'Answering survey questions' do
     survey.survey_questions.first.answer.should == "foo"
   end
 
-  it "answers a survey question", :vcr do
+  it "answers a survey question", :vcr, :record => :all do
     boolean_questions = Poptart::Question.all(type: 'boolean')
     user = Poptart::User.create
     survey = user.create_survey
@@ -44,7 +44,7 @@ describe 'Answering survey questions' do
     survey.survey_questions.first.answer.should == 'true'
   end
 
-  it "answers a multiple choice question", :vcr do
+  it "answers a multiple choice question", :vcr, :record => :all do
     questions = Poptart::Question.all(type: 'multiple')
     question = questions.find { |question| question.responses.include?('At Home') }
     user = Poptart::User.create
@@ -62,35 +62,11 @@ describe 'Answering survey questions' do
     survey.survey_questions.first.answer.should == 'At Home'
   end
 
-  it "finds survey question for id", :vcr do
+  it "finds survey question for id", :vcr, :record => :all do
     user = Poptart::User.create
     survey = user.create_random_survey
     first_survey_question = survey.survey_questions.first
     survey_question = survey.survey_question_for_id(first_survey_question.id)
     first_survey_question.should == survey_question
-  end
-
-  xit "returns all answered survey questions for a question", :vcr, :record => :all do
-    questions = Poptart::Question.all(type: 'multiple')
-    question = questions.find { |question| question.responses.include?('At Home') }
-    user = Poptart::User.create
-
-    survey = user.create_survey
-    survey.add_question(question).should be
-    second_survey = user.create_survey
-    second_survey.add_question(question).should be
-
-    survey = user.survey_for_id(survey.id)
-    survey_question = survey.survey_questions.first
-    survey_question.answer = 'At Home'
-    survey_question.submit.should be
-
-    survey = user.survey_for_id(second_survey.id)
-    survey_question = survey.survey_questions.first
-    survey_question.answer = 'At Work'
-    survey_question.submit.should be
-
-    answered_questions = user.survey_questions_for_question_id(question.id)
-    answered_questions.map(&:answer).should =~ ['At Home', 'At Work']
   end
 end

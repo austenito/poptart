@@ -1,8 +1,8 @@
 require 'spec_helper'
 
 describe 'retrieving answers' do
-  xit 'returns answers', :vcr, record: :all do
-    question = Poptart::BooleanQuestion.create(text: text)
+  it 'returns answers' do
+    question = Poptart::BooleanQuestion.create("Do you like poptarts?")
     user = Poptart::User.create
     survey = user.create_survey
     survey_question = survey.add_question(question)
@@ -20,5 +20,29 @@ describe 'retrieving answers' do
 
     answers.first.answer.should == false
     answers.last.should_not be_nil
+  end
+
+  xit "returns all answered survey questions for a question", :vcr, :record => :all do
+    questions = Poptart::Question.all(type: 'multiple')
+    question = questions.find { |question| question.responses.include?('At Home') }
+    user = Poptart::User.create
+
+    survey = user.create_survey
+    survey.add_question(question).should be
+    second_survey = user.create_survey
+    second_survey.add_question(question).should be
+
+    survey = user.survey_for_id(survey.id)
+    survey_question = survey.survey_questions.first
+    survey_question.answer = 'At Home'
+    survey_question.submit.should be
+
+    survey = user.survey_for_id(second_survey.id)
+    survey_question = survey.survey_questions.first
+    survey_question.answer = 'At Work'
+    survey_question.submit.should be
+
+    answered_questions = user.survey_questions_for_question_id(question.id)
+    answered_questions.map(&:answer).should =~ ['At Home', 'At Work']
   end
 end

@@ -421,142 +421,6 @@ http_interactions:
   recorded_at: Thu, 25 Sep 2014 02:29:22 GMT
 - request:
     method: post
-    uri: http://localhost:3000/api/users/
-    body:
-      encoding: UTF-8
-      string: "{}"
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: 'Created '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"d2960910cfe0787a1b3ef42b2f6290fe"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 94836300-b065-42d0-832d-b410896292b3
-      X-Runtime:
-      - '0.010095'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Thu, 25 Sep 2014 02:29:22 GMT
-      Content-Length:
-      - '260'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "service_user_id": "e2e405f10db037586a1d7e77f3db499ba625a3aa10ba491209e21792bafdd0d1",
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/users/92"
-            }
-          },
-          "token": "1a58d3875b7eec409e0e18e419a1a0ed4c76e59ebe655181504a547119e2a7c4"
-        }
-    http_version: 
-  recorded_at: Thu, 25 Sep 2014 02:29:22 GMT
-- request:
-    method: post
-    uri: http://localhost:3000/api/surveys/
-    body:
-      encoding: UTF-8
-      string: '{"survey":{"service_user_id":"e2e405f10db037586a1d7e77f3db499ba625a3aa10ba491209e21792bafdd0d1"}}'
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: 'Created '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"cc5f3265e0c423c2fba94a00e1213c6a"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - fbacab30-61c3-4966-9bcf-7ca5658954bd
-      X-Runtime:
-      - '0.010543'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Thu, 25 Sep 2014 02:29:22 GMT
-      Content-Length:
-      - '430'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "id": 94,
-          "service_user_id": "e2e405f10db037586a1d7e77f3db499ba625a3aa10ba491209e21792bafdd0d1",
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/surveys/94"
-            },
-            "survey_questions": {
-              "post": {
-                "href": "/api/surveys/94/survey_questions"
-              },
-              "put": {
-                "href": "/api/surveys/94/survey_questions"
-              }
-            }
-          },
-          "completed": false,
-          "survey_questions": [
-
-          ]
-        }
-    http_version: 
-  recorded_at: Thu, 25 Sep 2014 02:29:22 GMT
-- request:
-    method: post
     uri: http://localhost:3000//api/surveys/94/survey_questions/
     body:
       encoding: UTF-8
@@ -678,80 +542,6 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-    http_version: 
-  recorded_at: Thu, 25 Sep 2014 02:29:22 GMT
-- request:
-    method: post
-    uri: http://localhost:3000/api/surveys/
-    body:
-      encoding: UTF-8
-      string: '{"survey":{"service_user_id":"e2e405f10db037586a1d7e77f3db499ba625a3aa10ba491209e21792bafdd0d1"}}'
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: 'Created '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"9bf93cc795b8c2477fd988bfb759334c"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 814f5035-3c60-48fb-976b-d895c4549c16
-      X-Runtime:
-      - '0.013703'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Thu, 25 Sep 2014 02:29:22 GMT
-      Content-Length:
-      - '430'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "id": 95,
-          "service_user_id": "e2e405f10db037586a1d7e77f3db499ba625a3aa10ba491209e21792bafdd0d1",
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/surveys/95"
-            },
-            "survey_questions": {
-              "post": {
-                "href": "/api/surveys/95/survey_questions"
-              },
-              "put": {
-                "href": "/api/surveys/95/survey_questions"
-              }
-            }
-          },
-          "completed": false,
-          "survey_questions": [
-
-          ]
-        }
     http_version: 
   recorded_at: Thu, 25 Sep 2014 02:29:22 GMT
 - request:
@@ -1070,4 +860,790 @@ http_interactions:
         <pre>None</pre>\n\n</div>\n\n\n</body>\n</html>\n"
     http_version: 
   recorded_at: Thu, 25 Sep 2014 02:29:22 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"c4942090acbc96722cba50e4cecfde73"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e7260f8a-713d-4447-925c-d1ed305bc806
+      X-Runtime:
+      - '0.096070'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 14:43:19 GMT
+      Content-Length:
+      - '236'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/"
+            },
+            "surveys": {
+              "href": "api/surveys"
+            },
+            "users": {
+              "href": "api/users"
+            },
+            "questions": {
+              "href": "api/questions"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 14:43:19 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/questions/
+    body:
+      encoding: UTF-8
+      string: '{"question":{"question_type":"boolean","responses":[true,false],"text":"Do
+        you like poptarts?","freeform":false,"absolute_index":null,"parent_question_id":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"2a1a9f1e783deb60c28f0e9e93a45f43"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8ff57d1c-463c-4bae-91f3-cd4f05e8f59a
+      X-Runtime:
+      - '0.034028'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 14:43:20 GMT
+      Content-Length:
+      - '198'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 87,
+          "question_type": "boolean",
+          "text": "Do you like poptarts?",
+          "responses": [
+            true,
+            false
+          ],
+          "freeform": false,
+          "absolute_index": null,
+          "parent_question_id": null
+        }
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 14:43:20 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/users/
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"30df7ef03f50dde3a0aaf74ef0fd5844"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c51175a2-b371-4d26-8590-bfd795e62013
+      X-Runtime:
+      - '0.092777'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 14:43:20 GMT
+      Content-Length:
+      - '260'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "service_user_id": "765380efe7e7b3e761c02d506a74c9c7f5118d555062311884130e4810e4f5c0",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/users/93"
+            }
+          },
+          "token": "54dad9c3178e033c70a8e49b2bbb977720854ff82cd5428096f4b8ee3669d7c6"
+        }
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 14:43:20 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/
+    body:
+      encoding: UTF-8
+      string: '{"survey":{"service_user_id":"765380efe7e7b3e761c02d506a74c9c7f5118d555062311884130e4810e4f5c0"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"d7c40e6ddf703accefe13658be527676"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a71327b0-fdb0-4308-ab10-85832547fc1d
+      X-Runtime:
+      - '0.072480'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 14:43:20 GMT
+      Content-Length:
+      - '430'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 96,
+          "service_user_id": "765380efe7e7b3e761c02d506a74c9c7f5118d555062311884130e4810e4f5c0",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/96"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/96/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/96/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+
+          ]
+        }
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 14:43:20 GMT
+- request:
+    method: post
+    uri: http://localhost:3000//api/surveys/96/survey_questions/
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":87}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"ef3129edfcf6e491898bb9a5afb130d4"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1b03a347-991b-4548-9bc9-81a712b789b0
+      X-Runtime:
+      - '0.025881'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 14:43:20 GMT
+      Content-Length:
+      - '460'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 288,
+          "text": "Do you like poptarts?",
+          "type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "answer": null,
+          "freeform": false,
+          "_links": {
+            "self": {
+              "href": "/api/surveys/96/survey_questions/288"
+            },
+            "post": {
+              "href": "http://localhost:3000/api/surveys/96/survey_questions"
+            },
+            "put": {
+              "href": "/api/surveys/96/survey_questions/288"
+            },
+            "survey": {
+              "href": "/api/surveys/96"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 14:43:20 GMT
+- request:
+    method: put
+    uri: http://localhost:3000//api/surveys/96/survey_questions/288/
+    body:
+      encoding: UTF-8
+      string: '{"id":288,"survey_question":{"answer":true}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - c6a870dc-05f2-42ed-820c-ac3231fdd5c0
+      X-Runtime:
+      - '0.018829'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 14:43:20 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 14:43:20 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/
+    body:
+      encoding: UTF-8
+      string: '{"survey":{"service_user_id":"765380efe7e7b3e761c02d506a74c9c7f5118d555062311884130e4810e4f5c0"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"823e66c318e463dfef88327f4a895a52"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 59ec9eeb-9a39-472d-814d-0d0f50c092fa
+      X-Runtime:
+      - '0.010832'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 14:43:20 GMT
+      Content-Length:
+      - '430'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 97,
+          "service_user_id": "765380efe7e7b3e761c02d506a74c9c7f5118d555062311884130e4810e4f5c0",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/97"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/97/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/97/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+
+          ]
+        }
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 14:43:20 GMT
+- request:
+    method: post
+    uri: http://localhost:3000//api/surveys/97/survey_questions/
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":87}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"8175183450f7dee652895fee3458ab35"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 84c601e8-93a4-489c-85e9-dc109d29ca75
+      X-Runtime:
+      - '0.018813'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 14:43:20 GMT
+      Content-Length:
+      - '460'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 289,
+          "text": "Do you like poptarts?",
+          "type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "answer": null,
+          "freeform": false,
+          "_links": {
+            "self": {
+              "href": "/api/surveys/97/survey_questions/289"
+            },
+            "post": {
+              "href": "http://localhost:3000/api/surveys/97/survey_questions"
+            },
+            "put": {
+              "href": "/api/surveys/97/survey_questions/289"
+            },
+            "survey": {
+              "href": "/api/surveys/97"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 14:43:20 GMT
+- request:
+    method: put
+    uri: http://localhost:3000//api/surveys/97/survey_questions/289/
+    body:
+      encoding: UTF-8
+      string: '{"id":289,"survey_question":{"answer":false}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 422
+      message: 'Unprocessable Entity '
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '17277'
+      X-Request-Id:
+      - b4239693-6bc5-43c2-b726-49dc11eb9ad5
+      X-Runtime:
+      - '0.055845'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 14:43:20 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\"
+        />\n  <title>Action Controller: Exception caught</title>\n  <style>\n    body
+        {\n      background-color: #FAFAFA;\n      color: #333;\n      margin: 0px;\n
+        \   }\n\n    body, p, ol, ul, td {\n      font-family: helvetica, verdana,
+        arial, sans-serif;\n      font-size:   13px;\n      line-height: 18px;\n    }\n\n
+        \   pre {\n      font-size: 11px;\n      white-space: pre-wrap;\n    }\n\n
+        \   pre.box {\n      border: 1px solid #EEE;\n      padding: 10px;\n      margin:
+        0px;\n      width: 958px;\n    }\n\n    header {\n      color: #F0F0F0;\n
+        \     background: #C52F24;\n      padding: 0.5em 1.5em;\n    }\n\n    h1 {\n
+        \     margin: 0.2em 0;\n      line-height: 1.1em;\n      font-size: 2em;\n
+        \   }\n\n    h2 {\n      color: #C52F24;\n      line-height: 25px;\n    }\n\n
+        \   .details {\n      border: 1px solid #D0D0D0;\n      border-radius: 4px;\n
+        \     margin: 1em 0px;\n      display: block;\n      width: 978px;\n    }\n\n
+        \   .summary {\n      padding: 8px 15px;\n      border-bottom: 1px solid #D0D0D0;\n
+        \     display: block;\n    }\n\n    .details pre {\n      margin: 5px;\n      border:
+        none;\n    }\n\n    #container {\n      box-sizing: border-box;\n      width:
+        100%;\n      padding: 0 1.5em;\n    }\n\n    .source * {\n      margin: 0px;\n
+        \     padding: 0px;\n    }\n\n    .source {\n      border: 1px solid #D9D9D9;\n
+        \     background: #ECECEC;\n      width: 978px;\n    }\n\n    .source pre
+        {\n      padding: 10px 0px;\n      border: none;\n    }\n\n    .source .data
+        {\n      font-size: 80%;\n      overflow: auto;\n      background-color: #FFF;\n
+        \   }\n\n    .info {\n      padding: 0.5em;\n    }\n\n    .source .data .line_numbers
+        {\n      background-color: #ECECEC;\n      color: #AAA;\n      padding: 1em
+        .5em;\n      border-right: 1px solid #DDD;\n      text-align: right;\n    }\n\n
+        \   .line {\n      padding-left: 10px;\n    }\n\n    .line:hover {\n      background-color:
+        #F6F6F6;\n    }\n\n    .line.active {\n      background-color: #FFCCCC;\n
+        \   }\n\n    a { color: #980905; }\n    a:visited { color: #666; }\n    a:hover
+        { color: #C52F24; }\n\n    \n  </style>\n\n  <script>\n    var toggle = function(id)
+        {\n      var s = document.getElementById(id).style;\n      s.display = s.display
+        == 'none' ? 'block' : 'none';\n      return false;\n    }\n    var show =
+        function(id) {\n      document.getElementById(id).style.display = 'block';\n
+        \   }\n    var hide = function(id) {\n      document.getElementById(id).style.display
+        = 'none';\n    }\n    var toggleTrace = function() {\n      return toggle('blame_trace');\n
+        \   }\n    var toggleSessionDump = function() {\n      return toggle('session_dump');\n
+        \   }\n    var toggleEnvDump = function() {\n      return toggle('env_dump');\n
+        \   }\n  </script>\n</head>\n<body>\n\n<header>\n  <h1>\n    ActiveRecord::RecordInvalid\n
+        \     in Api::V1::SurveyQuestionsController#update\n  </h1>\n</header>\n\n<div
+        id=\"container\">\n  <h2>Validation failed: Answer can&#39;t be blank</h2>\n\n
+        \ <div class=\"source\">\n<div class=\"info\">\n  Extracted source (around
+        line <strong>#10</strong>):\n</div>\n<div class=\"data\">\n  <table cellpadding=\"0\"
+        cellspacing=\"0\" class=\"lines\">\n      <tr>\n        <td>\n          <pre
+        class=\"line_numbers\">\n<span>8</span>\n<span>9</span>\n<span>10</span>\n<span>11</span>\n<span>12</span>\n<span>13</span>\n
+        \         </pre>\n        </td>\n<td width=\"100%\">\n<pre>\n<div class=\"line\">
+        \ def update\n</div><div class=\"line\">    survey_question.answer = params[:survey_question][:answer]\n</div><div
+        class=\"line active\">    survey_question.save!\n</div><div class=\"line\">
+        \   respond_with survey_question, { status: :created, location: nil, show_next:
+        true,\n</div><div class=\"line\">                                    represent_with:
+        nil}\n</div><div class=\"line\">  end\n</div>\n</pre>\n</td>\n    </tr>\n
+        \ </table>\n</div>\n</div>\n\n  \n<p><code>Rails.root: /Users/austenito/repos/happiness/happiness_service</code></p>\n\n<div
+        id=\"traces\">\n    <a href=\"#\" onclick=\"hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);;
+        return false;\">Application Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);;
+        return false;\">Framework Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);;
+        return false;\">Full Trace</a> \n\n    <div id=\"Application-Trace\" style=\"display:
+        block;\">\n      <pre><code>app/controllers/api/v1/survey_questions_controller.rb:10:in
+        `update&#39;</code></pre>\n    </div>\n    <div id=\"Framework-Trace\" style=\"display:
+        none;\">\n      <pre><code>activerecord (4.0.4) lib/active_record/validations.rb:57:in
+        `save!&#39;\nactiverecord (4.0.4) lib/active_record/attribute_methods/dirty.rb:41:in
+        `save!&#39;\nactiverecord (4.0.4) lib/active_record/transactions.rb:275:in
+        `block in save!&#39;\nactiverecord (4.0.4) lib/active_record/transactions.rb:330:in
+        `block in with_transaction_returning_status&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in
+        `block in transaction&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/database_statements.rb:221:in
+        `within_new_transaction&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in
+        `transaction&#39;\nactiverecord (4.0.4) lib/active_record/transactions.rb:209:in
+        `transaction&#39;\nactiverecord (4.0.4) lib/active_record/transactions.rb:327:in
+        `with_transaction_returning_status&#39;\nactiverecord (4.0.4) lib/active_record/transactions.rb:275:in
+        `save!&#39;\nactionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:4:in
+        `send_action&#39;\nactionpack (4.0.4) lib/abstract_controller/base.rb:189:in
+        `process_action&#39;\nactionpack (4.0.4) lib/action_controller/metal/rendering.rb:10:in
+        `process_action&#39;\nactionpack (4.0.4) lib/abstract_controller/callbacks.rb:18:in
+        `block in process_action&#39;\nactivesupport (4.0.4) lib/active_support/callbacks.rb:383:in
+        `_run__1772801917304475632__process_action__callbacks&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/callbacks.rb:17:in `process_action&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications.rb:159:in `instrument&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;\nactiverecord
+        (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/base.rb:136:in `process&#39;\nactionpack (4.0.4)
+        lib/abstract_controller/rendering.rb:44:in `process&#39;\nactionpack (4.0.4)
+        lib/action_controller/metal.rb:195:in `dispatch&#39;\nactionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in
+        `dispatch&#39;\nactionpack (4.0.4) lib/action_controller/metal.rb:231:in `block
+        in action&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in
+        `dispatch&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/mapper.rb:44:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in
+        `block in call&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in
+        `each&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in
+        `call&#39;\nrack (1.5.2) lib/rack/etag.rb:23:in `call&#39;\nrack (1.5.2) lib/rack/conditionalget.rb:35:in
+        `call&#39;\nrack (1.5.2) lib/rack/head.rb:11:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;\nactiverecord
+        (4.0.4) lib/active_record/query_cache.rb:36:in `call&#39;\nactiverecord (4.0.4)
+        lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call&#39;\nactiverecord
+        (4.0.4) lib/active_record/migration.rb:373:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:373:in `_run__2270658051568218024__call__callbacks&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:20:in
+        `block in call&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in
+        `block in tagged&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in
+        `tagged&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in
+        `tagged&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;\nrack
+        (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in
+        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/static.rb:64:in `call&#39;\nrailties (4.0.4)
+        lib/rails/engine.rb:511:in `call&#39;\nrailties (4.0.4) lib/rails/application.rb:97:in
+        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in
+        `call&#39;\nrack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n    <div id=\"Full-Trace\"
+        style=\"display: none;\">\n      <pre><code>activerecord (4.0.4) lib/active_record/validations.rb:57:in
+        `save!&#39;\nactiverecord (4.0.4) lib/active_record/attribute_methods/dirty.rb:41:in
+        `save!&#39;\nactiverecord (4.0.4) lib/active_record/transactions.rb:275:in
+        `block in save!&#39;\nactiverecord (4.0.4) lib/active_record/transactions.rb:330:in
+        `block in with_transaction_returning_status&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in
+        `block in transaction&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/database_statements.rb:221:in
+        `within_new_transaction&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in
+        `transaction&#39;\nactiverecord (4.0.4) lib/active_record/transactions.rb:209:in
+        `transaction&#39;\nactiverecord (4.0.4) lib/active_record/transactions.rb:327:in
+        `with_transaction_returning_status&#39;\nactiverecord (4.0.4) lib/active_record/transactions.rb:275:in
+        `save!&#39;\napp/controllers/api/v1/survey_questions_controller.rb:10:in `update&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/base.rb:189:in `process_action&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/callbacks.rb:18:in `block in process_action&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:383:in `_run__1772801917304475632__process_action__callbacks&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/callbacks.rb:17:in `process_action&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications.rb:159:in `instrument&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;\nactiverecord
+        (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/base.rb:136:in `process&#39;\nactionpack (4.0.4)
+        lib/abstract_controller/rendering.rb:44:in `process&#39;\nactionpack (4.0.4)
+        lib/action_controller/metal.rb:195:in `dispatch&#39;\nactionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in
+        `dispatch&#39;\nactionpack (4.0.4) lib/action_controller/metal.rb:231:in `block
+        in action&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in
+        `dispatch&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/mapper.rb:44:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in
+        `block in call&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in
+        `each&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in
+        `call&#39;\nrack (1.5.2) lib/rack/etag.rb:23:in `call&#39;\nrack (1.5.2) lib/rack/conditionalget.rb:35:in
+        `call&#39;\nrack (1.5.2) lib/rack/head.rb:11:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;\nactiverecord
+        (4.0.4) lib/active_record/query_cache.rb:36:in `call&#39;\nactiverecord (4.0.4)
+        lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call&#39;\nactiverecord
+        (4.0.4) lib/active_record/migration.rb:373:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:373:in `_run__2270658051568218024__call__callbacks&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:20:in
+        `block in call&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in
+        `block in tagged&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in
+        `tagged&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in
+        `tagged&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;\nrack
+        (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in
+        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/static.rb:64:in `call&#39;\nrailties (4.0.4)
+        lib/rails/engine.rb:511:in `call&#39;\nrailties (4.0.4) lib/rails/application.rb:97:in
+        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in
+        `call&#39;\nrack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n</div>\n\n  \n\n<h2
+        style=\"margin-top: 30px\">Request</h2>\n<p><b>Parameters</b>:</p> <pre>{&quot;id&quot;=&gt;&quot;289&quot;,\n
+        &quot;survey_question&quot;=&gt;{&quot;answer&quot;=&gt;false},\n &quot;format&quot;=&gt;&quot;json&quot;,\n
+        &quot;survey_id&quot;=&gt;&quot;97&quot;}</pre>\n\n<div class=\"details\">\n
+        \ <div class=\"summary\"><a href=\"#\" onclick=\"return toggleSessionDump()\">Toggle
+        session dump</a></div>\n  <div id=\"session_dump\" style=\"display:none\"><pre></pre></div>\n</div>\n\n<div
+        class=\"details\">\n  <div class=\"summary\"><a href=\"#\" onclick=\"return
+        toggleEnvDump()\">Toggle env dump</a></div>\n  <div id=\"env_dump\" style=\"display:none\"><pre>GATEWAY_INTERFACE:
+        &quot;CGI/1.1&quot;\nHTTP_ACCEPT: &quot;*/*&quot;\nHTTP_ACCEPT_ENCODING: &quot;gzip;q=1.0,deflate;q=0.6,identity;q=0.3&quot;\nREMOTE_ADDR:
+        &quot;127.0.0.1&quot;\nREMOTE_HOST: &quot;127.0.0.1&quot;\nSERVER_NAME: &quot;localhost&quot;\nSERVER_PROTOCOL:
+        &quot;HTTP/1.1&quot;</pre></div>\n</div>\n\n<h2 style=\"margin-top: 30px\">Response</h2>\n<p><b>Headers</b>:</p>
+        <pre>None</pre>\n\n</div>\n\n\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 14:43:20 GMT
 recorded_with: VCR 2.6.0
