@@ -1,9 +1,9 @@
 module Poptart
-  class RangeQuestion < Question
+  class TimeQuestion < Question
     extend Poptart::Request
 
     def self.question_type
-      'range'
+      'time'
     end
   end
 end
