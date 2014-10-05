@@ -8273,6 +8273,1460 @@ http_interactions:
     http_version: 
   recorded_at: Sat, 04 Oct 2014 18:11:11 GMT
 - request:
+    method: post
+    uri: http://localhost:3000/api/surveys/145/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":25}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"e50172c62ced50d4088cdfca6dfeae96"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - dc609167-3ee2-4774-87e8-5cc4579c5213
+      X-Runtime:
+      - '0.012135'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 18:43:51 GMT
+      Content-Length:
+      - '561'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 680,
+          "text": "Where are you?",
+          "type": "multiple",
+          "responses": [
+            "At Home",
+            "At Work",
+            "In a car",
+            "Other"
+          ],
+          "answer": null,
+          "freeform": true,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/145/survey_questions/680"
+            },
+            "post": {
+              "href": "http://localhost:3000/api/surveys/145/survey_questions"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/145/survey_questions/680"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/145"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 18:43:51 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/145/survey_questions/680
+    body:
+      encoding: UTF-8
+      string: '{"id":680,"survey_question":{"answer":"At Home"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 17ad2616-144c-45af-94bc-ce3cfa5d7427
+      X-Runtime:
+      - '0.008004'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 18:43:51 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 18:43:51 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/145
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"6d1d21bc6857f01984b3cb2c02720066"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d4005ac8-75cd-49c0-adf4-e64551d705ca
+      X-Runtime:
+      - '0.011250'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 04 Oct 2014 18:43:51 GMT
+      Content-Length:
+      - '1108'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 145,
+          "service_user_id": "4b33689ce77a5dadfb30def4e759cff82ec47baf22c9b66b22ac5cc4fa84e27a",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/145"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "/api/surveys/145/survey_questions"
+              },
+              "put": {
+                "href": "/api/surveys/145/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 680,
+              "text": "Where are you?",
+              "type": "multiple",
+              "responses": [
+                "At Home",
+                "At Work",
+                "In a car",
+                "Other"
+              ],
+              "answer": "At Home",
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/145/survey_questions/680"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/145/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/145/survey_questions/680"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/145"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 18:43:51 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/151/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":25}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"43785e1a17e3786f041a443b68c938f0"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a65fcf47-6b5c-4823-b018-993e7881fc6d
+      X-Runtime:
+      - '0.023028'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 05 Oct 2014 12:13:21 GMT
+      Content-Length:
+      - '561'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 718,
+          "text": "Where are you?",
+          "type": "multiple",
+          "responses": [
+            "At Home",
+            "At Work",
+            "In a car",
+            "Other"
+          ],
+          "answer": null,
+          "freeform": true,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/151/survey_questions/718"
+            },
+            "post": {
+              "href": "http://localhost:3000/api/surveys/151/survey_questions"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/151/survey_questions/718"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/151"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sun, 05 Oct 2014 12:13:21 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/151/survey_questions/718
+    body:
+      encoding: UTF-8
+      string: '{"id":718,"survey_question":{"answer":"At Home"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 0441e371-7b9d-4eff-9fb0-d2c1dc2a597b
+      X-Runtime:
+      - '0.010453'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 05 Oct 2014 12:13:22 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 05 Oct 2014 12:13:22 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/151
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"0a9c733a2068da78dbc1c6fb71bf8bf1"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 55785f7b-9a7f-4881-809b-f1442f537df1
+      X-Runtime:
+      - '0.010520'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 05 Oct 2014 12:13:22 GMT
+      Content-Length:
+      - '1150'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 151,
+          "service_user_id": "dfa2ae1900284f305e72f05673f91052f24409b326b7e862db8511b59bd76702",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/151"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "http://localhost:3000/api/surveys/151/survey_questions"
+              },
+              "put": {
+                "href": "http://localhost:3000/api/surveys/151/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 718,
+              "text": "Where are you?",
+              "type": "multiple",
+              "responses": [
+                "At Home",
+                "At Work",
+                "In a car",
+                "Other"
+              ],
+              "answer": "At Home",
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/151/survey_questions/718"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/151/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/151/survey_questions/718"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/151"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 05 Oct 2014 12:13:22 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/159/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":25}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"f227517f866954e9cc3cbfa6bc17d9b7"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1eabee30-f17c-4fc2-a3e4-fcb018aad63b
+      X-Runtime:
+      - '0.011115'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 05 Oct 2014 12:13:52 GMT
+      Content-Length:
+      - '561'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 758,
+          "text": "Where are you?",
+          "type": "multiple",
+          "responses": [
+            "At Home",
+            "At Work",
+            "In a car",
+            "Other"
+          ],
+          "answer": null,
+          "freeform": true,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/159/survey_questions/758"
+            },
+            "post": {
+              "href": "http://localhost:3000/api/surveys/159/survey_questions"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/159/survey_questions/758"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/159"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sun, 05 Oct 2014 12:13:52 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/159/survey_questions/758
+    body:
+      encoding: UTF-8
+      string: '{"id":758,"survey_question":{"answer":"At Home"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 98e457ef-b046-4241-8fd3-9875887f8bf3
+      X-Runtime:
+      - '0.007676'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 05 Oct 2014 12:13:52 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 05 Oct 2014 12:13:52 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/159
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"8cfb2c749d6ed041e92da35dde1e4db8"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 117389d0-bd1c-41e4-8977-2db9730c9fe8
+      X-Runtime:
+      - '0.015435'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 05 Oct 2014 12:13:52 GMT
+      Content-Length:
+      - '1150'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 159,
+          "service_user_id": "c36ef5bfd250af7aa2b08f0419c43b3adb47dad6e718f82808543c9a39316ccc",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/159"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "http://localhost:3000/api/surveys/159/survey_questions"
+              },
+              "put": {
+                "href": "http://localhost:3000/api/surveys/159/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 758,
+              "text": "Where are you?",
+              "type": "multiple",
+              "responses": [
+                "At Home",
+                "At Work",
+                "In a car",
+                "Other"
+              ],
+              "answer": "At Home",
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/159/survey_questions/758"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/159/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/159/survey_questions/758"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/159"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 05 Oct 2014 12:13:52 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/167/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":25}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"419593f9665e3ee62d976ad74b25f06c"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9b2cb18c-a4e5-485f-83c3-254ac7820e93
+      X-Runtime:
+      - '0.013595'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 05 Oct 2014 12:14:05 GMT
+      Content-Length:
+      - '561'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 798,
+          "text": "Where are you?",
+          "type": "multiple",
+          "responses": [
+            "At Home",
+            "At Work",
+            "In a car",
+            "Other"
+          ],
+          "answer": null,
+          "freeform": true,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/167/survey_questions/798"
+            },
+            "post": {
+              "href": "http://localhost:3000/api/surveys/167/survey_questions"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/167/survey_questions/798"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/167"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sun, 05 Oct 2014 12:14:05 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/167/survey_questions/798
+    body:
+      encoding: UTF-8
+      string: '{"id":798,"survey_question":{"answer":"At Home"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 0bbaf2c6-7286-41e2-aea3-a73586e8ddbd
+      X-Runtime:
+      - '0.010513'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 05 Oct 2014 12:14:05 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 05 Oct 2014 12:14:05 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/167
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"a48434c907ef451e9ab0236904a36a26"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 487c4f4a-e445-48a8-83fc-d573f12b8fa4
+      X-Runtime:
+      - '0.013242'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 05 Oct 2014 12:14:05 GMT
+      Content-Length:
+      - '1150'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 167,
+          "service_user_id": "a190cae9e4c01867303a4eb8d23b832dcbb4cea1f81044b9a798c8b2ae437168",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/167"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "http://localhost:3000/api/surveys/167/survey_questions"
+              },
+              "put": {
+                "href": "http://localhost:3000/api/surveys/167/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 798,
+              "text": "Where are you?",
+              "type": "multiple",
+              "responses": [
+                "At Home",
+                "At Work",
+                "In a car",
+                "Other"
+              ],
+              "answer": "At Home",
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/167/survey_questions/798"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/167/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/167/survey_questions/798"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/167"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 05 Oct 2014 12:14:05 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/211/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":25}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"acfd12f903018686beed9cdb037bae7b"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4a264c5e-5e60-4e45-8a46-ba842412dd53
+      X-Runtime:
+      - '0.014006'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 05 Oct 2014 12:47:34 GMT
+      Content-Length:
+      - '561'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 874,
+          "text": "Where are you?",
+          "type": "multiple",
+          "responses": [
+            "At Home",
+            "At Work",
+            "In a car",
+            "Other"
+          ],
+          "answer": null,
+          "freeform": true,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/211/survey_questions/874"
+            },
+            "post": {
+              "href": "http://localhost:3000/api/surveys/211/survey_questions"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/211/survey_questions/874"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/211"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sun, 05 Oct 2014 12:47:34 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/211/survey_questions/874
+    body:
+      encoding: UTF-8
+      string: '{"id":874,"survey_question":{"answer":"At Home"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 422
+      message: 'Unprocessable Entity '
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '17301'
+      X-Request-Id:
+      - 7194a611-8627-4e8e-a581-94db15bd1f8b
+      X-Runtime:
+      - '0.031293'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 05 Oct 2014 12:47:34 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\"
+        />\n  <title>Action Controller: Exception caught</title>\n  <style>\n    body
+        {\n      background-color: #FAFAFA;\n      color: #333;\n      margin: 0px;\n
+        \   }\n\n    body, p, ol, ul, td {\n      font-family: helvetica, verdana,
+        arial, sans-serif;\n      font-size:   13px;\n      line-height: 18px;\n    }\n\n
+        \   pre {\n      font-size: 11px;\n      white-space: pre-wrap;\n    }\n\n
+        \   pre.box {\n      border: 1px solid #EEE;\n      padding: 10px;\n      margin:
+        0px;\n      width: 958px;\n    }\n\n    header {\n      color: #F0F0F0;\n
+        \     background: #C52F24;\n      padding: 0.5em 1.5em;\n    }\n\n    h1 {\n
+        \     margin: 0.2em 0;\n      line-height: 1.1em;\n      font-size: 2em;\n
+        \   }\n\n    h2 {\n      color: #C52F24;\n      line-height: 25px;\n    }\n\n
+        \   .details {\n      border: 1px solid #D0D0D0;\n      border-radius: 4px;\n
+        \     margin: 1em 0px;\n      display: block;\n      width: 978px;\n    }\n\n
+        \   .summary {\n      padding: 8px 15px;\n      border-bottom: 1px solid #D0D0D0;\n
+        \     display: block;\n    }\n\n    .details pre {\n      margin: 5px;\n      border:
+        none;\n    }\n\n    #container {\n      box-sizing: border-box;\n      width:
+        100%;\n      padding: 0 1.5em;\n    }\n\n    .source * {\n      margin: 0px;\n
+        \     padding: 0px;\n    }\n\n    .source {\n      border: 1px solid #D9D9D9;\n
+        \     background: #ECECEC;\n      width: 978px;\n    }\n\n    .source pre
+        {\n      padding: 10px 0px;\n      border: none;\n    }\n\n    .source .data
+        {\n      font-size: 80%;\n      overflow: auto;\n      background-color: #FFF;\n
+        \   }\n\n    .info {\n      padding: 0.5em;\n    }\n\n    .source .data .line_numbers
+        {\n      background-color: #ECECEC;\n      color: #AAA;\n      padding: 1em
+        .5em;\n      border-right: 1px solid #DDD;\n      text-align: right;\n    }\n\n
+        \   .line {\n      padding-left: 10px;\n    }\n\n    .line:hover {\n      background-color:
+        #F6F6F6;\n    }\n\n    .line.active {\n      background-color: #FFCCCC;\n
+        \   }\n\n    a { color: #980905; }\n    a:visited { color: #666; }\n    a:hover
+        { color: #C52F24; }\n\n    \n  </style>\n\n  <script>\n    var toggle = function(id)
+        {\n      var s = document.getElementById(id).style;\n      s.display = s.display
+        == 'none' ? 'block' : 'none';\n      return false;\n    }\n    var show =
+        function(id) {\n      document.getElementById(id).style.display = 'block';\n
+        \   }\n    var hide = function(id) {\n      document.getElementById(id).style.display
+        = 'none';\n    }\n    var toggleTrace = function() {\n      return toggle('blame_trace');\n
+        \   }\n    var toggleSessionDump = function() {\n      return toggle('session_dump');\n
+        \   }\n    var toggleEnvDump = function() {\n      return toggle('env_dump');\n
+        \   }\n  </script>\n</head>\n<body>\n\n<header>\n  <h1>\n    ActiveRecord::RecordInvalid\n
+        \     in Api::V1::SurveyQuestionsController#update\n  </h1>\n</header>\n\n<div
+        id=\"container\">\n  <h2>Validation failed: Answer is not included in the
+        list</h2>\n\n  <div class=\"source\">\n<div class=\"info\">\n  Extracted source
+        (around line <strong>#15</strong>):\n</div>\n<div class=\"data\">\n  <table
+        cellpadding=\"0\" cellspacing=\"0\" class=\"lines\">\n      <tr>\n        <td>\n
+        \         <pre class=\"line_numbers\">\n<span>13</span>\n<span>14</span>\n<span>15</span>\n<span>16</span>\n<span>17</span>\n<span>18</span>\n
+        \         </pre>\n        </td>\n<td width=\"100%\">\n<pre>\n<div class=\"line\">
+        \ def update\n</div><div class=\"line\">    survey_question.answer = params[:survey_question][:answer]\n</div><div
+        class=\"line active\">    survey_question.save!\n</div><div class=\"line\">
+        \   respond_with survey_question, { status: :created, location: nil, show_next:
+        true,\n</div><div class=\"line\">                                    represent_with:
+        nil}\n</div><div class=\"line\">  end\n</div>\n</pre>\n</td>\n    </tr>\n
+        \ </table>\n</div>\n</div>\n\n  \n<p><code>Rails.root: /Users/austenito/repos/happiness/happiness_service</code></p>\n\n<div
+        id=\"traces\">\n    <a href=\"#\" onclick=\"hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);;
+        return false;\">Application Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);;
+        return false;\">Framework Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);;
+        return false;\">Full Trace</a> \n\n    <div id=\"Application-Trace\" style=\"display:
+        block;\">\n      <pre><code>app/controllers/api/v1/survey_questions_controller.rb:15:in
+        `update&#39;</code></pre>\n    </div>\n    <div id=\"Framework-Trace\" style=\"display:
+        none;\">\n      <pre><code>activerecord (4.0.4) lib/active_record/validations.rb:57:in
+        `save!&#39;\nactiverecord (4.0.4) lib/active_record/attribute_methods/dirty.rb:41:in
+        `save!&#39;\nactiverecord (4.0.4) lib/active_record/transactions.rb:275:in
+        `block in save!&#39;\nactiverecord (4.0.4) lib/active_record/transactions.rb:330:in
+        `block in with_transaction_returning_status&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in
+        `block in transaction&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/database_statements.rb:221:in
+        `within_new_transaction&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in
+        `transaction&#39;\nactiverecord (4.0.4) lib/active_record/transactions.rb:209:in
+        `transaction&#39;\nactiverecord (4.0.4) lib/active_record/transactions.rb:327:in
+        `with_transaction_returning_status&#39;\nactiverecord (4.0.4) lib/active_record/transactions.rb:275:in
+        `save!&#39;\nactionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:4:in
+        `send_action&#39;\nactionpack (4.0.4) lib/abstract_controller/base.rb:189:in
+        `process_action&#39;\nactionpack (4.0.4) lib/action_controller/metal/rendering.rb:10:in
+        `process_action&#39;\nactionpack (4.0.4) lib/abstract_controller/callbacks.rb:18:in
+        `block in process_action&#39;\nactivesupport (4.0.4) lib/active_support/callbacks.rb:383:in
+        `_run__548537728060381544__process_action__callbacks&#39;\nactivesupport (4.0.4)
+        lib/active_support/callbacks.rb:80:in `run_callbacks&#39;\nactionpack (4.0.4)
+        lib/abstract_controller/callbacks.rb:17:in `process_action&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications.rb:159:in `instrument&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;\nactiverecord
+        (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/base.rb:136:in `process&#39;\nactionpack (4.0.4)
+        lib/abstract_controller/rendering.rb:44:in `process&#39;\nactionpack (4.0.4)
+        lib/action_controller/metal.rb:195:in `dispatch&#39;\nactionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in
+        `dispatch&#39;\nactionpack (4.0.4) lib/action_controller/metal.rb:231:in `block
+        in action&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in
+        `dispatch&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/mapper.rb:44:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in
+        `block in call&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in
+        `each&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in
+        `call&#39;\nrack (1.5.2) lib/rack/etag.rb:23:in `call&#39;\nrack (1.5.2) lib/rack/conditionalget.rb:35:in
+        `call&#39;\nrack (1.5.2) lib/rack/head.rb:11:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;\nactiverecord
+        (4.0.4) lib/active_record/query_cache.rb:36:in `call&#39;\nactiverecord (4.0.4)
+        lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call&#39;\nactiverecord
+        (4.0.4) lib/active_record/migration.rb:373:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:373:in `_run__1103736362963642301__call__callbacks&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:20:in
+        `block in call&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in
+        `block in tagged&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in
+        `tagged&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in
+        `tagged&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;\nrack
+        (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in
+        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/static.rb:64:in `call&#39;\nrailties (4.0.4)
+        lib/rails/engine.rb:511:in `call&#39;\nrailties (4.0.4) lib/rails/application.rb:97:in
+        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in
+        `call&#39;\nrack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n    <div id=\"Full-Trace\"
+        style=\"display: none;\">\n      <pre><code>activerecord (4.0.4) lib/active_record/validations.rb:57:in
+        `save!&#39;\nactiverecord (4.0.4) lib/active_record/attribute_methods/dirty.rb:41:in
+        `save!&#39;\nactiverecord (4.0.4) lib/active_record/transactions.rb:275:in
+        `block in save!&#39;\nactiverecord (4.0.4) lib/active_record/transactions.rb:330:in
+        `block in with_transaction_returning_status&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in
+        `block in transaction&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/database_statements.rb:221:in
+        `within_new_transaction&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in
+        `transaction&#39;\nactiverecord (4.0.4) lib/active_record/transactions.rb:209:in
+        `transaction&#39;\nactiverecord (4.0.4) lib/active_record/transactions.rb:327:in
+        `with_transaction_returning_status&#39;\nactiverecord (4.0.4) lib/active_record/transactions.rb:275:in
+        `save!&#39;\napp/controllers/api/v1/survey_questions_controller.rb:15:in `update&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/base.rb:189:in `process_action&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/callbacks.rb:18:in `block in process_action&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:383:in `_run__548537728060381544__process_action__callbacks&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/callbacks.rb:17:in `process_action&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;\nactivesupport
+        (4.0.4) lib/active_support/notifications.rb:159:in `instrument&#39;\nactionpack
+        (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;\nactiverecord
+        (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;\nactionpack
+        (4.0.4) lib/abstract_controller/base.rb:136:in `process&#39;\nactionpack (4.0.4)
+        lib/abstract_controller/rendering.rb:44:in `process&#39;\nactionpack (4.0.4)
+        lib/action_controller/metal.rb:195:in `dispatch&#39;\nactionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in
+        `dispatch&#39;\nactionpack (4.0.4) lib/action_controller/metal.rb:231:in `block
+        in action&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in
+        `dispatch&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/mapper.rb:44:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in
+        `block in call&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in
+        `each&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in
+        `call&#39;\nrack (1.5.2) lib/rack/etag.rb:23:in `call&#39;\nrack (1.5.2) lib/rack/conditionalget.rb:35:in
+        `call&#39;\nrack (1.5.2) lib/rack/head.rb:11:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;\nactiverecord
+        (4.0.4) lib/active_record/query_cache.rb:36:in `call&#39;\nactiverecord (4.0.4)
+        lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call&#39;\nactiverecord
+        (4.0.4) lib/active_record/migration.rb:373:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:373:in `_run__1103736362963642301__call__callbacks&#39;\nactivesupport
+        (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:20:in
+        `block in call&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in
+        `block in tagged&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in
+        `tagged&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in
+        `tagged&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack
+        (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;\nrack
+        (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in
+        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4)
+        lib/action_dispatch/middleware/static.rb:64:in `call&#39;\nrailties (4.0.4)
+        lib/rails/engine.rb:511:in `call&#39;\nrailties (4.0.4) lib/rails/application.rb:97:in
+        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in
+        `call&#39;\nrack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n</div>\n\n  \n\n<h2
+        style=\"margin-top: 30px\">Request</h2>\n<p><b>Parameters</b>:</p> <pre>{&quot;id&quot;=&gt;&quot;874&quot;,\n
+        &quot;survey_question&quot;=&gt;{&quot;answer&quot;=&gt;&quot;At Home&quot;},\n
+        &quot;format&quot;=&gt;&quot;json&quot;,\n &quot;survey_id&quot;=&gt;&quot;211&quot;}</pre>\n\n<div
+        class=\"details\">\n  <div class=\"summary\"><a href=\"#\" onclick=\"return
+        toggleSessionDump()\">Toggle session dump</a></div>\n  <div id=\"session_dump\"
+        style=\"display:none\"><pre></pre></div>\n</div>\n\n<div class=\"details\">\n
+        \ <div class=\"summary\"><a href=\"#\" onclick=\"return toggleEnvDump()\">Toggle
+        env dump</a></div>\n  <div id=\"env_dump\" style=\"display:none\"><pre>GATEWAY_INTERFACE:
+        &quot;CGI/1.1&quot;\nHTTP_ACCEPT: &quot;*/*&quot;\nHTTP_ACCEPT_ENCODING: &quot;gzip;q=1.0,deflate;q=0.6,identity;q=0.3&quot;\nREMOTE_ADDR:
+        &quot;127.0.0.1&quot;\nREMOTE_HOST: &quot;127.0.0.1&quot;\nSERVER_NAME: &quot;localhost&quot;\nSERVER_PROTOCOL:
+        &quot;HTTP/1.1&quot;</pre></div>\n</div>\n\n<h2 style=\"margin-top: 30px\">Response</h2>\n<p><b>Headers</b>:</p>
+        <pre>None</pre>\n\n</div>\n\n\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Sun, 05 Oct 2014 12:47:34 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/221/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":25}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"35fd42bf74ba4940d72a9692038d231d"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d9f5dd67-f5e7-4dc5-8445-8e2cef0f1495
+      X-Runtime:
+      - '0.011623'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 05 Oct 2014 12:50:05 GMT
+      Content-Length:
+      - '561'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 938,
+          "text": "Where are you?",
+          "type": "multiple",
+          "responses": [
+            "At Home",
+            "At Work",
+            "In a car",
+            "Other"
+          ],
+          "answer": null,
+          "freeform": true,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/221/survey_questions/938"
+            },
+            "post": {
+              "href": "http://localhost:3000/api/surveys/221/survey_questions"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/221/survey_questions/938"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/221"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sun, 05 Oct 2014 12:50:05 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/221/survey_questions/938
+    body:
+      encoding: UTF-8
+      string: '{"id":938,"survey_question":{"answer":"At Home"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 142d57c8-dbd4-4c80-96a1-d0d95f2502af
+      X-Runtime:
+      - '0.009920'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 05 Oct 2014 12:50:05 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 05 Oct 2014 12:50:05 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/221
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"f9f29b4655e81678993c1e8504e2cea1"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bbbf7ad2-6b4e-4b35-ab52-58ef3422196c
+      X-Runtime:
+      - '0.014138'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sun, 05 Oct 2014 12:50:05 GMT
+      Content-Length:
+      - '1150'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 221,
+          "service_user_id": "69fb19e7a49f6a70be862b9cd96a80a09d5bbf1828cfc9cd7b23ee12489bcd50",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/221"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "http://localhost:3000/api/surveys/221/survey_questions"
+              },
+              "put": {
+                "href": "http://localhost:3000/api/surveys/221/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+            {
+              "id": 938,
+              "text": "Where are you?",
+              "type": "multiple",
+              "responses": [
+                "At Home",
+                "At Work",
+                "In a car",
+                "Other"
+              ],
+              "answer": "At Home",
+              "freeform": true,
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/221/survey_questions/938"
+                },
+                "post": {
+                  "href": "http://localhost:3000/api/surveys/221/survey_questions"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/221/survey_questions/938"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/221"
+                }
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 05 Oct 2014 12:50:05 GMT
+- request:
     method: get
     uri: http://localhost:3000/api/questions
     body:
@@ -8305,19 +9759,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"095b342516d2b8d4e48f2c027147779e"'
+      - '"145ebff4b4e2813726abea67cd2574e2"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 18d568b8-1def-4322-a0e8-3ffe9816e621
+      - a1285ff5-8b2f-41f2-acd3-d8110e9a3dd3
       X-Runtime:
-      - '0.015166'
+      - '0.023532'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Sat, 04 Oct 2014 18:43:51 GMT
+      - Sun, 05 Oct 2014 12:53:40 GMT
       Content-Length:
-      - '21618'
+      - '26490'
       Connection:
       - Keep-Alive
     body:
@@ -9382,10 +10836,274 @@ http_interactions:
             "freeform": false,
             "absolute_index": null,
             "parent_question_id": null
+          },
+          {
+            "id": 88,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 89,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 90,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 91,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 92,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 93,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 94,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 95,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 96,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 97,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 98,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 99,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 100,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 101,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 102,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 103,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 104,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 105,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 106,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 107,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 108,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
+          },
+          {
+            "id": 109,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "freeform": false,
+            "absolute_index": null,
+            "parent_question_id": null
           }
         ]
     http_version: 
-  recorded_at: Sat, 04 Oct 2014 18:43:51 GMT
+  recorded_at: Sun, 05 Oct 2014 12:53:40 GMT
 - request:
     method: post
     uri: http://localhost:3000/api/users
@@ -9419,17 +11137,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"556a8d8681059dd515a70f7027eebf41"'
+      - '"4f779f77721e60c7313cbdfcc3bbcf5a"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 115d3cc9-0d42-4208-93a1-97e33cec43f1
+      - a21cd708-0860-47b3-97b9-382ead7381e0
       X-Runtime:
-      - '0.007007'
+      - '0.007461'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Sat, 04 Oct 2014 18:43:51 GMT
+      - Sun, 05 Oct 2014 12:53:40 GMT
       Content-Length:
       - '261'
       Connection:
@@ -9438,22 +11156,22 @@ http_interactions:
       encoding: UTF-8
       string: |-
         {
-          "service_user_id": "4b33689ce77a5dadfb30def4e759cff82ec47baf22c9b66b22ac5cc4fa84e27a",
+          "service_user_id": "1f3b3de9bb7fb10d149ac41d384e3fa54bc63b009175539d256ba9c57ba396f9",
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/users/141"
+              "href": "http://localhost:3000/api/users/207"
             }
           },
-          "token": "9446ec2fddfca3489be0f1dd6a268dec0d23862ab9367e44afd6a42d611b176b"
+          "token": "f78b819f60159337ea556e00e08d677a0746dc3a5afc3eb21fca7d7ee9290e6c"
         }
     http_version: 
-  recorded_at: Sat, 04 Oct 2014 18:43:51 GMT
+  recorded_at: Sun, 05 Oct 2014 12:53:40 GMT
 - request:
     method: post
     uri: http://localhost:3000/api/surveys
     body:
       encoding: UTF-8
-      string: '{"survey":{"service_user_id":"4b33689ce77a5dadfb30def4e759cff82ec47baf22c9b66b22ac5cc4fa84e27a"}}'
+      string: '{"survey":{"service_user_id":"1f3b3de9bb7fb10d149ac41d384e3fa54bc63b009175539d256ba9c57ba396f9"}}'
     headers:
       User-Agent:
       - Faraday v0.9.0
@@ -9481,37 +11199,37 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"6088467defb1e81ac4e6affa03625b8c"'
+      - '"08a6c3b0a8b628224a684f472da4552a"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6b4cb2b8-07ed-40eb-8f74-a68a248c474a
+      - 4aea2a9e-6bee-4fd9-b71f-453c5bec20df
       X-Runtime:
-      - '0.009551'
+      - '0.021489'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Sat, 04 Oct 2014 18:43:51 GMT
+      - Sun, 05 Oct 2014 12:53:40 GMT
       Content-Length:
-      - '434'
+      - '476'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "id": 145,
-          "service_user_id": "4b33689ce77a5dadfb30def4e759cff82ec47baf22c9b66b22ac5cc4fa84e27a",
+          "id": 233,
+          "service_user_id": "1f3b3de9bb7fb10d149ac41d384e3fa54bc63b009175539d256ba9c57ba396f9",
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/surveys/145"
+              "href": "http://localhost:3000/api/surveys/233"
             },
             "survey_questions": {
               "post": {
-                "href": "/api/surveys/145/survey_questions"
+                "href": "http://localhost:3000/api/surveys/233/survey_questions"
               },
               "put": {
-                "href": "/api/surveys/145/survey_questions"
+                "href": "http://localhost:3000/api/surveys/233/survey_questions"
               }
             }
           },
@@ -9521,10 +11239,10 @@ http_interactions:
           ]
         }
     http_version: 
-  recorded_at: Sat, 04 Oct 2014 18:43:51 GMT
+  recorded_at: Sun, 05 Oct 2014 12:53:40 GMT
 - request:
     method: post
-    uri: http://localhost:3000/api/surveys/145/survey_questions
+    uri: http://localhost:3000/api/surveys/233/survey_questions
     body:
       encoding: UTF-8
       string: '{"survey_question":{"question_id":25}}'
@@ -9555,17 +11273,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"e50172c62ced50d4088cdfca6dfeae96"'
+      - '"793bb1e641a893f14ddde2f5cc4a7d1e"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - dc609167-3ee2-4774-87e8-5cc4579c5213
+      - 69c63f90-cb44-4861-b598-0e2b23a07555
       X-Runtime:
-      - '0.012135'
+      - '0.009891'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Sat, 04 Oct 2014 18:43:51 GMT
+      - Sun, 05 Oct 2014 12:53:40 GMT
       Content-Length:
       - '561'
       Connection:
@@ -9574,7 +11292,7 @@ http_interactions:
       encoding: UTF-8
       string: |-
         {
-          "id": 680,
+          "id": 982,
           "text": "Where are you?",
           "type": "multiple",
           "responses": [
@@ -9587,27 +11305,27 @@ http_interactions:
           "freeform": true,
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/surveys/145/survey_questions/680"
+              "href": "http://localhost:3000/api/surveys/233/survey_questions/982"
             },
             "post": {
-              "href": "http://localhost:3000/api/surveys/145/survey_questions"
+              "href": "http://localhost:3000/api/surveys/233/survey_questions"
             },
             "put": {
-              "href": "http://localhost:3000/api/surveys/145/survey_questions/680"
+              "href": "http://localhost:3000/api/surveys/233/survey_questions/982"
             },
             "survey": {
-              "href": "http://localhost:3000/api/surveys/145"
+              "href": "http://localhost:3000/api/surveys/233"
             }
           }
         }
     http_version: 
-  recorded_at: Sat, 04 Oct 2014 18:43:51 GMT
+  recorded_at: Sun, 05 Oct 2014 12:53:40 GMT
 - request:
     method: put
-    uri: http://localhost:3000/api/surveys/145/survey_questions/680
+    uri: http://localhost:3000/api/surveys/233/survey_questions/982
     body:
       encoding: UTF-8
-      string: '{"id":680,"survey_question":{"answer":"At Home"}}'
+      string: '{"id":982,"survey_question":{"answer":"At Home"}}'
     headers:
       User-Agent:
       - Faraday v0.9.0
@@ -9635,23 +11353,23 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 17ad2616-144c-45af-94bc-ce3cfa5d7427
+      - b727303b-6f37-490a-bd2d-acd4a2ae91fa
       X-Runtime:
-      - '0.008004'
+      - '0.009534'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Sat, 04 Oct 2014 18:43:51 GMT
+      - Sun, 05 Oct 2014 12:53:40 GMT
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 04 Oct 2014 18:43:51 GMT
+  recorded_at: Sun, 05 Oct 2014 12:53:40 GMT
 - request:
     method: get
-    uri: http://localhost:3000/api/surveys/145
+    uri: http://localhost:3000/api/surveys/233
     body:
       encoding: US-ASCII
       string: ''
@@ -9682,44 +11400,44 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"6d1d21bc6857f01984b3cb2c02720066"'
+      - '"3275465a3e63b09c1973512baf26f2cf"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d4005ac8-75cd-49c0-adf4-e64551d705ca
+      - d68c8b61-b3b9-44b7-9e27-cf9ffef26efb
       X-Runtime:
-      - '0.011250'
+      - '0.011698'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Sat, 04 Oct 2014 18:43:51 GMT
+      - Sun, 05 Oct 2014 12:53:40 GMT
       Content-Length:
-      - '1108'
+      - '1150'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "id": 145,
-          "service_user_id": "4b33689ce77a5dadfb30def4e759cff82ec47baf22c9b66b22ac5cc4fa84e27a",
+          "id": 233,
+          "service_user_id": "1f3b3de9bb7fb10d149ac41d384e3fa54bc63b009175539d256ba9c57ba396f9",
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/surveys/145"
+              "href": "http://localhost:3000/api/surveys/233"
             },
             "survey_questions": {
               "post": {
-                "href": "/api/surveys/145/survey_questions"
+                "href": "http://localhost:3000/api/surveys/233/survey_questions"
               },
               "put": {
-                "href": "/api/surveys/145/survey_questions"
+                "href": "http://localhost:3000/api/surveys/233/survey_questions"
               }
             }
           },
           "completed": false,
           "survey_questions": [
             {
-              "id": 680,
+              "id": 982,
               "text": "Where are you?",
               "type": "multiple",
               "responses": [
@@ -9732,21 +11450,21 @@ http_interactions:
               "freeform": true,
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/145/survey_questions/680"
+                  "href": "http://localhost:3000/api/surveys/233/survey_questions/982"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/145/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/233/survey_questions"
                 },
                 "put": {
-                  "href": "http://localhost:3000/api/surveys/145/survey_questions/680"
+                  "href": "http://localhost:3000/api/surveys/233/survey_questions/982"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/145"
+                  "href": "http://localhost:3000/api/surveys/233"
                 }
               }
             }
           ]
         }
     http_version: 
-  recorded_at: Sat, 04 Oct 2014 18:43:51 GMT
+  recorded_at: Sun, 05 Oct 2014 12:53:40 GMT
 recorded_with: VCR 2.6.0

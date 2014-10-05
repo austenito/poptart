@@ -39,7 +39,9 @@ module Poptart
     end
 
     def survey_questions_for_question_id(question_id)
-
+      url = root.survey_questions_url(question_id: question_id)
+      response = get(url)
+      JSON.parse(response.body)["survey_questions"].map { |response_body| Poptart::SurveyQuestion.new(response_body) }
     end
   end
 end

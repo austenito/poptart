@@ -41,6 +41,11 @@ module Poptart
       template.expand(id: id, query: query).to_s
     end
 
+    def survey_questions_url(question_id: nil, query: nil)
+      template = Addressable::Template.new(links.survey_questions.href)
+      template.expand(question_id: question_id, query: query).to_s
+    end
+
     private
 
     def root_uri

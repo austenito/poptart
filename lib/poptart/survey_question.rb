@@ -8,10 +8,16 @@ module Poptart
     def initialize(response)
       super
       @text = params['text']
-      @answer = params['answer']
       @type = params['type']
       @freeform = params['freeform']
       @responses = params['responses']
+      @answer = params['answer']
+
+      if @answer == 't'
+        @answer = true
+      elsif @answer == 'f'
+        @answer = false
+      end
     end
 
     def boolean?

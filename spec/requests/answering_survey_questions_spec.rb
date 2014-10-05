@@ -1,21 +1,21 @@
 require 'spec_helper'
 
 describe 'Answering survey questions' do
-  it "creates and returns an empty survey", :vcr, :record => :all do
+  it "creates and returns an empty survey", :vcr do
     user = Poptart::User.create
     survey = user.create_survey
     survey.service_user_id.should == user.service_user_id
     survey.survey_questions.count.should == 0
   end
 
-  it "creates and returns a random question survey", :vcr, :record => :all do
+  it "creates and returns a random question survey", :vcr do
     user = Poptart::User.create
     survey = user.create_random_survey
     survey.service_user_id.should == user.service_user_id
     survey.survey_questions.count.should > 0
   end
 
-  it "answers a survey question", :vcr, :record => :all do
+  it "answers a survey question", :vcr do
     user = Poptart::User.create
     survey = user.create_random_survey
     survey_question = survey.survey_questions.first
@@ -27,7 +27,7 @@ describe 'Answering survey questions' do
     survey.survey_questions.first.answer.should == "foo"
   end
 
-  it "answers a survey question", :vcr, :record => :all do
+  it "answers a survey question", :vcr do
     boolean_questions = Poptart::Question.all(type: 'boolean')
     user = Poptart::User.create
     survey = user.create_survey
@@ -37,14 +37,14 @@ describe 'Answering survey questions' do
     survey_question.responses.should == ['t', 'f']
     survey_question.type.should == 'boolean'
 
-    survey_question.answer = 'true'
+    survey_question.answer = true
     survey_question.submit.should be
 
     survey = user.survey_for_id(survey.id)
-    survey.survey_questions.first.answer.should == 'true'
+    survey.survey_questions.first.answer.should == true
   end
 
-  it "answers a multiple choice question", :vcr, :record => :all do
+  it "answers a multiple choice question", :vcr do
     questions = Poptart::Question.all(type: 'multiple')
     question = questions.find { |question| question.responses.include?('At Home') }
     user = Poptart::User.create
@@ -62,7 +62,7 @@ describe 'Answering survey questions' do
     survey.survey_questions.first.answer.should == 'At Home'
   end
 
-  it "finds survey question for id", :vcr, :record => :all do
+  it "finds survey question for id", :vcr do
     user = Poptart::User.create
     survey = user.create_random_survey
     first_survey_question = survey.survey_questions.first

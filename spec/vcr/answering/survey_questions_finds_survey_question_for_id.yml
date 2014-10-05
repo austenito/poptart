@@ -1974,17 +1974,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"f4ef02e86280fba87530b3681d97f1c6"'
+      - '"627191e4146cdc30e988ff0a96e0753a"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 395403a1-98d5-478d-baa7-cc7f8bf83bf2
+      - 41b3878c-6281-456d-90fc-aff17addc771
       X-Runtime:
-      - '0.006426'
+      - '0.006398'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Sat, 04 Oct 2014 18:43:51 GMT
+      - Sun, 05 Oct 2014 12:53:40 GMT
       Content-Length:
       - '261'
       Connection:
@@ -1993,22 +1993,22 @@ http_interactions:
       encoding: UTF-8
       string: |-
         {
-          "service_user_id": "4b33689ce77a5dadfb30def4e759cff82ec47baf22c9b66b22ac5cc4fa84e27a",
+          "service_user_id": "1f3b3de9bb7fb10d149ac41d384e3fa54bc63b009175539d256ba9c57ba396f9",
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/users/142"
+              "href": "http://localhost:3000/api/users/208"
             }
           },
-          "token": "9446ec2fddfca3489be0f1dd6a268dec0d23862ab9367e44afd6a42d611b176b"
+          "token": "f78b819f60159337ea556e00e08d677a0746dc3a5afc3eb21fca7d7ee9290e6c"
         }
     http_version: 
-  recorded_at: Sat, 04 Oct 2014 18:43:51 GMT
+  recorded_at: Sun, 05 Oct 2014 12:53:40 GMT
 - request:
     method: post
     uri: http://localhost:3000/api/surveys?random=true
     body:
       encoding: UTF-8
-      string: '{"survey":{"service_user_id":"4b33689ce77a5dadfb30def4e759cff82ec47baf22c9b66b22ac5cc4fa84e27a"}}'
+      string: '{"survey":{"service_user_id":"1f3b3de9bb7fb10d149ac41d384e3fa54bc63b009175539d256ba9c57ba396f9"}}'
     headers:
       User-Agent:
       - Faraday v0.9.0
@@ -2036,44 +2036,44 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"28d4023aa966aae205b4447e64a91bcc"'
+      - '"8884eb7a1ab4a82882034ac7eb3c4eee"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4188c8b8-b1dd-45b2-b246-cc50cc9e9a61
+      - 36a0d35e-82e9-4b00-809e-6d80939a46de
       X-Runtime:
-      - '0.058917'
+      - '0.081621'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Sat, 04 Oct 2014 18:43:51 GMT
+      - Sun, 05 Oct 2014 12:53:40 GMT
       Content-Length:
-      - '8056'
+      - '8098'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "id": 146,
-          "service_user_id": "4b33689ce77a5dadfb30def4e759cff82ec47baf22c9b66b22ac5cc4fa84e27a",
+          "id": 234,
+          "service_user_id": "1f3b3de9bb7fb10d149ac41d384e3fa54bc63b009175539d256ba9c57ba396f9",
           "_links": {
             "self": {
-              "href": "http://localhost:3000/api/surveys/146"
+              "href": "http://localhost:3000/api/surveys/234"
             },
             "survey_questions": {
               "post": {
-                "href": "/api/surveys/146/survey_questions"
+                "href": "http://localhost:3000/api/surveys/234/survey_questions"
               },
               "put": {
-                "href": "/api/surveys/146/survey_questions"
+                "href": "http://localhost:3000/api/surveys/234/survey_questions"
               }
             }
           },
           "completed": false,
           "survey_questions": [
             {
-              "id": 681,
+              "id": 983,
               "text": "How do you feel right now?",
               "type": "range",
               "responses": [
@@ -2084,21 +2084,21 @@ http_interactions:
               "freeform": false,
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/681"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/983"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions"
                 },
                 "put": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/681"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/983"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/146"
+                  "href": "http://localhost:3000/api/surveys/234"
                 }
               }
             },
             {
-              "id": 682,
+              "id": 984,
               "text": "Where are you?",
               "type": "multiple",
               "responses": [
@@ -2111,21 +2111,21 @@ http_interactions:
               "freeform": true,
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/682"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/984"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions"
                 },
                 "put": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/682"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/984"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/146"
+                  "href": "http://localhost:3000/api/surveys/234"
                 }
               }
             },
             {
-              "id": 683,
+              "id": 985,
               "text": "Do you like poptarts?",
               "type": "multiple",
               "responses": [
@@ -2136,21 +2136,21 @@ http_interactions:
               "freeform": true,
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/683"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/985"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions"
                 },
                 "put": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/683"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/985"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/146"
+                  "href": "http://localhost:3000/api/surveys/234"
                 }
               }
             },
             {
-              "id": 684,
+              "id": 986,
               "text": "Do you like poptarts?",
               "type": "multiple",
               "responses": [
@@ -2161,21 +2161,21 @@ http_interactions:
               "freeform": true,
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/684"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/986"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions"
                 },
                 "put": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/684"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/986"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/146"
+                  "href": "http://localhost:3000/api/surveys/234"
                 }
               }
             },
             {
-              "id": 685,
+              "id": 987,
               "text": "Do you love poptarts?",
               "type": "multiple",
               "responses": [
@@ -2186,21 +2186,21 @@ http_interactions:
               "freeform": true,
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/685"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/987"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions"
                 },
                 "put": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/685"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/987"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/146"
+                  "href": "http://localhost:3000/api/surveys/234"
                 }
               }
             },
             {
-              "id": 686,
+              "id": 988,
               "text": "Do you love poptarts?",
               "type": "multiple",
               "responses": [
@@ -2211,21 +2211,21 @@ http_interactions:
               "freeform": true,
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/686"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/988"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions"
                 },
                 "put": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/686"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/988"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/146"
+                  "href": "http://localhost:3000/api/surveys/234"
                 }
               }
             },
             {
-              "id": 687,
+              "id": 989,
               "text": "Do you like poptarts?",
               "type": "multiple",
               "responses": [
@@ -2236,21 +2236,21 @@ http_interactions:
               "freeform": true,
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/687"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/989"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions"
                 },
                 "put": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/687"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/989"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/146"
+                  "href": "http://localhost:3000/api/surveys/234"
                 }
               }
             },
             {
-              "id": 688,
+              "id": 990,
               "text": "Do you like poptarts?",
               "type": "multiple",
               "responses": [
@@ -2261,21 +2261,21 @@ http_interactions:
               "freeform": true,
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/688"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/990"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions"
                 },
                 "put": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/688"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/990"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/146"
+                  "href": "http://localhost:3000/api/surveys/234"
                 }
               }
             },
             {
-              "id": 689,
+              "id": 991,
               "text": "Do you like poptarts?",
               "type": "multiple",
               "responses": [
@@ -2286,21 +2286,21 @@ http_interactions:
               "freeform": true,
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/689"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/991"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions"
                 },
                 "put": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/689"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/991"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/146"
+                  "href": "http://localhost:3000/api/surveys/234"
                 }
               }
             },
             {
-              "id": 690,
+              "id": 992,
               "text": "Do you like poptarts?",
               "type": "multiple",
               "responses": [
@@ -2311,21 +2311,21 @@ http_interactions:
               "freeform": true,
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/690"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/992"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions"
                 },
                 "put": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/690"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/992"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/146"
+                  "href": "http://localhost:3000/api/surveys/234"
                 }
               }
             },
             {
-              "id": 691,
+              "id": 993,
               "text": "Do you like poptarts?",
               "type": "multiple",
               "responses": [
@@ -2336,21 +2336,21 @@ http_interactions:
               "freeform": true,
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/691"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/993"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions"
                 },
                 "put": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/691"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/993"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/146"
+                  "href": "http://localhost:3000/api/surveys/234"
                 }
               }
             },
             {
-              "id": 692,
+              "id": 994,
               "text": "Do you love poptarts?",
               "type": "multiple",
               "responses": [
@@ -2361,21 +2361,21 @@ http_interactions:
               "freeform": true,
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/692"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/994"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions"
                 },
                 "put": {
-                  "href": "http://localhost:3000/api/surveys/146/survey_questions/692"
+                  "href": "http://localhost:3000/api/surveys/234/survey_questions/994"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/146"
+                  "href": "http://localhost:3000/api/surveys/234"
                 }
               }
             }
           ]
         }
     http_version: 
-  recorded_at: Sat, 04 Oct 2014 18:43:51 GMT
+  recorded_at: Sun, 05 Oct 2014 12:53:40 GMT
 recorded_with: VCR 2.6.0
