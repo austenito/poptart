@@ -19,4 +19,24 @@ describe 'retrieving answers' do
     survey_questions = user.survey_questions_for_question_id(question.id)
     survey_questions.map(&:answer).should =~ [true, false]
   end
+
+  it "returns all answered survey questions for a question by key", :vcr do
+    key = 'testingooptarts'
+    question = Poptart::BooleanQuestion.create("Do you like poptarts?", key: key)
+    user = Poptart::User.create
+
+    survey = user.create_survey
+    first_survey_question = survey.add_question(question)
+    second_survey = user.create_survey
+    second_survey_question = second_survey.add_question(question)
+
+    first_survey_question.answer = true
+    first_survey_question.submit.should be
+
+    second_survey_question.answer = false
+    second_survey_question.submit.should be
+
+    survey_questions = user.survey_questions_for_key(key)
+    survey_questions.map(&:answer).should =~ [true, false]
+  end
 end
