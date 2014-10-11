@@ -3,7 +3,7 @@ module Poptart
     extend Poptart::Request
     include Poptart::Request
 
-    attr_accessor :text, :answer, :type, :responses, :created_at
+    attr_accessor :text, :answer, :type, :responses
 
     def initialize(response)
       super
@@ -39,6 +39,10 @@ module Poptart
 
     def freeform?
       @freeform == true
+    end
+
+    def created_at
+      DateTime.parse(@created_at)
     end
 
     def submit
