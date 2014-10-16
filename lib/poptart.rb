@@ -14,6 +14,24 @@ module Poptart
   def self.url
     @url || 'http://localhost:3000'
   end
+
+  def self.service_user_id
+    @service_user_id
+  end
+
+  def self.user_token
+    @user_token
+  end
+
+  def self.authorize(service_user_id:, user_token:)
+    @service_user_id = service_user_id
+    @user_token = user_token
+  end
+
+  def self.reset_authorization
+    @service_user_id = nil
+    @user_token = nil
+  end
 end
 
 require 'faraday'
