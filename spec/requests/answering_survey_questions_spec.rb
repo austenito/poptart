@@ -3,6 +3,7 @@ require 'spec_helper'
 describe 'Answering survey questions' do
   it "creates and returns an empty survey", :vcr do
     user = Poptart::User.create
+    Poptart.authorize(service_user_id: user.service_user_id, user_token: user.token)
     survey = user.create_survey
     survey.service_user_id.should == user.service_user_id
     survey.survey_questions.count.should == 0
@@ -10,6 +11,7 @@ describe 'Answering survey questions' do
 
   it "creates and returns a random question survey", :vcr do
     user = Poptart::User.create
+    Poptart.authorize(service_user_id: user.service_user_id, user_token: user.token)
     survey = user.create_random_survey
     survey.service_user_id.should == user.service_user_id
     survey.survey_questions.count.should > 0
@@ -17,6 +19,7 @@ describe 'Answering survey questions' do
 
   it "answers a survey question", :vcr do
     user = Poptart::User.create
+    Poptart.authorize(service_user_id: user.service_user_id, user_token: user.token)
     survey = user.create_random_survey
     survey_question = survey.survey_questions.first
     survey_question.text.should be
@@ -30,6 +33,7 @@ describe 'Answering survey questions' do
   it "answers a survey question", :vcr do
     boolean_questions = Poptart::Question.all(type: 'boolean')
     user = Poptart::User.create
+    Poptart.authorize(service_user_id: user.service_user_id, user_token: user.token)
     survey = user.create_survey
     survey_question = survey.add_question(boolean_questions.first)
 
@@ -48,6 +52,7 @@ describe 'Answering survey questions' do
     questions = Poptart::Question.all(type: 'multiple')
     question = questions.find { |question| question.responses.include?('At Home') }
     user = Poptart::User.create
+    Poptart.authorize(service_user_id: user.service_user_id, user_token: user.token)
     survey = user.create_survey
     survey_question = survey.add_question(question)
 
@@ -64,6 +69,7 @@ describe 'Answering survey questions' do
 
   it "finds survey question for id", :vcr do
     user = Poptart::User.create
+    Poptart.authorize(service_user_id: user.service_user_id, user_token: user.token)
     survey = user.create_random_survey
     first_survey_question = survey.survey_questions.first
     survey_question = survey.survey_question_for_id(first_survey_question.id)

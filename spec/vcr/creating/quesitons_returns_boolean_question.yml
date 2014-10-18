@@ -103,13 +103,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7e53c3b0-a044-4cc9-abc0-4793c59a8ed8
+      - f3f12516-1a80-478c-9d43-16848831e5c7
       X-Runtime:
-      - '0.032272'
+      - '0.029369'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Wed, 08 Oct 2014 02:15:37 GMT
+      - Wed, 08 Oct 2014 02:16:10 GMT
       Content-Length:
       - '469'
       Connection:
@@ -137,7 +137,7 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Wed, 08 Oct 2014 02:15:37 GMT
+  recorded_at: Wed, 08 Oct 2014 02:16:10 GMT
 - request:
     method: get
     uri: http://localhost:3000/
@@ -175,13 +175,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f3f12516-1a80-478c-9d43-16848831e5c7
+      - b383a40c-c0b4-4d87-99d7-a31d312553b5
       X-Runtime:
-      - '0.029369'
+      - '0.005370'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Wed, 08 Oct 2014 02:16:10 GMT
+      - Sat, 18 Oct 2014 17:21:23 GMT
       Content-Length:
       - '469'
       Connection:
@@ -209,7 +209,7 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Wed, 08 Oct 2014 02:16:10 GMT
+  recorded_at: Sat, 18 Oct 2014 17:21:23 GMT
 - request:
     method: post
     uri: http://localhost:3000/api/questions
@@ -224,6 +224,10 @@ http_interactions:
       - application/json
       Api-Token:
       - testing
+      User-Token:
+      - 79d638f50b633871f48db1bf89a367c13fa838cc79b665c0f82ffc28fcf2d1ab
+      Service-User-Id:
+      - 0cc711f2486004185fe85b93f829074b225b46a616d10cb2d5c9f15329c22e05
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -244,26 +248,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"5df8e0fd01cd48f8c251e4b1420d0070"'
+      - '"345e60b0d5495fe468bad0e974d953fe"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d550e167-b88c-4d8b-8180-1d31aa7c99c5
+      - eb84e1b9-b787-4489-8918-e12addfd6c60
       X-Runtime:
-      - '0.022491'
+      - '0.008234'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Wed, 08 Oct 2014 02:16:10 GMT
+      - Sat, 18 Oct 2014 17:30:45 GMT
       Content-Length:
-      - '214'
+      - '215'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "id": 40,
+          "id": 127,
           "question_type": "boolean",
           "text": "Do you like poptarts?",
           "responses": [
@@ -276,5 +280,5 @@ http_interactions:
           "key": "poptarts"
         }
     http_version: 
-  recorded_at: Wed, 08 Oct 2014 02:16:10 GMT
+  recorded_at: Sat, 18 Oct 2014 17:30:45 GMT
 recorded_with: VCR 2.6.0

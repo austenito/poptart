@@ -451,68 +451,6 @@ http_interactions:
     http_version: 
   recorded_at: Sun, 05 Oct 2014 12:55:49 GMT
 - request:
-    method: post
-    uri: http://localhost:3000/api/users
-    body:
-      encoding: UTF-8
-      string: "{}"
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: 'Created '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"203b04ee2677eb52b616b7689ebdd141"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 1ef35a2b-571d-4435-95e2-af69c72ccf43
-      X-Runtime:
-      - '0.007209'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sun, 05 Oct 2014 12:56:55 GMT
-      Content-Length:
-      - '261'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "service_user_id": "6636fecbce7c6e772ee47a4ccf75a48dbbd5f773eed970554b0ed96e6a4e6f70",
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/users/212"
-            }
-          },
-          "token": "0ba0d61be9303076a3c8e381eaf4d3b63541fe8c5c6a86a3df69d437783acf8e"
-        }
-    http_version: 
-  recorded_at: Sun, 05 Oct 2014 12:56:55 GMT
-- request:
     method: get
     uri: http://localhost:3000/api/users/6636fecbce7c6e772ee47a4ccf75a48dbbd5f773eed970554b0ed96e6a4e6f70
     body:
@@ -574,4 +512,517 @@ http_interactions:
         }
     http_version: 
   recorded_at: Sun, 05 Oct 2014 12:56:55 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/users/7a5541a99bd8b0823ba4dde7c4f38fff458729a6dccb3189417cff46f1fbef18
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: 'Unauthorized '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - text/html
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - d357a8e5-8ef3-40eb-90be-be10067a9766
+      X-Runtime:
+      - '0.004571'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 18 Oct 2014 17:22:53 GMT
+      Content-Length:
+      - '1'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: " "
+    http_version: 
+  recorded_at: Sat, 18 Oct 2014 17:22:53 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/users/1e5f0a0b13bf4a940b97dd0598cf65ea157b448dafda9494ebc21e151b12286d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - b4c910f7f048ac2b57fa7d5193ab5e9a6b751a24e8cc89e366f702fd12fa7bba
+      Service-User-Id:
+      - 1e5f0a0b13bf4a940b97dd0598cf65ea157b448dafda9494ebc21e151b12286d
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"453673f7522daace4151ec19e090ada7"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 38a3cc0f-0080-460b-86bb-e321ff2c721f
+      X-Runtime:
+      - '0.005772'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 18 Oct 2014 17:23:04 GMT
+      Content-Length:
+      - '260'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "service_user_id": "1e5f0a0b13bf4a940b97dd0598cf65ea157b448dafda9494ebc21e151b12286d",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/users/84"
+            }
+          },
+          "token": "b4c910f7f048ac2b57fa7d5193ab5e9a6b751a24e8cc89e366f702fd12fa7bba"
+        }
+    http_version: 
+  recorded_at: Sat, 18 Oct 2014 17:23:04 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/users/ef6d675788ed9555e7485aed8fe5b55188e5ed5d37df5da1fdb6c426a0c46f63
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 22db57748b2f4d2df0fe34d9cb03199fc6ddd6bfa2a9c7423d657f58eee85e68
+      Service-User-Id:
+      - ef6d675788ed9555e7485aed8fe5b55188e5ed5d37df5da1fdb6c426a0c46f63
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"cd7569cc45add0bd1e1c7649bf251ad2"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a337c95a-af8a-49f3-85e5-bebfd44b05ec
+      X-Runtime:
+      - '0.006433'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 18 Oct 2014 17:26:55 GMT
+      Content-Length:
+      - '260'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "service_user_id": "ef6d675788ed9555e7485aed8fe5b55188e5ed5d37df5da1fdb6c426a0c46f63",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/users/99"
+            }
+          },
+          "token": "22db57748b2f4d2df0fe34d9cb03199fc6ddd6bfa2a9c7423d657f58eee85e68"
+        }
+    http_version: 
+  recorded_at: Sat, 18 Oct 2014 17:26:55 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/users/9b9cecf62bf7b0209bc1d02efe07c39d3b4c9aea55305263c0a5ea3a879ac114
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 6f60976124c03c4dcb6eec1203befa6e93931b5232dfaf40eae202f652518523
+      Service-User-Id:
+      - 9b9cecf62bf7b0209bc1d02efe07c39d3b4c9aea55305263c0a5ea3a879ac114
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"c7338947bbdb8eaabd01901825b10191"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 01eeeaa3-b037-4b03-a310-785ecab48f7d
+      X-Runtime:
+      - '0.005983'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 18 Oct 2014 17:28:27 GMT
+      Content-Length:
+      - '261'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "service_user_id": "9b9cecf62bf7b0209bc1d02efe07c39d3b4c9aea55305263c0a5ea3a879ac114",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/users/109"
+            }
+          },
+          "token": "6f60976124c03c4dcb6eec1203befa6e93931b5232dfaf40eae202f652518523"
+        }
+    http_version: 
+  recorded_at: Sat, 18 Oct 2014 17:28:27 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/users/9ca365303eaa6b3b8d5588ea43d7d55de8a571918e30278cceaba70ed416bc00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 440198e9b51b97a8d9d9a4466f5fc014f32b961ad0f2b5423c94070ef5fb5d4c
+      Service-User-Id:
+      - 9ca365303eaa6b3b8d5588ea43d7d55de8a571918e30278cceaba70ed416bc00
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"2cec193468012756c3209fd1a55bffd2"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5d8df003-0ec7-4032-86f2-f45cfb422296
+      X-Runtime:
+      - '0.005367'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 18 Oct 2014 17:30:45 GMT
+      Content-Length:
+      - '261'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "service_user_id": "9ca365303eaa6b3b8d5588ea43d7d55de8a571918e30278cceaba70ed416bc00",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/users/151"
+            }
+          },
+          "token": "440198e9b51b97a8d9d9a4466f5fc014f32b961ad0f2b5423c94070ef5fb5d4c"
+        }
+    http_version: 
+  recorded_at: Sat, 18 Oct 2014 17:30:45 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/users/deb03cc2a27b47a93f5d1883c9a264410f7dfb6785192a8d1952f0b0aacc5b8a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 79abe0acc02e7c7a4ecb9d282f2b960136e2fc479e997547082bb2b48e7f0f1e
+      Service-User-Id:
+      - deb03cc2a27b47a93f5d1883c9a264410f7dfb6785192a8d1952f0b0aacc5b8a
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"340ade85edb137551bf5d7f98622e403"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 13d0b87e-603f-4e98-817d-de6e60b0a349
+      X-Runtime:
+      - '0.005189'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 18 Oct 2014 17:31:05 GMT
+      Content-Length:
+      - '261'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "service_user_id": "deb03cc2a27b47a93f5d1883c9a264410f7dfb6785192a8d1952f0b0aacc5b8a",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/users/154"
+            }
+          },
+          "token": "79abe0acc02e7c7a4ecb9d282f2b960136e2fc479e997547082bb2b48e7f0f1e"
+        }
+    http_version: 
+  recorded_at: Sat, 18 Oct 2014 17:31:05 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/users
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 440198e9b51b97a8d9d9a4466f5fc014f32b961ad0f2b5423c94070ef5fb5d4c
+      Service-User-Id:
+      - 9ca365303eaa6b3b8d5588ea43d7d55de8a571918e30278cceaba70ed416bc00
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"3a3abe1dca5b5a43d5be91869ad68bbb"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5cb66817-e884-487e-a693-da96282e1768
+      X-Runtime:
+      - '0.007987'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 18 Oct 2014 17:31:13 GMT
+      Content-Length:
+      - '261'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "service_user_id": "b98f19d9fc82b2d6ee9845a3844454b98a9f5b47a2b16dd48e768d18167c8133",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/users/157"
+            }
+          },
+          "token": "2d1af3825c28236b06e594daf2fcfec5edd7aed545beb06ea81becc246598385"
+        }
+    http_version: 
+  recorded_at: Sat, 18 Oct 2014 17:31:13 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/users/b98f19d9fc82b2d6ee9845a3844454b98a9f5b47a2b16dd48e768d18167c8133
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 2d1af3825c28236b06e594daf2fcfec5edd7aed545beb06ea81becc246598385
+      Service-User-Id:
+      - b98f19d9fc82b2d6ee9845a3844454b98a9f5b47a2b16dd48e768d18167c8133
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"de524230fc03846624c6b07bdfb110c2"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3d4ba9bd-cfa1-4d99-ba5d-0f80630c3fff
+      X-Runtime:
+      - '0.005653'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 18 Oct 2014 17:31:13 GMT
+      Content-Length:
+      - '261'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "service_user_id": "b98f19d9fc82b2d6ee9845a3844454b98a9f5b47a2b16dd48e768d18167c8133",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/users/156"
+            }
+          },
+          "token": "2d1af3825c28236b06e594daf2fcfec5edd7aed545beb06ea81becc246598385"
+        }
+    http_version: 
+  recorded_at: Sat, 18 Oct 2014 17:31:13 GMT
 recorded_with: VCR 2.6.0

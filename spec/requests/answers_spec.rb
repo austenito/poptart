@@ -4,6 +4,7 @@ describe 'retrieving answers' do
   it "returns all answered survey questions for a question", :vcr do
     question = Poptart::BooleanQuestion.create("Do you like poptarts?")
     user = Poptart::User.create
+    Poptart.authorize(service_user_id: user.service_user_id, user_token: user.token)
 
     survey = user.create_survey
     first_survey_question = survey.add_question(question)
@@ -24,6 +25,7 @@ describe 'retrieving answers' do
     key = 'testingooptarts'
     question = Poptart::BooleanQuestion.create("Do you like poptarts?", key: key)
     user = Poptart::User.create
+    Poptart.authorize(service_user_id: user.service_user_id, user_token: user.token)
 
     survey = user.create_survey
     first_survey_question = survey.add_question(question)
