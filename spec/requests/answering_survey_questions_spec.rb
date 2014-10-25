@@ -46,6 +46,7 @@ describe 'Answering survey questions' do
 
     survey = user.survey_for_id(survey.id)
     survey.survey_questions.first.answer.should == true
+    survey.completed?.should == true
   end
 
   it "answers a multiple choice question", :vcr do
