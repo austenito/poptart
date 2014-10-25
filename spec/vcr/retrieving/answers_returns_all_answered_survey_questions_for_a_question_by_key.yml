@@ -8979,221 +8979,6 @@ http_interactions:
   recorded_at: Sat, 18 Oct 2014 17:28:27 GMT
 - request:
     method: post
-    uri: http://localhost:3000/api/questions
-    body:
-      encoding: UTF-8
-      string: '{"question":{"question_type":"boolean","responses":[true,false],"text":"Do
-        you like poptarts?","freeform":false,"absolute_index":null,"parent_question_id":null,"key":"testingooptarts"}}'
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      User-Token:
-      - cd13490902b4944acf6af4d6e8505c8e44b68e841dbfca133523f68b941587b7
-      Service-User-Id:
-      - 8104645e99aeda86d54dd596af7d3d91ed7909493bcf2e0e6291270d4303a471
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: 'Created '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"00c4e2b79f1b7d9367b0b98619c59386"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - ca24d43f-7072-4333-8b20-31faa14b2ae1
-      X-Runtime:
-      - '0.007519'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sat, 18 Oct 2014 17:30:44 GMT
-      Content-Length:
-      - '227'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "id": 126,
-          "question_type": "boolean",
-          "text": "Do you like poptarts?",
-          "responses": [
-            true,
-            false
-          ],
-          "freeform": false,
-          "absolute_index": null,
-          "parent_question_id": null,
-          "key": "testingooptarts"
-        }
-    http_version: 
-  recorded_at: Sat, 18 Oct 2014 17:30:44 GMT
-- request:
-    method: post
-    uri: http://localhost:3000/api/users
-    body:
-      encoding: UTF-8
-      string: "{}"
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      User-Token:
-      - cd13490902b4944acf6af4d6e8505c8e44b68e841dbfca133523f68b941587b7
-      Service-User-Id:
-      - 8104645e99aeda86d54dd596af7d3d91ed7909493bcf2e0e6291270d4303a471
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: 'Created '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"6b28c257656ca8d458c4e751dc5eca7a"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 8c561076-40b3-48f4-b4dd-500ec750b96a
-      X-Runtime:
-      - '0.007589'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sat, 18 Oct 2014 17:30:44 GMT
-      Content-Length:
-      - '261'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "service_user_id": "0cc711f2486004185fe85b93f829074b225b46a616d10cb2d5c9f15329c22e05",
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/users/150"
-            }
-          },
-          "token": "79d638f50b633871f48db1bf89a367c13fa838cc79b665c0f82ffc28fcf2d1ab"
-        }
-    http_version: 
-  recorded_at: Sat, 18 Oct 2014 17:30:44 GMT
-- request:
-    method: post
-    uri: http://localhost:3000/api/surveys
-    body:
-      encoding: UTF-8
-      string: '{"survey":{"service_user_id":"0cc711f2486004185fe85b93f829074b225b46a616d10cb2d5c9f15329c22e05"}}'
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      User-Token:
-      - 79d638f50b633871f48db1bf89a367c13fa838cc79b665c0f82ffc28fcf2d1ab
-      Service-User-Id:
-      - 0cc711f2486004185fe85b93f829074b225b46a616d10cb2d5c9f15329c22e05
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: 'Created '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"e61d7e6bf0ffebb01f613e8c03531a1a"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - da0a3e4b-fcfd-4c2d-b34f-bde390f43e78
-      X-Runtime:
-      - '0.035492'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sat, 18 Oct 2014 17:30:44 GMT
-      Content-Length:
-      - '476'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "id": 186,
-          "service_user_id": "0cc711f2486004185fe85b93f829074b225b46a616d10cb2d5c9f15329c22e05",
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/surveys/186"
-            },
-            "survey_questions": {
-              "post": {
-                "href": "http://localhost:3000/api/surveys/186/survey_questions"
-              },
-              "put": {
-                "href": "http://localhost:3000/api/surveys/186/survey_questions"
-              }
-            }
-          },
-          "completed": false,
-          "survey_questions": [
-
-          ]
-        }
-    http_version: 
-  recorded_at: Sat, 18 Oct 2014 17:30:44 GMT
-- request:
-    method: post
     uri: http://localhost:3000/api/surveys/186/survey_questions
     body:
       encoding: UTF-8
@@ -9272,84 +9057,6 @@ http_interactions:
             }
           },
           "created_at": "2014-10-18T17:30:44.637Z"
-        }
-    http_version: 
-  recorded_at: Sat, 18 Oct 2014 17:30:44 GMT
-- request:
-    method: post
-    uri: http://localhost:3000/api/surveys
-    body:
-      encoding: UTF-8
-      string: '{"survey":{"service_user_id":"0cc711f2486004185fe85b93f829074b225b46a616d10cb2d5c9f15329c22e05"}}'
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      User-Token:
-      - 79d638f50b633871f48db1bf89a367c13fa838cc79b665c0f82ffc28fcf2d1ab
-      Service-User-Id:
-      - 0cc711f2486004185fe85b93f829074b225b46a616d10cb2d5c9f15329c22e05
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: 'Created '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"ff8691d7cc2a4e7fbe4f455700b62a33"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 3aaab540-8eef-4a62-aa37-7fc31f6e6b01
-      X-Runtime:
-      - '0.010871'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sat, 18 Oct 2014 17:30:44 GMT
-      Content-Length:
-      - '476'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "id": 187,
-          "service_user_id": "0cc711f2486004185fe85b93f829074b225b46a616d10cb2d5c9f15329c22e05",
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/surveys/187"
-            },
-            "survey_questions": {
-              "post": {
-                "href": "http://localhost:3000/api/surveys/187/survey_questions"
-              },
-              "put": {
-                "href": "http://localhost:3000/api/surveys/187/survey_questions"
-              }
-            }
-          },
-          "completed": false,
-          "survey_questions": [
-
-          ]
         }
     http_version: 
   recorded_at: Sat, 18 Oct 2014 17:30:44 GMT
@@ -9539,6 +9246,1105 @@ http_interactions:
     http_version: 
   recorded_at: Sat, 18 Oct 2014 17:30:44 GMT
 - request:
+    method: post
+    uri: http://localhost:3000/api/surveys/191/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":130}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 68e8575008e75611c5df4a8b5ae709e44f53228733aa24d87dfbd68c4bd5901d
+      Service-User-Id:
+      - f74bf991c9703ab84cf946be3e26d1497b9c5dee7cee626a4dd2c80fdaa7a855
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"699dea14ffcadf3b701dc67a67b592a1"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c4defd7b-d4f7-4bd6-a957-5f2fe3aca6a1
+      X-Runtime:
+      - '0.029208'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 25 Oct 2014 17:45:48 GMT
+      Content-Length:
+      - '571'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 276,
+          "text": "Do you like poptarts?",
+          "type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "answer": null,
+          "freeform": false,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/191/survey_questions/276"
+            },
+            "post": {
+              "href": "http://localhost:3000/api/surveys/191/survey_questions"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/191/survey_questions/276"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/191"
+            }
+          },
+          "created_at": "2014-10-25T17:45:48.665Z"
+        }
+    http_version: 
+  recorded_at: Sat, 25 Oct 2014 17:45:48 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/192/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":130}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 68e8575008e75611c5df4a8b5ae709e44f53228733aa24d87dfbd68c4bd5901d
+      Service-User-Id:
+      - f74bf991c9703ab84cf946be3e26d1497b9c5dee7cee626a4dd2c80fdaa7a855
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"148e7e59f8964e54b7ab47893b33bfff"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 945298f3-d560-4b91-8c6a-1ce2106468a2
+      X-Runtime:
+      - '0.013269'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 25 Oct 2014 17:45:48 GMT
+      Content-Length:
+      - '571'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 277,
+          "text": "Do you like poptarts?",
+          "type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "answer": null,
+          "freeform": false,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/192/survey_questions/277"
+            },
+            "post": {
+              "href": "http://localhost:3000/api/surveys/192/survey_questions"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/192/survey_questions/277"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/192"
+            }
+          },
+          "created_at": "2014-10-25T17:45:48.726Z"
+        }
+    http_version: 
+  recorded_at: Sat, 25 Oct 2014 17:45:48 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/191/survey_questions/276
+    body:
+      encoding: UTF-8
+      string: '{"id":276,"survey_question":{"answer":true}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 68e8575008e75611c5df4a8b5ae709e44f53228733aa24d87dfbd68c4bd5901d
+      Service-User-Id:
+      - f74bf991c9703ab84cf946be3e26d1497b9c5dee7cee626a4dd2c80fdaa7a855
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 4f0127bb-2970-489e-848c-4f13cd0aa4c3
+      X-Runtime:
+      - '0.013744'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 25 Oct 2014 17:45:48 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 25 Oct 2014 17:45:48 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/192/survey_questions/277
+    body:
+      encoding: UTF-8
+      string: '{"id":277,"survey_question":{"answer":false}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 68e8575008e75611c5df4a8b5ae709e44f53228733aa24d87dfbd68c4bd5901d
+      Service-User-Id:
+      - f74bf991c9703ab84cf946be3e26d1497b9c5dee7cee626a4dd2c80fdaa7a855
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - fb6188f8-6e81-427d-84f2-2a8ab9101cdd
+      X-Runtime:
+      - '0.012077'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 25 Oct 2014 17:45:48 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 25 Oct 2014 17:45:48 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/193/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":131}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - c8842d36e5666fc97cbe15a50faca277a4cf9b868793a5951502a734522b8a2f
+      Service-User-Id:
+      - 5e937a19844717c6957689fc2c786edf9bfe49ccc4277984574af091f012904b
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"28f8d79aa1dc49ee19d82f457152450d"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 019b3e31-d9a5-426a-9b38-be5908d4646f
+      X-Runtime:
+      - '0.015809'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 25 Oct 2014 17:46:15 GMT
+      Content-Length:
+      - '571'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 278,
+          "text": "Do you like poptarts?",
+          "type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "answer": null,
+          "freeform": false,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/193/survey_questions/278"
+            },
+            "post": {
+              "href": "http://localhost:3000/api/surveys/193/survey_questions"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/193/survey_questions/278"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/193"
+            }
+          },
+          "created_at": "2014-10-25T17:46:15.048Z"
+        }
+    http_version: 
+  recorded_at: Sat, 25 Oct 2014 17:46:15 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/194/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":131}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - c8842d36e5666fc97cbe15a50faca277a4cf9b868793a5951502a734522b8a2f
+      Service-User-Id:
+      - 5e937a19844717c6957689fc2c786edf9bfe49ccc4277984574af091f012904b
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"42aef16309315b60d27bb49af82768f1"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a8abc60a-fd39-4239-9b28-132c9ed169cd
+      X-Runtime:
+      - '0.011367'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 25 Oct 2014 17:46:15 GMT
+      Content-Length:
+      - '571'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 279,
+          "text": "Do you like poptarts?",
+          "type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "answer": null,
+          "freeform": false,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/194/survey_questions/279"
+            },
+            "post": {
+              "href": "http://localhost:3000/api/surveys/194/survey_questions"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/194/survey_questions/279"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/194"
+            }
+          },
+          "created_at": "2014-10-25T17:46:15.086Z"
+        }
+    http_version: 
+  recorded_at: Sat, 25 Oct 2014 17:46:15 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/193/survey_questions/278
+    body:
+      encoding: UTF-8
+      string: '{"id":278,"survey_question":{"answer":true}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - c8842d36e5666fc97cbe15a50faca277a4cf9b868793a5951502a734522b8a2f
+      Service-User-Id:
+      - 5e937a19844717c6957689fc2c786edf9bfe49ccc4277984574af091f012904b
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - af53bbf2-0259-40f9-8213-88f482399ff0
+      X-Runtime:
+      - '0.010887'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 25 Oct 2014 17:46:15 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 25 Oct 2014 17:46:15 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/194/survey_questions/279
+    body:
+      encoding: UTF-8
+      string: '{"id":279,"survey_question":{"answer":false}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - c8842d36e5666fc97cbe15a50faca277a4cf9b868793a5951502a734522b8a2f
+      Service-User-Id:
+      - 5e937a19844717c6957689fc2c786edf9bfe49ccc4277984574af091f012904b
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 88b76bf5-8724-413e-b14f-3e198efc616a
+      X-Runtime:
+      - '0.012714'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 25 Oct 2014 17:46:15 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 25 Oct 2014 17:46:15 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/questions
+    body:
+      encoding: UTF-8
+      string: '{"question":{"question_type":"boolean","responses":[true,false],"text":"Do
+        you like poptarts?","freeform":false,"absolute_index":null,"parent_question_id":null,"key":"testingooptarts"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - cd13490902b4944acf6af4d6e8505c8e44b68e841dbfca133523f68b941587b7
+      Service-User-Id:
+      - 8104645e99aeda86d54dd596af7d3d91ed7909493bcf2e0e6291270d4303a471
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"9bcf6d160c2bd5b6e1e1267e20211f1f"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 05b0ea27-5549-4051-82ef-7da12b49e024
+      X-Runtime:
+      - '0.051019'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 25 Oct 2014 17:46:30 GMT
+      Content-Length:
+      - '227'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 132,
+          "question_type": "boolean",
+          "text": "Do you like poptarts?",
+          "responses": [
+            true,
+            false
+          ],
+          "freeform": false,
+          "absolute_index": null,
+          "parent_question_id": null,
+          "key": "testingooptarts"
+        }
+    http_version: 
+  recorded_at: Sat, 25 Oct 2014 17:46:30 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/users
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - cd13490902b4944acf6af4d6e8505c8e44b68e841dbfca133523f68b941587b7
+      Service-User-Id:
+      - 8104645e99aeda86d54dd596af7d3d91ed7909493bcf2e0e6291270d4303a471
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"ea5a23890141f3337edaa6a6fcba6a7a"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ae7f8a74-db49-4de1-aac2-d17afd2a22b1
+      X-Runtime:
+      - '0.024557'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 25 Oct 2014 17:46:30 GMT
+      Content-Length:
+      - '261'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "service_user_id": "9d37fe86d9f38d0ec2fcfa66b2eac63fe146fb926bf193e95d9f8edafd5303c4",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/users/160"
+            }
+          },
+          "token": "78758fa0b6cbc73f43f7c185d630d53cf7bd6c4020069b3f381b4a7a7908b55e"
+        }
+    http_version: 
+  recorded_at: Sat, 25 Oct 2014 17:46:30 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys
+    body:
+      encoding: UTF-8
+      string: '{"survey":{"service_user_id":"9d37fe86d9f38d0ec2fcfa66b2eac63fe146fb926bf193e95d9f8edafd5303c4"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 78758fa0b6cbc73f43f7c185d630d53cf7bd6c4020069b3f381b4a7a7908b55e
+      Service-User-Id:
+      - 9d37fe86d9f38d0ec2fcfa66b2eac63fe146fb926bf193e95d9f8edafd5303c4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"4b6dc65b7750de6115be07dbf5cb791d"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 28a6b0b5-8041-4d1e-b6d4-6b41b3107168
+      X-Runtime:
+      - '0.031234'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 25 Oct 2014 17:46:30 GMT
+      Content-Length:
+      - '476'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 195,
+          "service_user_id": "9d37fe86d9f38d0ec2fcfa66b2eac63fe146fb926bf193e95d9f8edafd5303c4",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/195"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "http://localhost:3000/api/surveys/195/survey_questions"
+              },
+              "put": {
+                "href": "http://localhost:3000/api/surveys/195/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+
+          ]
+        }
+    http_version: 
+  recorded_at: Sat, 25 Oct 2014 17:46:30 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/195/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":132}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 78758fa0b6cbc73f43f7c185d630d53cf7bd6c4020069b3f381b4a7a7908b55e
+      Service-User-Id:
+      - 9d37fe86d9f38d0ec2fcfa66b2eac63fe146fb926bf193e95d9f8edafd5303c4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"30c40f43d2f2bf056d29a688c4650f42"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2b0a6ebe-0e58-4fef-b866-6d6b53d59b89
+      X-Runtime:
+      - '0.024571'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 25 Oct 2014 17:46:30 GMT
+      Content-Length:
+      - '599'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 280,
+          "text": "Do you like poptarts?",
+          "type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "answer": null,
+          "freeform": false,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/195/survey_questions/280"
+            },
+            "post": {
+              "href": "http://localhost:3000/api/surveys/195/survey_questions"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/195/survey_questions/280"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/195"
+            }
+          },
+          "created_at": "2014-10-25T17:46:30.299Z",
+          "key": "testingooptarts"
+        }
+    http_version: 
+  recorded_at: Sat, 25 Oct 2014 17:46:30 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys
+    body:
+      encoding: UTF-8
+      string: '{"survey":{"service_user_id":"9d37fe86d9f38d0ec2fcfa66b2eac63fe146fb926bf193e95d9f8edafd5303c4"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 78758fa0b6cbc73f43f7c185d630d53cf7bd6c4020069b3f381b4a7a7908b55e
+      Service-User-Id:
+      - 9d37fe86d9f38d0ec2fcfa66b2eac63fe146fb926bf193e95d9f8edafd5303c4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"1cca18ea2d28e4bc8e8cc40cb05bfd25"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5046382a-7e1e-4164-97d9-2a221b75efd9
+      X-Runtime:
+      - '0.011940'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 25 Oct 2014 17:46:30 GMT
+      Content-Length:
+      - '476'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 196,
+          "service_user_id": "9d37fe86d9f38d0ec2fcfa66b2eac63fe146fb926bf193e95d9f8edafd5303c4",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/196"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "http://localhost:3000/api/surveys/196/survey_questions"
+              },
+              "put": {
+                "href": "http://localhost:3000/api/surveys/196/survey_questions"
+              }
+            }
+          },
+          "completed": false,
+          "survey_questions": [
+
+          ]
+        }
+    http_version: 
+  recorded_at: Sat, 25 Oct 2014 17:46:30 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/196/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":132}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 78758fa0b6cbc73f43f7c185d630d53cf7bd6c4020069b3f381b4a7a7908b55e
+      Service-User-Id:
+      - 9d37fe86d9f38d0ec2fcfa66b2eac63fe146fb926bf193e95d9f8edafd5303c4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"b9fffcd9f7feef476ce251c809a69302"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6eb4a81d-8fb6-479d-bc1b-81bf466eda28
+      X-Runtime:
+      - '0.015721'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 25 Oct 2014 17:46:30 GMT
+      Content-Length:
+      - '599'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 281,
+          "text": "Do you like poptarts?",
+          "type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "answer": null,
+          "freeform": false,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/196/survey_questions/281"
+            },
+            "post": {
+              "href": "http://localhost:3000/api/surveys/196/survey_questions"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/196/survey_questions/281"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/196"
+            }
+          },
+          "created_at": "2014-10-25T17:46:30.337Z",
+          "key": "testingooptarts"
+        }
+    http_version: 
+  recorded_at: Sat, 25 Oct 2014 17:46:30 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/195/survey_questions/280
+    body:
+      encoding: UTF-8
+      string: '{"id":280,"survey_question":{"answer":true}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 78758fa0b6cbc73f43f7c185d630d53cf7bd6c4020069b3f381b4a7a7908b55e
+      Service-User-Id:
+      - 9d37fe86d9f38d0ec2fcfa66b2eac63fe146fb926bf193e95d9f8edafd5303c4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - bd2c8c9d-c020-46d2-a2e8-7b43a93d6346
+      X-Runtime:
+      - '0.011729'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 25 Oct 2014 17:46:30 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 25 Oct 2014 17:46:30 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/196/survey_questions/281
+    body:
+      encoding: UTF-8
+      string: '{"id":281,"survey_question":{"answer":false}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 78758fa0b6cbc73f43f7c185d630d53cf7bd6c4020069b3f381b4a7a7908b55e
+      Service-User-Id:
+      - 9d37fe86d9f38d0ec2fcfa66b2eac63fe146fb926bf193e95d9f8edafd5303c4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - be666ddc-b62c-4a8e-abe8-cd7e153e9acf
+      X-Runtime:
+      - '0.010861'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
+      Date:
+      - Sat, 25 Oct 2014 17:46:30 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 25 Oct 2014 17:46:30 GMT
+- request:
     method: get
     uri: http://localhost:3000/api/questions/testingooptarts/survey_questions
     body:
@@ -9552,9 +10358,9 @@ http_interactions:
       Api-Token:
       - testing
       User-Token:
-      - 79d638f50b633871f48db1bf89a367c13fa838cc79b665c0f82ffc28fcf2d1ab
+      - 78758fa0b6cbc73f43f7c185d630d53cf7bd6c4020069b3f381b4a7a7908b55e
       Service-User-Id:
-      - 0cc711f2486004185fe85b93f829074b225b46a616d10cb2d5c9f15329c22e05
+      - 9d37fe86d9f38d0ec2fcfa66b2eac63fe146fb926bf193e95d9f8edafd5303c4
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -9575,19 +10381,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"b63cae22484e016b6c9ed669090e56ef"'
+      - '"dad5d7a8f0d77ca0ffeba3d1be3561d9"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2a487380-822d-44d5-9992-5ae55cf21106
+      - 84a24b24-5ca2-46e0-b677-3374cec365e3
       X-Runtime:
-      - '0.013948'
+      - '0.029506'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
       Date:
-      - Sat, 18 Oct 2014 17:30:44 GMT
+      - Sat, 25 Oct 2014 17:46:30 GMT
       Content-Length:
-      - '1382'
+      - '1446'
       Connection:
       - Keep-Alive
     body:
@@ -9596,7 +10402,7 @@ http_interactions:
         {
           "survey_questions": [
             {
-              "id": 269,
+              "id": 280,
               "text": "Do you like poptarts?",
               "type": "boolean",
               "responses": [
@@ -9607,22 +10413,23 @@ http_interactions:
               "freeform": false,
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/186/survey_questions/269"
+                  "href": "http://localhost:3000/api/surveys/195/survey_questions/280"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/186/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/195/survey_questions"
                 },
                 "put": {
-                  "href": "http://localhost:3000/api/surveys/186/survey_questions/269"
+                  "href": "http://localhost:3000/api/surveys/195/survey_questions/280"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/186"
+                  "href": "http://localhost:3000/api/surveys/195"
                 }
               },
-              "created_at": "2014-10-18T17:30:44.637Z"
+              "created_at": "2014-10-25T17:46:30.299Z",
+              "key": "testingooptarts"
             },
             {
-              "id": 270,
+              "id": 281,
               "text": "Do you like poptarts?",
               "type": "boolean",
               "responses": [
@@ -9633,22 +10440,23 @@ http_interactions:
               "freeform": false,
               "_links": {
                 "self": {
-                  "href": "http://localhost:3000/api/surveys/187/survey_questions/270"
+                  "href": "http://localhost:3000/api/surveys/196/survey_questions/281"
                 },
                 "post": {
-                  "href": "http://localhost:3000/api/surveys/187/survey_questions"
+                  "href": "http://localhost:3000/api/surveys/196/survey_questions"
                 },
                 "put": {
-                  "href": "http://localhost:3000/api/surveys/187/survey_questions/270"
+                  "href": "http://localhost:3000/api/surveys/196/survey_questions/281"
                 },
                 "survey": {
-                  "href": "http://localhost:3000/api/surveys/187"
+                  "href": "http://localhost:3000/api/surveys/196"
                 }
               },
-              "created_at": "2014-10-18T17:30:44.702Z"
+              "created_at": "2014-10-25T17:46:30.337Z",
+              "key": "testingooptarts"
             }
           ]
         }
     http_version: 
-  recorded_at: Sat, 18 Oct 2014 17:30:44 GMT
+  recorded_at: Sat, 25 Oct 2014 17:46:30 GMT
 recorded_with: VCR 2.6.0

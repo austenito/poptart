@@ -39,6 +39,7 @@ describe 'retrieving answers' do
     second_survey_question.submit.should be
 
     survey_questions = user.survey_questions_for_key(key)
+    survey_questions.first.key.should == key
     survey_questions.map(&:answer).should =~ [true, false]
   end
 end

@@ -3,7 +3,7 @@ module Poptart
     extend Poptart::Request
     include Poptart::Request
 
-    attr_accessor :text, :answer, :type, :responses
+    attr_accessor :text, :answer, :type, :responses, :key
 
     def initialize(response)
       super
@@ -13,6 +13,7 @@ module Poptart
       @responses = params['responses']
       @answer = params['answer']
       @created_at = params['created_at']
+      @key = params['key']
 
       if @answer == 't'
         @answer = true
