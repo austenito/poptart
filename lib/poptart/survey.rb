@@ -14,7 +14,7 @@ module Poptart
         else
           SurveyQuestion.new(survey_question)
         end
-      end.sort_by { |survey_question| survey_question.id }
+      end
     end
 
     def add_question(question)
