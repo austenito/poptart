@@ -26,9 +26,9 @@ module Poptart
       Poptart::Model.root
     end
 
-    def users_url(id: nil, query: nil)
+    def user_url(query: nil)
       template = Addressable::Template.new(links.users.href)
-      template.expand(id: id, query: query).to_s
+      template.expand(query: query).to_s
     end
 
     def surveys_url(id: nil, query: nil)
@@ -41,9 +41,9 @@ module Poptart
       template.expand(id: id, query: query).to_s
     end
 
-    def survey_questions_url(question_id: nil, query: nil)
+    def survey_questions_url(survey_id:, id: nil, query: nil)
       template = Addressable::Template.new(links.survey_questions.href)
-      template.expand(question_id: question_id, query: query).to_s
+      template.expand(survey_id: survey_id, id: id, query: query).to_s
     end
 
     private
