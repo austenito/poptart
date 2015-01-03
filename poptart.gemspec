@@ -20,10 +20,6 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'faraday'
   gem.add_dependency 'addressable'
 
-  gem.add_development_dependency 'bourne', "1.5.0"
-  gem.add_development_dependency 'guard'
-  gem.add_development_dependency 'guard-rspec'
-  gem.add_development_dependency 'mocha', "~> 0.14.0"
   gem.add_development_dependency 'pry'
   gem.add_development_dependency 'rspec'
   gem.add_development_dependency 'rake'

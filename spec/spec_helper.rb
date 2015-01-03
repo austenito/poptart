@@ -1,15 +1,12 @@
 require_relative "../lib/poptart"
 
-require 'mocha/api'
-require 'bourne'
 require 'vcr'
 
 require 'active_support/inflector'
 require 'pry/test/helper'
 
 RSpec.configure do |c|
-  c.mock_with :mocha
-  c.treat_symbols_as_metadata_keys_with_true_values = true
+  c.mock_with :rspec
 
   c.around(:each, :vcr) do |example|
     name = example.metadata[:full_description].split(/\s+/, 2).join("/").underscore.gsub(/[^\w\/]+/, "_")
