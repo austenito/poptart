@@ -9,11 +9,7 @@ module Poptart
       @completed = params['completed']
 
       @survey_questions = params['survey_questions'].map do |survey_question|
-        if survey_question['type'] == 'BooleanQuestion'
-          BooleanQuestion.new(survey_question)
-        else
-          SurveyQuestion.new(survey_question)
-        end
+        SurveyQuestion.new(survey_question)
       end
     end
 
