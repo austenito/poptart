@@ -27,4 +27,34 @@ describe Poptart::Survey do
       expect(survey.survey_questions).to include(survey_question)
     end
   end
+
+  context '.all' do
+    it 'returns all surveys' do
+      root = double(:root, surveys_url: 'surveys_url')
+      response = double(:response, body: { surveys: [{ id: 1 }] }.to_json)
+      allow(Poptart::Survey).to receive(:root).and_return(root)
+      allow(Poptart::Survey).to receive(:get).and_return(response)
+
+      surveys = Poptart::Survey.all
+
+      expect(Poptart::Survey).to have_received(:get).with('surveys_url')
+      expect(surveys.count).to eq(1)
+      expect(surveys.first).to be
+      expect(surveys.first.id).to eq(1)
+    end
+  end
+
+  context '.create' do
+    it 'creates an empty survey' do
+      root = double(:root, surveys_url: 'surveys_url')
+      response = double(:response, status: 201, body: { id: 1 }.to_json)
+      allow(Poptart::Survey).to receive(:root).and_return(root)
+      allow(Poptart::Survey).to receive(:post).and_return(response)
+
+      survey = Poptart::Survey.create
+
+      expect(Poptart::Survey).to have_received(:post).with('surveys_url')
+      expect(survey.id).to be
+    end
+  end
 end

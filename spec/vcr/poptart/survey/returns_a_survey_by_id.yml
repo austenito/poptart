@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/user
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 5d6eaa09a0131d7eee7b70db4a587c9b8e31ee03dcb599a908250b0e14cda9e0
+      Service-User-Id:
+      - d58bd449c6bc1cc552e39f387893f65175f808785a21ded1dbe6c554294800a3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"db3dc094dab3f0b18b938eb7fa0eb6cc"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6bdca998-f22d-4ae6-bd32-690fa48038d3
+      X-Runtime:
+      - '0.006834'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Thu, 08 Jan 2015 03:43:52 GMT
+      Content-Length:
+      - '256'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "service_user_id": "d58bd449c6bc1cc552e39f387893f65175f808785a21ded1dbe6c554294800a3",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/user"
+            }
+          },
+          "token": "5d6eaa09a0131d7eee7b70db4a587c9b8e31ee03dcb599a908250b0e14cda9e0"
+        }
+    http_version: 
+  recorded_at: Thu, 08 Jan 2015 03:43:52 GMT
+recorded_with: VCR 2.9.3

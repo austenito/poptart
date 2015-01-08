@@ -8,8 +8,10 @@ module Poptart
       @service_user_id = params['service_user_id']
       @completed = params['completed']
 
-      @survey_questions = params['survey_questions'].map do |survey_question|
-        SurveyQuestion.new(survey_question)
+      if params['survey_questions']
+        @survey_questions = params['survey_questions'].map do |survey_question|
+          SurveyQuestion.new(survey_question)
+        end
       end
     end
 
@@ -28,6 +30,18 @@ module Poptart
 
     def completed?
       @completed
+    end
+
+    def self.create
+      response = post(root.surveys_url)
+      Poptart::Survey.new(response)
+    end
+
+    def self.all
+      response = get(root.surveys_url)
+      JSON.parse(response.body)['surveys'].map do |survey|
+        Poptart::Survey.new(survey)
+      end
     end
   end
 end
