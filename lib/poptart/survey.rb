@@ -43,5 +43,10 @@ module Poptart
         Poptart::Survey.new(survey)
       end
     end
+
+    def self.find(id)
+      response = get(root.surveys_url(id: id))
+      Poptart::Survey.new(response)
+    end
   end
 end

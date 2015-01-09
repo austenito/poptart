@@ -57,4 +57,27 @@ describe Poptart::Survey do
       expect(survey.id).to be
     end
   end
+
+  context '.find' do
+    it 'returns a survey' do
+      root = double(:root, surveys_url: 'surveys_url/1')
+      response = double(:response, status: 200, body: { id: 1 }.to_json)
+      allow(Poptart::Survey).to receive(:root).and_return(root)
+      allow(Poptart::Survey).to receive(:get).and_return(response)
+
+      survey = Poptart::Survey.find(1)
+
+      expect(root).to have_received(:surveys_url).with(id: 1)
+      expect(Poptart::Survey).to have_received(:get).with('surveys_url/1')
+      expect(survey.id).to eq(1)
+    end
+  end
+
+
+  context '#add_question' do
+    it 'adds a survey question to a survey' do
+
+
+    end
+  end
 end
