@@ -7,6 +7,7 @@ describe 'questions' do
                                         responses: [true, false],
                                         key: 'poptarts')
 
+    expect(question.id).to be
     expect(question.text).to eq('Do you like poptarts?')
     expect(question.responses).to eq([true, false])
     expect(question.key).to eq('poptarts')

@@ -73,11 +73,34 @@ describe Poptart::Survey do
     end
   end
 
-
   context '#add_question' do
     it 'adds a survey question to a survey' do
+      survey = Poptart::Survey.new({})
+      allow(survey).to receive_message_chain(
+        :links,
+        :survey_questions,
+        :post,
+        :href
+      ).and_return('survey_questions_url')
 
+      response = double(:response, status: 201, body: { 'id' => 1 }.to_json)
+      allow(survey).to receive(:post).and_return(response)
 
+      survey_question = Poptart::SurveyQuestion.new(
+        'question_id' => 1,
+        'responses' => [true, false]
+      )
+      survey_question = survey.add_survey_question(survey_question)
+
+      body = {
+        'survey_question' => {
+          'question_id' => 1,
+          'responses' => [true, false]
+        }
+      }
+      expect(survey).to have_received(:post).with('survey_questions_url', body)
+      expect(survey_question.id).to eq(1)
+      expect(survey.survey_questions.include?(survey_question)).to eq(true)
     end
   end
 end

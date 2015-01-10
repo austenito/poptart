@@ -16,13 +16,25 @@ describe Poptart::Survey do
     expect(returned_survey.id).to eq(survey.id)
   end
 
-  xit 'adds a question to a survey', :vcr, record: :all do
-    # need to test creating the other questions first
+  it 'adds a question to a survey', :vcr do
+    question = Poptart::Question.create('Do you like poptarts?',
+                                        question_type: 'boolean',
+                                        responses: [true, false])
+
     user = Poptart::User.create
     Poptart.authorize(service_user_id: user.service_user_id, user_token: user.token)
-    survey = Survey.create
+    survey = Poptart::Survey.create
+    expect(survey.survey_questions.count).to eq(0)
 
-    survey.add_question(survey_question)
+    survey_question = Poptart::SurveyQuestion.new('question_id' => question.id)
 
+    survey_question = survey.add_survey_question(survey_question)
+    expect(survey_question).to be
+    expect(survey_question.id).to be
+
+    survey = Poptart::Survey.find(survey.id)
+    expect(survey.survey_questions.count).to eq(1)
+    expect(survey.survey_questions.first.id).to eq(survey_question.id)
+    expect(survey.survey_questions.first.responses).to eq(['t', 'f'])
   end
 end

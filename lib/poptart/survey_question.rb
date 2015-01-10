@@ -3,17 +3,17 @@ module Poptart
     extend Poptart::Request
     include Poptart::Request
 
-    attr_accessor :text, :answer, :type, :responses, :key
+    attr_accessor :text, :answer, :type, :responses, :key, :question_id
 
     def initialize(response)
       super
       @text = params['text']
       @type = params['type']
-      @freeform = params['freeform']
       @responses = params['responses']
       @answer = params['answer']
       @created_at = params['created_at']
       @key = params['key']
+      @question_id = params['question_id']
 
       if @answer == 't'
         @answer = true
@@ -36,10 +36,6 @@ module Poptart
 
     def time?
       type == "time"
-    end
-
-    def freeform?
-      @freeform == true
     end
 
     def created_at

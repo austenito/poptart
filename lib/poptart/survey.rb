@@ -12,13 +12,22 @@ module Poptart
         @survey_questions = params['survey_questions'].map do |survey_question|
           SurveyQuestion.new(survey_question)
         end
+      else
+        @survey_questions = []
       end
     end
 
-    def add_question(question)
-      response = post(links.survey_questions.post.href, { survey_question: { question_id: question.id } } )
+    def add_survey_question(survey_question)
+      response = post(links.survey_questions.post.href, {
+        'survey_question' => {
+          'question_id' => survey_question.question_id,
+          'responses' => survey_question.responses
+        }
+      })
       if response.status == 201
-        Poptart::SurveyQuestion.new(response).tap { |survey_question| survey_questions << survey_question }
+        survey_question = Poptart::SurveyQuestion.new(response)
+        survey_questions << survey_question
+        survey_question
       end
     end
 
