@@ -3,12 +3,12 @@ module Poptart
     extend Poptart::Request
     include Poptart::Request
 
-    attr_accessor :text, :answer, :type, :responses, :key, :question_id
+    attr_accessor :text, :answer, :question_type, :responses, :key, :question_id
 
     def initialize(response)
       super
       @text = params['text']
-      @type = params['type']
+      @question_type = params['question_type']
       @responses = params['responses']
       @answer = params['answer']
       @created_at = params['created_at']
@@ -23,19 +23,19 @@ module Poptart
     end
 
     def boolean?
-      type == "boolean"
+      question_type == "boolean"
     end
 
     def multiple?
-      type == "multiple"
+      question_type == "multiple"
     end
 
     def range?
-      type == "range"
+      question_type == "range"
     end
 
     def time?
-      type == "time"
+      question_type == "time"
     end
 
     def created_at

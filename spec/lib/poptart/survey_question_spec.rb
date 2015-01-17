@@ -12,11 +12,6 @@ describe Poptart::SurveyQuestion do
       expect(survey_question.text).to eq('poptarts')
     end
 
-    it 'returns type' do
-      survey_question = Poptart::SurveyQuestion.new('type' => 'type')
-      expect(survey_question.type).to eq('type')
-    end
-
     it 'returns responses' do
       survey_question = Poptart::SurveyQuestion.new('responses' => ['Yes', 'No'])
       expect(survey_question.responses).to eq(['Yes', 'No'])
@@ -40,28 +35,28 @@ describe Poptart::SurveyQuestion do
 
   context '#boolean?' do
     it 'returns true' do
-      survey_question = Poptart::SurveyQuestion.new('type' => 'boolean')
+      survey_question = Poptart::SurveyQuestion.new('question_type' => 'boolean')
       expect(survey_question.boolean?).to eq(true)
     end
   end
 
   context '#multiple?' do
     it 'returns true' do
-      survey_question = Poptart::SurveyQuestion.new('type' => 'multiple')
+      survey_question = Poptart::SurveyQuestion.new('question_type' => 'multiple')
       expect(survey_question.multiple?).to eq(true)
     end
   end
 
   context '#range?' do
     it 'returns true' do
-      survey_question = Poptart::SurveyQuestion.new('type' => 'range')
+      survey_question = Poptart::SurveyQuestion.new('question_type' => 'range')
       expect(survey_question.range?).to eq(true)
     end
   end
 
   context '#time?' do
     it 'returns true' do
-      survey_question = Poptart::SurveyQuestion.new('type' => 'time')
+      survey_question = Poptart::SurveyQuestion.new('question_type' => 'time')
       expect(survey_question.time?).to eq(true)
     end
   end
