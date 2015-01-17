@@ -709,291 +709,6 @@ http_interactions:
     http_version: 
   recorded_at: Sun, 14 Sep 2014 16:59:38 GMT
 - request:
-    method: get
-    uri: http://localhost:3000/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 500
-      message: 'Internal Server Error '
-    headers:
-      Content-Type:
-      - text/html; charset=utf-8
-      Content-Length:
-      - '21264'
-      X-Request-Id:
-      - 894934d0-06cf-402a-b696-f05c663e36a1
-      X-Runtime:
-      - '0.027140'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sat, 04 Oct 2014 15:25:47 GMT
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\"
-        />\n  <title>Action Controller: Exception caught</title>\n  <style>\n    body
-        {\n      background-color: #FAFAFA;\n      color: #333;\n      margin: 0px;\n
-        \   }\n\n    body, p, ol, ul, td {\n      font-family: helvetica, verdana,
-        arial, sans-serif;\n      font-size:   13px;\n      line-height: 18px;\n    }\n\n
-        \   pre {\n      font-size: 11px;\n      white-space: pre-wrap;\n    }\n\n
-        \   pre.box {\n      border: 1px solid #EEE;\n      padding: 10px;\n      margin:
-        0px;\n      width: 958px;\n    }\n\n    header {\n      color: #F0F0F0;\n
-        \     background: #C52F24;\n      padding: 0.5em 1.5em;\n    }\n\n    h1 {\n
-        \     margin: 0.2em 0;\n      line-height: 1.1em;\n      font-size: 2em;\n
-        \   }\n\n    h2 {\n      color: #C52F24;\n      line-height: 25px;\n    }\n\n
-        \   .details {\n      border: 1px solid #D0D0D0;\n      border-radius: 4px;\n
-        \     margin: 1em 0px;\n      display: block;\n      width: 978px;\n    }\n\n
-        \   .summary {\n      padding: 8px 15px;\n      border-bottom: 1px solid #D0D0D0;\n
-        \     display: block;\n    }\n\n    .details pre {\n      margin: 5px;\n      border:
-        none;\n    }\n\n    #container {\n      box-sizing: border-box;\n      width:
-        100%;\n      padding: 0 1.5em;\n    }\n\n    .source * {\n      margin: 0px;\n
-        \     padding: 0px;\n    }\n\n    .source {\n      border: 1px solid #D9D9D9;\n
-        \     background: #ECECEC;\n      width: 978px;\n    }\n\n    .source pre
-        {\n      padding: 10px 0px;\n      border: none;\n    }\n\n    .source .data
-        {\n      font-size: 80%;\n      overflow: auto;\n      background-color: #FFF;\n
-        \   }\n\n    .info {\n      padding: 0.5em;\n    }\n\n    .source .data .line_numbers
-        {\n      background-color: #ECECEC;\n      color: #AAA;\n      padding: 1em
-        .5em;\n      border-right: 1px solid #DDD;\n      text-align: right;\n    }\n\n
-        \   .line {\n      padding-left: 10px;\n    }\n\n    .line:hover {\n      background-color:
-        #F6F6F6;\n    }\n\n    .line.active {\n      background-color: #FFCCCC;\n
-        \   }\n\n    a { color: #980905; }\n    a:visited { color: #666; }\n    a:hover
-        { color: #C52F24; }\n\n    \n  </style>\n\n  <script>\n    var toggle = function(id)
-        {\n      var s = document.getElementById(id).style;\n      s.display = s.display
-        == 'none' ? 'block' : 'none';\n      return false;\n    }\n    var show =
-        function(id) {\n      document.getElementById(id).style.display = 'block';\n
-        \   }\n    var hide = function(id) {\n      document.getElementById(id).style.display
-        = 'none';\n    }\n    var toggleTrace = function() {\n      return toggle('blame_trace');\n
-        \   }\n    var toggleSessionDump = function() {\n      return toggle('session_dump');\n
-        \   }\n    var toggleEnvDump = function() {\n      return toggle('env_dump');\n
-        \   }\n  </script>\n</head>\n<body>\n\n<header>\n  <h1>\n    NameError\n      in
-        Api::V1::RootController#index\n  </h1>\n</header>\n\n<div id=\"container\">\n
-        \ <h2>undefined local variable or method `api_questions_answers_url&#39; for
-        #&lt;Api::V1::RootSerializer:0x007fe583f4c228&gt;</h2>\n\n  <div class=\"source\">\n<div
-        class=\"info\">\n  Extracted source (around line <strong>#21</strong>):\n</div>\n<div
-        class=\"data\">\n  <table cellpadding=\"0\" cellspacing=\"0\" class=\"lines\">\n
-        \     <tr>\n        <td>\n          <pre class=\"line_numbers\">\n<span>19</span>\n<span>20</span>\n<span>21</span>\n<span>22</span>\n<span>23</span>\n<span>24</span>\n
-        \         </pre>\n        </td>\n<td width=\"100%\">\n<pre>\n<div class=\"line\">
-        \     },\n</div><div class=\"line\">      answers: {\n</div><div class=\"line
-        active\">        href: api_questions_answers_url\n</div><div class=\"line\">
-        \     }\n</div><div class=\"line\">    }\n</div><div class=\"line\">  end\n</div>\n</pre>\n</td>\n
-        \   </tr>\n  </table>\n</div>\n</div>\n\n  \n<p><code>Rails.root: /Users/austenito/repos/happiness/happiness_service</code></p>\n\n<div
-        id=\"traces\">\n    <a href=\"#\" onclick=\"hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);;
-        return false;\">Application Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);;
-        return false;\">Framework Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);;
-        return false;\">Full Trace</a> \n\n    <div id=\"Application-Trace\" style=\"display:
-        block;\">\n      <pre><code>app/serializers/api/v1/root_serializer.rb:21:in
-        `_links&#39;\napp/controllers/api/v1/root_controller.rb:5:in `index&#39;</code></pre>\n
-        \   </div>\n    <div id=\"Framework-Trace\" style=\"display: none;\">\n      <pre><code>(eval):3:in
-        `_fast_attributes&#39;\nactive_model_serializers (0.8.1) lib/active_model/serializer.rb:466:in
-        `rescue in attributes&#39;\nactive_model_serializers (0.8.1) lib/active_model/serializer.rb:454:in
-        `attributes&#39;\nactive_model_serializers (0.8.1) lib/active_model/serializer.rb:478:in
-        `_serializable_hash&#39;\nactive_model_serializers (0.8.1) lib/active_model/serializer.rb:360:in
-        `serializable_hash&#39;\nactive_model_serializers (0.8.1) lib/active_model/serializer.rb:348:in
-        `as_json&#39;\nactivesupport (4.0.4) lib/active_support/json/encoding.rb:50:in
-        `block in encode&#39;\nactivesupport (4.0.4) lib/active_support/json/encoding.rb:81:in
-        `check_for_circular_references&#39;\nactivesupport (4.0.4) lib/active_support/json/encoding.rb:49:in
-        `encode&#39;\nactivesupport (4.0.4) lib/active_support/json/encoding.rb:34:in
-        `encode&#39;\nactivesupport (4.0.4) lib/active_support/core_ext/object/to_json.rb:16:in
-        `to_json&#39;\nactive_model_serializers (0.8.1) lib/active_model/serializer.rb:333:in
-        `to_json&#39;\nactionpack (4.0.4) lib/action_controller/metal/renderers.rb:90:in
-        `block in &lt;module:Renderers&gt;&#39;\nactive_model_serializers (0.8.1)
-        lib/action_controller/serialization.rb:46:in `_render_option_json&#39;\nactionpack
-        (4.0.4) lib/action_controller/metal/renderers.rb:33:in `block in _handle_render_options&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/set.rb:263:in
-        `each_key&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/set.rb:263:in
-        `each&#39;\nactionpack (4.0.4) lib/action_controller/metal/renderers.rb:30:in
-        `_handle_render_options&#39;\nactionpack (4.0.4) lib/action_controller/metal/renderers.rb:26:in
-        `render_to_body&#39;\nactionpack (4.0.4) lib/abstract_controller/rendering.rb:97:in
-        `render&#39;\nactionpack (4.0.4) lib/action_controller/metal/rendering.rb:16:in
-        `render&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in
-        `block (2 levels) in render&#39;\nactivesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in
-        `block in ms&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in
-        `realtime&#39;\nactivesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in
-        `ms&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in
-        `block in render&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:84:in
-        `cleanup_view_runtime&#39;\nactiverecord (4.0.4) lib/active_record/railties/controller_runtime.rb:25:in
-        `cleanup_view_runtime&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:40:in
-        `render&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:255:in
-        `display&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:203:in
-        `api_behavior&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:182:in
-        `rescue in to_format&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:176:in
-        `to_format&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:154:in
-        `respond&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:147:in
-        `call&#39;\nactionpack (4.0.4) lib/action_controller/metal/mime_responds.rb:330:in
-        `respond_with&#39;\nactionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:4:in
-        `send_action&#39;\nactionpack (4.0.4) lib/abstract_controller/base.rb:189:in
-        `process_action&#39;\nactionpack (4.0.4) lib/action_controller/metal/rendering.rb:10:in
-        `process_action&#39;\nactionpack (4.0.4) lib/abstract_controller/callbacks.rb:18:in
-        `block in process_action&#39;\nactivesupport (4.0.4) lib/active_support/callbacks.rb:383:in
-        `_run__552417660275114359__process_action__callbacks&#39;\nactivesupport (4.0.4)
-        lib/active_support/callbacks.rb:80:in `run_callbacks&#39;\nactionpack (4.0.4)
-        lib/abstract_controller/callbacks.rb:17:in `process_action&#39;\nactionpack
-        (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;\nactionpack
-        (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;\nactivesupport
-        (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument&#39;\nactivesupport
-        (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;\nactivesupport
-        (4.0.4) lib/active_support/notifications.rb:159:in `instrument&#39;\nactionpack
-        (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;\nactiverecord
-        (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;\nactionpack
-        (4.0.4) lib/abstract_controller/base.rb:136:in `process&#39;\nactionpack (4.0.4)
-        lib/abstract_controller/rendering.rb:44:in `process&#39;\nactionpack (4.0.4)
-        lib/action_controller/metal.rb:195:in `dispatch&#39;\nactionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in
-        `dispatch&#39;\nactionpack (4.0.4) lib/action_controller/metal.rb:231:in `block
-        in action&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in
-        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in
-        `dispatch&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in
-        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in
-        `block in call&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in
-        `each&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in
-        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in
-        `call&#39;\nrack (1.5.2) lib/rack/etag.rb:23:in `call&#39;\nrack (1.5.2) lib/rack/conditionalget.rb:25:in
-        `call&#39;\nrack (1.5.2) lib/rack/head.rb:11:in `call&#39;\nactionpack (4.0.4)
-        lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;\nactiverecord
-        (4.0.4) lib/active_record/query_cache.rb:36:in `call&#39;\nactiverecord (4.0.4)
-        lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call&#39;\nactiverecord
-        (4.0.4) lib/active_record/migration.rb:373:in `call&#39;\nactionpack (4.0.4)
-        lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;\nactivesupport
-        (4.0.4) lib/active_support/callbacks.rb:373:in `_run__2270658051568218024__call__callbacks&#39;\nactivesupport
-        (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks&#39;\nactionpack
-        (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;\nactionpack
-        (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call&#39;\nactionpack
-        (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;\nactionpack
-        (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;\nactionpack
-        (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;\nrailties
-        (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:20:in
-        `block in call&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in
-        `block in tagged&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in
-        `tagged&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in
-        `tagged&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack
-        (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;\nrack
-        (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in
-        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4)
-        lib/action_dispatch/middleware/static.rb:64:in `call&#39;\nrailties (4.0.4)
-        lib/rails/engine.rb:511:in `call&#39;\nrailties (4.0.4) lib/rails/application.rb:97:in
-        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in
-        `call&#39;\nrack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
-        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
-        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
-        `block in start_thread&#39;</code></pre>\n    </div>\n    <div id=\"Full-Trace\"
-        style=\"display: none;\">\n      <pre><code>app/serializers/api/v1/root_serializer.rb:21:in
-        `_links&#39;\n(eval):3:in `_fast_attributes&#39;\nactive_model_serializers
-        (0.8.1) lib/active_model/serializer.rb:466:in `rescue in attributes&#39;\nactive_model_serializers
-        (0.8.1) lib/active_model/serializer.rb:454:in `attributes&#39;\nactive_model_serializers
-        (0.8.1) lib/active_model/serializer.rb:478:in `_serializable_hash&#39;\nactive_model_serializers
-        (0.8.1) lib/active_model/serializer.rb:360:in `serializable_hash&#39;\nactive_model_serializers
-        (0.8.1) lib/active_model/serializer.rb:348:in `as_json&#39;\nactivesupport
-        (4.0.4) lib/active_support/json/encoding.rb:50:in `block in encode&#39;\nactivesupport
-        (4.0.4) lib/active_support/json/encoding.rb:81:in `check_for_circular_references&#39;\nactivesupport
-        (4.0.4) lib/active_support/json/encoding.rb:49:in `encode&#39;\nactivesupport
-        (4.0.4) lib/active_support/json/encoding.rb:34:in `encode&#39;\nactivesupport
-        (4.0.4) lib/active_support/core_ext/object/to_json.rb:16:in `to_json&#39;\nactive_model_serializers
-        (0.8.1) lib/active_model/serializer.rb:333:in `to_json&#39;\nactionpack (4.0.4)
-        lib/action_controller/metal/renderers.rb:90:in `block in &lt;module:Renderers&gt;&#39;\nactive_model_serializers
-        (0.8.1) lib/action_controller/serialization.rb:46:in `_render_option_json&#39;\nactionpack
-        (4.0.4) lib/action_controller/metal/renderers.rb:33:in `block in _handle_render_options&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/set.rb:263:in
-        `each_key&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/set.rb:263:in
-        `each&#39;\nactionpack (4.0.4) lib/action_controller/metal/renderers.rb:30:in
-        `_handle_render_options&#39;\nactionpack (4.0.4) lib/action_controller/metal/renderers.rb:26:in
-        `render_to_body&#39;\nactionpack (4.0.4) lib/abstract_controller/rendering.rb:97:in
-        `render&#39;\nactionpack (4.0.4) lib/action_controller/metal/rendering.rb:16:in
-        `render&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in
-        `block (2 levels) in render&#39;\nactivesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in
-        `block in ms&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in
-        `realtime&#39;\nactivesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in
-        `ms&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in
-        `block in render&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:84:in
-        `cleanup_view_runtime&#39;\nactiverecord (4.0.4) lib/active_record/railties/controller_runtime.rb:25:in
-        `cleanup_view_runtime&#39;\nactionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:40:in
-        `render&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:255:in
-        `display&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:203:in
-        `api_behavior&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:182:in
-        `rescue in to_format&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:176:in
-        `to_format&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:154:in
-        `respond&#39;\nactionpack (4.0.4) lib/action_controller/metal/responder.rb:147:in
-        `call&#39;\nactionpack (4.0.4) lib/action_controller/metal/mime_responds.rb:330:in
-        `respond_with&#39;\napp/controllers/api/v1/root_controller.rb:5:in `index&#39;\nactionpack
-        (4.0.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action&#39;\nactionpack
-        (4.0.4) lib/abstract_controller/base.rb:189:in `process_action&#39;\nactionpack
-        (4.0.4) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;\nactionpack
-        (4.0.4) lib/abstract_controller/callbacks.rb:18:in `block in process_action&#39;\nactivesupport
-        (4.0.4) lib/active_support/callbacks.rb:383:in `_run__552417660275114359__process_action__callbacks&#39;\nactivesupport
-        (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks&#39;\nactionpack
-        (4.0.4) lib/abstract_controller/callbacks.rb:17:in `process_action&#39;\nactionpack
-        (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;\nactionpack
-        (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;\nactivesupport
-        (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument&#39;\nactivesupport
-        (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;\nactivesupport
-        (4.0.4) lib/active_support/notifications.rb:159:in `instrument&#39;\nactionpack
-        (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;\nactiverecord
-        (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;\nactionpack
-        (4.0.4) lib/abstract_controller/base.rb:136:in `process&#39;\nactionpack (4.0.4)
-        lib/abstract_controller/rendering.rb:44:in `process&#39;\nactionpack (4.0.4)
-        lib/action_controller/metal.rb:195:in `dispatch&#39;\nactionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in
-        `dispatch&#39;\nactionpack (4.0.4) lib/action_controller/metal.rb:231:in `block
-        in action&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in
-        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in
-        `dispatch&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in
-        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in
-        `block in call&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in
-        `each&#39;\nactionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in
-        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in
-        `call&#39;\nrack (1.5.2) lib/rack/etag.rb:23:in `call&#39;\nrack (1.5.2) lib/rack/conditionalget.rb:25:in
-        `call&#39;\nrack (1.5.2) lib/rack/head.rb:11:in `call&#39;\nactionpack (4.0.4)
-        lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;\nactiverecord
-        (4.0.4) lib/active_record/query_cache.rb:36:in `call&#39;\nactiverecord (4.0.4)
-        lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call&#39;\nactiverecord
-        (4.0.4) lib/active_record/migration.rb:373:in `call&#39;\nactionpack (4.0.4)
-        lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;\nactivesupport
-        (4.0.4) lib/active_support/callbacks.rb:373:in `_run__2270658051568218024__call__callbacks&#39;\nactivesupport
-        (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks&#39;\nactionpack
-        (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;\nactionpack
-        (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call&#39;\nactionpack
-        (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;\nactionpack
-        (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;\nactionpack
-        (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;\nrailties
-        (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:20:in
-        `block in call&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in
-        `block in tagged&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in
-        `tagged&#39;\nactivesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in
-        `tagged&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack
-        (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;\nrack
-        (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in
-        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4)
-        lib/action_dispatch/middleware/static.rb:64:in `call&#39;\nrailties (4.0.4)
-        lib/rails/engine.rb:511:in `call&#39;\nrailties (4.0.4) lib/rails/application.rb:97:in
-        `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in
-        `call&#39;\nrack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
-        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
-        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in
-        `block in start_thread&#39;</code></pre>\n    </div>\n</div>\n\n  \n\n<h2
-        style=\"margin-top: 30px\">Request</h2>\n<p><b>Parameters</b>:</p> <pre>None</pre>\n\n<div
-        class=\"details\">\n  <div class=\"summary\"><a href=\"#\" onclick=\"return
-        toggleSessionDump()\">Toggle session dump</a></div>\n  <div id=\"session_dump\"
-        style=\"display:none\"><pre></pre></div>\n</div>\n\n<div class=\"details\">\n
-        \ <div class=\"summary\"><a href=\"#\" onclick=\"return toggleEnvDump()\">Toggle
-        env dump</a></div>\n  <div id=\"env_dump\" style=\"display:none\"><pre>GATEWAY_INTERFACE:
-        &quot;CGI/1.1&quot;\nHTTP_ACCEPT: &quot;*/*&quot;\nHTTP_ACCEPT_ENCODING: &quot;gzip;q=1.0,deflate;q=0.6,identity;q=0.3&quot;\nREMOTE_ADDR:
-        &quot;127.0.0.1&quot;\nREMOTE_HOST: &quot;127.0.0.1&quot;\nSERVER_NAME: &quot;localhost&quot;\nSERVER_PROTOCOL:
-        &quot;HTTP/1.1&quot;</pre></div>\n</div>\n\n<h2 style=\"margin-top: 30px\">Response</h2>\n<p><b>Headers</b>:</p>
-        <pre>None</pre>\n\n</div>\n\n\n</body>\n</html>\n"
-    http_version: 
-  recorded_at: Sat, 04 Oct 2014 15:25:47 GMT
-- request:
     method: post
     uri: http://localhost:3000/api/surveys/?query=random,true
     body:
@@ -2216,4 +1931,1621 @@ http_interactions:
         }
     http_version: 
   recorded_at: Sat, 18 Oct 2014 17:30:43 GMT
-recorded_with: VCR 2.6.0
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: 'Internal Server Error '
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '13174'
+      X-Request-Id:
+      - 57ed132b-a3d6-4c4e-a38e-476e855824c9
+      X-Runtime:
+      - '0.168001'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 13:45:54 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\"
+        />\n  <title>Action Controller: Exception caught</title>\n  <style>\n    body
+        {\n      background-color: #FAFAFA;\n      color: #333;\n      margin: 0px;\n
+        \   }\n\n    body, p, ol, ul, td {\n      font-family: helvetica, verdana,
+        arial, sans-serif;\n      font-size:   13px;\n      line-height: 18px;\n    }\n\n
+        \   pre {\n      font-size: 11px;\n      white-space: pre-wrap;\n    }\n\n
+        \   pre.box {\n      border: 1px solid #EEE;\n      padding: 10px;\n      margin:
+        0px;\n      width: 958px;\n    }\n\n    header {\n      color: #F0F0F0;\n
+        \     background: #C52F24;\n      padding: 0.5em 1.5em;\n    }\n\n    h1 {\n
+        \     margin: 0.2em 0;\n      line-height: 1.1em;\n      font-size: 2em;\n
+        \   }\n\n    h2 {\n      color: #C52F24;\n      line-height: 25px;\n    }\n\n
+        \   .details {\n      border: 1px solid #D0D0D0;\n      border-radius: 4px;\n
+        \     margin: 1em 0px;\n      display: block;\n      width: 978px;\n    }\n\n
+        \   .summary {\n      padding: 8px 15px;\n      border-bottom: 1px solid #D0D0D0;\n
+        \     display: block;\n    }\n\n    .details pre {\n      margin: 5px;\n      border:
+        none;\n    }\n\n    #container {\n      box-sizing: border-box;\n      width:
+        100%;\n      padding: 0 1.5em;\n    }\n\n    .source * {\n      margin: 0px;\n
+        \     padding: 0px;\n    }\n\n    .source {\n      border: 1px solid #D9D9D9;\n
+        \     background: #ECECEC;\n      width: 978px;\n    }\n\n    .source pre
+        {\n      padding: 10px 0px;\n      border: none;\n    }\n\n    .source .data
+        {\n      font-size: 80%;\n      overflow: auto;\n      background-color: #FFF;\n
+        \   }\n\n    .info {\n      padding: 0.5em;\n    }\n\n    .source .data .line_numbers
+        {\n      background-color: #ECECEC;\n      color: #AAA;\n      padding: 1em
+        .5em;\n      border-right: 1px solid #DDD;\n      text-align: right;\n    }\n\n
+        \   .line {\n      padding-left: 10px;\n    }\n\n    .line:hover {\n      background-color:
+        #F6F6F6;\n    }\n\n    .line.active {\n      background-color: #FFCCCC;\n
+        \   }\n\n    a { color: #980905; }\n    a:visited { color: #666; }\n    a:hover
+        { color: #C52F24; }\n\n    \n  </style>\n\n  <script>\n    var toggle = function(id)
+        {\n      var s = document.getElementById(id).style;\n      s.display = s.display
+        == 'none' ? 'block' : 'none';\n      return false;\n    }\n    var show =
+        function(id) {\n      document.getElementById(id).style.display = 'block';\n
+        \   }\n    var hide = function(id) {\n      document.getElementById(id).style.display
+        = 'none';\n    }\n    var toggleTrace = function() {\n      return toggle('blame_trace');\n
+        \   }\n    var toggleSessionDump = function() {\n      return toggle('session_dump');\n
+        \   }\n    var toggleEnvDump = function() {\n      return toggle('env_dump');\n
+        \   }\n  </script>\n</head>\n<body>\n\n<header>\n  <h1>\n    PG::ConnectionBad\n
+        \ </h1>\n</header>\n\n<div id=\"container\">\n  <h2>could not connect to server:
+        No such file or directory\n\tIs the server running locally and accepting\n\tconnections
+        on Unix domain socket &quot;/tmp/.s.PGSQL.5432&quot;?\n</h2>\n\n  \n  \n<p><code>Rails.root:
+        /Users/austenito/repos/happiness/happiness_service</code></p>\n\n<div id=\"traces\">\n
+        \   <a href=\"#\" onclick=\"hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);;
+        return false;\">Application Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);;
+        return false;\">Framework Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);;
+        return false;\">Full Trace</a> \n\n    <div id=\"Application-Trace\" style=\"display:
+        block;\">\n      <pre><code></code></pre>\n    </div>\n    <div id=\"Framework-Trace\"
+        style=\"display: none;\">\n      <pre><code>activerecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:848:in
+        `initialize&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:848:in
+        `new&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:848:in
+        `connect&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:556:in
+        `initialize&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in
+        `new&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in
+        `postgresql_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in
+        `new_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in
+        `checkout_new_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in
+        `acquire_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in
+        `block in checkout&#39;\n/Users/austenito/.rubies/ruby-2.1.3/lib/ruby/2.1.0/monitor.rb:211:in
+        `mon_synchronize&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in
+        `checkout&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in
+        `block in connection&#39;\n/Users/austenito/.rubies/ruby-2.1.3/lib/ruby/2.1.0/monitor.rb:211:in
+        `mon_synchronize&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in
+        `connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in
+        `retrieve_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_handling.rb:79:in
+        `retrieve_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_handling.rb:53:in
+        `connection&#39;\nactiverecord (4.0.4) lib/active_record/migration.rb:796:in
+        `current_version&#39;\nactiverecord (4.0.4) lib/active_record/migration.rb:804:in
+        `needs_migration?&#39;\nactiverecord (4.0.4) lib/active_record/migration.rb:383:in
+        `check_pending!&#39;\nactiverecord (4.0.4) lib/active_record/migration.rb:370:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in
+        `block in call&#39;\nactivesupport (4.0.4) lib/active_support/callbacks.rb:373:in
+        `_run__4385228089887704791__call__callbacks&#39;\nactivesupport (4.0.4) lib/active_support/callbacks.rb:80:in
+        `run_callbacks&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in
+        `call&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in
+        `call&#39;\nrack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport
+        (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call&#39;\nrack
+        (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in
+        `call&#39;\nrailties (4.0.4) lib/rails/engine.rb:511:in `call&#39;\nrailties
+        (4.0.4) lib/rails/application.rb:97:in `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in
+        `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;\nrack
+        (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n    <div id=\"Full-Trace\"
+        style=\"display: none;\">\n      <pre><code>activerecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:848:in
+        `initialize&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:848:in
+        `new&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:848:in
+        `connect&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:556:in
+        `initialize&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in
+        `new&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in
+        `postgresql_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in
+        `new_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in
+        `checkout_new_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in
+        `acquire_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in
+        `block in checkout&#39;\n/Users/austenito/.rubies/ruby-2.1.3/lib/ruby/2.1.0/monitor.rb:211:in
+        `mon_synchronize&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in
+        `checkout&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in
+        `block in connection&#39;\n/Users/austenito/.rubies/ruby-2.1.3/lib/ruby/2.1.0/monitor.rb:211:in
+        `mon_synchronize&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in
+        `connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in
+        `retrieve_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_handling.rb:79:in
+        `retrieve_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_handling.rb:53:in
+        `connection&#39;\nactiverecord (4.0.4) lib/active_record/migration.rb:796:in
+        `current_version&#39;\nactiverecord (4.0.4) lib/active_record/migration.rb:804:in
+        `needs_migration?&#39;\nactiverecord (4.0.4) lib/active_record/migration.rb:383:in
+        `check_pending!&#39;\nactiverecord (4.0.4) lib/active_record/migration.rb:370:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in
+        `block in call&#39;\nactivesupport (4.0.4) lib/active_support/callbacks.rb:373:in
+        `_run__4385228089887704791__call__callbacks&#39;\nactivesupport (4.0.4) lib/active_support/callbacks.rb:80:in
+        `run_callbacks&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in
+        `call&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in
+        `call&#39;\nrack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport
+        (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call&#39;\nrack
+        (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in
+        `call&#39;\nrailties (4.0.4) lib/rails/engine.rb:511:in `call&#39;\nrailties
+        (4.0.4) lib/rails/application.rb:97:in `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in
+        `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;\nrack
+        (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n</div>\n\n  \n\n<h2
+        style=\"margin-top: 30px\">Request</h2>\n<p><b>Parameters</b>:</p> <pre>None</pre>\n\n<div
+        class=\"details\">\n  <div class=\"summary\"><a href=\"#\" onclick=\"return
+        toggleSessionDump()\">Toggle session dump</a></div>\n  <div id=\"session_dump\"
+        style=\"display:none\"><pre></pre></div>\n</div>\n\n<div class=\"details\">\n
+        \ <div class=\"summary\"><a href=\"#\" onclick=\"return toggleEnvDump()\">Toggle
+        env dump</a></div>\n  <div id=\"env_dump\" style=\"display:none\"><pre>GATEWAY_INTERFACE:
+        &quot;CGI/1.1&quot;\nHTTP_ACCEPT: &quot;*/*&quot;\nHTTP_ACCEPT_ENCODING: &quot;gzip;q=1.0,deflate;q=0.6,identity;q=0.3&quot;\nREMOTE_ADDR:
+        &quot;127.0.0.1&quot;\nREMOTE_HOST: &quot;127.0.0.1&quot;\nSERVER_NAME: &quot;localhost&quot;\nSERVER_PROTOCOL:
+        &quot;HTTP/1.1&quot;</pre></div>\n</div>\n\n<h2 style=\"margin-top: 30px\">Response</h2>\n<p><b>Headers</b>:</p>
+        <pre>None</pre>\n\n</div>\n\n\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 13:45:54 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/user
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 56872b7795c726cbf37cd03408461aa18432aebea7250da037f32a5c21869de3
+      Service-User-Id:
+      - a5ca5056ce004dc40632e68e12b2d7a58807616b852d11b308d0f45ca7ba9597
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"ccdf1c53d55f6c8480a1894ba79cbe66"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 64e0a253-b2c5-424e-b636-7e6aff600c87
+      X-Runtime:
+      - '0.006929'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:05:21 GMT
+      Content-Length:
+      - '256'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "service_user_id": "a5ca5056ce004dc40632e68e12b2d7a58807616b852d11b308d0f45ca7ba9597",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/user"
+            }
+          },
+          "token": "56872b7795c726cbf37cd03408461aa18432aebea7250da037f32a5c21869de3"
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:05:21 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/questions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 56872b7795c726cbf37cd03408461aa18432aebea7250da037f32a5c21869de3
+      Service-User-Id:
+      - a5ca5056ce004dc40632e68e12b2d7a58807616b852d11b308d0f45ca7ba9597
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"370590f6952ac2411abaf86b5d7c60fe"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2d50bef6-2bac-44ff-a0c2-e914d9404ea4
+      X-Runtime:
+      - '0.027036'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:05:21 GMT
+      Content-Length:
+      - '19572'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        [
+          {
+            "id": 1,
+            "question_type": "multiple",
+            "text": "How hungry or full are you right now?",
+            "responses": [
+              "Very hungry",
+              "Somewhat hungry",
+              "Neither full nor hungry",
+              "Somewhat full",
+              "Very full"
+            ],
+            "key": "how_hungry_are_you",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/1"
+              }
+            }
+          },
+          {
+            "id": 2,
+            "question_type": "time",
+            "text": "What time did you wake up this morning?",
+            "responses": null,
+            "key": "what_time_did_you_wake_up",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/2"
+              }
+            }
+          },
+          {
+            "id": 3,
+            "question_type": "time",
+            "text": "What time did you got to sleep last night?",
+            "responses": null,
+            "key": "what_time_did_you_sleep",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/3"
+              }
+            }
+          },
+          {
+            "id": 4,
+            "question_type": "multiple",
+            "text": "Are you judging or evaluating yourself right now (i.e. at the moment just before you were notified)?",
+            "responses": [
+              "f",
+              "Yes - Negatively",
+              "Yes - Neutrally",
+              "Yes - Positively"
+            ],
+            "key": "are_you_judging_yourself",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/4"
+              }
+            }
+          },
+          {
+            "id": 5,
+            "question_type": "range",
+            "text": "How well did you sleep last night?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "how_well_did_you_sleep",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/5"
+              }
+            }
+          },
+          {
+            "id": 6,
+            "question_type": "range",
+            "text": "To what extent are you engrossed in what you are doing?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "what_extent_are_you_engrossed",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/6"
+              }
+            }
+          },
+          {
+            "id": 7,
+            "question_type": "multiple",
+            "text": "Are you judging or evaluating what you are doing right now (i.e. at the moment just before you were notified?)",
+            "responses": [
+              "f",
+              "Yes - Negatively",
+              "Yes - Neutrally",
+              "Yes - Positively"
+            ],
+            "key": "are_you_judging_or_evaluating_what_you_are_doing",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/7"
+              }
+            }
+          },
+          {
+            "id": 8,
+            "question_type": "boolean",
+            "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "had_sex",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/8"
+              }
+            }
+          },
+          {
+            "id": 9,
+            "question_type": "multiple",
+            "text": "Imagine you were given $10 to divide between yourself and a stranger to whom you would remain anonymous. How much would you give to the stranger?",
+            "responses": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10"
+            ],
+            "key": "how_much_would_you_give_to_stranger",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/9"
+              }
+            }
+          },
+          {
+            "id": 10,
+            "question_type": "boolean",
+            "text": "Have you surprised someone with a gift (including small gifts) in the last week?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "have_you_surprised_someone",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/10"
+              }
+            }
+          },
+          {
+            "id": 11,
+            "question_type": "multiple",
+            "text": "In general, how is your health?",
+            "responses": [
+              "Excellent",
+              "Very Good",
+              "Good",
+              "Fair",
+              "Poor"
+            ],
+            "key": "how_is_your_health",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/11"
+              }
+            }
+          },
+          {
+            "id": 12,
+            "question_type": "range",
+            "text": "Where would you place yourself on this ladder?\nThink of a ladder representing where people stand in your country.\nAt the top of the ladder are the people who are the best off - those who have the most money, the most education and the most respected jobs. At the bottom are the people who are the worst off - who have the least money, least education, and the least respected jobs or no job. The higher up you are on the ladder, the closer you are to the people at the very top; the lower you are the closer you are to people at the very bottom.",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "ladder",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/12"
+              }
+            }
+          },
+          {
+            "id": 13,
+            "question_type": "range",
+            "text": "To what extent is what you're doing interesting?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "what_extent_interesting",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/13"
+              }
+            }
+          },
+          {
+            "id": 14,
+            "question_type": "multiple",
+            "text": "On average, how many hours do you work each week?",
+            "responses": [
+              "Less than 5",
+              "5-10",
+              "10-20",
+              "20-30",
+              "30-40",
+              "40-50",
+              "50-60",
+              "60-70",
+              "More than 70"
+            ],
+            "key": "how_many_hours_do_you_work",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/14"
+              }
+            }
+          },
+          {
+            "id": 15,
+            "question_type": "range",
+            "text": "How do you feel right now?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "how_do_you_feel_right_now",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/15"
+              }
+            }
+          },
+          {
+            "id": 16,
+            "question_type": "range",
+            "text": "To what extent do you expect good things to happen in the future?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "good_things_future",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/16"
+              }
+            }
+          },
+          {
+            "id": 17,
+            "question_type": "boolean",
+            "text": "Have you taken any over-the-counter pain medication in the past 24 hours?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "pain_medication",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/17"
+              }
+            }
+          },
+          {
+            "id": 18,
+            "question_type": "range",
+            "text": "To what extent have you procrastinated so far today?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "procrastinated",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/18"
+              }
+            }
+          },
+          {
+            "id": 19,
+            "question_type": "range",
+            "text": "To what extent are you being productive?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "productive",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/19"
+              }
+            }
+          },
+          {
+            "id": 20,
+            "question_type": "multiple",
+            "text": "Who are you talking or interacting with?",
+            "responses": [
+              "Spouse/partner/significant other",
+              "Children",
+              "Parents",
+              "Other relatives",
+              "Friends",
+              "Acquaintances",
+              "Strangers",
+              "Co-workers",
+              "Customers/students",
+              "Boss",
+              "No one"
+            ],
+            "key": "who_are_you_talking_with",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/20"
+              }
+            }
+          },
+          {
+            "id": 27,
+            "question_type": "multiple",
+            "text": "How many people are you talking or interacting with?",
+            "responses": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "More than 10"
+            ],
+            "key": "how_many_people_are_you_talking_with",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/27"
+              }
+            }
+          },
+          {
+            "id": 21,
+            "question_type": "range",
+            "text": "To what extent do you feel accepted by the person/people you are interacting with?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/21"
+              }
+            }
+          },
+          {
+            "id": 22,
+            "question_type": "boolean",
+            "text": "Are you alone?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "are_you_alone",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/22"
+              }
+            }
+          },
+          {
+            "id": 23,
+            "question_type": "boolean",
+            "text": "Do you want to do what you're doing?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "do_you_want_to_do_what_youre_doing",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/23"
+              }
+            }
+          },
+          {
+            "id": 24,
+            "question_type": "boolean",
+            "text": "Are you talking or interacting with anyone?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "are_you_talking_to_anyone",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/24"
+              }
+            }
+          },
+          {
+            "id": 25,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": "where_are_you",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/25"
+              }
+            }
+          },
+          {
+            "id": 26,
+            "question_type": "multiple",
+            "text": "What are you doing?",
+            "responses": [
+              "Eating",
+              "Bathroom",
+              "Working"
+            ],
+            "key": "what_are_you_doing",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/26"
+              }
+            }
+          },
+          {
+            "id": 28,
+            "question_type": "boolean",
+            "text": "Do you have to do what you're doing?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "do_you_have_to_do_what_youre_doing",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/28"
+              }
+            }
+          },
+          {
+            "id": 29,
+            "question_type": "range",
+            "text": "To what extent are you focused on what you are doing?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "how_focused",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/29"
+              }
+            }
+          },
+          {
+            "id": 30,
+            "question_type": "multiple",
+            "text": "When did you last check Facebook?",
+            "responses": [
+              "Right now",
+              "In the last 5 minutes",
+              "In the last 15 minutes",
+              "In the last 30 minutes",
+              "In the last hour",
+              "1-2 hours ago",
+              "3-5 hours ago",
+              "6-12 hours ago",
+              "24 hours ago",
+              "Don't use facebook"
+            ],
+            "key": "when_did_last_check_facebook",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/30"
+              }
+            }
+          },
+          {
+            "id": 31,
+            "question_type": "multiple",
+            "text": "Beyond any work you've already done today, how many additional hours do you expect to work today?",
+            "responses": [
+              "0 (none)",
+              "Less than 1 hour",
+              "1-2 hours",
+              "2-3 hours",
+              "3-4 hours",
+              "4-5 hours",
+              "5-6 hours"
+            ],
+            "key": "how_many_additional_work_hours",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/31"
+              }
+            }
+          },
+          {
+            "id": 32,
+            "question_type": "boolean",
+            "text": "If you could, and it had no negative consequences, would you jump forward in time 24 hours?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "jump_forward_24_hours",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/32"
+              }
+            }
+          },
+          {
+            "id": 33,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "poptarts",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/33"
+              }
+            }
+          },
+          {
+            "id": 34,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/34"
+              }
+            }
+          },
+          {
+            "id": 35,
+            "question_type": "range",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/35"
+              }
+            }
+          },
+          {
+            "id": 36,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "poptarts",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/36"
+              }
+            }
+          },
+          {
+            "id": 37,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "poptarts",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/37"
+              }
+            }
+          },
+          {
+            "id": 38,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/38"
+              }
+            }
+          },
+          {
+            "id": 39,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/39"
+              }
+            }
+          },
+          {
+            "id": 40,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/40"
+              }
+            }
+          },
+          {
+            "id": 41,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/41"
+              }
+            }
+          },
+          {
+            "id": 42,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/42"
+              }
+            }
+          },
+          {
+            "id": 43,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/43"
+              }
+            }
+          },
+          {
+            "id": 44,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/44"
+              }
+            }
+          },
+          {
+            "id": 45,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/45"
+              }
+            }
+          },
+          {
+            "id": 46,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/46"
+              }
+            }
+          },
+          {
+            "id": 47,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/47"
+              }
+            }
+          },
+          {
+            "id": 48,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/48"
+              }
+            }
+          },
+          {
+            "id": 49,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/49"
+              }
+            }
+          },
+          {
+            "id": 50,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/50"
+              }
+            }
+          },
+          {
+            "id": 51,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/51"
+              }
+            }
+          },
+          {
+            "id": 52,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/52"
+              }
+            }
+          },
+          {
+            "id": 53,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/53"
+              }
+            }
+          },
+          {
+            "id": 54,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/54"
+              }
+            }
+          },
+          {
+            "id": 55,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/55"
+              }
+            }
+          },
+          {
+            "id": 56,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/56"
+              }
+            }
+          },
+          {
+            "id": 57,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/57"
+              }
+            }
+          },
+          {
+            "id": 58,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/58"
+              }
+            }
+          },
+          {
+            "id": 59,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/59"
+              }
+            }
+          },
+          {
+            "id": 60,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/60"
+              }
+            }
+          },
+          {
+            "id": 61,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/61"
+              }
+            }
+          }
+        ]
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:05:21 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 56872b7795c726cbf37cd03408461aa18432aebea7250da037f32a5c21869de3
+      Service-User-Id:
+      - a5ca5056ce004dc40632e68e12b2d7a58807616b852d11b308d0f45ca7ba9597
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"cd4d7fedd30daf2037bd9ebca71ca991"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cdaf2696-db3b-43a6-9439-9a38268ba557
+      X-Runtime:
+      - '0.012469'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:05:21 GMT
+      Content-Length:
+      - '471'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 55,
+          "service_user_id": "a5ca5056ce004dc40632e68e12b2d7a58807616b852d11b308d0f45ca7ba9597",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/55"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "http://localhost:3000/api/surveys/55/survey_questions"
+              },
+              "put": {
+                "href": "http://localhost:3000/api/surveys/55/survey_questions"
+              }
+            }
+          },
+          "completed": true,
+          "survey_questions": [
+
+          ]
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:05:21 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/questions
+    body:
+      encoding: UTF-8
+      string: '{"question":{"question_type":"multiple","responses":["At Home","At
+        Work","In a car","Other"],"text":"Where are you?","key":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 56872b7795c726cbf37cd03408461aa18432aebea7250da037f32a5c21869de3
+      Service-User-Id:
+      - a5ca5056ce004dc40632e68e12b2d7a58807616b852d11b308d0f45ca7ba9597
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"a38f06b379c3a84e8c2ae5256c10a325"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 92ceb466-c537-4d95-ac8a-6b0d7a814073
+      X-Runtime:
+      - '0.009571'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:05:21 GMT
+      Content-Length:
+      - '262'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 62,
+          "question_type": "multiple",
+          "text": "Where are you?",
+          "responses": [
+            "At Home",
+            "At Work",
+            "In a car",
+            "Other"
+          ],
+          "key": null,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/questions/62"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:05:21 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/55/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":62,"responses":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 56872b7795c726cbf37cd03408461aa18432aebea7250da037f32a5c21869de3
+      Service-User-Id:
+      - a5ca5056ce004dc40632e68e12b2d7a58807616b852d11b308d0f45ca7ba9597
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"4de09d33925c529ec7e323f6825fe336"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3fa0901c-7e10-4bc1-ab04-d243978a39dd
+      X-Runtime:
+      - '0.021257'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:05:22 GMT
+      Content-Length:
+      - '532'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 15,
+          "text": "Where are you?",
+          "question_type": "multiple",
+          "responses": [
+            "At Home",
+            "At Work",
+            "In a car",
+            "Other"
+          ],
+          "answer": null,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/55/survey_questions/15"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/55/survey_questions/15"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/55"
+            }
+          },
+          "created_at": "2015-01-17T14:05:21.997Z",
+          "key": null,
+          "question_id": 62
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:05:22 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/55/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":62,"responses":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 56872b7795c726cbf37cd03408461aa18432aebea7250da037f32a5c21869de3
+      Service-User-Id:
+      - a5ca5056ce004dc40632e68e12b2d7a58807616b852d11b308d0f45ca7ba9597
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"202e1e954689ada0ed45ea0bff4527cf"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fe2a85f6-e194-467f-a61b-7631f3b7b65b
+      X-Runtime:
+      - '0.012462'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:05:22 GMT
+      Content-Length:
+      - '532'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 16,
+          "text": "Where are you?",
+          "question_type": "multiple",
+          "responses": [
+            "At Home",
+            "At Work",
+            "In a car",
+            "Other"
+          ],
+          "answer": null,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/55/survey_questions/16"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/55/survey_questions/16"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/55"
+            }
+          },
+          "created_at": "2015-01-17T14:05:22.026Z",
+          "key": null,
+          "question_id": 62
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:05:22 GMT
+recorded_with: VCR 2.9.3

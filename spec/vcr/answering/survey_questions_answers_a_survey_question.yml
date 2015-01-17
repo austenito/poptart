@@ -30077,82 +30077,6 @@ http_interactions:
     http_version: 
   recorded_at: Sat, 18 Oct 2014 17:30:42 GMT
 - request:
-    method: get
-    uri: http://localhost:3000/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      User-Token:
-      - a64adb15025af2fc240b897d43212ab50348e9ac78c9b52e07b20570804ced9f
-      Service-User-Id:
-      - 0a589c1df5abb96b0c87bd492ce6e63860344a4f3a6b46baa4481fdc4b203bc6
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"2aa11a1ab77b139e58f765299f923a01"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - c94be389-d2e9-4673-8e27-c73ba9b1ad56
-      X-Runtime:
-      - '0.005350'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sat, 18 Oct 2014 17:30:42 GMT
-      Content-Length:
-      - '469'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/"
-            },
-            "surveys": {
-              "href": "http://localhost:3000/api/surveys{/id}{?query*}"
-            },
-            "users": {
-              "href": "http://localhost:3000/api/users{/id}{?query*}"
-            },
-            "questions": {
-              "href": "http://localhost:3000/api/questions{/id}{?query*}"
-            },
-            "survey_questions": {
-              "href": "http://localhost:3000/api/questions{/question_id}/survey_questions{?query*}"
-            }
-          }
-        }
-    http_version: 
-  recorded_at: Sat, 18 Oct 2014 17:30:42 GMT
-- request:
     method: post
     uri: http://localhost:3000/api/surveys/181/survey_questions
     body:
@@ -30389,82 +30313,6 @@ http_interactions:
         }
     http_version: 
   recorded_at: Sat, 18 Oct 2014 17:30:42 GMT
-- request:
-    method: get
-    uri: http://localhost:3000/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      User-Token:
-      - a64adb15025af2fc240b897d43212ab50348e9ac78c9b52e07b20570804ced9f
-      Service-User-Id:
-      - 0a589c1df5abb96b0c87bd492ce6e63860344a4f3a6b46baa4481fdc4b203bc6
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"2aa11a1ab77b139e58f765299f923a01"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - bd98c929-7e1d-4726-8499-ddd3ece9c32c
-      X-Runtime:
-      - '0.005663'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sat, 25 Oct 2014 18:06:30 GMT
-      Content-Length:
-      - '469'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/"
-            },
-            "surveys": {
-              "href": "http://localhost:3000/api/surveys{/id}{?query*}"
-            },
-            "users": {
-              "href": "http://localhost:3000/api/users{/id}{?query*}"
-            },
-            "questions": {
-              "href": "http://localhost:3000/api/questions{/id}{?query*}"
-            },
-            "survey_questions": {
-              "href": "http://localhost:3000/api/questions{/question_id}/survey_questions{?query*}"
-            }
-          }
-        }
-    http_version: 
-  recorded_at: Sat, 25 Oct 2014 18:06:30 GMT
 - request:
     method: post
     uri: http://localhost:3000/api/surveys/197/survey_questions
@@ -30704,1989 +30552,6 @@ http_interactions:
         }
     http_version: 
   recorded_at: Sat, 25 Oct 2014 18:06:30 GMT
-- request:
-    method: get
-    uri: http://localhost:3000/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      User-Token:
-      - a9a293b5b8681d140febf763c57218ad1770737a163e47acef46dff071e3f1a1
-      Service-User-Id:
-      - f1bc4767687c146800d26a7954fe3703d246cb7c76224d89524c1d03b4b6fa8d
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"2aa11a1ab77b139e58f765299f923a01"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 22dc0462-c513-466a-a295-c8ad5fe39e41
-      X-Runtime:
-      - '0.026853'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sat, 25 Oct 2014 18:09:05 GMT
-      Content-Length:
-      - '469'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/"
-            },
-            "surveys": {
-              "href": "http://localhost:3000/api/surveys{/id}{?query*}"
-            },
-            "users": {
-              "href": "http://localhost:3000/api/users{/id}{?query*}"
-            },
-            "questions": {
-              "href": "http://localhost:3000/api/questions{/id}{?query*}"
-            },
-            "survey_questions": {
-              "href": "http://localhost:3000/api/questions{/question_id}/survey_questions{?query*}"
-            }
-          }
-        }
-    http_version: 
-  recorded_at: Sat, 25 Oct 2014 18:09:05 GMT
-- request:
-    method: get
-    uri: http://localhost:3000/api/questions
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      User-Token:
-      - a9a293b5b8681d140febf763c57218ad1770737a163e47acef46dff071e3f1a1
-      Service-User-Id:
-      - f1bc4767687c146800d26a7954fe3703d246cb7c76224d89524c1d03b4b6fa8d
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"f6b48cbf4ec8b7f87b8fd3de55ed23ea"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - ced0945b-4ed9-415a-9070-254693d545a5
-      X-Runtime:
-      - '0.039110'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sat, 25 Oct 2014 18:09:05 GMT
-      Content-Length:
-      - '35309'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        [
-          {
-            "id": 1,
-            "question_type": "multiple",
-            "text": "How hungry or full are you right now?",
-            "responses": [
-              "Very hungry",
-              "Somewhat hungry",
-              "Neither full nor hungry",
-              "Somewhat full",
-              "Very full"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "how_hungry_are_you"
-          },
-          {
-            "id": 2,
-            "question_type": "time",
-            "text": "What time did you wake up this morning?",
-            "responses": null,
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "what_time_did_you_wake_up"
-          },
-          {
-            "id": 3,
-            "question_type": "time",
-            "text": "What time did you got to sleep last night?",
-            "responses": null,
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "what_time_did_you_sleep"
-          },
-          {
-            "id": 4,
-            "question_type": "multiple",
-            "text": "Are you judging or evaluating yourself right now (i.e. at the moment just before you were notified)?",
-            "responses": [
-              "f",
-              "Yes - Negatively",
-              "Yes - Neutrally",
-              "Yes - Positively"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "are_you_judging_yourself"
-          },
-          {
-            "id": 5,
-            "question_type": "range",
-            "text": "How well did you sleep last night?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "how_well_did_you_sleep"
-          },
-          {
-            "id": 6,
-            "question_type": "range",
-            "text": "To what extent are you engrossed in what you are doing?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "what_extent_are_you_engrossed"
-          },
-          {
-            "id": 7,
-            "question_type": "multiple",
-            "text": "Are you judging or evaluating what you are doing right now (i.e. at the moment just before you were notified?)",
-            "responses": [
-              "f",
-              "Yes - Negatively",
-              "Yes - Neutrally",
-              "Yes - Positively"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "are_you_judging_or_evaluating_what_you_are_doing"
-          },
-          {
-            "id": 8,
-            "question_type": "boolean",
-            "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "had_sex"
-          },
-          {
-            "id": 9,
-            "question_type": "multiple",
-            "text": "Imagine you were given $10 to divide between yourself and a stranger to whom you would remain anonymous. How much would you give to the stranger?",
-            "responses": [
-              "0",
-              "1",
-              "2",
-              "3",
-              "4",
-              "5",
-              "6",
-              "7",
-              "8",
-              "9",
-              "10"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "how_much_would_you_give_to_stranger"
-          },
-          {
-            "id": 10,
-            "question_type": "boolean",
-            "text": "Have you surprised someone with a gift (including small gifts) in the last week?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "have_you_surprised_someone"
-          },
-          {
-            "id": 11,
-            "question_type": "multiple",
-            "text": "In general, how is your health?",
-            "responses": [
-              "Excellent",
-              "Very Good",
-              "Good",
-              "Fair",
-              "Poor"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "how_is_your_health"
-          },
-          {
-            "id": 12,
-            "question_type": "range",
-            "text": "Where would you place yourself on this ladder?\nThink of a ladder representing where people stand in your country.\nAt the top of the ladder are the people who are the best off - those who have the most money, the most education and the most respected jobs. At the bottom are the people who are the worst off - who have the least money, least education, and the least respected jobs or no job. The higher up you are on the ladder, the closer you are to the people at the very top; the lower you are the closer you are to people at the very bottom.",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "ladder"
-          },
-          {
-            "id": 13,
-            "question_type": "range",
-            "text": "To what extent is what you're doing interesting?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "what_extent_interesting"
-          },
-          {
-            "id": 14,
-            "question_type": "multiple",
-            "text": "On average, how many hours do you work each week?",
-            "responses": [
-              "Less than 5",
-              "5-10",
-              "10-20",
-              "20-30",
-              "30-40",
-              "40-50",
-              "50-60",
-              "60-70",
-              "More than 70"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "how_many_hours_do_you_work"
-          },
-          {
-            "id": 15,
-            "question_type": "range",
-            "text": "How do you feel right now?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false,
-            "absolute_index": 0,
-            "parent_question_id": null,
-            "key": "how_do_you_feel_right_now"
-          },
-          {
-            "id": 16,
-            "question_type": "range",
-            "text": "To what extent do you expect good things to happen in the future?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "good_things_future"
-          },
-          {
-            "id": 17,
-            "question_type": "boolean",
-            "text": "Have you taken any over-the-counter pain medication in the past 24 hours?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "pain_medication"
-          },
-          {
-            "id": 18,
-            "question_type": "range",
-            "text": "To what extent have you procrastinated so far today?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "procrastinated"
-          },
-          {
-            "id": 19,
-            "question_type": "range",
-            "text": "To what extent are you being productive?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "productive"
-          },
-          {
-            "id": 20,
-            "question_type": "multiple",
-            "text": "Who are you talking or interacting with?",
-            "responses": [
-              "Spouse/partner/significant other",
-              "Children",
-              "Parents",
-              "Other relatives",
-              "Friends",
-              "Acquaintances",
-              "Strangers",
-              "Co-workers",
-              "Customers/students",
-              "Boss",
-              "No one"
-            ],
-            "freeform": true,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "who_are_you_talking_with"
-          },
-          {
-            "id": 27,
-            "question_type": "boolean",
-            "text": "Do you have to do what you're doing?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "do_you_have_to_do_what_youre_doing"
-          },
-          {
-            "id": 21,
-            "question_type": "range",
-            "text": "To what extent do you feel accepted by the person/people you are interacting with?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": 20,
-            "key": null
-          },
-          {
-            "id": 22,
-            "question_type": "boolean",
-            "text": "Are you alone?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "are_you_alone"
-          },
-          {
-            "id": 23,
-            "question_type": "boolean",
-            "text": "Do you want to do what you're doing?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "do_you_want_to_do_what_youre_doing"
-          },
-          {
-            "id": 24,
-            "question_type": "boolean",
-            "text": "Are you talking or interacting with anyone?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "are_you_talking_to_anyone"
-          },
-          {
-            "id": 25,
-            "question_type": "multiple",
-            "text": "Where are you?",
-            "responses": [
-              "At Home",
-              "At Work",
-              "In a car",
-              "Other"
-            ],
-            "freeform": true,
-            "absolute_index": 1,
-            "parent_question_id": null,
-            "key": "where_are_you"
-          },
-          {
-            "id": 26,
-            "question_type": "multiple",
-            "text": "How many people are you talking or interacting with?",
-            "responses": [
-              "0",
-              "1",
-              "2",
-              "3",
-              "4",
-              "5",
-              "6",
-              "7",
-              "8",
-              "9",
-              "10",
-              "More than 10"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "how_many_people_are_you_talking_with"
-          },
-          {
-            "id": 28,
-            "question_type": "range",
-            "text": "To what extent are you focused on what you are doing?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "how_focused"
-          },
-          {
-            "id": 29,
-            "question_type": "multiple",
-            "text": "When did you last check Facebook?",
-            "responses": [
-              "Right now",
-              "In the last 5 minutes",
-              "In the last 15 minutes",
-              "In the last 30 minutes",
-              "In the last hour",
-              "1-2 hours ago",
-              "3-5 hours ago",
-              "6-12 hours ago",
-              "24 hours ago",
-              "Don't use facebook"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "when_did_last_check_facebook"
-          },
-          {
-            "id": 30,
-            "question_type": "multiple",
-            "text": "Beyond any work you've already done today, how many additional hours do you expect to work today?",
-            "responses": [
-              "0 (none)",
-              "Less than 1 hour",
-              "1-2 hours",
-              "2-3 hours",
-              "3-4 hours",
-              "4-5 hours",
-              "5-6 hours"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "how_many_additional_work_hours"
-          },
-          {
-            "id": 31,
-            "question_type": "boolean",
-            "text": "If you could, and it had no negative consequences, would you jump forward in time 24 hours?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "jump_forward_24_hours"
-          },
-          {
-            "id": 32,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": true,
-            "absolute_index": 10,
-            "parent_question_id": 42,
-            "key": null
-          },
-          {
-            "id": 33,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": true,
-            "absolute_index": 10,
-            "parent_question_id": 42,
-            "key": null
-          },
-          {
-            "id": 34,
-            "question_type": "multiple",
-            "text": "Do you love poptarts?",
-            "responses": [
-              "Yes",
-              "No"
-            ],
-            "freeform": true,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 35,
-            "question_type": "multiple",
-            "text": "Do you love poptarts?",
-            "responses": [
-              "Yes",
-              "No"
-            ],
-            "freeform": true,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 36,
-            "question_type": "multiple",
-            "text": "Do you love poptarts?",
-            "responses": [
-              "Yes",
-              "No"
-            ],
-            "freeform": true,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "poptarts"
-          },
-          {
-            "id": 37,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": true,
-            "absolute_index": 10,
-            "parent_question_id": 42,
-            "key": null
-          },
-          {
-            "id": 38,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": true,
-            "absolute_index": 10,
-            "parent_question_id": 42,
-            "key": null
-          },
-          {
-            "id": 39,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": true,
-            "absolute_index": 10,
-            "parent_question_id": 42,
-            "key": null
-          },
-          {
-            "id": 40,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": true,
-            "absolute_index": 10,
-            "parent_question_id": 42,
-            "key": "poptarts"
-          },
-          {
-            "id": 41,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "nyan"
-          },
-          {
-            "id": 42,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "nyan"
-          },
-          {
-            "id": 43,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "nyan"
-          },
-          {
-            "id": 44,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "nyan"
-          },
-          {
-            "id": 45,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "nyan"
-          },
-          {
-            "id": 46,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "nyan"
-          },
-          {
-            "id": 47,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "nyan"
-          },
-          {
-            "id": 48,
-            "question_type": "boolean",
-            "text": "Do you really like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "nyan"
-          },
-          {
-            "id": 49,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "frosted"
-          },
-          {
-            "id": 50,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "frosted"
-          },
-          {
-            "id": 51,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "frosted"
-          },
-          {
-            "id": 52,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "frosted"
-          },
-          {
-            "id": 53,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "frosted"
-          },
-          {
-            "id": 54,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "frosted"
-          },
-          {
-            "id": 55,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "what"
-          },
-          {
-            "id": 56,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "what"
-          },
-          {
-            "id": 57,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "qJQUbJDBQ6hpF6N9Q+zLcw=="
-          },
-          {
-            "id": 58,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "xPlF8nL0uASmMp49hrkxTg=="
-          },
-          {
-            "id": 59,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "LVyVxvlVCQh157o55jpnjA=="
-          },
-          {
-            "id": 60,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "Z+xZh1IzJRXUu53SYeE9bg=="
-          },
-          {
-            "id": 61,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "rIKtVMW3KdKfweWZ7PnrUA=="
-          },
-          {
-            "id": 62,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "JzfnEqc7bqtaJxKdgul2UQ=="
-          },
-          {
-            "id": 63,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "2JonyCUrRA7WVVdgGaKm7g=="
-          },
-          {
-            "id": 64,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "testingooptarts"
-          },
-          {
-            "id": 65,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 66,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 67,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 68,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 69,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 70,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 71,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 72,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 73,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 74,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 75,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 76,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 77,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 78,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 79,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 80,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 81,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 82,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 83,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 84,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "testingooptarts"
-          },
-          {
-            "id": 85,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 86,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "testingooptarts"
-          },
-          {
-            "id": 87,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 88,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "testingooptarts"
-          },
-          {
-            "id": 89,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 90,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "testingooptarts"
-          },
-          {
-            "id": 91,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 92,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "testingooptarts"
-          },
-          {
-            "id": 93,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 94,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 95,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 96,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 97,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 98,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 99,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "testingooptarts"
-          },
-          {
-            "id": 100,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 101,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "testingooptarts"
-          },
-          {
-            "id": 102,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 103,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "testingooptarts"
-          },
-          {
-            "id": 104,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 105,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "testingooptarts"
-          },
-          {
-            "id": 106,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 107,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "testingooptarts"
-          },
-          {
-            "id": 108,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 109,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "testingooptarts"
-          },
-          {
-            "id": 110,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 111,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "testingooptarts"
-          },
-          {
-            "id": 112,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": true,
-            "absolute_index": 10,
-            "parent_question_id": 42,
-            "key": "poptarts"
-          },
-          {
-            "id": 113,
-            "question_type": "multiple",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "Yes",
-              "No"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 114,
-            "question_type": "range",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 115,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 116,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "testingooptarts"
-          },
-          {
-            "id": 117,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": true,
-            "absolute_index": 10,
-            "parent_question_id": 42,
-            "key": "poptarts"
-          },
-          {
-            "id": 118,
-            "question_type": "multiple",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "Yes",
-              "No"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 119,
-            "question_type": "range",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 120,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 121,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "testingooptarts"
-          },
-          {
-            "id": 122,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": true,
-            "absolute_index": 10,
-            "parent_question_id": 42,
-            "key": "poptarts"
-          },
-          {
-            "id": 123,
-            "question_type": "multiple",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "Yes",
-              "No"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 124,
-            "question_type": "range",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 125,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 126,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "testingooptarts"
-          },
-          {
-            "id": 127,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": true,
-            "absolute_index": 10,
-            "parent_question_id": 42,
-            "key": "poptarts"
-          },
-          {
-            "id": 128,
-            "question_type": "multiple",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "Yes",
-              "No"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 129,
-            "question_type": "range",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "0",
-              "10"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": null
-          },
-          {
-            "id": 130,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "testingooptarts"
-          },
-          {
-            "id": 131,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "testingooptarts"
-          },
-          {
-            "id": 132,
-            "question_type": "boolean",
-            "text": "Do you like poptarts?",
-            "responses": [
-              "t",
-              "f"
-            ],
-            "freeform": false,
-            "absolute_index": null,
-            "parent_question_id": null,
-            "key": "testingooptarts"
-          }
-        ]
-    http_version: 
-  recorded_at: Sat, 25 Oct 2014 18:09:05 GMT
-- request:
-    method: post
-    uri: http://localhost:3000/api/surveys
-    body:
-      encoding: UTF-8
-      string: '{"survey":{"service_user_id":"d068715ec29db367e3adca0a3b2a38dcd2d011beba3b9df8840d8231044e7c08"}}'
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      User-Token:
-      - b85987387fd976bcc19264746b1dad8dc8046cc8d6ae74636d6336c452325276
-      Service-User-Id:
-      - d068715ec29db367e3adca0a3b2a38dcd2d011beba3b9df8840d8231044e7c08
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: 'Created '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"4ac43ecd48bc1f7dd0f75b941c5bab91"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 07054d81-acbb-44b7-b3a9-bf60146278ec
-      X-Runtime:
-      - '0.037105'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sat, 25 Oct 2014 18:09:05 GMT
-      Content-Length:
-      - '475'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "id": 198,
-          "service_user_id": "d068715ec29db367e3adca0a3b2a38dcd2d011beba3b9df8840d8231044e7c08",
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/surveys/198"
-            },
-            "survey_questions": {
-              "post": {
-                "href": "http://localhost:3000/api/surveys/198/survey_questions"
-              },
-              "put": {
-                "href": "http://localhost:3000/api/surveys/198/survey_questions"
-              }
-            }
-          },
-          "completed": true,
-          "survey_questions": [
-
-          ]
-        }
-    http_version: 
-  recorded_at: Sat, 25 Oct 2014 18:09:05 GMT
 - request:
     method: post
     uri: http://localhost:3000/api/surveys/198/survey_questions
@@ -33547,4 +31412,2697 @@ http_interactions:
         }
     http_version: 
   recorded_at: Sun, 26 Oct 2014 20:42:17 GMT
-recorded_with: VCR 2.6.0
+- request:
+    method: get
+    uri: http://localhost:3000/api/questions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 4c9403c233fdbabbb0b1d53fd6c65c3d47f06b9be3f087319622db6955c1576b
+      Service-User-Id:
+      - 390e397336a3e2e0a362bf10e93b02b7cff7b821f348bac902806688dfdf7121
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"91dfe37b1aa95288ae4f64eae420615a"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 23aab4a0-a25b-4d33-824c-71ddc6e8667b
+      X-Runtime:
+      - '0.017898'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 13:48:56 GMT
+      Content-Length:
+      - '15116'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        [
+          {
+            "id": 1,
+            "question_type": "multiple",
+            "text": "How hungry or full are you right now?",
+            "responses": [
+              "Very hungry",
+              "Somewhat hungry",
+              "Neither full nor hungry",
+              "Somewhat full",
+              "Very full"
+            ],
+            "key": "how_hungry_are_you",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/1"
+              }
+            }
+          },
+          {
+            "id": 2,
+            "question_type": "time",
+            "text": "What time did you wake up this morning?",
+            "responses": null,
+            "key": "what_time_did_you_wake_up",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/2"
+              }
+            }
+          },
+          {
+            "id": 3,
+            "question_type": "time",
+            "text": "What time did you got to sleep last night?",
+            "responses": null,
+            "key": "what_time_did_you_sleep",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/3"
+              }
+            }
+          },
+          {
+            "id": 4,
+            "question_type": "multiple",
+            "text": "Are you judging or evaluating yourself right now (i.e. at the moment just before you were notified)?",
+            "responses": [
+              "f",
+              "Yes - Negatively",
+              "Yes - Neutrally",
+              "Yes - Positively"
+            ],
+            "key": "are_you_judging_yourself",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/4"
+              }
+            }
+          },
+          {
+            "id": 5,
+            "question_type": "range",
+            "text": "How well did you sleep last night?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "how_well_did_you_sleep",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/5"
+              }
+            }
+          },
+          {
+            "id": 6,
+            "question_type": "range",
+            "text": "To what extent are you engrossed in what you are doing?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "what_extent_are_you_engrossed",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/6"
+              }
+            }
+          },
+          {
+            "id": 7,
+            "question_type": "multiple",
+            "text": "Are you judging or evaluating what you are doing right now (i.e. at the moment just before you were notified?)",
+            "responses": [
+              "f",
+              "Yes - Negatively",
+              "Yes - Neutrally",
+              "Yes - Positively"
+            ],
+            "key": "are_you_judging_or_evaluating_what_you_are_doing",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/7"
+              }
+            }
+          },
+          {
+            "id": 8,
+            "question_type": "boolean",
+            "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "had_sex",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/8"
+              }
+            }
+          },
+          {
+            "id": 9,
+            "question_type": "multiple",
+            "text": "Imagine you were given $10 to divide between yourself and a stranger to whom you would remain anonymous. How much would you give to the stranger?",
+            "responses": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10"
+            ],
+            "key": "how_much_would_you_give_to_stranger",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/9"
+              }
+            }
+          },
+          {
+            "id": 10,
+            "question_type": "boolean",
+            "text": "Have you surprised someone with a gift (including small gifts) in the last week?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "have_you_surprised_someone",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/10"
+              }
+            }
+          },
+          {
+            "id": 11,
+            "question_type": "multiple",
+            "text": "In general, how is your health?",
+            "responses": [
+              "Excellent",
+              "Very Good",
+              "Good",
+              "Fair",
+              "Poor"
+            ],
+            "key": "how_is_your_health",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/11"
+              }
+            }
+          },
+          {
+            "id": 12,
+            "question_type": "range",
+            "text": "Where would you place yourself on this ladder?\nThink of a ladder representing where people stand in your country.\nAt the top of the ladder are the people who are the best off - those who have the most money, the most education and the most respected jobs. At the bottom are the people who are the worst off - who have the least money, least education, and the least respected jobs or no job. The higher up you are on the ladder, the closer you are to the people at the very top; the lower you are the closer you are to people at the very bottom.",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "ladder",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/12"
+              }
+            }
+          },
+          {
+            "id": 13,
+            "question_type": "range",
+            "text": "To what extent is what you're doing interesting?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "what_extent_interesting",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/13"
+              }
+            }
+          },
+          {
+            "id": 14,
+            "question_type": "multiple",
+            "text": "On average, how many hours do you work each week?",
+            "responses": [
+              "Less than 5",
+              "5-10",
+              "10-20",
+              "20-30",
+              "30-40",
+              "40-50",
+              "50-60",
+              "60-70",
+              "More than 70"
+            ],
+            "key": "how_many_hours_do_you_work",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/14"
+              }
+            }
+          },
+          {
+            "id": 15,
+            "question_type": "range",
+            "text": "How do you feel right now?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "how_do_you_feel_right_now",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/15"
+              }
+            }
+          },
+          {
+            "id": 16,
+            "question_type": "range",
+            "text": "To what extent do you expect good things to happen in the future?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "good_things_future",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/16"
+              }
+            }
+          },
+          {
+            "id": 17,
+            "question_type": "boolean",
+            "text": "Have you taken any over-the-counter pain medication in the past 24 hours?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "pain_medication",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/17"
+              }
+            }
+          },
+          {
+            "id": 18,
+            "question_type": "range",
+            "text": "To what extent have you procrastinated so far today?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "procrastinated",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/18"
+              }
+            }
+          },
+          {
+            "id": 19,
+            "question_type": "range",
+            "text": "To what extent are you being productive?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "productive",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/19"
+              }
+            }
+          },
+          {
+            "id": 20,
+            "question_type": "multiple",
+            "text": "Who are you talking or interacting with?",
+            "responses": [
+              "Spouse/partner/significant other",
+              "Children",
+              "Parents",
+              "Other relatives",
+              "Friends",
+              "Acquaintances",
+              "Strangers",
+              "Co-workers",
+              "Customers/students",
+              "Boss",
+              "No one"
+            ],
+            "key": "who_are_you_talking_with",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/20"
+              }
+            }
+          },
+          {
+            "id": 27,
+            "question_type": "multiple",
+            "text": "How many people are you talking or interacting with?",
+            "responses": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "More than 10"
+            ],
+            "key": "how_many_people_are_you_talking_with",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/27"
+              }
+            }
+          },
+          {
+            "id": 21,
+            "question_type": "range",
+            "text": "To what extent do you feel accepted by the person/people you are interacting with?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/21"
+              }
+            }
+          },
+          {
+            "id": 22,
+            "question_type": "boolean",
+            "text": "Are you alone?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "are_you_alone",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/22"
+              }
+            }
+          },
+          {
+            "id": 23,
+            "question_type": "boolean",
+            "text": "Do you want to do what you're doing?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "do_you_want_to_do_what_youre_doing",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/23"
+              }
+            }
+          },
+          {
+            "id": 24,
+            "question_type": "boolean",
+            "text": "Are you talking or interacting with anyone?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "are_you_talking_to_anyone",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/24"
+              }
+            }
+          },
+          {
+            "id": 25,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": "where_are_you",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/25"
+              }
+            }
+          },
+          {
+            "id": 26,
+            "question_type": "multiple",
+            "text": "What are you doing?",
+            "responses": [
+              "Eating",
+              "Bathroom",
+              "Working"
+            ],
+            "key": "what_are_you_doing",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/26"
+              }
+            }
+          },
+          {
+            "id": 28,
+            "question_type": "boolean",
+            "text": "Do you have to do what you're doing?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "do_you_have_to_do_what_youre_doing",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/28"
+              }
+            }
+          },
+          {
+            "id": 29,
+            "question_type": "range",
+            "text": "To what extent are you focused on what you are doing?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "how_focused",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/29"
+              }
+            }
+          },
+          {
+            "id": 30,
+            "question_type": "multiple",
+            "text": "When did you last check Facebook?",
+            "responses": [
+              "Right now",
+              "In the last 5 minutes",
+              "In the last 15 minutes",
+              "In the last 30 minutes",
+              "In the last hour",
+              "1-2 hours ago",
+              "3-5 hours ago",
+              "6-12 hours ago",
+              "24 hours ago",
+              "Don't use facebook"
+            ],
+            "key": "when_did_last_check_facebook",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/30"
+              }
+            }
+          },
+          {
+            "id": 31,
+            "question_type": "multiple",
+            "text": "Beyond any work you've already done today, how many additional hours do you expect to work today?",
+            "responses": [
+              "0 (none)",
+              "Less than 1 hour",
+              "1-2 hours",
+              "2-3 hours",
+              "3-4 hours",
+              "4-5 hours",
+              "5-6 hours"
+            ],
+            "key": "how_many_additional_work_hours",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/31"
+              }
+            }
+          },
+          {
+            "id": 32,
+            "question_type": "boolean",
+            "text": "If you could, and it had no negative consequences, would you jump forward in time 24 hours?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "jump_forward_24_hours",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/32"
+              }
+            }
+          },
+          {
+            "id": 33,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "poptarts",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/33"
+              }
+            }
+          },
+          {
+            "id": 34,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/34"
+              }
+            }
+          },
+          {
+            "id": 35,
+            "question_type": "range",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/35"
+              }
+            }
+          },
+          {
+            "id": 36,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "poptarts",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/36"
+              }
+            }
+          },
+          {
+            "id": 37,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "poptarts",
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/37"
+              }
+            }
+          },
+          {
+            "id": 38,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/38"
+              }
+            }
+          },
+          {
+            "id": 39,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/39"
+              }
+            }
+          },
+          {
+            "id": 40,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/40"
+              }
+            }
+          },
+          {
+            "id": 41,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/41"
+              }
+            }
+          },
+          {
+            "id": 42,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/42"
+              }
+            }
+          },
+          {
+            "id": 43,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/43"
+              }
+            }
+          },
+          {
+            "id": 44,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/44"
+              }
+            }
+          },
+          {
+            "id": 45,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": {
+              "self": {
+                "href": "http://localhost:3000/api/questions/45"
+              }
+            }
+          }
+        ]
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 13:48:56 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/25/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":46,"responses":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - d3c0c84a3be5f7d1d692338fdb7e48d5ad53df7a0af4bd02b9243d8996b81e8d
+      Service-User-Id:
+      - 7ffd1b98525719e796fd82a2fb5deaca0c4cc51f0aee51fa24d505c35a29a06e
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"c4db94c5e8f3c0e2f1bb4ddfbcd1a136"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8d8ed2a1-1e02-487c-8205-1369b309de7e
+      X-Runtime:
+      - '0.030315'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 13:57:35 GMT
+      Content-Length:
+      - '494'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 4,
+          "text": "Do you like poptarts?",
+          "question_type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "answer": null,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/25/survey_questions/4"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/25/survey_questions/4"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/25"
+            }
+          },
+          "created_at": "2015-01-17T13:57:35.677Z",
+          "key": null,
+          "question_id": 46
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 13:57:35 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/29/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":48,"responses":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - c4986a79f568ca2698d170d2108f8a50d2108325a42fa6c9e2305855f1df76a0
+      Service-User-Id:
+      - 283a44cb3fd46bd181d7e6a18254c6a5c2913d5c4da8913e4a70e27b4e082591
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"a1e8f5cd0d668682e211a6a324f7a23a"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 00f7106e-5af9-4611-ba9f-1f8dc72d90a2
+      X-Runtime:
+      - '0.039190'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:00:49 GMT
+      Content-Length:
+      - '494'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 5,
+          "text": "Do you like poptarts?",
+          "question_type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "answer": null,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/29/survey_questions/5"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/29/survey_questions/5"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/29"
+            }
+          },
+          "created_at": "2015-01-17T14:00:49.644Z",
+          "key": null,
+          "question_id": 48
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:00:49 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/33/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":50,"responses":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 8a254b15eaa41a260b131bbcb0b7f0c99d776f9a3069b1222ca812dc57249266
+      Service-User-Id:
+      - 46fe32a28efa0a6ae0789ae410ba5fdb67a5bcc0d735abe8230d9c4ee642cb9b
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"c7e708a0d7ec8044edd10aa2454aefd1"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b20e187d-051d-400b-b4c3-faaafcabc0f9
+      X-Runtime:
+      - '0.012538'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:01:12 GMT
+      Content-Length:
+      - '494'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 6,
+          "text": "Do you like poptarts?",
+          "question_type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "answer": null,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/33/survey_questions/6"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/33/survey_questions/6"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/33"
+            }
+          },
+          "created_at": "2015-01-17T14:01:12.822Z",
+          "key": null,
+          "question_id": 50
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:01:12 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/33/survey_questions/6
+    body:
+      encoding: UTF-8
+      string: '{"id":6,"survey_question":{"answer":true}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 8a254b15eaa41a260b131bbcb0b7f0c99d776f9a3069b1222ca812dc57249266
+      Service-User-Id:
+      - 46fe32a28efa0a6ae0789ae410ba5fdb67a5bcc0d735abe8230d9c4ee642cb9b
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 3a8bdf6b-67e4-4e61-a0ae-1d32b65832cf
+      X-Runtime:
+      - '0.025523'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:01:12 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:01:12 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/37/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":52,"responses":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 3d28d025e24b27e78961d3ad2e3d135470d5f6c382620f1c0029ab1c85353eb1
+      Service-User-Id:
+      - 6d5a2484192a28cc041a5b783b591396412668d3aa603a3338bef7551f0488a7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"0b99c48d4df7b3c2bb8a117a7d6bb1b9"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a65e60d0-3b23-459d-a132-b0a48c51f818
+      X-Runtime:
+      - '0.015511'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:01:39 GMT
+      Content-Length:
+      - '494'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 7,
+          "text": "Do you like poptarts?",
+          "question_type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "answer": null,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/37/survey_questions/7"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/37/survey_questions/7"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/37"
+            }
+          },
+          "created_at": "2015-01-17T14:01:39.775Z",
+          "key": null,
+          "question_id": 52
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:01:39 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/37/survey_questions/7
+    body:
+      encoding: UTF-8
+      string: '{"id":7,"survey_question":{"answer":true}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 3d28d025e24b27e78961d3ad2e3d135470d5f6c382620f1c0029ab1c85353eb1
+      Service-User-Id:
+      - 6d5a2484192a28cc041a5b783b591396412668d3aa603a3338bef7551f0488a7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - ab414e11-fb8c-489b-9362-4433794c7939
+      X-Runtime:
+      - '0.015138'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:01:39 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:01:39 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/37
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 3d28d025e24b27e78961d3ad2e3d135470d5f6c382620f1c0029ab1c85353eb1
+      Service-User-Id:
+      - 6d5a2484192a28cc041a5b783b591396412668d3aa603a3338bef7551f0488a7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"eb44cb6abef07a7533b18bf4cb7c35c7"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5dec6c28-012c-4c62-becf-89967b2d9814
+      X-Runtime:
+      - '0.020516'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:01:39 GMT
+      Content-Length:
+      - '1060'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 37,
+          "service_user_id": "6d5a2484192a28cc041a5b783b591396412668d3aa603a3338bef7551f0488a7",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/37"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "http://localhost:3000/api/surveys/37/survey_questions"
+              },
+              "put": {
+                "href": "http://localhost:3000/api/surveys/37/survey_questions"
+              }
+            }
+          },
+          "completed": true,
+          "survey_questions": [
+            {
+              "id": 7,
+              "text": "Do you like poptarts?",
+              "question_type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": "t",
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/37/survey_questions/7"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/37/survey_questions/7"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/37"
+                }
+              },
+              "created_at": "2015-01-17T14:01:39.775Z",
+              "key": null,
+              "question_id": 52
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:01:39 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/41/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":54,"responses":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - b97b808d2953aebd957077e713a1ae9e68d9ebc397e85e245924666cdbd8236e
+      Service-User-Id:
+      - 9e805d800c22fc2507212971a92f99e6b55ffbadc70d9520ac51e7ddda93d573
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"61347e1db14e31a31b541efa43c277dd"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - da1232c5-1c5f-4e7c-89d2-e0892bc4d799
+      X-Runtime:
+      - '0.019799'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:02:12 GMT
+      Content-Length:
+      - '494'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 8,
+          "text": "Do you like poptarts?",
+          "question_type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "answer": null,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/41/survey_questions/8"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/41/survey_questions/8"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/41"
+            }
+          },
+          "created_at": "2015-01-17T14:02:12.016Z",
+          "key": null,
+          "question_id": 54
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:02:12 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/41/survey_questions/8
+    body:
+      encoding: UTF-8
+      string: '{"id":8,"survey_question":{"answer":true}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - b97b808d2953aebd957077e713a1ae9e68d9ebc397e85e245924666cdbd8236e
+      Service-User-Id:
+      - 9e805d800c22fc2507212971a92f99e6b55ffbadc70d9520ac51e7ddda93d573
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 347ae82e-0b5c-4117-b6e5-a4071d0beb34
+      X-Runtime:
+      - '0.029805'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:02:12 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:02:12 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/41
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - b97b808d2953aebd957077e713a1ae9e68d9ebc397e85e245924666cdbd8236e
+      Service-User-Id:
+      - 9e805d800c22fc2507212971a92f99e6b55ffbadc70d9520ac51e7ddda93d573
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"15899fffcfe7f2e2e03e463a73809581"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - aec6bef4-7b04-49b6-aac6-e792e1e666de
+      X-Runtime:
+      - '0.027715'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:02:12 GMT
+      Content-Length:
+      - '1060'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 41,
+          "service_user_id": "9e805d800c22fc2507212971a92f99e6b55ffbadc70d9520ac51e7ddda93d573",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/41"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "http://localhost:3000/api/surveys/41/survey_questions"
+              },
+              "put": {
+                "href": "http://localhost:3000/api/surveys/41/survey_questions"
+              }
+            }
+          },
+          "completed": true,
+          "survey_questions": [
+            {
+              "id": 8,
+              "text": "Do you like poptarts?",
+              "question_type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": "t",
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/41/survey_questions/8"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/41/survey_questions/8"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/41"
+                }
+              },
+              "created_at": "2015-01-17T14:02:12.016Z",
+              "key": null,
+              "question_id": 54
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:02:12 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 7d6a210d9de4bd3f0f63f368b8022e7b23ebbea60565e3f4b1713989fedc72f5
+      Service-User-Id:
+      - 94ff2fe1e8eb0511bee2f0e46f1f87136f48aafc8ffd596b394ea28a5456252f
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"cd727c0ba392005a102fbf8dc32be000"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 052b2b9d-5ec2-4554-9304-f73d0dad566b
+      X-Runtime:
+      - '0.005071'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:02:38 GMT
+      Content-Length:
+      - '479'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/"
+            },
+            "surveys": {
+              "href": "http://localhost:3000/api/surveys{/id}{?query*}"
+            },
+            "users": {
+              "href": "http://localhost:3000/api/user{/id}{?query*}"
+            },
+            "questions": {
+              "href": "http://localhost:3000/api/questions{/id}{?query*}"
+            },
+            "survey_questions": {
+              "href": "http://localhost:3000/api/questions/surveys/{survey_id}/survey_questions{/id}{?query*}"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:02:38 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/45/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":56,"responses":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 7d6a210d9de4bd3f0f63f368b8022e7b23ebbea60565e3f4b1713989fedc72f5
+      Service-User-Id:
+      - 94ff2fe1e8eb0511bee2f0e46f1f87136f48aafc8ffd596b394ea28a5456252f
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"e104c22f2b06c1fdb2f0c5341c4955c5"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 95144b32-b9c2-488a-8128-603b45140f8f
+      X-Runtime:
+      - '0.012445'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:02:38 GMT
+      Content-Length:
+      - '494'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 9,
+          "text": "Do you like poptarts?",
+          "question_type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "answer": null,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/45/survey_questions/9"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/45/survey_questions/9"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/45"
+            }
+          },
+          "created_at": "2015-01-17T14:02:38.150Z",
+          "key": null,
+          "question_id": 56
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:02:38 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/45/survey_questions/9
+    body:
+      encoding: UTF-8
+      string: '{"id":9,"survey_question":{"answer":true}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 7d6a210d9de4bd3f0f63f368b8022e7b23ebbea60565e3f4b1713989fedc72f5
+      Service-User-Id:
+      - 94ff2fe1e8eb0511bee2f0e46f1f87136f48aafc8ffd596b394ea28a5456252f
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - cb1ba1b1-ac29-413d-8f4b-cad4c1725443
+      X-Runtime:
+      - '0.023831'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:02:38 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:02:38 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/45
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 7d6a210d9de4bd3f0f63f368b8022e7b23ebbea60565e3f4b1713989fedc72f5
+      Service-User-Id:
+      - 94ff2fe1e8eb0511bee2f0e46f1f87136f48aafc8ffd596b394ea28a5456252f
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"f5cd54a645b52571d52dc9a5096f28b2"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fbc93fcf-415d-4797-929f-830d222e2e78
+      X-Runtime:
+      - '0.012636'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:02:38 GMT
+      Content-Length:
+      - '1060'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 45,
+          "service_user_id": "94ff2fe1e8eb0511bee2f0e46f1f87136f48aafc8ffd596b394ea28a5456252f",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/45"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "http://localhost:3000/api/surveys/45/survey_questions"
+              },
+              "put": {
+                "href": "http://localhost:3000/api/surveys/45/survey_questions"
+              }
+            }
+          },
+          "completed": true,
+          "survey_questions": [
+            {
+              "id": 9,
+              "text": "Do you like poptarts?",
+              "question_type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": "t",
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/45/survey_questions/9"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/45/survey_questions/9"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/45"
+                }
+              },
+              "created_at": "2015-01-17T14:02:38.150Z",
+              "key": null,
+              "question_id": 56
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:02:38 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 0eb9566a12e55d0a3ee595d2ba8a2e08cbf7887f4aa4b9a2f09f9940c7a92e09
+      Service-User-Id:
+      - 202aeb88285791ec9423ec29bd03f79e4f87a78c3b9786d9f5669df6f7c78921
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"cd727c0ba392005a102fbf8dc32be000"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2cef13e6-49ad-4e33-9172-a7b512bda18f
+      X-Runtime:
+      - '0.004800'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:02:55 GMT
+      Content-Length:
+      - '479'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/"
+            },
+            "surveys": {
+              "href": "http://localhost:3000/api/surveys{/id}{?query*}"
+            },
+            "users": {
+              "href": "http://localhost:3000/api/user{/id}{?query*}"
+            },
+            "questions": {
+              "href": "http://localhost:3000/api/questions{/id}{?query*}"
+            },
+            "survey_questions": {
+              "href": "http://localhost:3000/api/questions/surveys/{survey_id}/survey_questions{/id}{?query*}"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:02:55 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/49/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":58,"responses":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 0eb9566a12e55d0a3ee595d2ba8a2e08cbf7887f4aa4b9a2f09f9940c7a92e09
+      Service-User-Id:
+      - 202aeb88285791ec9423ec29bd03f79e4f87a78c3b9786d9f5669df6f7c78921
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"9dca6607ca0b72e453dbe9c1b2616889"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d95f64c5-edbf-4a01-82da-73fd80588529
+      X-Runtime:
+      - '0.016713'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:02:55 GMT
+      Content-Length:
+      - '497'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 11,
+          "text": "Do you like poptarts?",
+          "question_type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "answer": null,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/49/survey_questions/11"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/49/survey_questions/11"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/49"
+            }
+          },
+          "created_at": "2015-01-17T14:02:55.398Z",
+          "key": null,
+          "question_id": 58
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:02:55 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/49/survey_questions/11
+    body:
+      encoding: UTF-8
+      string: '{"id":11,"survey_question":{"answer":true}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 0eb9566a12e55d0a3ee595d2ba8a2e08cbf7887f4aa4b9a2f09f9940c7a92e09
+      Service-User-Id:
+      - 202aeb88285791ec9423ec29bd03f79e4f87a78c3b9786d9f5669df6f7c78921
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 501a0b86-febc-4556-af90-8600d90558e2
+      X-Runtime:
+      - '0.017106'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:02:55 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:02:55 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/49
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 0eb9566a12e55d0a3ee595d2ba8a2e08cbf7887f4aa4b9a2f09f9940c7a92e09
+      Service-User-Id:
+      - 202aeb88285791ec9423ec29bd03f79e4f87a78c3b9786d9f5669df6f7c78921
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"c67f8fdb9e13356a6f9a04bcbeb1d6de"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cdb43be4-7aa1-4f54-83ff-9e385a61f3c1
+      X-Runtime:
+      - '0.020993'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:02:55 GMT
+      Content-Length:
+      - '1063'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 49,
+          "service_user_id": "202aeb88285791ec9423ec29bd03f79e4f87a78c3b9786d9f5669df6f7c78921",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/49"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "http://localhost:3000/api/surveys/49/survey_questions"
+              },
+              "put": {
+                "href": "http://localhost:3000/api/surveys/49/survey_questions"
+              }
+            }
+          },
+          "completed": true,
+          "survey_questions": [
+            {
+              "id": 11,
+              "text": "Do you like poptarts?",
+              "question_type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": "t",
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/49/survey_questions/11"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/49/survey_questions/11"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/49"
+                }
+              },
+              "created_at": "2015-01-17T14:02:55.398Z",
+              "key": null,
+              "question_id": 58
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:02:55 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/user
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 23d9bc5844f6112732f52e44bf1961b5ae4fb3dd709e8d3640599c5bad088bdc
+      Service-User-Id:
+      - 4c56b1623f7c0f2096d19c87b721d06b1d224e8474b97933fb40e553ecc842c4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"d1543008c03a2390325182e6e3bd2464"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4811c770-d45f-455a-b79b-7c11453865e8
+      X-Runtime:
+      - '0.015013'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:05:19 GMT
+      Content-Length:
+      - '256'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "service_user_id": "4c56b1623f7c0f2096d19c87b721d06b1d224e8474b97933fb40e553ecc842c4",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/user"
+            }
+          },
+          "token": "23d9bc5844f6112732f52e44bf1961b5ae4fb3dd709e8d3640599c5bad088bdc"
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:05:19 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 23d9bc5844f6112732f52e44bf1961b5ae4fb3dd709e8d3640599c5bad088bdc
+      Service-User-Id:
+      - 4c56b1623f7c0f2096d19c87b721d06b1d224e8474b97933fb40e553ecc842c4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"aba6568938e82c53ecc9ff10d84d3f10"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0caae7e8-eb50-4822-808d-18801239ac7e
+      X-Runtime:
+      - '0.029463'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:05:20 GMT
+      Content-Length:
+      - '471'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 53,
+          "service_user_id": "4c56b1623f7c0f2096d19c87b721d06b1d224e8474b97933fb40e553ecc842c4",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/53"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "http://localhost:3000/api/surveys/53/survey_questions"
+              },
+              "put": {
+                "href": "http://localhost:3000/api/surveys/53/survey_questions"
+              }
+            }
+          },
+          "completed": true,
+          "survey_questions": [
+
+          ]
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:05:20 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 23d9bc5844f6112732f52e44bf1961b5ae4fb3dd709e8d3640599c5bad088bdc
+      Service-User-Id:
+      - 4c56b1623f7c0f2096d19c87b721d06b1d224e8474b97933fb40e553ecc842c4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"cd727c0ba392005a102fbf8dc32be000"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1023462b-fb21-4288-b311-d3ac706f9ba6
+      X-Runtime:
+      - '0.007945'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:05:20 GMT
+      Content-Length:
+      - '479'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/"
+            },
+            "surveys": {
+              "href": "http://localhost:3000/api/surveys{/id}{?query*}"
+            },
+            "users": {
+              "href": "http://localhost:3000/api/user{/id}{?query*}"
+            },
+            "questions": {
+              "href": "http://localhost:3000/api/questions{/id}{?query*}"
+            },
+            "survey_questions": {
+              "href": "http://localhost:3000/api/questions/surveys/{survey_id}/survey_questions{/id}{?query*}"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:05:20 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/questions
+    body:
+      encoding: UTF-8
+      string: '{"question":{"question_type":"boolean","responses":[true,false],"text":"Do
+        you like poptarts?","key":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 23d9bc5844f6112732f52e44bf1961b5ae4fb3dd709e8d3640599c5bad088bdc
+      Service-User-Id:
+      - 4c56b1623f7c0f2096d19c87b721d06b1d224e8474b97933fb40e553ecc842c4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"e09308a73a8da689b325a5663d716272"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 888ee415-3859-422c-acad-8a545b3814ae
+      X-Runtime:
+      - '0.010823'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:05:20 GMT
+      Content-Length:
+      - '230'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 60,
+          "question_type": "boolean",
+          "text": "Do you like poptarts?",
+          "responses": [
+            true,
+            false
+          ],
+          "key": null,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/questions/60"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:05:20 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/53/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":60,"responses":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 23d9bc5844f6112732f52e44bf1961b5ae4fb3dd709e8d3640599c5bad088bdc
+      Service-User-Id:
+      - 4c56b1623f7c0f2096d19c87b721d06b1d224e8474b97933fb40e553ecc842c4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"a2ce50f5adfdcf86fdac99db703f8589"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6df1c8d6-5e18-4447-a697-b5200351a7c9
+      X-Runtime:
+      - '0.018978'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:05:20 GMT
+      Content-Length:
+      - '497'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 13,
+          "text": "Do you like poptarts?",
+          "question_type": "boolean",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "answer": null,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/53/survey_questions/13"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/53/survey_questions/13"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/53"
+            }
+          },
+          "created_at": "2015-01-17T14:05:20.075Z",
+          "key": null,
+          "question_id": 60
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:05:20 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/surveys/53/survey_questions/13
+    body:
+      encoding: UTF-8
+      string: '{"id":13,"survey_question":{"answer":true}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 23d9bc5844f6112732f52e44bf1961b5ae4fb3dd709e8d3640599c5bad088bdc
+      Service-User-Id:
+      - 4c56b1623f7c0f2096d19c87b721d06b1d224e8474b97933fb40e553ecc842c4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: 'No Content '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 142b2e54-31d8-422f-96d6-6c798850e77b
+      X-Runtime:
+      - '0.028276'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:05:20 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:05:20 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/surveys/53
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 23d9bc5844f6112732f52e44bf1961b5ae4fb3dd709e8d3640599c5bad088bdc
+      Service-User-Id:
+      - 4c56b1623f7c0f2096d19c87b721d06b1d224e8474b97933fb40e553ecc842c4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"0e0441760c693d71e86fdb4e33e29b91"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 377934b1-1025-436a-86ea-215c62b56352
+      X-Runtime:
+      - '0.019301'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 14:05:20 GMT
+      Content-Length:
+      - '1063'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 53,
+          "service_user_id": "4c56b1623f7c0f2096d19c87b721d06b1d224e8474b97933fb40e553ecc842c4",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/53"
+            },
+            "survey_questions": {
+              "post": {
+                "href": "http://localhost:3000/api/surveys/53/survey_questions"
+              },
+              "put": {
+                "href": "http://localhost:3000/api/surveys/53/survey_questions"
+              }
+            }
+          },
+          "completed": true,
+          "survey_questions": [
+            {
+              "id": 13,
+              "text": "Do you like poptarts?",
+              "question_type": "boolean",
+              "responses": [
+                "t",
+                "f"
+              ],
+              "answer": "t",
+              "_links": {
+                "self": {
+                  "href": "http://localhost:3000/api/surveys/53/survey_questions/13"
+                },
+                "put": {
+                  "href": "http://localhost:3000/api/surveys/53/survey_questions/13"
+                },
+                "survey": {
+                  "href": "http://localhost:3000/api/surveys/53"
+                }
+              },
+              "created_at": "2015-01-17T14:05:20.075Z",
+              "key": null,
+              "question_id": 60
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 14:05:20 GMT
+recorded_with: VCR 2.9.3

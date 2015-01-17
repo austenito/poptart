@@ -583,75 +583,6 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 18462046-fc0c-48c1-b90a-26372c917ad2
-      X-Runtime:
-      - '0.032400'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.1.2/2014-05-08)
-      Date:
-      - Sat, 04 Oct 2014 17:52:39 GMT
-      Content-Length:
-      - '347'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/"
-            },
-            "surveys": {
-              "href": "http://localhost:3000/api/surveys{+id}/{?query*}"
-            },
-            "users": {
-              "href": "http://localhost:3000/api/users{+id}/{?query*}"
-            },
-            "questions": {
-              "href": "http://localhost:3000/api/questions{+id}/{?query*}"
-            }
-          }
-        }
-    http_version: 
-  recorded_at: Sat, 04 Oct 2014 17:52:39 GMT
-- request:
-    method: get
-    uri: http://localhost:3000/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.9.0
-      Content-Type:
-      - application/json
-      Api-Token:
-      - testing
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Ua-Compatible:
-      - chrome=1
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"224d26690c7c9c963202a6eb22d0a7d1"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
       - 92e2f3d4-4e0a-4ce4-9de4-374792f19950
       X-Runtime:
       - '0.005007'
@@ -1830,4 +1761,257 @@ http_interactions:
         }
     http_version: 
   recorded_at: Sat, 18 Oct 2014 17:30:42 GMT
-recorded_with: VCR 2.6.0
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: 'Internal Server Error '
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '13174'
+      X-Request-Id:
+      - 1eae61cc-50de-4a76-93eb-82d96df756b4
+      X-Runtime:
+      - '0.034419'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 13:45:52 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\"
+        />\n  <title>Action Controller: Exception caught</title>\n  <style>\n    body
+        {\n      background-color: #FAFAFA;\n      color: #333;\n      margin: 0px;\n
+        \   }\n\n    body, p, ol, ul, td {\n      font-family: helvetica, verdana,
+        arial, sans-serif;\n      font-size:   13px;\n      line-height: 18px;\n    }\n\n
+        \   pre {\n      font-size: 11px;\n      white-space: pre-wrap;\n    }\n\n
+        \   pre.box {\n      border: 1px solid #EEE;\n      padding: 10px;\n      margin:
+        0px;\n      width: 958px;\n    }\n\n    header {\n      color: #F0F0F0;\n
+        \     background: #C52F24;\n      padding: 0.5em 1.5em;\n    }\n\n    h1 {\n
+        \     margin: 0.2em 0;\n      line-height: 1.1em;\n      font-size: 2em;\n
+        \   }\n\n    h2 {\n      color: #C52F24;\n      line-height: 25px;\n    }\n\n
+        \   .details {\n      border: 1px solid #D0D0D0;\n      border-radius: 4px;\n
+        \     margin: 1em 0px;\n      display: block;\n      width: 978px;\n    }\n\n
+        \   .summary {\n      padding: 8px 15px;\n      border-bottom: 1px solid #D0D0D0;\n
+        \     display: block;\n    }\n\n    .details pre {\n      margin: 5px;\n      border:
+        none;\n    }\n\n    #container {\n      box-sizing: border-box;\n      width:
+        100%;\n      padding: 0 1.5em;\n    }\n\n    .source * {\n      margin: 0px;\n
+        \     padding: 0px;\n    }\n\n    .source {\n      border: 1px solid #D9D9D9;\n
+        \     background: #ECECEC;\n      width: 978px;\n    }\n\n    .source pre
+        {\n      padding: 10px 0px;\n      border: none;\n    }\n\n    .source .data
+        {\n      font-size: 80%;\n      overflow: auto;\n      background-color: #FFF;\n
+        \   }\n\n    .info {\n      padding: 0.5em;\n    }\n\n    .source .data .line_numbers
+        {\n      background-color: #ECECEC;\n      color: #AAA;\n      padding: 1em
+        .5em;\n      border-right: 1px solid #DDD;\n      text-align: right;\n    }\n\n
+        \   .line {\n      padding-left: 10px;\n    }\n\n    .line:hover {\n      background-color:
+        #F6F6F6;\n    }\n\n    .line.active {\n      background-color: #FFCCCC;\n
+        \   }\n\n    a { color: #980905; }\n    a:visited { color: #666; }\n    a:hover
+        { color: #C52F24; }\n\n    \n  </style>\n\n  <script>\n    var toggle = function(id)
+        {\n      var s = document.getElementById(id).style;\n      s.display = s.display
+        == 'none' ? 'block' : 'none';\n      return false;\n    }\n    var show =
+        function(id) {\n      document.getElementById(id).style.display = 'block';\n
+        \   }\n    var hide = function(id) {\n      document.getElementById(id).style.display
+        = 'none';\n    }\n    var toggleTrace = function() {\n      return toggle('blame_trace');\n
+        \   }\n    var toggleSessionDump = function() {\n      return toggle('session_dump');\n
+        \   }\n    var toggleEnvDump = function() {\n      return toggle('env_dump');\n
+        \   }\n  </script>\n</head>\n<body>\n\n<header>\n  <h1>\n    PG::ConnectionBad\n
+        \ </h1>\n</header>\n\n<div id=\"container\">\n  <h2>could not connect to server:
+        No such file or directory\n\tIs the server running locally and accepting\n\tconnections
+        on Unix domain socket &quot;/tmp/.s.PGSQL.5432&quot;?\n</h2>\n\n  \n  \n<p><code>Rails.root:
+        /Users/austenito/repos/happiness/happiness_service</code></p>\n\n<div id=\"traces\">\n
+        \   <a href=\"#\" onclick=\"hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);;
+        return false;\">Application Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);;
+        return false;\">Framework Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);;
+        return false;\">Full Trace</a> \n\n    <div id=\"Application-Trace\" style=\"display:
+        block;\">\n      <pre><code></code></pre>\n    </div>\n    <div id=\"Framework-Trace\"
+        style=\"display: none;\">\n      <pre><code>activerecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:848:in
+        `initialize&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:848:in
+        `new&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:848:in
+        `connect&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:556:in
+        `initialize&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in
+        `new&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in
+        `postgresql_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in
+        `new_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in
+        `checkout_new_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in
+        `acquire_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in
+        `block in checkout&#39;\n/Users/austenito/.rubies/ruby-2.1.3/lib/ruby/2.1.0/monitor.rb:211:in
+        `mon_synchronize&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in
+        `checkout&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in
+        `block in connection&#39;\n/Users/austenito/.rubies/ruby-2.1.3/lib/ruby/2.1.0/monitor.rb:211:in
+        `mon_synchronize&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in
+        `connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in
+        `retrieve_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_handling.rb:79:in
+        `retrieve_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_handling.rb:53:in
+        `connection&#39;\nactiverecord (4.0.4) lib/active_record/migration.rb:796:in
+        `current_version&#39;\nactiverecord (4.0.4) lib/active_record/migration.rb:804:in
+        `needs_migration?&#39;\nactiverecord (4.0.4) lib/active_record/migration.rb:383:in
+        `check_pending!&#39;\nactiverecord (4.0.4) lib/active_record/migration.rb:370:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in
+        `block in call&#39;\nactivesupport (4.0.4) lib/active_support/callbacks.rb:373:in
+        `_run__4385228089887704791__call__callbacks&#39;\nactivesupport (4.0.4) lib/active_support/callbacks.rb:80:in
+        `run_callbacks&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in
+        `call&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in
+        `call&#39;\nrack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport
+        (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call&#39;\nrack
+        (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in
+        `call&#39;\nrailties (4.0.4) lib/rails/engine.rb:511:in `call&#39;\nrailties
+        (4.0.4) lib/rails/application.rb:97:in `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in
+        `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;\nrack
+        (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n    <div id=\"Full-Trace\"
+        style=\"display: none;\">\n      <pre><code>activerecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:848:in
+        `initialize&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:848:in
+        `new&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:848:in
+        `connect&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:556:in
+        `initialize&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in
+        `new&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in
+        `postgresql_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in
+        `new_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in
+        `checkout_new_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in
+        `acquire_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in
+        `block in checkout&#39;\n/Users/austenito/.rubies/ruby-2.1.3/lib/ruby/2.1.0/monitor.rb:211:in
+        `mon_synchronize&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in
+        `checkout&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in
+        `block in connection&#39;\n/Users/austenito/.rubies/ruby-2.1.3/lib/ruby/2.1.0/monitor.rb:211:in
+        `mon_synchronize&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in
+        `connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in
+        `retrieve_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_handling.rb:79:in
+        `retrieve_connection&#39;\nactiverecord (4.0.4) lib/active_record/connection_handling.rb:53:in
+        `connection&#39;\nactiverecord (4.0.4) lib/active_record/migration.rb:796:in
+        `current_version&#39;\nactiverecord (4.0.4) lib/active_record/migration.rb:804:in
+        `needs_migration?&#39;\nactiverecord (4.0.4) lib/active_record/migration.rb:383:in
+        `check_pending!&#39;\nactiverecord (4.0.4) lib/active_record/migration.rb:370:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in
+        `block in call&#39;\nactivesupport (4.0.4) lib/active_support/callbacks.rb:373:in
+        `_run__4385228089887704791__call__callbacks&#39;\nactivesupport (4.0.4) lib/active_support/callbacks.rb:80:in
+        `run_callbacks&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in
+        `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in
+        `call&#39;\nrailties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `block in call&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged&#39;\nactivesupport
+        (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged&#39;\nrailties
+        (4.0.4) lib/rails/rack/logger.rb:20:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in
+        `call&#39;\nrack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;\nactivesupport
+        (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call&#39;\nrack
+        (1.5.2) lib/rack/lock.rb:17:in `call&#39;\nactionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in
+        `call&#39;\nrailties (4.0.4) lib/rails/engine.rb:511:in `call&#39;\nrailties
+        (4.0.4) lib/rails/application.rb:97:in `call&#39;\nrack (1.5.2) lib/rack/lock.rb:17:in
+        `call&#39;\nrack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;\nrack
+        (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;\n/Users/austenito/.rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in
+        `service&#39;\n/Users/austenito/.rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in
+        `run&#39;\n/Users/austenito/.rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in
+        `block in start_thread&#39;</code></pre>\n    </div>\n</div>\n\n  \n\n<h2
+        style=\"margin-top: 30px\">Request</h2>\n<p><b>Parameters</b>:</p> <pre>None</pre>\n\n<div
+        class=\"details\">\n  <div class=\"summary\"><a href=\"#\" onclick=\"return
+        toggleSessionDump()\">Toggle session dump</a></div>\n  <div id=\"session_dump\"
+        style=\"display:none\"><pre></pre></div>\n</div>\n\n<div class=\"details\">\n
+        \ <div class=\"summary\"><a href=\"#\" onclick=\"return toggleEnvDump()\">Toggle
+        env dump</a></div>\n  <div id=\"env_dump\" style=\"display:none\"><pre>GATEWAY_INTERFACE:
+        &quot;CGI/1.1&quot;\nHTTP_ACCEPT: &quot;*/*&quot;\nHTTP_ACCEPT_ENCODING: &quot;gzip;q=1.0,deflate;q=0.6,identity;q=0.3&quot;\nREMOTE_ADDR:
+        &quot;127.0.0.1&quot;\nREMOTE_HOST: &quot;127.0.0.1&quot;\nSERVER_NAME: &quot;localhost&quot;\nSERVER_PROTOCOL:
+        &quot;HTTP/1.1&quot;</pre></div>\n</div>\n\n<h2 style=\"margin-top: 30px\">Response</h2>\n<p><b>Headers</b>:</p>
+        <pre>None</pre>\n\n</div>\n\n\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 13:45:52 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/user
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 0d729f94c6574de095bfe375a1f3ec46ebcf8ee99ff34c69cb401c92e0a15520
+      Service-User-Id:
+      - 5df349f6a5f7430b1cd971b24f9ba6b8513216303f5def500aa6617ff713b150
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"de3fa7aa07a0b82d966b780f9eeaa0e2"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3f91c8b2-8ddf-43d5-abf2-77d0e7296bbe
+      X-Runtime:
+      - '0.006287'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sat, 17 Jan 2015 13:46:17 GMT
+      Content-Length:
+      - '256'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "service_user_id": "5df349f6a5f7430b1cd971b24f9ba6b8513216303f5def500aa6617ff713b150",
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/user"
+            }
+          },
+          "token": "0d729f94c6574de095bfe375a1f3ec46ebcf8ee99ff34c69cb401c92e0a15520"
+        }
+    http_version: 
+  recorded_at: Sat, 17 Jan 2015 13:46:17 GMT
+recorded_with: VCR 2.9.3

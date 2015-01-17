@@ -1,79 +1,80 @@
 require 'spec_helper'
 
-describe 'Answering survey questions' do
-  it "creates and returns an empty survey", :vcr do
+describe 'Answering survey questions', :vcr do
+  it "creates and returns an empty survey" do
     user = Poptart::User.create
     Poptart.authorize(service_user_id: user.service_user_id, user_token: user.token)
-    survey = user.create_survey
-    survey.service_user_id.should == user.service_user_id
-    survey.survey_questions.count.should == 0
+    survey = Poptart::Survey.create
+    expect(survey.service_user_id).to eq(user.service_user_id)
+    expect(survey.survey_questions.count).to eq(0)
   end
 
-  it "creates and returns a random question survey", :vcr do
+  it "answers a survey question" do
     user = Poptart::User.create
     Poptart.authorize(service_user_id: user.service_user_id, user_token: user.token)
-    survey = user.create_random_survey
-    survey.service_user_id.should == user.service_user_id
-    survey.survey_questions.count.should > 0
-  end
+    survey = Poptart::Survey.create
 
-  it "answers a survey question", :vcr do
-    user = Poptart::User.create
-    Poptart.authorize(service_user_id: user.service_user_id, user_token: user.token)
-    survey = user.create_random_survey
-    survey_question = survey.survey_questions.first
-    survey_question.text.should be
-    survey_question.answer = "foo"
-    survey_question.submit.should be
+    question = Poptart::Question.create(
+      'Do you like poptarts?',
+      responses: [true, false],
+      question_type: 'boolean'
+    )
+    survey_question = Poptart::SurveyQuestion.new('question_id' => question.id)
+    survey_question = survey.add_survey_question(survey_question)
 
-    survey = user.survey_for_id(survey.id)
-    survey.survey_questions.first.answer.should == "foo"
-  end
-
-  it "answers a survey question", :vcr do
-    boolean_questions = Poptart::Question.all(type: 'boolean')
-    user = Poptart::User.create
-    Poptart.authorize(service_user_id: user.service_user_id, user_token: user.token)
-    survey = user.create_survey
-    survey_question = survey.add_question(boolean_questions.first)
-
-    survey.survey_questions.count.should == 1
-    survey_question.responses.should == ['t', 'f']
-    survey_question.type.should == 'boolean'
+    expect(survey.survey_questions.count).to eq(1)
+    expect(survey_question.responses).to eq(['t', 'f'])
+    expect(survey_question.question_type).to eq('boolean')
 
     survey_question.answer = true
-    survey_question.submit.should be
+    expect(survey_question.submit).to eq(true)
 
-    survey = user.survey_for_id(survey.id)
-    survey.survey_questions.first.answer.should == true
-    survey.completed?.should == true
+    survey = Poptart::Survey.find(survey.id)
+    expect(survey.survey_questions.first.answer).to eq(true)
+    expect(survey.completed?).to eq(true)
   end
 
-  it "answers a multiple choice question", :vcr do
-    questions = Poptart::Question.all(type: 'multiple')
-    question = questions.find { |question| question.responses.include?('At Home') }
+  it "answers a multiple choice question" do
     user = Poptart::User.create
     Poptart.authorize(service_user_id: user.service_user_id, user_token: user.token)
-    survey = user.create_survey
-    survey_question = survey.add_question(question)
+    survey = Poptart::Survey.create
 
-    survey.survey_questions.count.should == 1
-    survey_question.responses.should == ["At Home", "At Work", "In a car", "Other"]
-    survey_question.type.should == 'multiple'
+    question = Poptart::Question.create(
+      'Where are you?',
+      responses: ["At Home", "At Work", "In a car", "Other"],
+      question_type: 'multiple'
+    )
+    survey_question = Poptart::SurveyQuestion.new('question_id' => question.id)
+    survey_question = survey.add_survey_question(survey_question)
+
+    expect(survey.survey_questions.count).to eq(1)
+    expect(survey_question.responses).to eq(["At Home", "At Work", "In a car", "Other"])
+    expect(survey_question.question_type).to eq('multiple')
 
     survey_question.answer = 'At Home'
-    survey_question.submit.should be
+    expect(survey_question.submit).to be
 
-    survey = user.survey_for_id(survey.id)
-    survey.survey_questions.first.answer.should == 'At Home'
+    survey = Poptart::Survey.find(survey.id)
+    expect(survey.survey_questions.first.answer).to eq('At Home')
   end
 
-  it "finds survey question for id", :vcr do
+  it "finds survey question for id" do
     user = Poptart::User.create
     Poptart.authorize(service_user_id: user.service_user_id, user_token: user.token)
-    survey = user.create_random_survey
-    first_survey_question = survey.survey_questions.first
+    questions = Poptart::Question.all(type: 'multiple')
+    survey = Poptart::Survey.create
+
+    question = Poptart::Question.create(
+      'Where are you?',
+      responses: ["At Home", "At Work", "In a car", "Other"],
+      question_type: 'multiple'
+    )
+    survey_question = Poptart::SurveyQuestion.new('question_id' => question.id)
+    first_survey_question = survey.add_survey_question(survey_question)
+    second_survey_question = survey.add_survey_question(survey_question)
+
     survey_question = survey.survey_question_for_id(first_survey_question.id)
-    first_survey_question.should == survey_question
+    expect(first_survey_question).to eq(survey.survey_question_for_id(first_survey_question.id))
+    expect(second_survey_question).to eq(survey.survey_question_for_id(second_survey_question.id))
   end
 end
