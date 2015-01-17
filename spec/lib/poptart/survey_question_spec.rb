@@ -72,4 +72,36 @@ describe Poptart::SurveyQuestion do
       expect(survey_question.answer).to eq(false)
     end
   end
+
+  context '#submit' do
+    it 'submits a survey question' do
+      survey_question = Poptart::SurveyQuestion.new('id' => 1, 'answer' => 'poptarts')
+      allow(survey_question).to receive_message_chain(
+        :links,
+        :put,
+        :href
+      ).and_return('survey_questions_url')
+      response = double(:response, status: 204, body: { id: 1 }.to_json)
+      allow(survey_question).to receive(:put).and_return(response)
+
+      submit_result = survey_question.submit
+
+      expect(survey_question).to have_received(:put).with(
+        'survey_questions_url',
+        {
+          'id' => 1,
+          'survey_question' => {
+            'answer' => 'poptarts'
+          }
+        }
+      )
+      expect(submit_result).to eq(true)
+    end
+  end
+
+  context '.find_all' do
+    it 'finds all survey questions by question id'
+
+    it 'finds all survey questions by question key'
+  end
 end

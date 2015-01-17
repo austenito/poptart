@@ -20,12 +20,6 @@ module Poptart
       Poptart::User.new(response)
     end
 
-    # def survey_for_id(id)
-      # url = root.surveys_url(id: id)
-      # response = get(url)
-      # Poptart::Survey.new(response)
-    # end
-
     def survey_questions_for_question_id(question_id)
       url = root.survey_questions_url(question_id: question_id)
       response = get(url)
