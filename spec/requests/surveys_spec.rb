@@ -1,14 +1,14 @@
 require 'spec_helper'
 
-describe Poptart::Survey do
-  it 'creates an empty survey', :vcr do
+describe Poptart::Survey, :vcr do
+  it 'creates an empty survey' do
     user = Poptart::User.create
     Poptart.authorize(service_user_id: user.service_user_id, user_token: user.token)
     survey = Poptart::Survey.create
     expect(Poptart::Survey.all.map(&:id).include?(survey.id)).to eq(true)
   end
 
-  it 'returns a survey by id', :vcr do
+  it 'returns a survey by id' do
     user = Poptart::User.create
     Poptart.authorize(service_user_id: user.service_user_id, user_token: user.token)
     survey = Poptart::Survey.create
@@ -16,7 +16,7 @@ describe Poptart::Survey do
     expect(returned_survey.id).to eq(survey.id)
   end
 
-  it 'adds a question to a survey', :vcr do
+  it 'adds a question to a survey' do
     question = Poptart::Question.create('Do you like poptarts?',
                                         question_type: 'boolean',
                                         responses: [true, false])
