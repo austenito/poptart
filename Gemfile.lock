@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    poptart (0.0.13)
+    poptart (0.0.14)
       activesupport
       addressable
       faraday
@@ -25,7 +25,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     hashie (3.3.2)
     i18n (0.7.0)
-    json (1.8.1)
+    json (1.8.2)
     method_source (0.8.2)
     minitest (5.5.0)
     multipart-post (2.0.0)
