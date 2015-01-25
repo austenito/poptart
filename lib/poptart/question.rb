@@ -28,6 +28,11 @@ module Poptart
       new(response)
     end
 
+    def self.find(id_or_key)
+      response = get(root.url(relation: 'questions', id: id_or_key))
+      new(response)
+    end
+
     def self.all(params = {})
       response = get(root.url(relation: 'questions'))
       JSON.parse(response.body).map do |question|

@@ -1,0 +1,144 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/questions
+    body:
+      encoding: UTF-8
+      string: '{"question":{"question_type":"boolean","responses":[true,false],"text":"Do
+        you like poptarts?","key":"poptarts"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"29a27f144cef4d18a3326c6661b1bb83"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f44e45cc-c51c-402e-a22e-e1d8f684d336
+      X-Runtime:
+      - '0.009566'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sun, 25 Jan 2015 18:13:28 GMT
+      Content-Length:
+      - '274'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 128,
+          "question_type": "boolean",
+          "text": "Do you like poptarts?",
+          "responses": [
+            true,
+            false
+          ],
+          "key": "poptarts",
+          "_links": [
+            {
+              "rel": "self",
+              "href": "http://localhost:3000/api/questions/128",
+              "method": "GET"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 25 Jan 2015 18:13:28 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/questions/poptarts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"e18d1aa81a5e80c3c58f3a8a604024e4"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4b02cd22-c9fe-44d2-80e5-94f4f04e9e3a
+      X-Runtime:
+      - '0.006046'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sun, 25 Jan 2015 18:13:28 GMT
+      Content-Length:
+      - '269'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 33,
+          "question_type": "boolean",
+          "text": "Do you like poptarts?",
+          "responses": [
+            "t",
+            "f"
+          ],
+          "key": "poptarts",
+          "_links": [
+            {
+              "rel": "self",
+              "href": "http://localhost:3000/api/questions/33",
+              "method": "GET"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 25 Jan 2015 18:13:28 GMT
+recorded_with: VCR 2.9.3

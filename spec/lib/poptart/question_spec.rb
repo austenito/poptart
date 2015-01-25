@@ -29,4 +29,19 @@ describe Poptart::Question do
       expect(question.key).to eq('poptarts')
     end
   end
+
+  context '.find' do
+    it 'finds question' do
+      response = { 'id' => 1 }
+
+      root = double(:root, url: 'questions_url')
+      allow(Poptart::Question).to receive(:root).and_return(root)
+      allow(Poptart::Question).to receive(:get).and_return(response)
+
+      question = Poptart::Question.find(1)
+
+      expect(root).to have_received(:url).with(relation: 'questions', id: 1)
+      expect(question.id).to eq(1)
+    end
+  end
 end
