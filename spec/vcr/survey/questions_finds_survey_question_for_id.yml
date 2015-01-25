@@ -1,0 +1,3083 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/65/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":69,"responses":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - ef3dd911c4fa9b1810cb0eebdbda120bca81a251129b1f019e9ccd959fbc3317
+      Service-User-Id:
+      - 47060b8cddb466302d2d21c7b8567902e8c6e1ba4e6dc9726a5e92b7826bdc64
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"31a58b149841e0ffd5025ff0c2187c33"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 62965dac-7826-49cf-8cdd-0ad6185ee5fa
+      X-Runtime:
+      - '0.012915'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sun, 18 Jan 2015 15:31:27 GMT
+      Content-Length:
+      - '532'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 25,
+          "text": "Where are you?",
+          "question_type": "multiple",
+          "responses": [
+            "At Home",
+            "At Work",
+            "In a car",
+            "Other"
+          ],
+          "answer": null,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/65/survey_questions/25"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/65/survey_questions/25"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/65"
+            }
+          },
+          "created_at": "2015-01-18T15:31:27.916Z",
+          "key": null,
+          "question_id": 69
+        }
+    http_version: 
+  recorded_at: Sun, 18 Jan 2015 15:31:27 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/65/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":69,"responses":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - ef3dd911c4fa9b1810cb0eebdbda120bca81a251129b1f019e9ccd959fbc3317
+      Service-User-Id:
+      - 47060b8cddb466302d2d21c7b8567902e8c6e1ba4e6dc9726a5e92b7826bdc64
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"66a09ab5f923be415defc0105ea0de35"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f462b53a-0e3e-4050-9e4a-9009da94e13a
+      X-Runtime:
+      - '0.012611'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sun, 18 Jan 2015 15:31:27 GMT
+      Content-Length:
+      - '532'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 26,
+          "text": "Where are you?",
+          "question_type": "multiple",
+          "responses": [
+            "At Home",
+            "At Work",
+            "In a car",
+            "Other"
+          ],
+          "answer": null,
+          "_links": {
+            "self": {
+              "href": "http://localhost:3000/api/surveys/65/survey_questions/26"
+            },
+            "put": {
+              "href": "http://localhost:3000/api/surveys/65/survey_questions/26"
+            },
+            "survey": {
+              "href": "http://localhost:3000/api/surveys/65"
+            }
+          },
+          "created_at": "2015-01-18T15:31:27.935Z",
+          "key": null,
+          "question_id": 69
+        }
+    http_version: 
+  recorded_at: Sun, 18 Jan 2015 15:31:27 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"3a543c1faf13608a2dcffc78fccf95fd"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cce5ddd7-c0e1-476d-8edf-2efcf777f9db
+      X-Runtime:
+      - '0.008569'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sun, 25 Jan 2015 14:03:55 GMT
+      Content-Length:
+      - '1469'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "_links": [
+            {
+              "href": "http://localhost:3000/",
+              "rel": "self",
+              "method": "GET"
+            },
+            {
+              "href": "http://localhost:3000/api/surveys{/id}{?query*}",
+              "rel": "surveys",
+              "method": "GET"
+            },
+            {
+              "href": "http://localhost:3000/api/surveys",
+              "rel": "surveys",
+              "method": "POST"
+            },
+            {
+              "href": "http://localhost:3000/api/user{/id}{?query*}",
+              "rel": "users",
+              "method": "GET"
+            },
+            {
+              "href": "http://localhost:3000/api/user",
+              "rel": "users",
+              "method": "POST"
+            },
+            {
+              "href": "http://localhost:3000/api/questions{/id}{?query*}",
+              "rel": "questions",
+              "method": "GET"
+            },
+            {
+              "href": "http://localhost:3000/api/questions",
+              "rel": "questions",
+              "method": "POST"
+            },
+            {
+              "href": "http://localhost:3000/api/questions/surveys/{survey_id}/survey_questions{/id}{?query*}",
+              "rel": "survey-questions",
+              "method": "GET"
+            },
+            {
+              "href": "http://localhost:3000/api/questions/surveys/{survey_id}/survey_questions",
+              "rel": "survey-questions",
+              "method": "POST"
+            },
+            {
+              "href": "http://localhost:3000/api/questions/surveys/{survey_id}/survey_questions{/id}",
+              "rel": "survey-questions",
+              "method": "PUT"
+            },
+            {
+              "href": "http://localhost:3000/api/questions/survey_questions{?query*}",
+              "rel": "survey-questions-by-query",
+              "method": "GET"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 25 Jan 2015 14:03:55 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 1a4870e2b39a4a3ab520b8613150bfa6fa228b4d9f0d6bbd28be890e57a40aac
+      Service-User-Id:
+      - 01087e7ec38cae33cb0da17dd12fa81cf8f9976fecc76e21db6d2f8170e87f43
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"3a543c1faf13608a2dcffc78fccf95fd"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a2f0c20a-79fd-4a6c-b160-b220557360c0
+      X-Runtime:
+      - '0.005126'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sun, 25 Jan 2015 14:03:55 GMT
+      Content-Length:
+      - '1469'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "_links": [
+            {
+              "href": "http://localhost:3000/",
+              "rel": "self",
+              "method": "GET"
+            },
+            {
+              "href": "http://localhost:3000/api/surveys{/id}{?query*}",
+              "rel": "surveys",
+              "method": "GET"
+            },
+            {
+              "href": "http://localhost:3000/api/surveys",
+              "rel": "surveys",
+              "method": "POST"
+            },
+            {
+              "href": "http://localhost:3000/api/user{/id}{?query*}",
+              "rel": "users",
+              "method": "GET"
+            },
+            {
+              "href": "http://localhost:3000/api/user",
+              "rel": "users",
+              "method": "POST"
+            },
+            {
+              "href": "http://localhost:3000/api/questions{/id}{?query*}",
+              "rel": "questions",
+              "method": "GET"
+            },
+            {
+              "href": "http://localhost:3000/api/questions",
+              "rel": "questions",
+              "method": "POST"
+            },
+            {
+              "href": "http://localhost:3000/api/questions/surveys/{survey_id}/survey_questions{/id}{?query*}",
+              "rel": "survey-questions",
+              "method": "GET"
+            },
+            {
+              "href": "http://localhost:3000/api/questions/surveys/{survey_id}/survey_questions",
+              "rel": "survey-questions",
+              "method": "POST"
+            },
+            {
+              "href": "http://localhost:3000/api/questions/surveys/{survey_id}/survey_questions{/id}",
+              "rel": "survey-questions",
+              "method": "PUT"
+            },
+            {
+              "href": "http://localhost:3000/api/questions/survey_questions{?query*}",
+              "rel": "survey-questions-by-query",
+              "method": "GET"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 25 Jan 2015 14:03:55 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 1a4870e2b39a4a3ab520b8613150bfa6fa228b4d9f0d6bbd28be890e57a40aac
+      Service-User-Id:
+      - 01087e7ec38cae33cb0da17dd12fa81cf8f9976fecc76e21db6d2f8170e87f43
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"3a543c1faf13608a2dcffc78fccf95fd"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7d16a54e-354a-45d7-a1ef-95d68c6adac4
+      X-Runtime:
+      - '0.006679'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sun, 25 Jan 2015 14:03:55 GMT
+      Content-Length:
+      - '1469'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "_links": [
+            {
+              "href": "http://localhost:3000/",
+              "rel": "self",
+              "method": "GET"
+            },
+            {
+              "href": "http://localhost:3000/api/surveys{/id}{?query*}",
+              "rel": "surveys",
+              "method": "GET"
+            },
+            {
+              "href": "http://localhost:3000/api/surveys",
+              "rel": "surveys",
+              "method": "POST"
+            },
+            {
+              "href": "http://localhost:3000/api/user{/id}{?query*}",
+              "rel": "users",
+              "method": "GET"
+            },
+            {
+              "href": "http://localhost:3000/api/user",
+              "rel": "users",
+              "method": "POST"
+            },
+            {
+              "href": "http://localhost:3000/api/questions{/id}{?query*}",
+              "rel": "questions",
+              "method": "GET"
+            },
+            {
+              "href": "http://localhost:3000/api/questions",
+              "rel": "questions",
+              "method": "POST"
+            },
+            {
+              "href": "http://localhost:3000/api/questions/surveys/{survey_id}/survey_questions{/id}{?query*}",
+              "rel": "survey-questions",
+              "method": "GET"
+            },
+            {
+              "href": "http://localhost:3000/api/questions/surveys/{survey_id}/survey_questions",
+              "rel": "survey-questions",
+              "method": "POST"
+            },
+            {
+              "href": "http://localhost:3000/api/questions/surveys/{survey_id}/survey_questions{/id}",
+              "rel": "survey-questions",
+              "method": "PUT"
+            },
+            {
+              "href": "http://localhost:3000/api/questions/survey_questions{?query*}",
+              "rel": "survey-questions-by-query",
+              "method": "GET"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 25 Jan 2015 14:03:55 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/96/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":92,"responses":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 1a4870e2b39a4a3ab520b8613150bfa6fa228b4d9f0d6bbd28be890e57a40aac
+      Service-User-Id:
+      - 01087e7ec38cae33cb0da17dd12fa81cf8f9976fecc76e21db6d2f8170e87f43
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"a5566970100b57552da358e471945c08"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 40ddc33a-604c-4bcb-9481-6afc581b4c1b
+      X-Runtime:
+      - '0.012330'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sun, 25 Jan 2015 14:03:56 GMT
+      Content-Length:
+      - '641'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 48,
+          "text": "Where are you?",
+          "question_type": "multiple",
+          "responses": [
+            "At Home",
+            "At Work",
+            "In a car",
+            "Other"
+          ],
+          "answer": null,
+          "_links": [
+            {
+              "rel": "self",
+              "href": "http://localhost:3000/api/surveys/96/survey_questions/48",
+              "method": "GET"
+            },
+            {
+              "rel": "self",
+              "href": "http://localhost:3000/api/surveys/96/survey_questions/48",
+              "method": "PUT"
+            },
+            {
+              "rel": "survey",
+              "href": "http://localhost:3000/api/surveys/96",
+              "method": "GET"
+            }
+          ],
+          "created_at": "2015-01-25T14:03:56.004Z",
+          "key": null,
+          "question_id": 92
+        }
+    http_version: 
+  recorded_at: Sun, 25 Jan 2015 14:03:56 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/96/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":92,"responses":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 1a4870e2b39a4a3ab520b8613150bfa6fa228b4d9f0d6bbd28be890e57a40aac
+      Service-User-Id:
+      - 01087e7ec38cae33cb0da17dd12fa81cf8f9976fecc76e21db6d2f8170e87f43
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"5dd359a0dbb361195ba2293eaf93a936"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 85316e90-f18e-4737-ba51-f11e75105def
+      X-Runtime:
+      - '0.012421'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sun, 25 Jan 2015 14:03:56 GMT
+      Content-Length:
+      - '641'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 49,
+          "text": "Where are you?",
+          "question_type": "multiple",
+          "responses": [
+            "At Home",
+            "At Work",
+            "In a car",
+            "Other"
+          ],
+          "answer": null,
+          "_links": [
+            {
+              "rel": "self",
+              "href": "http://localhost:3000/api/surveys/96/survey_questions/49",
+              "method": "GET"
+            },
+            {
+              "rel": "self",
+              "href": "http://localhost:3000/api/surveys/96/survey_questions/49",
+              "method": "PUT"
+            },
+            {
+              "rel": "survey",
+              "href": "http://localhost:3000/api/surveys/96",
+              "method": "GET"
+            }
+          ],
+          "created_at": "2015-01-25T14:03:56.023Z",
+          "key": null,
+          "question_id": 92
+        }
+    http_version: 
+  recorded_at: Sun, 25 Jan 2015 14:03:56 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/99/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":95,"responses":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 43ccb7a785debcea52cc3840a2649f67b90bc42b788b11f7de529506fd704f4f
+      Service-User-Id:
+      - d93a796899cb899675bbb7e8253ef15aadcf15ca9377067c03cde66d0cec6108
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"eee9ef47be1bb1110ea9095a1bf2996d"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 68135efe-1769-4417-a841-2c9bfb466861
+      X-Runtime:
+      - '0.020561'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sun, 25 Jan 2015 14:04:00 GMT
+      Content-Length:
+      - '641'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 52,
+          "text": "Where are you?",
+          "question_type": "multiple",
+          "responses": [
+            "At Home",
+            "At Work",
+            "In a car",
+            "Other"
+          ],
+          "answer": null,
+          "_links": [
+            {
+              "rel": "self",
+              "href": "http://localhost:3000/api/surveys/99/survey_questions/52",
+              "method": "GET"
+            },
+            {
+              "rel": "self",
+              "href": "http://localhost:3000/api/surveys/99/survey_questions/52",
+              "method": "PUT"
+            },
+            {
+              "rel": "survey",
+              "href": "http://localhost:3000/api/surveys/99",
+              "method": "GET"
+            }
+          ],
+          "created_at": "2015-01-25T14:04:00.913Z",
+          "key": null,
+          "question_id": 95
+        }
+    http_version: 
+  recorded_at: Sun, 25 Jan 2015 14:04:00 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/99/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":95,"responses":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 43ccb7a785debcea52cc3840a2649f67b90bc42b788b11f7de529506fd704f4f
+      Service-User-Id:
+      - d93a796899cb899675bbb7e8253ef15aadcf15ca9377067c03cde66d0cec6108
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"7a327918c44321ffe21b822b8b17202f"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 25df6aad-d659-4e15-a585-dcc1b2ee8c18
+      X-Runtime:
+      - '0.012073'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sun, 25 Jan 2015 14:04:00 GMT
+      Content-Length:
+      - '641'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 53,
+          "text": "Where are you?",
+          "question_type": "multiple",
+          "responses": [
+            "At Home",
+            "At Work",
+            "In a car",
+            "Other"
+          ],
+          "answer": null,
+          "_links": [
+            {
+              "rel": "self",
+              "href": "http://localhost:3000/api/surveys/99/survey_questions/53",
+              "method": "GET"
+            },
+            {
+              "rel": "self",
+              "href": "http://localhost:3000/api/surveys/99/survey_questions/53",
+              "method": "PUT"
+            },
+            {
+              "rel": "survey",
+              "href": "http://localhost:3000/api/surveys/99",
+              "method": "GET"
+            }
+          ],
+          "created_at": "2015-01-25T14:04:00.940Z",
+          "key": null,
+          "question_id": 95
+        }
+    http_version: 
+  recorded_at: Sun, 25 Jan 2015 14:04:00 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/user
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 418d60ff35340cfae0ad820b9eafb9978fb0874e1568d6780ee1336413462779
+      Service-User-Id:
+      - 6943fa049ba6492bfe8421e556fed40c1a486285f94703f8fa924306b1c61afc
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"f9b80921d6c3040472bd0eeb44a4668e"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cd10c2b0-c823-4659-a38c-493b75fb793b
+      X-Runtime:
+      - '0.008068'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sun, 25 Jan 2015 14:07:15 GMT
+      Content-Length:
+      - '292'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "service_user_id": "6943fa049ba6492bfe8421e556fed40c1a486285f94703f8fa924306b1c61afc",
+          "_links": [
+            {
+              "href": "http://localhost:3000/api/user",
+              "rel": "self",
+              "method": "GET"
+            }
+          ],
+          "token": "418d60ff35340cfae0ad820b9eafb9978fb0874e1568d6780ee1336413462779"
+        }
+    http_version: 
+  recorded_at: Sun, 25 Jan 2015 14:07:15 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/questions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 418d60ff35340cfae0ad820b9eafb9978fb0874e1568d6780ee1336413462779
+      Service-User-Id:
+      - 6943fa049ba6492bfe8421e556fed40c1a486285f94703f8fa924306b1c61afc
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"36aff317a383b5eacd4cf15a496ca105"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a521bbe9-6365-4eb5-8305-a0ae7319fa8e
+      X-Runtime:
+      - '0.033953'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sun, 25 Jan 2015 14:07:15 GMT
+      Content-Length:
+      - '33444'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        [
+          {
+            "id": 1,
+            "question_type": "multiple",
+            "text": "How hungry or full are you right now?",
+            "responses": [
+              "Very hungry",
+              "Somewhat hungry",
+              "Neither full nor hungry",
+              "Somewhat full",
+              "Very full"
+            ],
+            "key": "how_hungry_are_you",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/1",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "question_type": "time",
+            "text": "What time did you wake up this morning?",
+            "responses": null,
+            "key": "what_time_did_you_wake_up",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/2",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "question_type": "time",
+            "text": "What time did you got to sleep last night?",
+            "responses": null,
+            "key": "what_time_did_you_sleep",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/3",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "question_type": "multiple",
+            "text": "Are you judging or evaluating yourself right now (i.e. at the moment just before you were notified)?",
+            "responses": [
+              "f",
+              "Yes - Negatively",
+              "Yes - Neutrally",
+              "Yes - Positively"
+            ],
+            "key": "are_you_judging_yourself",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/4",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "question_type": "range",
+            "text": "How well did you sleep last night?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "how_well_did_you_sleep",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/5",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "question_type": "range",
+            "text": "To what extent are you engrossed in what you are doing?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "what_extent_are_you_engrossed",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/6",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "question_type": "multiple",
+            "text": "Are you judging or evaluating what you are doing right now (i.e. at the moment just before you were notified?)",
+            "responses": [
+              "f",
+              "Yes - Negatively",
+              "Yes - Neutrally",
+              "Yes - Positively"
+            ],
+            "key": "are_you_judging_or_evaluating_what_you_are_doing",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/7",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "question_type": "boolean",
+            "text": "In the past 24 hours, have you engaged in sexual activity with another person?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "had_sex",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/8",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "question_type": "multiple",
+            "text": "Imagine you were given $10 to divide between yourself and a stranger to whom you would remain anonymous. How much would you give to the stranger?",
+            "responses": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10"
+            ],
+            "key": "how_much_would_you_give_to_stranger",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/9",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "question_type": "boolean",
+            "text": "Have you surprised someone with a gift (including small gifts) in the last week?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "have_you_surprised_someone",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/10",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 11,
+            "question_type": "multiple",
+            "text": "In general, how is your health?",
+            "responses": [
+              "Excellent",
+              "Very Good",
+              "Good",
+              "Fair",
+              "Poor"
+            ],
+            "key": "how_is_your_health",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/11",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 12,
+            "question_type": "range",
+            "text": "Where would you place yourself on this ladder?\nThink of a ladder representing where people stand in your country.\nAt the top of the ladder are the people who are the best off - those who have the most money, the most education and the most respected jobs. At the bottom are the people who are the worst off - who have the least money, least education, and the least respected jobs or no job. The higher up you are on the ladder, the closer you are to the people at the very top; the lower you are the closer you are to people at the very bottom.",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "ladder",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/12",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 13,
+            "question_type": "range",
+            "text": "To what extent is what you're doing interesting?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "what_extent_interesting",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/13",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 14,
+            "question_type": "multiple",
+            "text": "On average, how many hours do you work each week?",
+            "responses": [
+              "Less than 5",
+              "5-10",
+              "10-20",
+              "20-30",
+              "30-40",
+              "40-50",
+              "50-60",
+              "60-70",
+              "More than 70"
+            ],
+            "key": "how_many_hours_do_you_work",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/14",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 15,
+            "question_type": "range",
+            "text": "How do you feel right now?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "how_do_you_feel_right_now",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/15",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 16,
+            "question_type": "range",
+            "text": "To what extent do you expect good things to happen in the future?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "good_things_future",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/16",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 17,
+            "question_type": "boolean",
+            "text": "Have you taken any over-the-counter pain medication in the past 24 hours?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "pain_medication",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/17",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 18,
+            "question_type": "range",
+            "text": "To what extent have you procrastinated so far today?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "procrastinated",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/18",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 19,
+            "question_type": "range",
+            "text": "To what extent are you being productive?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "productive",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/19",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 20,
+            "question_type": "multiple",
+            "text": "Who are you talking or interacting with?",
+            "responses": [
+              "Spouse/partner/significant other",
+              "Children",
+              "Parents",
+              "Other relatives",
+              "Friends",
+              "Acquaintances",
+              "Strangers",
+              "Co-workers",
+              "Customers/students",
+              "Boss",
+              "No one"
+            ],
+            "key": "who_are_you_talking_with",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/20",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 27,
+            "question_type": "multiple",
+            "text": "How many people are you talking or interacting with?",
+            "responses": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "More than 10"
+            ],
+            "key": "how_many_people_are_you_talking_with",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/27",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 21,
+            "question_type": "range",
+            "text": "To what extent do you feel accepted by the person/people you are interacting with?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/21",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 22,
+            "question_type": "boolean",
+            "text": "Are you alone?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "are_you_alone",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/22",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 23,
+            "question_type": "boolean",
+            "text": "Do you want to do what you're doing?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "do_you_want_to_do_what_youre_doing",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/23",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 24,
+            "question_type": "boolean",
+            "text": "Are you talking or interacting with anyone?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "are_you_talking_to_anyone",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/24",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 25,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": "where_are_you",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/25",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 26,
+            "question_type": "multiple",
+            "text": "What are you doing?",
+            "responses": [
+              "Eating",
+              "Bathroom",
+              "Working"
+            ],
+            "key": "what_are_you_doing",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/26",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 28,
+            "question_type": "boolean",
+            "text": "Do you have to do what you're doing?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "do_you_have_to_do_what_youre_doing",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/28",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 29,
+            "question_type": "range",
+            "text": "To what extent are you focused on what you are doing?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": "how_focused",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/29",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 30,
+            "question_type": "multiple",
+            "text": "When did you last check Facebook?",
+            "responses": [
+              "Right now",
+              "In the last 5 minutes",
+              "In the last 15 minutes",
+              "In the last 30 minutes",
+              "In the last hour",
+              "1-2 hours ago",
+              "3-5 hours ago",
+              "6-12 hours ago",
+              "24 hours ago",
+              "Don't use facebook"
+            ],
+            "key": "when_did_last_check_facebook",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/30",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 31,
+            "question_type": "multiple",
+            "text": "Beyond any work you've already done today, how many additional hours do you expect to work today?",
+            "responses": [
+              "0 (none)",
+              "Less than 1 hour",
+              "1-2 hours",
+              "2-3 hours",
+              "3-4 hours",
+              "4-5 hours",
+              "5-6 hours"
+            ],
+            "key": "how_many_additional_work_hours",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/31",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 32,
+            "question_type": "boolean",
+            "text": "If you could, and it had no negative consequences, would you jump forward in time 24 hours?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "jump_forward_24_hours",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/32",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 33,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "poptarts",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/33",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 34,
+            "question_type": "multiple",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "Yes",
+              "No"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/34",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 35,
+            "question_type": "range",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "0",
+              "10"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/35",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 36,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "poptarts",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/36",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 37,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "poptarts",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/37",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 38,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/38",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 39,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/39",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 40,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/40",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 41,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/41",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 42,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/42",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 43,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/43",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 44,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/44",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 45,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/45",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 46,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/46",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 47,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/47",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 48,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/48",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 49,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/49",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 50,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/50",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 51,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/51",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 52,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/52",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 53,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/53",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 54,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/54",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 55,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/55",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 56,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/56",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 57,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/57",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 58,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/58",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 59,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/59",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 60,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/60",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 61,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/61",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 62,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/62",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 63,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/63",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 64,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/64",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 65,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/65",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 66,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/66",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 67,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/67",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 68,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/68",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 69,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/69",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 70,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/70",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 71,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/71",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 72,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/72",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 73,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/73",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 74,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/74",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 75,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "poptarts",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/75",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 76,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/76",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 77,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "poptarts",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/77",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 78,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/78",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 79,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": "poptarts",
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/79",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 80,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/80",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 81,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/81",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 82,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/82",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 83,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/83",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 84,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/84",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 85,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/85",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 86,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/86",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 87,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/87",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 88,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/88",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 89,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/89",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 90,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/90",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 91,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/91",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 92,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/92",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 93,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/93",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 94,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/94",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 95,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/95",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 96,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/96",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 97,
+            "question_type": "boolean",
+            "text": "Do you like poptarts?",
+            "responses": [
+              "t",
+              "f"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/97",
+                "method": "GET"
+              }
+            ]
+          },
+          {
+            "id": 98,
+            "question_type": "multiple",
+            "text": "Where are you?",
+            "responses": [
+              "At Home",
+              "At Work",
+              "In a car",
+              "Other"
+            ],
+            "key": null,
+            "_links": [
+              {
+                "rel": "self",
+                "href": "http://localhost:3000/api/questions/98",
+                "method": "GET"
+              }
+            ]
+          }
+        ]
+    http_version: 
+  recorded_at: Sun, 25 Jan 2015 14:07:15 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 418d60ff35340cfae0ad820b9eafb9978fb0874e1568d6780ee1336413462779
+      Service-User-Id:
+      - 6943fa049ba6492bfe8421e556fed40c1a486285f94703f8fa924306b1c61afc
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"2f5e35834abd05d2afe5e3c4e3b0cd2e"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c8e555b2-4dbe-4867-9c18-0ccc60058f6f
+      X-Runtime:
+      - '0.013131'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sun, 25 Jan 2015 14:07:15 GMT
+      Content-Length:
+      - '425'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 104,
+          "service_user_id": "6943fa049ba6492bfe8421e556fed40c1a486285f94703f8fa924306b1c61afc",
+          "_links": [
+            {
+              "href": "http://localhost:3000/api/surveys/104",
+              "rel": "self",
+              "method": "GET"
+            },
+            {
+              "href": "http://localhost:3000/api/surveys/104/survey_questions",
+              "rel": "survey-questions",
+              "method": "POST"
+            }
+          ],
+          "completed": true,
+          "survey_questions": [
+
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 25 Jan 2015 14:07:15 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/questions
+    body:
+      encoding: UTF-8
+      string: '{"question":{"question_type":"multiple","responses":["At Home","At
+        Work","In a car","Other"],"text":"Where are you?","key":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 418d60ff35340cfae0ad820b9eafb9978fb0874e1568d6780ee1336413462779
+      Service-User-Id:
+      - 6943fa049ba6492bfe8421e556fed40c1a486285f94703f8fa924306b1c61afc
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"d1eedb69bb39a03252c8267cb6dee70b"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fe5bece8-d59a-45e5-a670-f338e05dcd0e
+      X-Runtime:
+      - '0.008158'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sun, 25 Jan 2015 14:07:15 GMT
+      Content-Length:
+      - '298'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 99,
+          "question_type": "multiple",
+          "text": "Where are you?",
+          "responses": [
+            "At Home",
+            "At Work",
+            "In a car",
+            "Other"
+          ],
+          "key": null,
+          "_links": [
+            {
+              "rel": "self",
+              "href": "http://localhost:3000/api/questions/99",
+              "method": "GET"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 25 Jan 2015 14:07:15 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/104/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":99,"responses":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 418d60ff35340cfae0ad820b9eafb9978fb0874e1568d6780ee1336413462779
+      Service-User-Id:
+      - 6943fa049ba6492bfe8421e556fed40c1a486285f94703f8fa924306b1c61afc
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"5fd47516824051d9b55d419550c92a91"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 752d666f-9f4f-44d1-883e-1c7b998206a4
+      X-Runtime:
+      - '0.030552'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sun, 25 Jan 2015 14:07:15 GMT
+      Content-Length:
+      - '644'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 58,
+          "text": "Where are you?",
+          "question_type": "multiple",
+          "responses": [
+            "At Home",
+            "At Work",
+            "In a car",
+            "Other"
+          ],
+          "answer": null,
+          "_links": [
+            {
+              "rel": "self",
+              "href": "http://localhost:3000/api/surveys/104/survey_questions/58",
+              "method": "GET"
+            },
+            {
+              "rel": "self",
+              "href": "http://localhost:3000/api/surveys/104/survey_questions/58",
+              "method": "PUT"
+            },
+            {
+              "rel": "survey",
+              "href": "http://localhost:3000/api/surveys/104",
+              "method": "GET"
+            }
+          ],
+          "created_at": "2015-01-25T14:07:15.530Z",
+          "key": null,
+          "question_id": 99
+        }
+    http_version: 
+  recorded_at: Sun, 25 Jan 2015 14:07:15 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/surveys/104/survey_questions
+    body:
+      encoding: UTF-8
+      string: '{"survey_question":{"question_id":99,"responses":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Api-Token:
+      - testing
+      User-Token:
+      - 418d60ff35340cfae0ad820b9eafb9978fb0874e1568d6780ee1336413462779
+      Service-User-Id:
+      - 6943fa049ba6492bfe8421e556fed40c1a486285f94703f8fa924306b1c61afc
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: 'Created '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"2464eae2e15eff7630f2b430389b1e6d"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 34949881-31e5-45e3-8ba0-9786a85b0464
+      X-Runtime:
+      - '0.012643'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
+      Date:
+      - Sun, 25 Jan 2015 14:07:15 GMT
+      Content-Length:
+      - '644'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 59,
+          "text": "Where are you?",
+          "question_type": "multiple",
+          "responses": [
+            "At Home",
+            "At Work",
+            "In a car",
+            "Other"
+          ],
+          "answer": null,
+          "_links": [
+            {
+              "rel": "self",
+              "href": "http://localhost:3000/api/surveys/104/survey_questions/59",
+              "method": "GET"
+            },
+            {
+              "rel": "self",
+              "href": "http://localhost:3000/api/surveys/104/survey_questions/59",
+              "method": "PUT"
+            },
+            {
+              "rel": "survey",
+              "href": "http://localhost:3000/api/surveys/104",
+              "method": "GET"
+            }
+          ],
+          "created_at": "2015-01-25T14:07:15.572Z",
+          "key": null,
+          "question_id": 99
+        }
+    http_version: 
+  recorded_at: Sun, 25 Jan 2015 14:07:15 GMT
+recorded_with: VCR 2.9.3

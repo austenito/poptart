@@ -18,7 +18,8 @@ module Poptart
     end
 
     def add_survey_question(survey_question)
-      response = post(links.survey_questions.post.href, {
+      url = url(relation: 'survey-questions', method: 'POST')
+      response = post(url, {
         'survey_question' => {
           'question_id' => survey_question.question_id,
           'responses' => survey_question.responses
@@ -42,19 +43,21 @@ module Poptart
     end
 
     def self.create
-      response = post(root.surveys_url)
+      url = root.url(relation: 'surveys', method: 'POST')
+      response = post(url)
       Poptart::Survey.new(response)
     end
 
     def self.all
-      response = get(root.surveys_url)
+      response = get(root.url(relation: 'surveys'))
       JSON.parse(response.body)['surveys'].map do |survey|
         Poptart::Survey.new(survey)
       end
     end
 
     def self.find(id)
-      response = get(root.surveys_url(id: id))
+      url = root.url(relation: 'surveys', id: id)
+      response = get(url)
       Poptart::Survey.new(response)
     end
   end

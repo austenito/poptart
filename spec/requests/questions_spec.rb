@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe 'questions' do
-  it 'creates a question', :vcr do
+describe 'questions', :vcr do
+  it 'creates a question' do
     question = Poptart::Question.create('Do you like poptarts?',
                                         question_type: 'boolean',
                                         responses: [true, false],

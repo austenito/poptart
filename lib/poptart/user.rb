@@ -11,12 +11,13 @@ module Poptart
     end
 
     def self.create
-      response = post(root.user_url)
+      url = root.url(relation: 'users', method: 'POST')
+      response = post(url)
       Poptart::User.new(response)
     end
 
     def self.get_user
-      response = get(root.user_url)
+      response = get(root.url(relation: 'users'))
       Poptart::User.new(response)
     end
 

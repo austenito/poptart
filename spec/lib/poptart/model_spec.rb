@@ -12,9 +12,18 @@ describe Poptart::Model do
       end
 
       it 'sets links' do
-        response = { '_links' => { 'self' => { 'href' => 'http://example.com' } } }
+        response = {
+          '_links' => [
+            { 'rel' => 'self',
+              'href' => 'http://example.com'
+            }
+          ]
+        }
         model = Poptart::TestModel.new(response)
-        expect(model.links).to eq('self' => { 'href' => 'http://example.com' })
+        expect(model.links.count).to eq(1)
+        link = model.links.first
+        expect(link.rel).to eq('self')
+        expect(link.href).to eq('http://example.com')
       end
     end
 
@@ -26,9 +35,19 @@ describe Poptart::Model do
       end
 
       it 'sets links' do
-        response = double(:response, status: 200, body: { '_links' => { 'self' => { 'href' => 'http://example.com' } } }.to_json)
+        response = double(:response, status: 200, body: {
+          '_links' => [
+            { 'rel' => 'self',
+              'href' => 'http://example.com'
+            }
+          ]
+        }.to_json)
+
         model = Poptart::TestModel.new(response)
-        expect(model.links).to eq('self' => { 'href' => 'http://example.com' })
+        expect(model.links.count).to eq(1)
+        link = model.links.first
+        expect(link.rel).to eq('self')
+        expect(link.href).to eq('http://example.com')
       end
     end
 
@@ -70,78 +89,6 @@ describe Poptart::Model do
       expect(Poptart::Model).to have_received(:get).with('/')
       expect(Poptart::Root).to have_received(:new).with(root_response)
       expect(returned_root).to eq(root)
-    end
-  end
-
-  context '#user_url' do
-    it 'returns user url' do
-      model = Poptart::TestModel.new(
-        '_links' => {
-          'users' => {
-            'href' => 'http://example.com/user{?query*}'
-          }
-        }
-      )
-
-      expect(model.user_url).to eq('http://example.com/user')
-      expect(model.user_url(query: {
-          flavor: 'strawberry'
-        }
-      )).to eq('http://example.com/user?flavor=strawberry')
-    end
-  end
-
-  context '#surveys_url' do
-    it 'returns survey url' do
-      model = Poptart::TestModel.new(
-        '_links' => {
-          'surveys' => {
-            'href' => 'http://example.com/surveys{/id}{?query*}'
-          }
-        }
-      )
-
-      expect(model.surveys_url).to eq('http://example.com/surveys')
-      expect(model.surveys_url(id: 1, query: {
-          flavor: 'strawberry'
-        }
-      )).to eq('http://example.com/surveys/1?flavor=strawberry')
-    end
-  end
-
-  context '#questions_url' do
-    it 'returns questions url' do
-      model = Poptart::TestModel.new(
-        '_links' => {
-          'questions' => {
-            'href' => 'http://example.com/questions{/id}{?query*}'
-          }
-        }
-      )
-
-      expect(model.questions_url).to eq('http://example.com/questions')
-      expect(model.questions_url(id: 1, query: {
-          flavor: 'strawberry'
-        }
-      )).to eq('http://example.com/questions/1?flavor=strawberry')
-    end
-  end
-
-  context '#survey_questions_url' do
-    it 'returns survey questions url' do
-      model = Poptart::TestModel.new(
-        '_links' => {
-          'survey_questions' => {
-            'href' => 'http://example.com/surveys/{survey_id}/survey_questions{/id}{?query*}'
-          }
-        }
-      )
-
-      expect(model.survey_questions_url(survey_id: 1)).to eq('http://example.com/surveys/1/survey_questions')
-      expect(model.survey_questions_url(survey_id: 1, id: 16, query: {
-          flavor: 'strawberry'
-        }
-      )).to eq('http://example.com/surveys/1/survey_questions/16?flavor=strawberry')
     end
   end
 end

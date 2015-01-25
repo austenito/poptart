@@ -10,7 +10,7 @@ describe Poptart::Question do
         'key' => 'poptarts'
       }
 
-      root = double(:root, questions_url: 'questions_url')
+      root = double(:root, url: 'questions_url')
       allow(Poptart::Question).to receive(:root).and_return(root)
       allow(Poptart::Question).to receive(:post).and_return(response)
 
@@ -19,6 +19,7 @@ describe Poptart::Question do
                                           responses: ['Yes', 'No'],
                                           key: 'poptarts')
 
+      expect(root).to have_received(:url).with(relation: 'questions', method: 'POST')
       expect(Poptart::Question).
         to have_received(:post).
         with('questions_url', 'question' => a_hash_including(response))

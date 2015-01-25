@@ -42,8 +42,25 @@ module Poptart
       DateTime.parse(@created_at)
     end
 
+    def self.find_all(question_id: nil, key: nil, survey_id: nil)
+      if question_id
+        query = { question_id: question_id }
+      elsif key
+        query = { key: key }
+      elsif survey_id
+        query = { survey_id: survey_id }
+      end
+
+      url = root.url(relation: 'survey-questions-by-query', query: query)
+      response = get(url)
+      JSON.parse(response.body)["survey_questions"].map do |response_body|
+        Poptart::SurveyQuestion.new(response_body)
+      end
+    end
+
     def submit
-      response = put(links.put.href,
+      url = url(method: 'PUT', relation: 'self')
+      response = put(url,
         {
           'id' => id,
           'survey_question' => {

@@ -23,12 +23,13 @@ module Poptart
         'text' => text,
         'key' => key
       }
-      response = post(root.questions_url, 'question' => question_data)
+      url = root.url(relation: 'questions', method: 'POST')
+      response = post(url, 'question' => question_data)
       new(response)
     end
 
     def self.all(params = {})
-      response = get(root.questions_url)
+      response = get(root.url(relation: 'questions'))
       JSON.parse(response.body).map do |question|
         if params[:type]
           if question['question_type'] == params[:type]

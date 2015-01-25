@@ -105,35 +105,37 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"b2aab1b757e8aeabef18094e723f5d4e"'
+      - '"8b035d9deedc38add24b298417e4ada0"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - db9761ed-5332-415e-bcf5-ab748270f190
+      - 264336a8-ef07-494f-a895-8410730faa84
       X-Runtime:
-      - '0.007931'
+      - '0.006582'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
       Date:
-      - Sat, 03 Jan 2015 19:11:09 GMT
+      - Sun, 25 Jan 2015 13:37:39 GMT
       Content-Length:
-      - '256'
+      - '292'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "service_user_id": "a78d559ac69329de79cec44cecabbe71108dbb08d07767f888af059bbf3e674d",
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/user"
+          "service_user_id": "c20ea857f90b281eb1b19c6ec9d0012bd4bed705f9b16711d9ed5bd0d3cd52b5",
+          "_links": [
+            {
+              "href": "http://localhost:3000/api/user",
+              "rel": "self",
+              "method": "GET"
             }
-          },
-          "token": "9b9bb1b0da7f7bdd8d234c532a18b5b0e14b50333c359c83c609fd243528c34f"
+          ],
+          "token": "31c9f428651e64eb0c6bb7524fc7a7cfa3a0e8d8cdc4c0f6cb8b796c469adf75"
         }
     http_version: 
-  recorded_at: Sat, 03 Jan 2015 19:11:09 GMT
+  recorded_at: Sun, 25 Jan 2015 13:37:39 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/user
@@ -148,9 +150,9 @@ http_interactions:
       Api-Token:
       - testing
       User-Token:
-      - 9b9bb1b0da7f7bdd8d234c532a18b5b0e14b50333c359c83c609fd243528c34f
+      - 31c9f428651e64eb0c6bb7524fc7a7cfa3a0e8d8cdc4c0f6cb8b796c469adf75
       Service-User-Id:
-      - a78d559ac69329de79cec44cecabbe71108dbb08d07767f888af059bbf3e674d
+      - c20ea857f90b281eb1b19c6ec9d0012bd4bed705f9b16711d9ed5bd0d3cd52b5
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -171,33 +173,35 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"b2aab1b757e8aeabef18094e723f5d4e"'
+      - '"8b035d9deedc38add24b298417e4ada0"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0dd3416e-00f4-4af9-a643-eeaa2583a2a5
+      - 7c4ade70-1f4e-468c-9690-1426a6dd9efb
       X-Runtime:
-      - '0.006953'
+      - '0.007437'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)
       Date:
-      - Sat, 03 Jan 2015 19:11:09 GMT
+      - Sun, 25 Jan 2015 13:37:39 GMT
       Content-Length:
-      - '256'
+      - '292'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
       string: |-
         {
-          "service_user_id": "a78d559ac69329de79cec44cecabbe71108dbb08d07767f888af059bbf3e674d",
-          "_links": {
-            "self": {
-              "href": "http://localhost:3000/api/user"
+          "service_user_id": "c20ea857f90b281eb1b19c6ec9d0012bd4bed705f9b16711d9ed5bd0d3cd52b5",
+          "_links": [
+            {
+              "href": "http://localhost:3000/api/user",
+              "rel": "self",
+              "method": "GET"
             }
-          },
-          "token": "9b9bb1b0da7f7bdd8d234c532a18b5b0e14b50333c359c83c609fd243528c34f"
+          ],
+          "token": "31c9f428651e64eb0c6bb7524fc7a7cfa3a0e8d8cdc4c0f6cb8b796c469adf75"
         }
     http_version: 
-  recorded_at: Sat, 03 Jan 2015 19:11:09 GMT
+  recorded_at: Sun, 25 Jan 2015 13:37:39 GMT
 recorded_with: VCR 2.9.3
