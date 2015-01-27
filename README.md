@@ -8,41 +8,84 @@ The gem provides ActiveRecord-y like models exposing service endpoint attributes
 
 ## User
 
-To create a user:
+### Creating a user
 
 ```
 user = User.create
-user.service_user_id # => <Some hash>
+user.service_user_id # => Some hash
 ```
 
-Users have a 1-many relationship to `surveys`. A user has read/write access to surveys as such:
+### Finding a user
 
 ```
-user.create_survey
-user.create_random_survey
-user.survey_for_id(id)
-
+user = User.find
 ```
 
+## Authorization
+
+Each request made by Poptart is made in the context of a service user id and
+a user token. The service user id is the authentication token of a user 
+stored in the happiness service. The user token is used for authorization of
+a user and what survey information they have access to.
+
+```
+Poptart.authorize(
+  service_user_id: service_user_id,
+  user_token: token
+)
+```
 
 ## Question
 
-To find all questions:
+### To find all questions
 ```
 questions = Question.all
+```
 
+### Creating a question
+
+```
+Poptart::Question.create(
+  'Do you like poptarts?',
+   question_type: 'boolean',
+   responses: [true, false],
+   key: 'poptarts'
+)
+```
+
+### Find a question
+
+Questions can be found by id or key:
+
+```
+Poptart::Question.find(1)
+Poptart::Question.find('what_are_you_doing')
 ```
 
 ## Surveys
 
-To add a question to a survey:
+### Creating a survey
+
+By default, surveys are created with no questions.
 
 ```
-question = Question.all.first
-survey.add_question(question)
+Poptart::Survey.create
 ```
 
-To find out if a survey has all of it's questions answered:
+### Adding a question to a survey
+
+```
+survey_question = Poptart::SurveyQuestion.new('question_id' => 1)
+survey.add_survey_question(survey_question)
+```
+
+### Find a specific survey question
+
+```
+Poptart::Survey.find(1)
+```
+
+### To find out if a survey has all of it's questions answered:
 
 ```
 survey.completed?
@@ -50,7 +93,21 @@ survey.completed?
 
 ## Survey Questions
 
-To answer a survey question:
+### Find all survey questions
+
+All survey questions can be found by the following keys:
+
+* question_id
+* key
+* survey_id
+
+This is useful to aggregate answers from multiple surveys.
+
+```
+Poptart::SurveyQuestion.find_all('what_are_you_doing')
+```
+
+# Answering a survey question
 
 ```
 survey_question = survey.survey_questions.first
