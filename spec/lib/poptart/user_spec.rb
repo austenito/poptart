@@ -27,19 +27,4 @@ describe Poptart::User do
       expect(user.id).to eq(1)
     end
   end
-
-  context '.get_user' do
-    it 'returns a user' do
-      root = double(:root, url: 'user_url')
-      user_response = { 'id' => 1 }
-      allow(Poptart::User).to receive(:root).and_return(root)
-      allow(Poptart::User).to receive(:get).and_return(user_response)
-
-      user = Poptart::User.get_user
-
-      expect(root).to have_received(:url).with(relation: 'users')
-      expect(Poptart::User).to have_received(:get).with('user_url')
-      expect(user.id).to eq(1)
-    end
-  end
 end
