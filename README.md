@@ -15,12 +15,6 @@ user = User.create
 user.service_user_id # => Some hash
 ```
 
-### Finding a user
-
-```
-user = User.find
-```
-
 ## Authorization
 
 Each request made by Poptart is made in the context of a service user id and
